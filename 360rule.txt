@@ -1,6 +1,6 @@
 [360 AdBlock Rule]
 title=xinggsf广告拦截
-updated_time=2015.6.25
+updated_time=2015.6.26
 author=xinggsf
 version=1.5
 
