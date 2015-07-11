@@ -1,0 +1,135 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("www.baidu.com") {
+  #head{position: absolute !important}
+  #content_right{display:none !important}
+  #content_left, .result.c-container{width: 100% !important}
+  #content_left{padding-left: 33px !important}  
+}
+@-moz-document domain("baidu.com") {
+div#ecad,div#pb_adbanner,div#union-qbbanner,
+div#ec_im_container,div#ecomcontainer,
+div#imgcmsadpart,
+table#relecom,div#relecom54,
+div#aside_ad[class^="aside_ad_"],
+a.adtopimg,div.banner_wrap,
+div.ecomad-banner-loading,
+div.ec_im_tg, .ec_tglj,
+div.pause-ad,div.res_top_banner,
+div.sam_iebrowser_banner,
+div.wgt-ads,div.widget-ads,div.wgt-union,
+div.ws-tips,
+div.union_mod,
+div.fsblock:last-child,
+table.ec_mr15.ec_ppim_top.ec_pp_f,
+div.ad-block.ad-block-0,
+div.l_banner.banner_theme_2,
+div.r.ec_bdtg,
+div.search_union_mod.search_ecom_mod,
+div.banner_post.banner_post_bright.j_banner_post.clearfix,
+div.wrap2 div.novel_wrap.j_novel_wrap,
+div.ad.ecomad-banner-loading,
+div[id^="game_couplet_pb_"],
+div#content_left > table[data-click],
+div[id^="html-reader-banner-"],
+div#container.container_s > div#content_left > table,
+div#container.container_l > div#content_left > table,
+div[id^="m"][id$="_canvas"]{display:none !important}
+}
+
+@-moz-document domain("163.com") {
+div.ntes-nav{position: absolute !important}
+
+div.ep-area:nth-child(3),
+#epContentLeft iframe,
+#epContentRight > span,
+.extra-tag.JS_NTES_LOG_FE ~ div,
+div#endText ~ span,
+div.btm-ad,
+div.ep-search,
+div.gg200x300,div.gg300,div.ggarea,
+div.sharecommend-wrap,
+div.area.top-gg-area,
+div.footer.clearfix,
+div.postadlayer.nbw-win,
+div.wrapper.top-banner,
+.ep-title-2.clearfix,
+div[class^="ad"],
+div[class$="_header_gg"],div[class^="gg-"],
+div#tieAuthRank.tieRank,
+div#adao,div#bobo,iframe#btm_ad_taobao,
+a[href*='.netease.com/redirect?'],
+.inner a[href^='http://love.163.com/'],
+.inner a[href^='http://tie.163.com/'],
+[src^="http://img1.126.net/"],
+[src^="http://img2.126.net/"],
+[src^="http://img3.126.net/"],
+iframe[src^="http://g.163.com/"],
+iframe[src^="http://x.jd.com/exsites?"],
+a[href^="http://y.163.com?from="],/*花田手机扫描图片*/
+.quickmark,/*手机扫描图片*/
+#j-appdown,/*手机客户端图片*/
+#js-epTabDS{display:none !important}
+}
+
+@-moz-document domain("qq.com") {
+div.ad90,div.ad960,div.ad_96001,
+div.adright,div.adleft,
+div.kjad2,div.juzhong2,
+div.pop_ads_wide,
+div.pop_ads_content,
+.adbox-article-qq,div.ad-box,
+div.ad-box1.mar-b-30,
+div.action_ad,
+div.mian-ad.mar-b-10,
+div.sidboxnoborder.mar-b8,
+div.body-top-ad.body-article-qq,
+div.mod-right.adbutton-aritcle-qq,
+div.mod-left.bottom-article-qq.sildpic-article-qq,
+div.wrap.tl_ad.tl_ad,
+div.wrapper.adtop-article-qq,
+div#adright-article-qq,
+div#advertisement,div#topad,
+div[class^="ad_"],div[id^="app_ad"],div[adid],
+div[style=" width:300px; height:250px; overflow:hidden"],
+div#tenyearad.tenyearad,
+div#qq_hp_bottom_width.l_qq_com,
+div#news_2nd_gd_width1.l_qq_com,
+div.l_qq_com[display="banner"],
+div.l_qq_com[style^="width:"],
+div[class^="adv"][style],
+[class^="right_ad_"]{display:none !important}
+}
+
+@-moz-document domain("sina.com.cn") {
+div.ad-banner,div.top-ads,.adNone,div.adspace,
+div.article-video,div.palm01-ad,
+div.bannerf1,div.clearad,
+div.sinaad-toolkit-box,
+div.sa_w.top_ads,div.taier_pfp,
+div.zhaoshang-block,
+div.ad-banner.mb25,
+div.part-l.clearfix,
+div.tit01.clearfix,
+div.wrap.topad,
+div#ad_blk_fixed,
+div#ad_top,div#ad_background_wall_banner,
+span#coupletmediawrap,
+div#divmilbottom,
+div#flashcontent_96ffb521078a,
+div#hp_idx_banner_un_01,
+div#sinaloginreward2014_w,
+ul#blk_sxad_2,
+div.article-video[vid],
+div#baidu.article_baidu,
+div#topbar.topad950,
+div#blk_xlzttltop_01.blk_xlzt,
+div[class*="weixin"],
+[class^="ad_"],
+[class$="_ad"],
+[id^="ad_"],
+#taobao,
+div[class^="atoptxt"],
+iframe[src*=".sina.com.cn/iframe/76/"],
+iframe[src^="http://www.baidu.com/ur/scun?di="]
+{display:none !important}
+}
