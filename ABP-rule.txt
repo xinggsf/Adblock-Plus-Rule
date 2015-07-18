@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v20150716 for chrome
+! title: xinggsf v20150719 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
