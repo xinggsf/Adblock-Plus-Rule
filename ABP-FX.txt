@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v20150722 for chrome
+! title: xinggsf v20150724 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
@@ -60,6 +60,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||adserver.
 |http://g.
 |http://gg.
+||000dn.com/
 ||1133.cc^
 ||123hala.com
 ! 广东电信截持弹窗
@@ -68,7 +69,10 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||allyes.$third-party
 |http:/*/allyes$third-party
 ||301pk.com/$third-party
+||37.com/$third-party
+||37wan.com/
 ||51.la^$script
+||6711.com/
 ||7pk.com/
 ! 9377的弹窗真烦，以下三行都是9377
 ||859377.com/
@@ -81,6 +85,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 |http:/*/adclick-cn$third-party
 ||baifendian.com/$third-party
 ||bfdcdn.com/$third-party
+||biddingx.com/
 ||chenwen7788.com/
 ||cloudfront.net/$third-party
 ||cmp288.com/
@@ -94,6 +99,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||duoshuo.com^$third-party
 ||exoclick.com^$third-party
 ||findicons.com^$third-party
+||gyyx.cn/$third-party
 ||huimee.net/
 ||humanding.com/$third-party
 ||il8r.com^$third-party
@@ -102,6 +108,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 |http://x.jd.com/
 ||jiathis.com^$third-party
 ||jtxh.net/
+||jzyx.com/$third-party
 ||lndjj.com/
 ||lnr2.com
 ||knet.cn^$third-party
@@ -138,6 +145,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||xyxy01.com
 ||yccdn.com/
 ||ydstatic.com^$third-party
+||youxi.com^$third-party
 ||yule8.net^
 ||yunshipei.com/$third-party
 ||yy.com^$third-party
@@ -152,6 +160,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 |http:/*/piwik.
 |http://*.qndown.
 ||stat.$~stylesheet
+|http://*/stat.$script
 ||wan.$third-party
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
@@ -180,7 +189,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 |http://*/piao.js|
 |http://*/pop.js^
 |http://*.pop.js^
-|http://*popup.js^$domain=~qzone.qq.com
+|http://*popup.js^$domain=~qzone.qq.com|youku.com
 |http://*_ads.js|
 |http://*/float.js|
 |http://*gonggao.js|
@@ -413,9 +422,6 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 @@|http://hudong.pl.youku.com/interact/live/get/live
 @@|http://hudong.pl.youku.com/player/getLive?liveid=
 ||hudong.pl.youku.com^
-@@|http://static.youku.com/v*/index/js/common.js
-@@|http://static.youku.com/v*/index/js/popup.js
-|http://static.youku.com/v*/index/js/$script
 |http://static.youku.com/v*/paycenter/js/$script
 |http://comments.youku.com/
 |http://hz.youku.com/red/ggnotice.php?
@@ -429,31 +435,26 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 |http://uo.youku.com/channelstore/rank/$script
 ||urchin.lstat.youku.com/index/js/
 v.youku.com##div#dragDIV
-youku.com##div#youku_ad_crazy,div#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],div#lotteryPic,body > .qwindow,#commentArea
+youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,#commentArea
 ||bilibili.com/html/$~xmlhttprequest
 |http://comment.bilibili.com/
-|http://static.hdslb.com/images/header/
-|http://www.bilibili.com/online.js
-|http://static.hdslb.com/js/jquery.qrcode.min.js
-|http://static.hdslb.com/js/bfd.js?
-|http://interface.bilibili.com/nav.js
 |http://interface.bilibili.com/count?$script
+|http://interface.bilibili.com/msg.xml
+|http://www.bilibili.com/online.js
+|http://static.hdslb.com/cloud/
+|http://static.hdslb.com/js/bfd.js?
+|http://static.hdslb.com/images/header/
+|http://static.hdslb.com/js/jquery.qrcode.min.js
 |http://static.hdslb.com/swz_crossdomain.xml
 |http://acg.tv/$domain=bilibili.com
-|http://static.hdslb.com/cloud/
-|http://interface.bilibili.com/msg.xml
 www.bilibili.com##div.ad-f
-@@|http://player.letvcdn.com/*/plugins/Hint.swf
-@@|http://player.letvcdn.com/p/201*.swf
-@@||player.letvcdn.com/*/letvPlayer.swf
-@@||player.letvcdn.com^*/newplayer/*.swf
-||player.letvcdn.com^*.swf|
+@@|http://stat.letv.com/$script
 |http://*/letv-gug/
-|http://ark.letv.com/*?vid=
-|http://ark.letv.com/t?mid=
+|http://ark.letv.com/
 ||dc.letv.com/
-|http://i*.letvimg.com/*.xml
-|http://i*.letvimg.com/*.swf
+||webp2p.letv.com
+|http://i*.letvimg.com/*.xml|
+|http://i*.letvimg.com/*.swf^
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"]
 cloud.letv.com##div#ad_show_box
