@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v20150724 for chrome
+! title: xinggsf v20150728 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$stylesheet
@@ -22,14 +22,11 @@
 |http://cpro.$script
 @@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
-@@|http://nsclick.baidu.com/v.gif?
 |http://*click.baidu.com/$domain=~baidu.com
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
 |http://hm.baidu.com/h.js
 |http://imgsrc.baidu.com/tieba/pic/item/$image
-@@|http://play.baidu.com/player/static/flash/SLC.swf?
-|http://play.baidu.com/*.swf^
 |http://list.video.baidu.com/pc_static/promotion/
 |http://tieba.baidu.com/tb/cms/game/*_common_banner.jpg
 |http://tieba.baidu.com/tb/cms/game/qianjun_banner.jpg
@@ -40,11 +37,15 @@
 |http://tb1.bdstatic.com/tb/cms/com/mis/spreadad/dasense_iframe_api.js
 |http://tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 |http://tb1.bdstatic.com/tb/r/image/201$image
+|http://tb1.bdstatic.com/tb/cms/frs/bg/$image
+|http://tbmsg.baidu.com/gmessage/get?$script
 baike.baidu.com###adLayerSideWrap
 fanyi.baidu.com##div.banner-wrap.inner
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin
+play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
+tieba.baidu.com###footer ~*,.firework_sender_wrap,#global_notice_wrap,.card_banner
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
-wenku.baidu.com###doc~*
+wenku.baidu.com##div.mod.lastcell-dialog
+|http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !-------------------通用、广告联盟站点--------------------
 |http:/*/ad.
@@ -63,21 +64,23 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 |http:/*/adServer.
 |http://*.adserver.
 |https://*.adserver.
-|http://g.
+|http://g.$domain=~xiami.com
 |http://gg.
 ||000dn.com/
 ||1133.cc^
 ||123hala.com
-! 广东电信截持弹窗
+! 电信截持弹窗－3行
+||greenet.cn/$popup,third-party
 ||189.gd/$popup,third-party
 ||189.cn/$popup,third-party
 ||301pk.com/$third-party
+||lianmeng.360.cn/
 ||37.com/$third-party
 ||37wan.com/
 ||51.la^$script
 ||6711.com/
 ||7pk.com/
-! 9377的弹窗真烦，以下三行都是9377
+! 下三行都是9377,其弹窗真烦
 ||859377.com/
 ||9377.com^$third-party
 ||937744.com/
@@ -361,7 +364,6 @@ bitauto.com##div.col-ad
 |http://btkitty.me/search/e7pk5dQEA.html$popup
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
-|http://static.csdn.net/public/common/toolbar/js/html.js
 |http://zz.csdn.net/
 ebusinessreview.cn##div.header
 @@|http://www.gamersky.com/gsinc/$subdocument
@@ -377,10 +379,13 @@ yatu.tv##[id*='myads'],#loadimg
 |http://www.jiaosm.net/*/yhc.html|
 |http://static.comment.acfun.
 |http://data.vod.itc.cn^
+|http://js.tv.itc.cn/hdpv.js
 |http://www.1905.com/coll/ad$subdocument
-hunantv.com##div.m-index-ad,#player-ad,p.i-floatbtn.clearfix
+hunantv.com##div.m-index-ad,#player-ad,p.i-floatbtn.clearfix,[class^=index-gg]
 |http://bs.da.hunantv.com/a.htm?pv=1&p=
-||res.hunantv.com/
+|http://res.hunantv.com/r.js
+|http://res.hunantv.com/FrameWork/*.swf|
+|http://image.res.hunantv.com/mediafiles/creative/
 dm456.com##div[style*="height:90px;"],iframe[width="978"][height="90"],iframe[src^="/m/bd_960x"],div#bdleft,iframe[width="980"][height="92"],div#p-right,div#p-left
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.crossAd.margin_b20,div#widget-indexad.ad-index,div#adflash.full-box,#adflash,div.ad-wrapper.clearfix,[id^="flash1000000000"],div#addiv,div.s_main.liveTop_adv,div.leftAd
 |http://static.qiyi.com/ext/
@@ -409,7 +414,7 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.cro
 ||qiyu.iqiyi.com/crossdomain.xml
 |http://dispatcher.video.qiyi.com/dispn/iamo.swf
 pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
-v.pps.tv##div.pgbox-content
+v.pps.tv##div.pgbox-content,div.pps-app-layer,#open_app_iframe
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
 ||js.tudouui.com/tspecial/assets/PauseContainer.swf
 |http://js.tudouui.com/bin/lingtong/app_
@@ -1858,7 +1863,7 @@ cloud.letv.com##div#ad_show_box
 ||hanzify.org/Main/Template/Images/ak47/$image
 ||haobk.taobao.com$domain=ysfx.howbbs.com
 ||hauchi.com.tw^$third-party
-||hd.sohu.com$object_subrequest
+||hd.sohu.com$object_subrequest,image
 ||hefan365.com
 ||heima8.com^$third-party
 ||hh6666.com
