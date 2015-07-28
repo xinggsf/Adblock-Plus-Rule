@@ -4,7 +4,7 @@
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|zongheng.com|xunzai.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|yunlaige.com|zongheng.com|xunzai.com
 |https://$third-party,domain=greasyfork.org
 !----------------NoScript,屏蔽指定域名的脚本---------------------
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
@@ -21,7 +21,6 @@
 |http://cpro.$script
 @@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
-@@|http://nsclick.baidu.com/v.gif?
 |http://*click.baidu.com/$domain=~baidu.com
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
@@ -39,11 +38,15 @@
 |http://tb1.bdstatic.com/tb/cms/com/mis/spreadad/dasense_iframe_api.js
 |http://tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 |http://tb1.bdstatic.com/tb/r/image/201$image
+|http://tb1.bdstatic.com/tb/cms/frs/bg/$image
+|http://tbmsg.baidu.com/gmessage/get?$script
 baike.baidu.com###adLayerSideWrap
 fanyi.baidu.com##div.banner-wrap.inner
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin
+tieba.baidu.com###footer ~*,.firework_sender_wrap,#global_notice_wrap,.card_banner
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
-wenku.baidu.com###doc~*
+wenku.baidu.com##div.mod.lastcell-dialog
+|http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !-------------------通用、广告联盟站点--------------------
 ||ad.
@@ -58,17 +61,19 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||adsense.
 |http://*/adsense/
 ||adserver.
-|http://g.
+|http://g.$domain=~xiami.com
 |http://gg.
 ||000dn.com/
 ||1133.cc^
 ||123hala.com
-! 广东电信截持弹窗
+! 电信截持弹窗
+||greenet.cn/$popup,third-party
 ||189.gd/$popup,third-party
 ||189.cn/$popup,third-party
 ||allyes.$third-party
 |http:/*/allyes$third-party
 ||301pk.com/$third-party
+||lianmeng.360.cn/
 ||37.com/$third-party
 ||37wan.com/
 ||51.la^$script
@@ -150,7 +155,7 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 ||yunshipei.com/$third-party
 ||yy.com^$third-party
 ||yystatic.com^$third-party
-~bnho.czxzz##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,.adsbygoogle,.side-ad,#side-ad
+##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,.adsbygoogle,.side-ad,#side-ad
 |http://*.com/ads$domain=~www.btspread.com
 |http:/*/svnad/$image,script
 |http://*_350_330.$image
@@ -371,10 +376,13 @@ yatu.tv##[id*='myads'],#loadimg
 |http://www.jiaosm.net/*/yhc.html|
 |http://static.comment.acfun.
 |http://data.vod.itc.cn^
+|http://js.tv.itc.cn/hdpv.js
 |http://www.1905.com/coll/ad$subdocument
-hunantv.com##div.m-index-ad,#player-ad,p.i-floatbtn.clearfix
+hunantv.com##div.m-index-ad,#player-ad,p.i-floatbtn.clearfix,[class^=index-gg]
 |http://bs.da.hunantv.com/a.htm?pv=1&p=
-||res.hunantv.com/
+|http://res.hunantv.com/r.js
+|http://res.hunantv.com/FrameWork/*.swf|
+|http://image.res.hunantv.com/mediafiles/creative/
 dm456.com##div[style*="height:90px;"],iframe[width="978"][height="90"],iframe[src^="/m/bd_960x"],div#bdleft,iframe[width="980"][height="92"],div#p-right,div#p-left
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.crossAd.margin_b20,div#widget-indexad.ad-index,div#adflash.full-box,#adflash,div.ad-wrapper.clearfix,[id^="flash1000000000"],div#addiv,div.s_main.liveTop_adv,div.leftAd
 |http://static.qiyi.com/ext/
@@ -1853,7 +1861,7 @@ cloud.letv.com##div#ad_show_box
 ||hanzify.org/Main/Template/Images/ak47/$image
 ||haobk.taobao.com$domain=ysfx.howbbs.com
 ||hauchi.com.tw^$third-party
-||hd.sohu.com$object_subrequest
+||hd.sohu.com$object_subrequest,image
 ||hefan365.com
 ||heima8.com^$third-party
 ||hh6666.com
