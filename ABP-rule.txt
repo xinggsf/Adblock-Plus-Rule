@@ -1,11 +1,12 @@
 [Adblock Plus 2.0]
-! title: xinggsf v20150731 for chrome
+! title: xinggsf v20150803 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com
+|http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
 |https://$third-party,domain=greasyfork.org
 !----------------NoScript,屏蔽指定域名的脚本---------------------
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
@@ -41,7 +42,6 @@ zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-op
 !--------------------------百度贴吧-----------------------------
 tieba.baidu.com###footer~*,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#j_p_postlist>div:not(.l_post),#thread_list>li:not(.j_thread_list)
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
-|http://$subdocument,third-party,domain=tieba.baidu.com
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
 |http://tb1.bdstatic.com/tb/cms/com/mis/spreadad/dasense_iframe_api.js
 |http://tb1.bdstatic.com/tb/cms/frs/bg/$image
@@ -183,6 +183,7 @@ tieba.baidu.com###footer~*,.firework_sender_wrap,#global_notice_wrap,.card_banne
 |http://wan.$third-party
 |http://*.wan.$third-party
 !-------------------通用脚本广告--------------------
+|http://*.cn/s.php?id=
 |http://*.com/ga.js^
 |https://*/ads/$script
 |http://*-ads-$script
@@ -360,29 +361,35 @@ zongheng.com###zh_ab_rb,#sumcard_flag
 |http://www.zongheng.com/zhda/zhda.html
 |http://*/zongheng_chat_loader
 !-------------------杂项--------------------
-1ting.com##[id^='tingx_']
+1ting.com##[id^=tingx_]
 |http://www.4399.com/loadimg/iframe_$subdocument
 |http://a.5054399.com/4399_js/$script
 51cto.com###message,#f_close_box
 |http://log.51cto.com/
 |http://logs.51cto.com/
 |http://vd.51cto.com/
+||52pk.com/www/images_*.swf|
 ||live.ali213.net/$domain=~live.ali213.net
 bitauto.com##div.col-ad
 |http://btkitty.me/search/e7pk5dQEA.html$popup
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
 |http://zz.csdn.net/
-|http://static92cc.db-cache.com/site/images/92show*.gif
-|http://static92cc.db-cache.com/site/images/playad*.gif
+|http://static92cc.db-cache.com/site/images/92show
+|http://static92cc.db-cache.com/site/images/indexad
+|http://static92cc.db-cache.com/site/images/playad
 |http://static92cc.db-cache.com/space/skin/*/images/bg.jpg
 ebusinessreview.cn##div.header
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
 |http://hrtsea.com/936x90.gif
+lepan.cc##div.alert_windows
+|http://image.lepan.cc/vipcz/$image
+|http://image.lepan.cc/ydxz/
 u17.com##[id^=u17-advert-fix-ad]
 |http://$subdocument,domain=u17.com
+|http://tj.u17t.com/$script
 yahoo.com###adbn_UMU
 |https://s.yimg.com/rq/darla/
 |https://s.yimg.com/*/yfpad/combo/$script
