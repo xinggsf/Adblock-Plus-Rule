@@ -40,10 +40,17 @@ v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
-!--------------------------百度贴吧-----------------------------
-tieba.baidu.com###footer~*,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#j_p_postlist>div:not(.l_post),#thread_list>li:not(.j_thread_list)
+!---贴吧---
+tieba.baidu.com###footer~*,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#j_p_postlist>div:not(.l_post),#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
+! tieba.baidu.com#@##thread_list>li.thread_top_list_folder
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
+|http://play.baidu.com/player/static/flash/fmp.swf
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
+|http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
+|http://tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
+|http://tb1.bdstatic.com/??/tb/_/app_forum_$script
+|http://tb1.bdstatic.com/??/tb/_/my_app_$script
+|http://tb1.bdstatic.com/??/tb/_/xiu8_$script
 |http://tb1.bdstatic.com/tb/cms/com/mis/spreadad/dasense_iframe_api.js
 |http://tb1.bdstatic.com/tb/cms/frs/bg/$image
 |http://tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
