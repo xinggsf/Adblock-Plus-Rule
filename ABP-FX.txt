@@ -1,8 +1,9 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.08.11 for firefox
+! title: xinggsf v2015.08.17 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
+|http://$subdocument,domain=u17.com|dm456.com|sz1001.net
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
@@ -11,7 +12,7 @@
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
 !--------------flashBlock。免过滤白名单如下----------------------
 |http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~apkbus.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com
-@@|http://*/upload.swf^
+@@|http://*upload.swf^
 !--------------------------百度----------------------------------
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
@@ -22,7 +23,7 @@
 |http://cpro.$script
 @@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
-|http://*click.baidu.com/$third-party
+/^http:\/\/\w*?click\.baidu\.com\//$third-party
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
 |http://hm.baidu.com/h.js
@@ -30,7 +31,7 @@
 @@|http://play.baidu.com/player/static/flash/SLC.swf?
 |http://play.baidu.com/*.swf^
 |http://list.video.baidu.com/pc_static/promotion/
-@@|http://znsv.baidu.com/customer_search/
+@@||baidu.com/customer_search/api/
 |http://znsv.baidu.com/
 |http://pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
@@ -90,6 +91,10 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||51.la^$script
 ||6711.com/
 ||7pk.com/
+! 3黑名单，最好加入防火墙中
+||7z66.com/
+||927go.com/
+||hr44.com/
 ! 9377的弹窗真烦
 ||859377.com/
 ||9377.com/
@@ -116,7 +121,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||ctsywy.com
 ||dian500.com
 ||dian5000.com
-||duoshuo.com^$third-party
+||duoshuo.com^$third-party,domain=~lite6.com
 ||eclkspbn.com/
 ||fd7c.com/
 ||findicons.com^$third-party
@@ -124,6 +129,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ! /^https?:\/\/\w+\.google-?\w+\.com\//$third-party
 ||govids.net/
 ||gyyx.cn/$third-party
+||hinet.net^third-party
 ||huimee.net/
 ||humanding.com/$third-party
 ||il8r.com^$third-party
@@ -319,13 +325,7 @@ v.360.cn##div.banner-g4
 ||rm.sina.com.cn/$script,subdocument
 |http://beacon.sina.com.cn
 @@|http://d1.sina.com.cn/zhuyan/jiaqing/F1/f1ad_nav_bg.jpg
-|http://d1.sina.com.cn/
-|http://d2.sina.com.cn/
-|http://d3.sina.com.cn/
-|http://d4.sina.com.cn/
-|http://d5.sina.com.cn/
-|http://d6.sina.com.cn/
-|http://d7.sina.com.cn/
+/^http:\/\/d\d\.sina\.com\.cn\//
 |http://dcads.sina.com.cn/html.ng/pos=tvselbanner&site=sina
 |http://henan.sina.com.cn/iframe/7/$subdocument
 |http://imgcdn.house.sina.com.cn/2.0/abp/cmslead_new.js
@@ -387,10 +387,6 @@ bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
 |http://zz.csdn.net/
-|http://static92cc.db-cache.com/site/images/92show
-|http://static92cc.db-cache.com/site/images/indexad
-|http://static92cc.db-cache.com/site/images/playad
-|http://static92cc.db-cache.com/space/skin/*/images/bg.jpg
 ebusinessreview.cn##div.header
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
@@ -399,15 +395,14 @@ ebusinessreview.cn##div.header
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
-|http://www.lepan.cc/images/js/$script
-|http://www.lepan.cc/images/js/$script
 u17.com##[id^=u17-advert-fix-ad]
-|http://$subdocument,domain=u17.com
 |http://tj.u17t.com/$script
 yahoo.com###adbn_UMU
 |https://s.yimg.com/rq/darla/
 |https://s.yimg.com/*/yfpad/combo/$script
 |http://*/yahoop.js|
+yxdown.com##.baiduimageplus-s, .ad-widget-imageplus
+|http://www.yxdown.com/ghtml/
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
@@ -415,14 +410,19 @@ zimuzu.tv##ul.room
 yatu.tv###loadimg
 |http://www.jiaosm.net/*/yhc.html|
 |http://static.comment.acfun.
-|http://data.vod.itc.cn
+@@||stat.v-56.com/player
+|http://data.vod.itc.cn:8080
+|http://data.vod.itc.cn/?new=*.mp4|
+|http://data.vod.itc.cn/?prod=ad&
+|http://js.tv.itc.cn/gg.seed.js
 |http://js.tv.itc.cn/hdpv.js
 |http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&p=
 |http://res.hunantv.com/r.js
 |http://res.hunantv.com/FrameWork/*.swf|
 |http://image.res.hunantv.com/mediafiles/creative/
-dm456.com##div[style*="height:90px;"],iframe[width="978"][height="90"],iframe[src^="/m/bd_960x"],div#bdleft,iframe[width="980"][height="92"],div#p-right,div#p-left
+dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
+@@|http://www.dm456.com/player/$subdocument
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.crossAd.margin_b20,div#widget-indexad.ad-index,div#adflash.full-box,#adflash,div.ad-wrapper.clearfix,[id^="flash1000000000"],div#addiv,div.s_main.liveTop_adv,div.leftAd
 |http://static.qiyi.com/ext/
 |http://static.iqiyi.com/js/common/ares$script
@@ -462,20 +462,17 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 |http://*.swz|$domain=tudou.com|youku.com|bilibili.com
 @@|http://v2html.atm.youku.com/vhtml
 ||atm.youku.com/
-@@|http://f.youku.com/player/getFlvPath/sid/*?start=0*&ypp=
-|http://f.youku.com/player/getFlvPath/sid/*/st/flv/fileid/0*&ypp=0
 @@|http://hudong.pl.youku.com/crossdomain.xml
 @@|http://hudong.pl.youku.com/interact/live/get/live
 @@|http://hudong.pl.youku.com/player/getLive?liveid=
 ||hudong.pl.youku.com^
-|http://static.youku.com/v*/paycenter/js/$script
 |http://hz.youku.com/red/ggnotice.php?
 ||l.youku.com^*log?
 |http://passport-log.youku.com/logsys/logstorage/
 |http://yk.pp.navi.youku.com/crossdomain.xml
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
 ||l.ykimg.com^
-|http://nc.youku.com/user/~ajax/qrcodeLogin.html?$script
+|http://nc.youku.com/user/~ajax/qrcodeLogin.html?
 |http://v.l.youku.com/uep?
 |http://uo.youku.com/channelstore/rank/$script
 ||urchin.lstat.youku.com/index/js/
@@ -495,8 +492,8 @@ www.bilibili.com##div.ad-f
 |http://ark.letv.com/
 ||dc.letv.com/
 ||webp2p.letv.com
-|http://i*.letvimg.com/*.xml|
-|http://i*.letvimg.com/*.swf^
+/^http:\/\/i\d\.letvimg\.com\/.+?\.xml$/
+/^http:\/\/i\d\.letvimg\.com\/.+?\.swf($|\?)/
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"]
 cloud.letv.com##div#ad_show_box
