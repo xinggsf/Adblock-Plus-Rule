@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.08.17 for firefox
+! title: xinggsf v2015.08.22 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
@@ -12,7 +12,7 @@
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
 !--------------flashBlock。免过滤白名单如下----------------------
 |http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~apkbus.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com
-@@|http://*upload.swf^
+@@|http://*upload.swf^$object
 !--------------------------百度----------------------------------
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
@@ -23,13 +23,13 @@
 |http://cpro.$script
 @@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
-/^http:\/\/\w*?click\.baidu\.com\//$third-party
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
 |http://hm.baidu.com/h.js
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 @@|http://play.baidu.com/player/static/flash/SLC.swf?
 |http://play.baidu.com/*.swf^
+|http://nsclick.baidu.com/$third-party
 |http://list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
 |http://znsv.baidu.com/
@@ -74,6 +74,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*/adsense/
 ||adserver.
 ! |http://*_banner.$script,object,image
+@@|http://g.alicdn.com/
 |http://g.$third-party,domain=~xiami.com|~e-hentai.org
 |http://gg.
 ||000dn.com/
@@ -143,15 +144,16 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||knet.cn^$third-party
 ||mengheng.net/$third-party
 ||msads.net^
+||mytanwan.com/$third-party
 ||newrelic.com/
 ||olcdn.com/
 ||optimix.asia^$third-party
 ||projectwonderful.com^$third-party
+||qucaigg.com^$third-party
 ||questionmarket.com^$third-party
 ||reachmax.cn^$third-party
 ||scorecardresearch.com^$third-party
 ||statcounter.com/
-||taobaocdn.com/$third-party
 ||tanx.$third-party
 |http://union$third-party
 ||union.doudouguo.com
@@ -174,7 +176,6 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||xcdf.cn^
 ||xyxy01.com
 ||yccdn.com/
-||ydstatic.com^$~image,third-party
 ||yeabble.com/
 ||youxi.com^$third-party
 ||yule8.net^
@@ -400,7 +401,7 @@ u17.com##[id^=u17-advert-fix-ad]
 yahoo.com###adbn_UMU
 |https://s.yimg.com/rq/darla/
 |https://s.yimg.com/*/yfpad/combo/$script
-|http://*/yahoop.js|
+|https://*/yahoop.js|
 yxdown.com##.baiduimageplus-s, .ad-widget-imageplus
 |http://www.yxdown.com/ghtml/
 zimuzu.tv##ul.room
