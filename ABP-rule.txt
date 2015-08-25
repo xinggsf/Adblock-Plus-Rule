@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.08.22 for chrome
+! title: xinggsf v2015.08.25 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
-@@|http://$stylesheet
+@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 |http://$subdocument,domain=u17.com|dm456.com|sz1001.net
 !-----------------------屏蔽第三方资源---------------------------
@@ -68,7 +68,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http:/*/adServer.
 /^https?:\/.*?\/ads?[-./_]/
 ! 只过滤域名
-/^https?:\/\/[\w.]*?\.ad(?:s|load|sense|server)?\./
+/^https?:\/\/[\w.-]*?\.ad(?:s|load|sense|server)?\./
 @@|http://g.alicdn.com/
 |http://g.$third-party,domain=~xiami.com|~e-hentai.org
 |http://gg.
@@ -98,13 +98,11 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||9377co.com/
 ||91hui.com^$third-party
 ||acxiom-online.com^$third-party
-|http://*.adclick-cn.$third-party
-|http:/*/adclick-cn$third-party
 ||admaster.com.cn
 ||admtpmp124.com/
 ||adrotator.se/
-|http://*.allyes.$third-party
-|http:/*/allyes$third-party
+||allyes.com$third-party
+|http:/*/allyes
 ||baifendian.com/$third-party
 ||bfdcdn.com/$third-party
 ||biddingx.com/
@@ -124,6 +122,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ! 没翻墙可启用下条规则~可提高某些页面加载速度
 ! /^https?:\/\/\w+\.google-?\w+\.com\//$third-party
 ||govids.net/
+||gridsumdissector.com^$third-party
 ||gyyx.cn/$third-party
 ||hinet.net^third-party
 ||huimee.net/
@@ -149,8 +148,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||reachmax.cn^$third-party
 ||scorecardresearch.com^$third-party
 ||statcounter.com/
-|http://*.tanx.$third-party
-|http:/*/tanx.$third-party
+||tanx.com^$third-party
 |http://union$third-party
 ||union.doudouguo.com
 ||union.vancl.com
@@ -178,10 +176,12 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yunshipei.com/$third-party
 ||yy.com^$third-party
 ||yystatic.com^$third-party
-~bnho.czxzz##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,.adsbygoogle,.side-ad,#side-ad
+~bnho.czxzz##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad
 |http://*.com/ads$domain=~www.btspread.com
 |http://*_350_330.$image
 |http://*/html/click/
+@@|http://shurufa.baidu.com/img/ime/index_banner_btn.png
+|http://*/index_banner_
 |http:/*/pageMediaControl
 |http:/*/piaofu.
 |http://*/piaofu/
@@ -286,6 +286,8 @@ coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 |http://adgeo.163.com/
 ||126.net/silver/
 ||lofter.com/$subdocument
+163.com###bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,.m-adv,.quickmark
+163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com##div#lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
 v.163.com##div[id^="v_shape"].bg
@@ -363,6 +365,7 @@ qidian.com##div[class^="gg"],div[class^="show_ggpic_"],div.a_mu,div[id^="div_100
 ||qidian.com/iframe/footer_qidian.html
 zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://static.zongheng.com/*/ad$script
+|http://static.zongheng.com/*/logger.min.js
 |http://static.zongheng.com/upload/hzds/column/$script,image
 |http://static.zongheng.com/upload/zhds/column/$script,image
 |http://www.zongheng.com/zhda/zhda.html
@@ -378,8 +381,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://vd.51cto.com/
 ||52pk.com/www/images_*.swf|
 ||live.ali213.net/$domain=~live.ali213.net
-||baofeng.net/*.html?&adid=
-baofeng.com##[class|=ad]
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 |http://gimg*.bitautoimg.com/ResourceFiles/*.swf|
 |http://btkitty.me/search/e7pk5dQEA.html$popup
@@ -406,9 +407,12 @@ zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
 |http://*.flv^$domain=flvcd.com
-yatu.tv###loadimg
+yatu.tv###loadimg,#daohang
 |http://www.jiaosm.net/*/yhc.html|
 |http://static.comment.acfun.
+||baofeng.net/*.html?&adid=
+||static.hd.baofeng.com/script/baidu_
+baofeng.com##[class|=ad]
 @@||stat.v-56.com/player
 |http://data.vod.itc.cn:8080
 |http://data.vod.itc.cn/?new=*.mp4|
@@ -474,10 +478,12 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 ||l.ykimg.com^
 |http://nc.youku.com/user/~ajax/qrcodeLogin.html?
 |http://v.l.youku.com/uep?
+|http://static.youku.com/v*/index/js/iresearch.js
+|http://static.youku.com/*/js/cps.js
 |http://uo.youku.com/channelstore/rank/$script
 ||urchin.lstat.youku.com/index/js/
 v.youku.com##div#dragDIV
-youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig
+youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box
 ||bilibili.com/html/$~xmlhttprequest
 |http://interface.bilibili.com/count?$script
 |http://i2.hdslb.com/u_user/*.jpg|
@@ -1040,7 +1046,7 @@ cloud.letv.com##div#ad_show_box
 |http://*/if/07top-new
 |http://*/ikb/js/t.js|
 |http://*/image/banner/$image
-|http://*/images/169$object,object-subrequest
+|http://*/images/169$object,object-subrequest,other
 |http://*/images/ad960.
 |http://*/images/bbsad/
 |http://*/images/ping.js|
@@ -1048,7 +1054,6 @@ cloud.letv.com##div#ad_show_box
 |http://*/img/ads_$image
 |http://*/imgad
 |http://*/Index_AD/
-|http://*/index_banner_
 |http://*/indexAD.js
 |http://*/inner_center1
 |http://*/intf/bbs_expert
