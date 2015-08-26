@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.08.25 for chrome
+! title: xinggsf v2015.08.26 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
@@ -12,7 +12,7 @@
 !----------------NoScript,屏蔽指定域名的脚本---------------------
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
 !------flashBlock,已注释,要恢复删除叹号。免过滤白名单如下--------
-!|http://*.swf^$domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~apkbus.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com
+!|http://*.swf^$domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~apkbus.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !--------------------------百度----------------------------------
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
@@ -35,6 +35,8 @@
 |http://pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
 fanyi.baidu.com##div.banner-wrap.inner
+music.baidu.com###show69-sidebar
+||69xiu.com/upload/roomimg/$image
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
@@ -66,9 +68,9 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http:/*/adsense.
 |http://*/adsense/
 |http:/*/adServer.
-/^https?:\/.*?\/ads?[-./_]/
+/[-./_&?]ads?\d*[-./_=]/
 ! 只过滤域名
-/^https?:\/\/[\w.-]*?\.ad(?:s|load|sense|server)?\./
+/^https?:\/\/[\w.-]*?\.?ad(?:s|load|sense|server)?\./
 @@|http://g.alicdn.com/
 |http://g.$third-party,domain=~xiami.com|~e-hentai.org
 |http://gg.
@@ -132,6 +134,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||irs01.net/$third-party
 |http://x.jd.com/
 ||jiathis.com^$third-party
+||jspg.cc^
 ||jtxh.net/
 ||jzyx.com/$third-party
 ||lndjj.com/
@@ -197,16 +200,11 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*.cn/s.php?id=
 |http://*.com/ga.js^
 |http://tk.*.php?id=
-|https://*/ads/$script
-|http://*-ads-$script
-|https://*-ads-$script
-|http://*/ad0*.js^$script
 |http://*/adSide/$script
 |http:/*/adSide.$script
 |http://*_ad.js|$script
 |http://*/analytics/$script
-|http://*analytics.$script
-|https://*analytics.$script
+*analytics.$script
 |http://*/analysis/$script
 |http://*analysis.$script
 |http:/*/adwidget$script
@@ -314,9 +312,10 @@ v.360.cn##div.banner-g4
 |http://wb.gtimg.com/adwin/
 !-------------------新浪--------------------
 @@|http://n.sinaimg.cn/jx/js/DFZ_Article_Union_min.js
+@@|http://js.t.sinajs.cn/open/analytics/js/suda.js
 ||sinaimg.cn/unipro/$domain=~video.sina.com.cn|~weibo.com
 |http://rs.sinajs.cn/
-||sinajs.cn/$script,domain=~weibo.com|~sina.com.cn
+! ||sinajs.cn/$script,domain=~weibo.com|~sina.com.cn
 |http://simg.sinajs.cn/blog7style/images/activity/app_tuiguang/ewm.gif
 |http://*/weixin$image,domain=sina.com.cn
 ||sina.com.cn/iframe/76/$subdocument
@@ -407,9 +406,18 @@ zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
 |http://*.flv^$domain=flvcd.com
-yatu.tv###loadimg,#daohang
-|http://www.jiaosm.net/*/yhc.html|
+|http://www.1905.com/coll/ad$subdocument
 |http://static.comment.acfun.
+|http://www.dy2018.com/dianyq/
+|http://misc.t.kankan.com/level_demo/iframe/$subdocument
+|http://www.jiaosm.net/*/yhc.html|
+yatu.tv###loadimg,#daohang
+v.duba.com###fixedad,#ad-dongman
+|http://v.duba.com/$object,other
+|http://afp.wasu.cn/a.htm?pv=
+|http://apistat.wasu.cn/$script
+!||mlt01.com^$third-party
+||wasu.cn/mediafiles/creative/
 ||baofeng.net/*.html?&adid=
 ||static.hd.baofeng.com/script/baidu_
 baofeng.com##[class|=ad]
@@ -420,7 +428,6 @@ baofeng.com##[class|=ad]
 |http://js.tv.itc.cn/gg.seed.js
 |http://js.tv.itc.cn/hdpv.js
 ||hd.sohu.com$~script,~xmlhttprequest
-|http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&p=
 |http://res.hunantv.com/r.js
 |http://res.hunantv.com/FrameWork/*.swf|
