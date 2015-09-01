@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.08.29 for chrome
+! title: xinggsf v2015.9.1 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 |http://$subdocument,domain=u17.com|dm456.com|sz1001.net
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
 |https://$third-party,domain=greasyfork.org
 !----------------NoScript,屏蔽指定域名的脚本---------------------
@@ -31,19 +31,20 @@
 |http://list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
 |http://znsv.baidu.com/
-!|http://ecma.bdimg.com/public03/imageplus/$script
 |http://pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
 fanyi.baidu.com##div.banner-wrap.inner
+play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
 music.baidu.com###show69-sidebar
 ||69xiu.com/upload/roomimg/$image
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
+|http://mu8.bdstatic.com/player/t/j/EjTbkNy4.js
+|http://log.music.baidu.com/maamonitor/v.gif?
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !---贴吧---
-tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#j_p_postlist>div:not(.l_post),#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
+tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,div.d_sign_split~*,#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
 ! tieba.baidu.com#@##thread_list>li.thread_top_list_folder
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
 |http://play.baidu.com/player/static/flash/fmp.swf
@@ -102,6 +103,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||admaster.com.cn
 ||admtpmp124.com/
 ||adrotator.se/
+||aiyujie.com/$third-party,script
 ||allyes.com$third-party
 |http:/*/allyes
 ||amazingmagics.com/$third-party
@@ -121,6 +123,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||eclkspbn.com/
 ||fd7c.com/
 ||findicons.com^$third-party
+||googleadservices.com/
 ||govids.net/
 ||gridsumdissector.com^$third-party
 ||gyyx.cn/$third-party
@@ -144,6 +147,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||olcdn.com/
 ||optimix.asia^$third-party
 ||projectwonderful.com^$third-party
+||qiqipower.com
 ||qucaigg.com^$third-party
 ||questionmarket.com^$third-party
 ||reachmax.cn^$third-party
@@ -174,6 +178,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yeabble.com/
 ||youxi.com^$third-party
 ||yule8.net^
+||yunjiasu.com/$third-party
 ||yunshipei.com/$third-party
 ||yy.com^$third-party
 ||yystatic.com^$third-party
@@ -200,11 +205,12 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://tk.*.php?id=
 |http://*/adSide/$script
 |http:/*/adSide.$script
-|http://*_ad.js|$script
+_ad.js|$script
+_ads.js|
 |http://*/analytics/$script
 analytics.$script
 |http://*/analysis/$script
-|http://*analysis.$script
+analysis.$script
 |http:/*/adwidget$script
 |http:/*/widget.$script
 wrating.$script,object-subrequest,other
@@ -216,11 +222,10 @@ wrating.$script,object-subrequest,other
 |http:/*/pagead$script
 |http://*/piao.js|
 |http://*/pop.js^
-|http://*.pop.js^
-|http://*popup.js^$domain=~qzone.qq.com|~flvcd.com
-|http://*_ads.js|
+.pop.js^
+popup.js^$domain=~qzone.qq.com|~flvcd.com
 |http://*/float.js|
-|http://*gonggao.js|
+gonggao.js|
 |http://*/m.js|$domain=~yunpan.cn
 |http:/*/tan.$script
 |http:/*/tan1.$script
@@ -277,7 +282,7 @@ coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 |http://img3.126.net/
 |http://img6.126.net/
 @@|http://oc-caption-srt.nos.netease.com/
-|http://*nos.netease.com/$image
+nos.netease.com/$image
 |http://bobo.163.com/
 |http://adgeo.163.com/
 ||126.net/silver/
@@ -384,7 +389,7 @@ bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
 |http://zz.csdn.net/
-ebusinessreview.cn##div.header
+ebusinessreview.cn##div.header,.adarticle
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
@@ -392,6 +397,9 @@ ebusinessreview.cn##div.header
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
+wiki.mbalib.com###ad-phone
+bbs.pcbeta.com###wp>style+div,#wp>div:first-child
+pcbeta.com###sitefocus,#weixinqr
 u17.com##[id^=u17-advert-fix-ad]
 |http://tj.u17t.com/$script
 xiazaiba.com##div.test-90
@@ -410,6 +418,7 @@ zimuzu.tv##ul.room
 |http://www.dy2018.com/dianyq/
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 |http://www.jiaosm.net/*/yhc.html|
+jiaosm.net###weizhi-a,div.viewt_cc,#gouwu
 yatu.tv###loadimg,#daohang
 v.duba.com###fixedad,#ad-dongman
 |http://v.duba.com/$object,other
@@ -485,6 +494,7 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 |http://nc.youku.com/user/~ajax/qrcodeLogin.html?
 |http://v.l.youku.com/uep?
 |http://static.youku.com/v*/index/js/iresearch.js
+|http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
 |http://uo.youku.com/channelstore/rank/$script
 ||urchin.lstat.youku.com/index/js/
@@ -538,7 +548,7 @@ cloud.letv.com##div#ad_show_box
 @@|http://jstv.
 @@|http://jstvimedia.allyes.com/crossdomain.xml
 @@|http://jump.synacast.com/
-@@|http://p.yiqifa.com/
+@@|http://p.yiqifa.com/$domain=~goooj.com
 @@|http://player.polyv.net/common_player/player/
 @@|http://s.csbew.com/crossdomain.xml
 @@|http://s.csbew.com/FrameWork/AFP/ASP_
