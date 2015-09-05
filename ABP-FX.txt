@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.1 for firefox
+! title: xinggsf v2015.9.5 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
@@ -96,6 +96,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||37.com/$third-party
 ||37wan.com/$third-party
 ||51.la^$script
+||52kmh.com^$third-party
 ||6711.com/
 ||7pk.com/
 ! 3黑名单，最好加入防火墙中
@@ -234,8 +235,8 @@ wrating.$script,object-subrequest
 */pagead$script
 */piao.js|
 */pop.js^
-.pop.js^
-popup.js^$domain=~qzone.qq.com|~flvcd.com
+.pop.js^$script
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org
 */float.js|
 gonggao.js|
 */m.js|$domain=~yunpan.cn
@@ -289,13 +290,13 @@ user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-r
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 !-------------------网易--------------------
 @@|http://analytics.163.com/ntes.js
-||g.163.com/
+||g.163.com/$~object-subrequest
 |http://img1.126.net/
 |http://img2.126.net/
 |http://img3.126.net/
 |http://img6.126.net/
 @@|http://oc-caption-srt.nos.netease.com/
-|http://*nos.netease.com/$image
+nos.netease.com/$image
 |http://bobo.163.com/
 |http://adgeo.163.com/
 ||126.net/silver/
@@ -425,6 +426,7 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
+@@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
 |http://www.jiaosm.net/*/yhc.html|
@@ -497,7 +499,7 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 @@|http://hudong.pl.youku.com/player/getLive?liveid=
 ||hudong.pl.youku.com^
 |http://hz.youku.com/red/ggnotice.php?
-||l.youku.com^*log?
+||l.youku.com/*log?
 |http://passport-log.youku.com/logsys/logstorage/
 |http://yk.pp.navi.youku.com/crossdomain.xml
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
@@ -529,7 +531,7 @@ www.bilibili.com##div.ad-f
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad
 cloud.letv.com##div#ad_show_box
-!精简自广告屏蔽大师的规则2015.5，门户站隐藏规则移到stylish
+!精简自adbyby规则2015.5，部分元素屏蔽规则移到stylish，请到https://userstyles.org/styles/117992/theme安装
 @@|http://*.org/admin$image
 @@|http://*/ad_js.php?aid=10004
 @@|http://*/adpolestar/wayl
