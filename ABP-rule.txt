@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.5 for chrome
+! title: xinggsf v2015.9.15 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 |http://$subdocument,domain=u17.com|dm456.com|sz1001.net
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
 |https://$third-party,domain=greasyfork.org
 !----------------NoScript,屏蔽指定域名的脚本---------------------
@@ -33,6 +33,7 @@
 |http://znsv.baidu.com/
 |http://pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
+|http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
 music.baidu.com###show69-sidebar
@@ -86,6 +87,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||lianmeng.360.cn/
 ||37.com/$third-party
 ||37wan.com/
+||38ra.com/$third-party
 ||51.la^$script
 ||52kmh.com^$third-party
 ||6711.com/
@@ -391,7 +393,7 @@ bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
 |http://zz.csdn.net/
-ebusinessreview.cn##div.header,.adarticle
+ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
@@ -2281,7 +2283,7 @@ www.myhack58.com##ul.adv32
 hexun.com##div.advp.clearfix
 52tian.net##div.bdad
 ! 只过滤域名
-/^https?:\/\/[\w.-]*?\.?ad(?:s|load|sense|server)?\./
+/^https?:\/\/(?:[\-\w]+\.)*ad(?:s|load|sense|server)?\./
 ! 没翻墙可启用下条规则~可提高某些页面加载速度
 ! /^https?:\/\/\w+\.google-?\w+\.com\//$third-party
-/[-./_&?]ads?\d*[-./_=]/
+/[\W_]ads?\d*[\W_]/
