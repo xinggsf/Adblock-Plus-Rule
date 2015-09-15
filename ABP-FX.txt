@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.5 for firefox
+! title: xinggsf v2015.9.15 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 |http://$subdocument,domain=dm456.com|sz1001.net|u17.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
 |https://$third-party,domain=greasyfork.org
 !----------------NoScript,屏蔽指定域名的脚本---------------------
@@ -35,6 +35,7 @@
 |http://znsv.baidu.com/
 |http://pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
+|http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
 music.baidu.com###show69-sidebar
 ||69xiu.com/upload/roomimg/$image
@@ -95,6 +96,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||lianmeng.360.cn/
 ||37.com/$third-party
 ||37wan.com/$third-party
+||38ra.com/$third-party
 ||51.la^$script
 ||52kmh.com^$third-party
 ||6711.com/
@@ -403,7 +405,7 @@ bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
 |http://zz.csdn.net/
-ebusinessreview.cn##div.header,.adarticle
+ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
