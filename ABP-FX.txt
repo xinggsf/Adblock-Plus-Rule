@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.15 for firefox
+! title: xinggsf v2015.9.17 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
@@ -37,18 +37,17 @@
 baike.baidu.com###adLayerSideWrap
 |http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
-music.baidu.com###show69-sidebar
-||69xiu.com/upload/roomimg/$image
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd
+play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd,.top-banner-ad-wrap,#pauseAdLetv
 |http://log.music.baidu.com/maamonitor/v.gif?
-|http://mu8.bdstatic.com/player/t/j/EjTbkNy4.js
+|http://mu9.bdstatic.com/player/t/j/zRDmlL4N.js
+|http://music.baidu.com/data/69xiu/
+|http://hiphotos.baidu.com/ting/pic/item/
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--贴吧---
 tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
-! tieba.baidu.com#@##thread_list>li.thread_top_list_folder
 |http://play.baidu.com/player/static/flash/fmp.swf
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
@@ -63,7 +62,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://tb1.bdstatic.com/tb/r/image/201$image
 |http://tbmsg.baidu.com/gmessage/get?$script
 |http://tieba.baidu.com/tb/cms/game/*_banner.jpg
-|http://tieba.baidu.com/tb/static-common/swf/worldcup_banner.swf?v=
+|http://tieba.baidu.com/tb/static-common/swf/worldcup_banner.swf?
 |http://tieba.baidu.com/tb/static-frs/img/novel_intro/idu.com/pc_static/promotion/
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
@@ -153,6 +152,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||jtxh.net/
 ||jzyx.com/$third-party
 ||lndjj.com/
+||lx167.com/$third-party
 ||knet.cn^$third-party
 ||mengheng.net/$third-party
 ||msads.net^
@@ -427,6 +427,8 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus
 |http://www.yxdown.com/ghtml/
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
+@@|http://js.rrsub.net/ZeroClipboard10.swf
+dygang.com,6vhao.com,6vhao.net###gd
 !-------------------视频站点--------------------
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
