@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.17 for chrome
+! title: xinggsf v2015.9.22 for chrome
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
@@ -12,7 +12,7 @@
 !----------------NoScript,屏蔽指定域名的脚本---------------------
 |http://$script,domain=ty2016.com|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.me
 !------flashBlock,已注释,要恢复删除叹号。免过滤白名单如下--------
-!|http://*.swf^$domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~apkbus.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
+!|http://*.swf^$domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !--------------------------百度----------------------------------
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
@@ -23,10 +23,13 @@
 |http://cpro.$script
 @@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
+|http://cbjslog.baidu.com/
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
 |http://hm.baidu.com/h.js
+|http://hm.baidu.com/hm.gif?
 |http://imgsrc.baidu.com/tieba/pic/item/$image
+|http://eclick.baidu.com/
 |http://nsclick.baidu.com/$third-party
 |http://list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
@@ -35,7 +38,7 @@
 baike.baidu.com###adLayerSideWrap
 |http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#pauseAd,.top-banner-ad-wrap,#pauseAdLetv
+play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#album-footer~div,.top-banner-ad-wrap
 |http://music.baidu.com/data/69xiu/
 |http://mu9.bdstatic.com/player/t/j/zRDmlL4N.js
 |http://log.music.baidu.com/maamonitor/v.gif?
@@ -45,10 +48,12 @@ wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !---贴吧---
+|http://tieba.baidu.com/tb/static-pcommon/component/commonLogic/common/
 tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,div.d_sign_split~*,#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
 |http://play.baidu.com/player/static/flash/fmp.swf
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
+@@|http://tb1.bdstatic.com/??/tb/_/*_ad_$script
 |http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
 |http://tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
 |http://tb1.bdstatic.com/??/tb/_/app_forum_$script
@@ -87,9 +92,12 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||37.com/$third-party
 ||37wan.com/
 ||38ra.com/$third-party
+||49wanwan.com/
 ||51.la^$script
 ||52kmh.com^$third-party
 ||6711.com/
+||e70123.com/
+||f70123.com/
 ||7pk.com/
 ! 3黑名单，最好加入防火墙中
 ||7z66.com/
@@ -176,12 +184,13 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*/vamaker/
 ||w8.com.cn
 ||xcdf.cn^
+||xtgreat.com^$third-party
 ||xyxy01.com
 ||yccdn.com/
 ||yeabble.com/
 ||youxi.com^$third-party
 ||yule8.net^
-||yunjiasu.com/$third-party
+||yunjiasu.com/$domain=~jiaosm.net
 ||yunshipei.com/$third-party
 ||yy.com^$third-party
 ||yystatic.com^$third-party
@@ -425,7 +434,7 @@ dygang.com,6vhao.com,6vhao.net###gd
 |http://www.dy2018.com/dianyq/
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 |http://www.jiaosm.net/*/yhc.html|
-jiaosm.net###weizhi-a,div.viewt_cc,#gouwu
+jiaosm.net###weizhi-a,div.viewt_cc,#gouwu,#__jx_l_div,[id^=BAIDU_],body>center ~*,.commendType2,.dmcms-notice,#tpAdv,#classpage:first-child
 yatu.tv###loadimg,#daohang
 v.duba.com###fixedad,#ad-dongman
 |http://v.duba.com/$object,other
@@ -504,6 +513,7 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 |http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
 |http://uo.youku.com/channelstore/rank/$script
+||lstat.youku.com/log.
 ||urchin.lstat.youku.com/index/js/
 v.youku.com##div#dragDIV
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box
@@ -527,6 +537,8 @@ www.bilibili.com##div.ad-f
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad
 cloud.letv.com##div#ad_show_box
+||yytcdn.com/crossdomain.xml
+||yytcdn.com/others/admin/*_800x
 !精简自adbyby规则2015.5，部分元素屏蔽规则移到stylish，请到https://userstyles.org/styles/117992/theme安装
 @@|http://*.org/admin$image
 @@|http://*/ad_js.php?aid=10004
