@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.22 for firefox
+! title: xinggsf v2015.9.26 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
@@ -23,7 +23,6 @@
 ||pos.baidu.com/
 ||spcode.baidu.com/
 |http://cpro.$script
-@@|http://cbjs.baidu.com/js/m.js$domain=xinku.org
 |http://cbjs.baidu.com/
 |http://cbjslog.baidu.com/
 |http://crs.baidu.com/
@@ -32,7 +31,7 @@
 |http://hm.baidu.com/hm.gif?
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 |http://eclick.baidu.com/
-|http://nsclick.baidu.com/$third-party
+|http://nsclick.baidu.com/
 |http://list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
 |http://znsv.baidu.com/
@@ -40,18 +39,21 @@
 baike.baidu.com###adLayerSideWrap
 |http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,#album-footer~div,.top-banner-ad-wrap
-|http://log.music.baidu.com/maamonitor/v.gif?
-|http://mu9.bdstatic.com/player/t/j/zRDmlL4N.js
-|http://music.baidu.com/data/69xiu/
-|http://hiphotos.baidu.com/ting/pic/item/
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
+!--百度音乐---
+play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
+|http://static.tieba.baidu.com/tb/pms/wpo_alog_speed.js
+|http://img.baidu.com/hunter/musicmonkey.min.js
+|http://hiphotos.baidu.com/ting/pic/item/
+|http://log.music.baidu.com/maamonitor/v.gif?
+|http://music.baidu.com/data/69xiu/
+|http://music.baidu.com/cms/tingbox/$script
 !--贴吧---
 |http://tieba.baidu.com/tb/static-pcommon/component/commonLogic/common/
-tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
+tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.card_banner,.content_top,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),.l_post.j_l_post+div[data-daid],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide]
 |http://play.baidu.com/player/static/flash/fmp.swf
 |http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
@@ -128,6 +130,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||baifendian.com/$third-party
 ||bfdcdn.com/$third-party
 ||biddingx.com/
+||bjjingda.com/
 ||chenwen7788.com/
 ||cloudfront.net/$third-party
 ||cmp288.com/
@@ -135,6 +138,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||cnzz.net/
 ||csad.cc^
 ||ctsywy.com
+||dazhantai.com
 ||dian500.com
 ||dian5000.com
 ||duoshuo.com^$third-party,domain=~lite6.com
@@ -155,12 +159,15 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||irs01.net/$third-party
 |http://x.jd.com/
 ||jiathis.com^$third-party
+||jiawen88.com/
 ||jspg.cc^
 ||jtxh.net/
+||ju33.com^
 ||jzyx.com/$third-party
 ||lndjj.com/
 ||lx167.com/$third-party
 ||knet.cn^$third-party
+||maomaotang.com
 ||mengheng.net/$third-party
 ||msads.net^
 ||mytanwan.com/$third-party
@@ -172,6 +179,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||qucaigg.com^$third-party
 ||questionmarket.com^$third-party
 ||reachmax.cn^$third-party
+||s8x1.com
 ||scorecardresearch.com^$third-party
 ||statcounter.com/
 ||tanx.com^$third-party
@@ -206,7 +214,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yy.com^$third-party
 ||yystatic.com^$third-party
 ##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad,div.adbox
-|http://*.com/ads$domain=~www.btspread.com
+|http://*.com/ads
 |http://*_350_330.$image
 |http://*/html/click/
 @@|http://shurufa.baidu.com/img/ime/index_banner_btn.png
@@ -235,7 +243,7 @@ analytics.$script
 |http://*/analysis/$script
 analysis.$script
 |http:/*/adwidget$script
-|http:/*/widget.$script
+|http:/*/widget.$script,domain=~mail.21cn.com
 wrating.$script,object-subrequest
 |http://*/gg.$script
 |http:/*/impservice$script
@@ -412,7 +420,6 @@ bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_]
 |http://btkitty.me/search/e7pk5dQEA.html$popup
 csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
-|http://zz.csdn.net/
 ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
@@ -436,13 +443,15 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 @@|http://js.rrsub.net/ZeroClipboard10.swf
-dygang.com,6vhao.com,6vhao.net###gd
 !-------------------视频站点--------------------
+dygang.com,6vhao.com,6vhao.net###gd
+jiyingdm.com##div.abcde,#otherWindowBox
+|http://jiyingdm.com/js/loadingshow.html
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
 |http://www.jiaosm.net/*/yhc.html|
-jiaosm.net###weizhi-a,div.viewt_cc,#gouwu,#__jx_l_div,[id^=BAIDU_],body>center ~*,.commendType2,.dmcms-notice,#tpAdv,#classpage:first-child
+jiaosm.net###weizhi-a,div.viewt_cc,#gouwu,#__jx_l_div,[id^=BAIDU_],[id^=cpro],.commendType2,.dmcms-notice,#tpAdv,#classpage:first-child
 |http://static.comment.acfun.
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 v.duba.com###fixedad,#ad-dongman
@@ -545,7 +554,11 @@ www.bilibili.com##div.ad-f
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad
 cloud.letv.com##div#ad_show_box
 ||yytcdn.com/crossdomain.xml
-||yytcdn.com/others/admin/*_800x
+@@||yytcdn.com/others/admin/*/0/-M-$image
+@@||yytcdn.com/others/admin/*_220x125.jpg|$image
+@@||yytcdn.com/others/admin/*.png|$image
+||yytcdn.com/others/admin/
+||yytcdn.com/others/avt/
 !精简自adbyby规则2015.5，部分元素屏蔽规则移到stylish，请到https://userstyles.org/styles/117992/theme安装
 @@|http://*.org/admin$image
 @@|http://*/ad_js.php?aid=10004
