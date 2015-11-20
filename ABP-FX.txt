@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.9.26 for firefox
+! title: xinggsf v2015.11.20 for firefox
 ! 精简xwhyc +自用 整合
 ! 反馈：http://bbs.theworld.cn/thread-231668-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com
 |http://$subdocument,domain=dm456.com|sz1001.net|u17.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com|hjwzw.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
 |https://$third-party,domain=greasyfork.org
 !----------------------------NoScript----------------------------
@@ -27,8 +27,8 @@
 |http://cbjslog.baidu.com/
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
-|http://hm.baidu.com/h.js
-|http://hm.baidu.com/hm.gif?
+||hm.baidu.com/
+@@||hm.baidu.com/hm.js
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 |http://eclick.baidu.com/
 |http://nsclick.baidu.com/
@@ -39,6 +39,7 @@
 baike.baidu.com###adLayerSideWrap
 |http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
+pan.baidu.com##a[class|=ad]
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
@@ -155,6 +156,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||huimee.net/
 ||humanding.com/$third-party
 ||il8r.com^$third-party
+||img80.net/
 ||irs01.com/$third-party
 ||irs01.net/$third-party
 |http://x.jd.com/
@@ -182,6 +184,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||s8x1.com
 ||scorecardresearch.com^$third-party
 ||statcounter.com/
+||t70123.com/
 ||tanx.com^$third-party
 |http://union$third-party
 ||union.doudouguo.com
@@ -203,6 +206,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||w8.com.cn
 ||wrating.com^$third-party
 ||xcdf.cn^
+||xe2c.com/
 ||xtgreat.com^$third-party
 ||xyxy01.com
 ||yccdn.com/
@@ -279,6 +283,7 @@ zol.com.cn##[id^='ad_']
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
 @@|http://v.gdt.qq.com/gdt_stats.fcg?
+||aq.qq.com/$script
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
 @@||l.qq.com/livemsg?ty=web&ad_type=
@@ -306,6 +311,19 @@ zol.com.cn##[id^='ad_']
 v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"]
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
+gd.qq.com###r_ad
+qq.com##div[bosszone$=ad]
+||gtimg.com/qqlive/
+||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
+||pgdt.gtimg.cn/gdt/
+||wa.gtimg.com^
+|http://ca.gtimg.com/client/
+|http://mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
+|http://mat1.gtimg.com/hb/zxb/tm1.gif
+|http://ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com
+|http://ra.gtimg.com/uv/1712104/index.js
+|http://ra.gtimg.com/web/crystal/v$script
+|http://wb.gtimg.com/adwin/
 !-------------------网易--------------------
 @@|http://analytics.163.com/ntes.js
 ||g.163.com/$~object-subrequest
@@ -333,18 +351,6 @@ bbs.360safe.com##a.cl.signin-box~*
 hao.360.cn##div.small-obj.animate,div#corner-flash
 so.360.cn##div#m-spread-left,div#so_kw-ad,div.spread
 v.360.cn##div.banner-g4
-!-------------------gtimg.com--------------------
-||gtimg.com/qqlive/
-||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
-||pgdt.gtimg.cn/gdt/
-||wa.gtimg.com^
-|http://ca.gtimg.com/client/
-|http://mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
-|http://mat1.gtimg.com/hb/zxb/tm1.gif
-|http://ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com
-|http://ra.gtimg.com/uv/1712104/index.js
-|http://ra.gtimg.com/web/crystal/v$script
-|http://wb.gtimg.com/adwin/
 !-------------------新浪--------------------
 @@|http://n.sinaimg.cn/jx/js/DFZ_Article_Union_min.js
 @@|http://js.t.sinajs.cn/open/analytics/js/suda.js
@@ -368,16 +374,20 @@ v.360.cn##div.banner-g4
 |http://sax.sina.
 |http://sh.sina.com.cn/js/441/ZwyArticle_commo_23.js
 !-------------------ifeng.com--------------------
+ifeng.com##div[class^=adList],div[class^=adbox]
+||deliver.ifeng.com/
 |http://img3.fdc.com.cn/cms/js/bbs/$script
 |http://*/sc_ifeng/js/
 ||games.ifeng.com/1403m/$subdocument
 ||games.ifeng.com/webgame/
+||ifengimg.com/*/inice.$script
+||ifengimg.com/*/sta_collection.$script
 ||ifengimg.com/6e0e559e19f25e8b/$object
 ||ifengimg.com/ifeng/sources/
 ||ifengimg.com/mappa/
-||ifengimg.com/sta_collection.*.js|
+||ifengimg.com/xingzhao/JS/bsgspecial.js
 ||y2.ifengimg.com/*.flv^
-|http://mfp.deliver.ifeng.com/mfp/mfpMultipleDelivery.do?t=
+|http://*/mfp/mfpMultipleDelivery.do?
 |http://vgg.ifeng
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 |http://zx.cp.ifeng.com/export/js/ifeng_sport_lottery_channel_pic.js
@@ -425,6 +435,7 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
 |http://hrtsea.com/936x90.gif
+|http://file.ithome.com/js/money/
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
@@ -470,7 +481,7 @@ baofeng.com##[class|=ad]
 |http://js.tv.itc.cn/gg.seed.js
 |http://js.tv.itc.cn/hdpv.js
 |http://www.1905.com/coll/ad$subdocument
-|http://bs.da.hunantv.com/a.htm?pv=1&p=
+|http://bs.da.hunantv.com/a.htm?pv=1&
 |http://res.hunantv.com/r.js
 |http://res.hunantv.com/FrameWork/*.swf|
 |http://image.res.hunantv.com/mediafiles/creative/
@@ -484,8 +495,8 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.cro
 |http://nl.notice.iqiyi.com/apis/msg/$script
 |http://nl.rcd.iqiyi.com/cro
 |http://msg.video.qiyi.com/
-|http://msg.71.am/*&av=AdManager%
-|http://msg.71.am/*.gif?$domain=iqiyi.com|pps.tv
+!|http://msg.71.am/*&av=AdManager%
+!|http://msg.71.am/*.gif?$domain=iqiyi.com|pps.tv
 |http://am.cupid.iqiyi.com/am
 |http://api.credit.iqiyi.com/
 |http://api.cupid.iqiyi.com/show2?a=qc_100001_100103&u=
@@ -534,7 +545,7 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 ||lstat.youku.com/log.
 ||urchin.lstat.youku.com/index/js/
 v.youku.com##div#dragDIV
-youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box
+youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box,#lotteryToolbar,#lotteryToolbar+li
 ||bilibili.com/html/$~xmlhttprequest
 |http://interface.bilibili.com/count?$script
 |http://i2.hdslb.com/u_user/*.jpg|$object-subrequest
