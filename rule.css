@@ -1,39 +1,17 @@
-@namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("www.baidu.com") {
   #head{position: absolute !important}
   #content_right{display:none !important}
   #content_left, .result.c-container{width: 100% !important}
   #content_left{padding-left: 33px !important}  
 }
-@-moz-document domain("baidu.com") {
-div#ecad,div#pb_adbanner,div#union-qbbanner,
-div#ec_im_container,div#ecomcontainer,
-div#imgcmsadpart,
-table#relecom,div#relecom54,
-div#aside_ad[class^="aside_ad_"],
-a.adtopimg,div.banner_wrap,
-div.ecomad-banner-loading,
-div.ec_im_tg, .ec_tglj,
-div.pause-ad,div.res_top_banner,
-div.sam_iebrowser_banner,
-div.wgt-ads,div.widget-ads,div.wgt-union,
-div.ws-tips,
-div.union_mod,
-div.fsblock:last-child,
-table.ec_mr15.ec_ppim_top.ec_pp_f,
-div.ad-block.ad-block-0,
-div.l_banner.banner_theme_2,
-div.r.ec_bdtg,
-div.search_union_mod.search_ecom_mod,
-div.banner_post.banner_post_bright.j_banner_post.clearfix,
-div.wrap2 div.novel_wrap.j_novel_wrap,
-div.ad.ecomad-banner-loading,
-div[id^="game_couplet_pb_"],
-div#content_left > table[data-click],
-div[id^="html-reader-banner-"],
-div#container.container_s > div#content_left > table,
-div#container.container_l > div#content_left > table,
-div[id^="m"][id$="_canvas"]{display:none !important}
+
+/*百度音乐盒自适应大小*/
+@-moz-document domain("play.baidu.com") {
+#m-client-product,.mb-layout-bd.column4,#album-footer~div{display:none !important;}
+.playlist-length-cloud{bottom:0 !important;}
+.leftbar-bottom-bg > .leftbar-outer{bottom:70px !important;}
+#lrcCol{right:0 !important;}
+.mb-layout-bd.column2{right:250px !important;}
 }
 
 @-moz-document domain("163.com") {
@@ -101,6 +79,9 @@ div[class^="adv"][style],
 }
 
 @-moz-document domain("sina.com.cn") {
+/*禁止分享栏浮动*/
+#bottomTools{position: static !important}
+
 div.ad-banner,div.top-ads,.adNone,div.adspace,
 div.article-video,div.palm01-ad,
 div.bannerf1,div.clearad,
@@ -132,4 +113,21 @@ div[class^="atoptxt"],
 iframe[src*=".sina.com.cn/iframe/76/"],
 iframe[src^="http://www.baidu.com/ur/scun?di="]
 {display:none !important}
+}
+
+@-moz-document domain("youku.com") {
+/*下二条：禁止顶栏浮动~调整其内边距防止出现水平滚动条*/
+#qheader_box{position: absolute !important;}
+#qheader_box>.yk-box{padding: 0 !important;}
+}
+
+@-moz-document domain("tudou.com") {
+div.g_main.g_top_fix{position: absolute !important;}
+}
+
+@-moz-document domain("player.kuwo.cn") {
+#down_tan+div,#down_tan+div>div:first-child{
+    width: 100%!important;
+    height: 100%!important;
+}
 }
