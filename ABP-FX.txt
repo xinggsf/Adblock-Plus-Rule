@@ -577,13 +577,19 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
 ||l.ykimg.com^
 |http://nc.youku.com/user/~ajax/qrcodeLogin.html?
-|http://v.l.youku.com/uep?
+! |http://v.l.youku.com/uep?
 |http://static.youku.com/v*/index/js/iresearch.js
 |http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
 |http://uo.youku.com/channelstore/rank/$script
 ||lstat.youku.com/log.
 ||urchin.lstat.youku.com/index/js/
+||l.youku.com/rec_ad_show?
+||l.youku.com/*&t=ad_
+||vip.com/cm/youku?
+|http://static.youku.com/index/js/ikuAdapterNew.js
+|http://module.youku.com/*.html$script
+|http://passport.youku.com/index_loginregGuide/$subdocument
 v.youku.com##div#dragDIV
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box,#lotteryToolbar,#lotteryToolbar+li,a[href^="http://poll.youku."]
 ||bilibili.com/html/$~xmlhttprequest
