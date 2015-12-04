@@ -477,8 +477,7 @@ pcbeta.com###sitefocus,#weixinqr
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
 v2ex.com##.box>.inner>a:first-child,.box>.inner>.sep10+a,.box>.inner>.sep10
-@@|http://cdn.v2ex.co/avatar/$image,domain=v2ex.com
-|http://$image,third-party,domain=v2ex.com
+|http://cdn.v2ex.co/assets/sidebar/$image
 xiazaiba.com##div.test-90
 yahoo.com###adbn_UMU
 |https://s.yimg.com/rq/darla/
