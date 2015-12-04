@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2015.12.3 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.5 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -139,7 +139,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||biddingx.com/
 ||bjjingda.com/
 ||chenwen7788.com/
-||cloudfront.net/$third-party
+||cloudfront.net/$third-party,domain=~pcloud.com
 ||cmp288.com/
 ||cnzz.com/
 ||cnzz.net/
@@ -605,7 +605,7 @@ www.bilibili.com##div.ad-f
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad,div.ad_layer
 cloud.letv.com##div#ad_show_box
-yinyuetai.com##video~div
+v.yinyuetai.com##video~div
 ||yytcdn.com/crossdomain.xml
 @@||yytcdn.com/others/admin/*/0/-M-$image
 @@||yytcdn.com/others/admin/*_220x125.jpg|$image
@@ -613,7 +613,6 @@ yinyuetai.com##video~div
 ||yytcdn.com/others/admin/
 ||yytcdn.com/others/avt/
 |http://acjs.aliyun.com/flash/JSocket.swf
-!|http://www.yinyuetai.com/partner/get-partner-code?callback=jQuery
 tucao.tv##div.a2013d
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument
 |http://www.tucao.tv/uploadfile/201*.jpg|$object-subrequest
