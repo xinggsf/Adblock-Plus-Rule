@@ -461,6 +461,8 @@ ftchinese.com##div.rightad,#topad,#topadcontainer
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
 |http://hrtsea.com/936x90.gif
+ithome.com##div#hd_float,#side_func,#con>#tt5>div
+||sinaimg.cn/large/*.jpg|
 |http://file.ithome.com/js/money/
 @@|http://i.kuwo.cn/US/login.$document
 ||kuwo.cn/kuwolive/
@@ -1420,7 +1422,6 @@ tucao.tv##div.a2013d
 |http://f.0597ok.com/ilike/597/
 |http://f.v.17173cdn.com/*/flash/OnLineTime.swf|
 |http://fashion.eastday.com/T990/Tpage.html
-|http://file.ithome.com/js/recommend.js
 |http://files.nyaa.se/ah*.jpg$image
 |http://finance.eastmoney.com/images/uma.html$subdocument
 |http://fragment.firefoxchina.cn/res/js/fchina_video-min.js
@@ -1446,8 +1447,6 @@ tucao.tv##div.a2013d
 |http://images.dayoo.com/dywimg/files/201
 |http://images.sohu.com/ytv/*.mp4
 |http://images.sohu.com/ytv/*.swf
-|http://img.ithome.com/images/lagou/lagou.gif
-|http://img.ithome.com/images/partner/*.gif|$image
 |http://img.jb51.net/downjs/$script
 |http://img.jb51.net/imgby/
 |http://img.jb51.net/js/$script
@@ -2288,7 +2287,6 @@ imanhua.com##div[id^="imh-"],div[id^="sider-"][class^="main-"],div.lineGray1,div
 imgo.tv##[id^="ac-"]
 info.win007.com##div[id^="ad_show"]
 it168.com##div.gg,div[id^="WADV_"],div[id^="ADV_"],div.lg_ad
-ithome.com##div#con > div#hl,div#con > div#hlindex,iframe[src="http://www.ithome.com/block/headerline.htm"],div[class^="bx-recom"],div#bbs_hl,LI.sb_list > div.bx,div[id^="a"][id$="g"],div#lagouData,div#hl-head,div#hl960,#side_pos1,div#hd_float,div#hl960 + A > img[src^="http://t3.qpic.cn/"]:first-child,div#b3a3hlindex > A > img[src^="http://t3.qpic.cn/"]:first-child,div[id$="hlindex"],div#hla
 kafan.cn##.header_gg,div.wp.gg,div.comeing_index_wad
 kdnet.net##div.banner.b-border
 kejianyuan.com##div.box_1 > table:first-child > tbody > tr:first-child,td[width="234"][height="60"],div.box_gg
