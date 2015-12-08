@@ -131,3 +131,9 @@ div.g_main.g_top_fix{position: absolute !important;}
     height: 100%!important;
 }
 }
+
+@-moz-document domain("yinyuetai.com") {
+.topbar,.iframeshim {
+    position: absolute !important;
+}
+}

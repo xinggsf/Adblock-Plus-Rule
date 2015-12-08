@@ -1,4 +1,4 @@
-[Adblock Plus 2.0]
+﻿[Adblock Plus 2.0]
 ! title: xinggsf v2015.12.8 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -480,7 +480,7 @@ lepan.cc##div.alert_windows
 wiki.mbalib.com###ad-phone
 oschina.net##div.google_ads,#QuestionWizard+div
 |http://static.oschina.net/*_banner_$image
-bbs.pcbeta.com###wp>style+div,#wp>div:first-child,#scbar+div
+bbs.pcbeta.com###wp>style+div,#scbar+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
 pcbeta.com###sitefocus,#weixinqr
 |http://www.sz1001.net/ab$script
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
