@@ -1,9 +1,9 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015.12.11 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.13 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
-|http://$subdocument,domain=u17.com|dm456.com|sz1001.net|music.baidu.com
+|http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
@@ -16,7 +16,7 @@
 !-@@|http://*upload.swf^$object
 !-@@|http://*clipboard.swf|$object
 !--------------------------百度----------------------------------
-|http://cpro.$script
+|http://cpro.$script,object-subrequest
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
@@ -88,7 +88,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||adserver.
 ! _banner.$script,object,image
 ||changyan.$image,script,subdocument
-@@|http://g.alicdn.com/
+@@||g.alicdn.com/
 ||g.$domain=~xiami.com|~e-hentai.org
 ||gg.
 ! |http:/*/log.$script,object-subrequest,image,domain=~yinyuetai.com
@@ -532,6 +532,8 @@ baofeng.com##[class|=ad]
 |http://data.vod.itc.cn/?pt=1&pg=1&prod=ad&
 |http://sohu.vod.cdn.myqcloud.com/*&prod=ad
 |http://js.tv.itc.cn/hdpv.js
+|http://a1.itc.cn/pv/js/spv.
+|http://push.my.tv.sohu.com/$script
 |http://tv.sohu.com/upload/swf/201*/panel/QianFanAdPalyer.swf
 |http://vstat.v.blog.sohu.com/dostat.do?
 |http://api.my.tv.sohu.com/wm/getads.do?
@@ -542,7 +544,10 @@ baofeng.com##[class|=ad]
 |http://image.res.hunantv.com/mediafiles/creative/
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
-iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,[id^="flash1000000000"],div#addiv,div.s_main.liveTop_adv,div.leftAd
+iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe
+|http://a.ckm.iqiyi.com/
+|http://static.iqiyi.com/js/pingback/
+|http://pic9.qiyipic.com/common/201*.jpg|
 |http://static.qiyi.com/ext/
 |http://static.iqiyi.com/js/common/ares$script
 |http://static.qiyi.com/js/cupid/20130813/ares.js
@@ -553,19 +558,21 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[id^="1000000000"],div.cro
 ||msg.71.am/
 |http://am.cupid.iqiyi.com/am
 |http://api.credit.iqiyi.com/
-|http://api.cupid.iqiyi.com/show2?a=qc_100001_100103&u=
 |http://api.cupid.iqiyi.com/etx?
 ||api.cupid.qiyi.com/show2
 ||api.cupid.iqiyi.com/policy2
 |http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv
 |http://policy.video.iqiyi.com/qiyi-flash.policy?ran=
 |http://www.iqiyi.com/common/clientPopLstyle.html
+||qiyu.iqiyi.com/crossdomain.xml
 |http://www.iqiyi.com/player/201*/theatre*.swf
 |http://www.iqiyi.com/player/cupid/*/pageer.swf?
 |http://www.iqiyi.com/player/cupid/common/icon_exclusive.swf
 |http://www.iqiyi.com/*/pause.swf|
-||qiyu.iqiyi.com/crossdomain.xml
 |http://dispatcher.video.qiyi.com/dispn/iamo.swf
+|http://p.bloxy.cn/antiphish.swf
+|http://www.iqiyi.com/player/cupid/common/skipgg_zz.swf
+|http://www.iqiyi.com/player/cupid/common/clear.swf
 pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
@@ -614,7 +621,7 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 |http://static.hdslb.com/swz_crossdomain.xml
 |http://acg.tv/$domain=bilibili.com
 www.bilibili.com##div.ad-f
-@@|http://stat.letv.com/$script
+@@||stat.letv.com/$script
 |http://*/letv-gug/
 |http://apple.www.letv.com/
 |http://ark.letv.com/
