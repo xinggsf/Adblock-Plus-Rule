@@ -1,12 +1,12 @@
 ﻿[Adblock Plus 2.0]
 ! title: xinggsf v2015.12.13 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-@@$stylesheet
+!@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com|hjwzw.com|bttiantang.com
-|http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com
+|http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 |https://$third-party,domain=greasyfork.org
 @@jquery.min.js|
 !---------------------NoScript，可加上自己要过滤的域名--------------------
@@ -487,6 +487,7 @@ bbs.pcbeta.com###wp>style+div,#scbar+div,#pt+div>div[style$=";border:9px solid #
 pcbeta.com###sitefocus,#weixinqr
 pcpop.com##[id^=ad_]
 |http://count.pcpop.com/ClickPv.js
+qiushibaike.com##div.shopwindow
 ttmeiju.com###wrapper~div,ul.menu~*
 |http://pic.yupoo.com/*/medish.jpg
 |http://www.sz1001.net/ab$script
@@ -608,7 +609,7 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 ||l.youku.com/rec_ad_show?
 ||l.youku.com/*&t=ad_
 ||vip.com/cm/youku?
-|http://static.youku.com/index/js/ikuAdapterNew.js
+!|http://static.youku.com/index/js/ikuAdapterNew.js
 |http://module.youku.com/*.html$script
 |http://passport.youku.com/index_loginregGuide/$subdocument
 v.youku.com##div#dragDIV
