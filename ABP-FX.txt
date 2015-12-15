@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015.12.13 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.15 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 !@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -87,7 +87,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*/adsense/
 ||adserver.
 ! _banner.$script,object,image
-||changyan.$image,script,subdocument
+||changyan.$subdocument
 @@||g.alicdn.com/
 ||g.$domain=~xiami.com|~e-hentai.org
 ||gg.
@@ -148,7 +148,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||dazhantai.com
 ||dian500.com
 ||dian5000.com
-||duoshuo.com^$third-party,domain=~lite6.com
+!||duoshuo.com^$third-party,domain=~lite6.com
 ||eclkspbn.com/
 ||f6ce.com/
 ||fd7c.com/
@@ -546,6 +546,7 @@ baofeng.com##[class|=ad]
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe
+|http://www.iqiyi.com/v_$subdocument
 |http://a.ckm.iqiyi.com/
 |http://static.iqiyi.com/js/pingback/
 |http://pic9.qiyipic.com/common/201*.jpg|
