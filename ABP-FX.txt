@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015.12.15 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 !@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -89,7 +89,11 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ! _banner.$script,object,image
 ||changyan.$subdocument
 @@||g.alicdn.com/
-||g.$domain=~xiami.com|~e-hentai.org
+@@||g.tbcdn.cn/
+@@||g.live.panda.tv/
+@@|http://g.picphotos.baidu.com/album/
+@@|http://g.hiphotos.baidu.com/album/
+||g.
 ||gg.
 ! |http:/*/log.$script,object-subrequest,image,domain=~yinyuetai.com
 ||000dn.com/
@@ -230,8 +234,8 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yule8.net^
 ||yunjiasu.com/$domain=~jiaosm.net
 ||yunshipei.com/$third-party
-||yy.com^$third-party
-||yystatic.com^$third-party
+||yy.com^$third-party,domain=~huya.com
+||yystatic.com^$third-party,domain=~huya.com
 ##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad,div.adbox
 mail.google.com#@#div.ads
 |http://*.com/ads
