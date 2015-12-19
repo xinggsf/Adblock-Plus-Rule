@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015.12.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.20 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-!@@$stylesheet
+@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
@@ -27,7 +27,7 @@
 |http://cbjslog.baidu.com/
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
-@@||hm.baidu.com/hm.js
+!@@||hm.baidu.com/hm.js
 ||hm.baidu.com/
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 |http://eclick.baidu.com/
@@ -110,11 +110,12 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||xmgktt.com/$popup
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
+||360buyimg.com/
 ||37.com/$third-party
 ||37wan.com/$third-party
 ||38ra.com/$third-party
 ||49wanwan.com/
-||51.la^$script
+||51.la/
 ||52kmh.com^$third-party
 ||6711.com/
 ||e70123.com/
@@ -126,9 +127,10 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||hr44.com/
 ! 9377的弹窗真烦
 ||859377.com/
-||9377.com/
+||9377.com/$third-party
 ||937744.com/
 ||9377co.com/
+||hi9377.com/
 ||91hui.com^$third-party
 ||acxiom-online.com^$third-party
 ||admaster.com.cn
@@ -145,8 +147,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||chenwen7788.com/
 ||cloudfront.net/$third-party,domain=~pcloud.com
 ||cmp288.com/
-||cnzz.com/
-||cnzz.net/
+||cnzz.
 ||csad.cc^
 ||ctsywy.com
 ||dazhantai.com
@@ -172,7 +173,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||img80.net/
 ||irs01.com/$third-party
 ||irs01.net/$third-party
-|http://x.jd.com/
+||jd.com/$third-party
 ||jiathis.com^$third-party
 ||jiawen88.com/
 ||jointreport-switch.com
@@ -481,6 +482,8 @@ ithome.com##div#hd_float,#side_func,#con>#tt5>div
 |http://config.kuwo.cn/uc/s
 |http://topmusic.kuwo.cn/today_recommend/images/201311/
 |http://wa.kuwo.cn/lyrics/img/kwgg/
+iciba.com##div[class|=ad],div.newpc-entry
+|http://cdn.iciba.com/web/co/ci/$image
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
@@ -542,6 +545,7 @@ baofeng.com##[class|=ad]
 |http://tv.sohu.com/upload/swf/201*/panel/QianFanAdPalyer.swf
 |http://vstat.v.blog.sohu.com/dostat.do?
 |http://api.my.tv.sohu.com/wm/getads.do?
+|http://v.aty.sohu.com/v
 |http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&
 |http://res.hunantv.com/r.js
