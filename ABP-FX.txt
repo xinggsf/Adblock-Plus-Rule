@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015圣诞版 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2015.12.27 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-!@@$stylesheet
+@@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
@@ -15,6 +15,7 @@
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
+@@|http://js.rrsub.net/ZeroClipboard10.swf
 !--------------------------百度----------------------------------
 |http://cpro.$script,object-subrequest
 ||baidustatic.com^$third-party
@@ -27,7 +28,7 @@
 |http://cbjslog.baidu.com/
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
-!@@||hm.baidu.com/hm.js
+!@@||hm.baidu.com/hm.js /hm.gif? 都是统计收集信息用！
 ||hm.baidu.com/
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 |http://eclick.baidu.com/
@@ -55,25 +56,21 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 |http://music.baidu.com/cms/tingbox/$script
 music.baidu.com##div.ad-banner
 !--贴吧---
-|http://tieba.baidu.com/tb/static-pcommon/component/commonLogic/common/
-tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),.l_post.j_l_post+div[data-daid],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ
-|http://play.baidu.com/player/static/flash/fmp.swf
-|http://*&dafid=*&datid=$subdocument,domain=tieba.baidu.com
+!tieba.baidu.com#@##j_p_postlist
+tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
 |http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
 |http://tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
 |http://tb1.bdstatic.com/??/tb/_/app_forum_$script
 |http://tb1.bdstatic.com/??/tb/_/my_app_$script
 |http://tb1.bdstatic.com/??/tb/_/xiu8_$script
-|http://tb1.bdstatic.com/tb/cms/com/mis/spreadad/dasense_iframe_api.js
+|http://tbmsg.baidu.com/gmessage/get?$script
 |http://tb1.bdstatic.com/tb/cms/frs/bg/$image
 |http://tb1.bdstatic.com/tb/cms/activity_head/$image
 |http://tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 |http://tb1.bdstatic.com/tb/r/image/201$image
-|http://tbmsg.baidu.com/gmessage/get?$script
+|http://image.cache.xiu8.com/live/
 |http://tieba.baidu.com/tb/cms/game/*_banner.jpg
-|http://tieba.baidu.com/tb/static-common/swf/worldcup_banner.swf?
-|http://tieba.baidu.com/tb/static-frs/img/novel_intro/idu.com/pc_static/promotion/
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
 |http://*/ad.
@@ -92,9 +89,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 @@||g.alicdn.com/
 @@||g.tbcdn.cn/
 @@||g.live.panda.tv/
-@@|http://g.picphotos.baidu.com/album/
-@@|http://g.hiphotos.baidu.com/album/
-||g.
+||g.$third-party
 ||gg.
 ! |http:/*/log.$script,object-subrequest,image,domain=~yinyuetai.com
 ||000dn.com/
@@ -108,7 +103,6 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||greenet.cn/$popup,third-party
 ||189.gd/$popup,third-party
 ||189.cn/$popup,third-party
-||xmgktt.com/$popup
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
 ||360buyimg.com/
@@ -122,19 +116,17 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||e70123.com/
 ||f70123.com/
 ||7pk.com/
-! 3黑名单，最好加入防火墙中
 ||7z66.com/
-||927go.com/
-||hr44.com/
-! 9377的弹窗真烦
-||859377.com/
 ||85rere.com/
 ||85rere.com/$popup
+||91hui.com^$third-party
+||927go.com/
+! 9377的弹窗真烦
+||859377.com/
 ||9377.com/$third-party
 ||937744.com/
 ||9377co.com/
 ||hi9377.com/
-||91hui.com^$third-party
 ||acxiom-online.com^$third-party
 ||admaster.com.cn
 ||admtpmp124.com/
@@ -163,12 +155,13 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||findicons.com^$third-party
 ||googleadservices.com/
 ! 没翻墙可启用下条规则~可提高某些页面加载速度
-! /^https?:\/\/\w+\.google-?\w+\.com\//$third-party
+! /^https?:\/\/\w+\.google-?\w+\.com/$third-party
 ||govids.net/
 ||gridsumdissector.com^$third-party
 ||gw630.com
 ||gyyx.cn/$third-party
 ||hinet.net^third-party
+||hr44.com/
 ||huimee.net/
 ||humanding.com/$third-party
 ||il8r.com^$third-party
@@ -229,6 +222,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||wrating.com^$third-party
 ||xcdf.cn^
 ||xe2c.com/
+||xmgktt.com/$popup
 ||xtgreat.com^$third-party
 ||xyxy01.com
 ||yccdn.com/
@@ -240,8 +234,8 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yunshipei.com/$third-party
 ||yy.com^$third-party,domain=~huya.com|~duowan.com
 ||yystatic.com^$third-party,domain=~huya.com
-mail.google.com#@#div.adn.ads
-~zzttzzzz.zzz##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad,div.adbox
+!mail.google.com#@#div.adn.ads
+~mail.google.com##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad,div.adbox
 |http://*.com/ads
 |http://*_350_330.$image
 |http://*/html/click/
@@ -288,7 +282,6 @@ wrating.$script,object-subrequest
 popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org
 */float.js|
 gonggao.js|
-*/m.js|$domain=~yunpan.cn
 |http:/*/tan.$script
 |http:/*/tan1.$script
 */tj.js|
@@ -474,6 +467,9 @@ csdn.net##.tracking-ad,div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_rig
 |http://static.blog.csdn.net/skin/*.jpg|
 duowan.com###udbsdk_cookieFrm~*,a[adid]
 ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
+firefoxchina.cn##div[trace-key=ad_banner],div[track-key=side_tpth]
+||firefoxchina.cn/html/$subdocument
+||firefoxchina.cn/iframes/$subdocument
 ftchinese.com##div.rightad,#topad,#topadcontainer
 |http://dolphin.ftimg.net/$script
 @@|http://union.bokecc.com/player
@@ -505,7 +501,6 @@ pconline.com.cn##div.jcztl
 |http://www.pconline.com.cn/jrzcz/$script
 |http://www.pconline.com.cn/ssi/*/download/
 |http://ivy.pconline.com.cn/adpuba/show
-!|http://imgcdn.pconline.com.cn/show
 ||jwz.3conline.com/adpuba/
 |http://pacd.3conline.com/$script
 |http://js.3conline.com/min/temp/v1/dpl-msclass_v2.js
@@ -533,7 +528,6 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus,a#adbg,div#ads460,a[class^="
 ||zchot.com/images/jiaoyou
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
-@@|http://js.rrsub.net/ZeroClipboard10.swf
 !-------------------视频站点--------------------
 dygang.com,6vhao.com,6vhao.net###gd
 jiyingdm.com##div.abcde,#otherWindowBox
@@ -555,6 +549,7 @@ v.duba.com###fixedad,div[id|=ad]
 ||static.hd.baofeng.com/script/baidu_
 baofeng.com##[class|=ad]
 @@||stat.v-56.com/player
+||tv.sohu.com/upload/Trace/$script
 |http://data.vod.itc.cn:8080
 |http://data.vod.itc.cn/?new=*.mp4|
 |http://data.vod.itc.cn/?pt=1&pg=1&prod=ad&
@@ -1476,7 +1471,6 @@ tucao.tv##div.a2013d
 |http://fashion.eastday.com/T990/Tpage.html
 |http://files.nyaa.se/ah*.jpg$image
 |http://finance.eastmoney.com/images/uma.html$subdocument
-|http://fragment.firefoxchina.cn/res/js/fchina_video-min.js
 |http://g1.dfcfw.com/g2/
 |http://gaimg.haiwainet.cn/k.js
 |http://ggw.gusuwang.com/gsw/ggw/
@@ -2200,8 +2194,6 @@ tucao.tv##div.a2013d
 ||tuigoo.com
 ||tukj.net
 ||tunka.com.cn/images/1234.gif
-||tv.sohu.com/upload/static/global/hdpv.js
-||tv.sohu.com/upload/Trace/$script
 ||tvf4.com/*.htm$subdocument
 ||tvf4.com/1/$script
 ||twb98.com
