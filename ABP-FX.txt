@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2015.12.27 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.12.30 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -40,7 +40,7 @@
 baike.baidu.com###adLayerSideWrap
 |http://baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
-pan.baidu.com,yun.baidu.com##a[class|=ad]
+pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
@@ -54,11 +54,11 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 |http://log.music.baidu.com/maamonitor/v.gif?
 |http://music.baidu.com/data/69xiu/
 |http://music.baidu.com/cms/tingbox/$script
-music.baidu.com##div.ad-banner
 !--贴吧---
 !tieba.baidu.com#@##j_p_postlist
-tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside
+tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside,div.search_main_wrap~*,#aside_ad
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
+@@|http://tb1.bdstatic.com/??/tb/_/forum_info_$script
 |http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
 |http://tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
 |http://tb1.bdstatic.com/??/tb/_/app_forum_$script
@@ -153,7 +153,9 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||f6ce.com/
 ||fd7c.com/
 ||findicons.com^$third-party
-||googleadservices.com/
+||googleadservices.com
+||googlesyndication.com
+||google-analytics.com
 ! 没翻墙可启用下条规则~可提高某些页面加载速度
 ! /^https?:\/\/\w+\.google-?\w+\.com/$third-party
 ||govids.net/
@@ -201,6 +203,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||t70123.com/
 ||tanx.com^$third-party
 |http://union$third-party
+*_union$script,subdocument,domain=~bitauto.com|~captcha.qq.com
 ||union.doudouguo.com
 ||union.vancl.com
 ||union.youdao.com
@@ -234,8 +237,9 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yunshipei.com/$third-party
 ||yy.com^$third-party,domain=~huya.com|~duowan.com
 ||yystatic.com^$third-party,domain=~huya.com
+##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,ins.adsbygoogle,#ggPar,#side-ad,#preAdContent,div.adbox
 !mail.google.com#@#div.adn.ads
-~mail.google.com##div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,#ggPar,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,#preAdContent,div.a_cn,.ad,.ads,ins.adsbygoogle,.side-ad,#side-ad,div.adbox
+~mail.google.com##.ad,.ads
 |http://*.com/ads
 |http://*_350_330.$image
 |http://*/html/click/
@@ -368,6 +372,9 @@ blog.163.com##div#lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
 v.163.com##div[id^="v_shape"].bg
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
+|http://shared.youdao.com/dao/search/outweb/js/
+www.youdao.com###spTop
+youdao.com##div#topImgAd
 !-------------------360-----------------------
 haosou.com##div.tuiguang
 |http://hao.360.cn/festival_shuang11.html
@@ -623,6 +630,8 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 ||l.ykimg.com^
 |http://nc.youku.com/user/~ajax/qrcodeLogin.html?
 ! |http://v.l.youku.com/uep?
+! |http://*/check_ikuacc?callback=jQuery$domain=v.youku.com
+|http://static.youku.com/v*/index/js/ikuAdapterNew.js
 |http://static.youku.com/v*/index/js/iresearch.js
 |http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
@@ -632,7 +641,6 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 ||l.youku.com/rec_ad_show?
 ||l.youku.com/*&t=ad_
 ||vip.com/cm/youku?
-!|http://static.youku.com/index/js/ikuAdapterNew.js
 |http://module.youku.com/*.html$script
 |http://passport.youku.com/index_loginregGuide/$subdocument
 v.youku.com##div#dragDIV
@@ -1389,7 +1397,6 @@ tucao.tv##div.a2013d
 |http://*_index_ad_
 |http://*_index_banner$script
 |http://*_right_ad.$domain=~dzwww.com
-|http://*_union$script,subdocument,domain=~bitauto.com|~captcha.qq.com
 |http://33.autoimg.cn/t/Adhtmlnet/$object
 |http://360.safe.go.360safego.com/
 |http://4.yunplay.sinaapp.com/img/120-400.gif
@@ -2383,7 +2390,6 @@ www.nba98.com##iframe[src^="http://www.nba98.com/proxy.html?id="],div.sidepanel_
 www.portablesoft.org##div.postads
 xunlei.com##div.file_right.adv_right
 yesky.com##div#bdadv.bd_adv,div.wth200 > div.baidu,div.ad190
-youdao.com##div#topImgAd
 dianying.fm##div[id^="ad"]:not([style="height:90px;margin-botton:5px;"])
 ||creatives.livejasmin.com/pu/w2/index.php?$popup
 |http://www.myhack58.com/acdb02/$script
