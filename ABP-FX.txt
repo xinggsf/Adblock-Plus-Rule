@@ -659,7 +659,6 @@ www.bilibili.com##div.ad-f
 |http://ark.letv.com/
 ||dc.letv.com/
 ||webp2p.letv.com
-||letvimg.com/$object-subrequest
 ||letvimg.com/gugwl/201*.jpg
 letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad,div.ad_layer
 cloud.letv.com##div#ad_show_box
