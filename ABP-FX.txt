@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.1.8 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.1.14 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
-@@|http://$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
+@@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com|hjwzw.com|bttiantang.com
@@ -10,13 +10,14 @@
 |https://$third-party,domain=greasyfork.org
 @@*jquery.min.js|
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.so|storebt.com|www.baidu.com
+*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.so|storebt.com
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
 @@|http://js.rrsub.net/ZeroClipboard10.swf
 !--------------------------百度----------------------------------
+||bdstatic.com/$script,domain=www.baidu.com
 |http://cpro.$script,object-subrequest
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
@@ -105,7 +106,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||189.cn/$popup,third-party
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
-||360buyimg.com/
+||360buyimg.com/$domain=~jd.com
 ||37.com/$third-party
 ||37wan.com/$third-party
 ||38ra.com/$third-party
@@ -224,7 +225,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*/vamaker/
 ||w8.com.cn
 ||winvestern.com.cn
-||wrating.com^$third-party
+||wrating.com^$third-party,domain=~tudou.com
 ||xcdf.cn^
 ||xe2c.com/
 ||xmgktt.com/$popup
@@ -619,7 +620,7 @@ v.pps.tv##div.pgbox-content
 ||js.tudouui.com/tspecial/assets/PauseContainer.swf
 |http://js.tudouui.com/bin/lingtong/app_
 ||goods.tudou.com/
-|http://www.tudou.com/uis/
+!|http://www.tudou.com/uis/
 |http://www.tudou.com/feeportal/getPayMsg.html?
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
