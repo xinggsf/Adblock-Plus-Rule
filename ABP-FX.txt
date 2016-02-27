@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.2.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.2.28 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 !@@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -305,6 +305,7 @@ zol.com.cn##[id^='ad_']
 @@|http://stat.pc.music.qq.com/fcgi-bin/player_
 |http://adsrich.qq.com
 |http://btrace.qq.com/
+||btrace.video.qq.com/
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
 @@|http://v.gdt.qq.com/gdt_stats.fcg?
@@ -500,6 +501,7 @@ ithome.com##div#hd_float,#side_func,#con>#tt5>div
 |http://wa.kuwo.cn/lyrics/img/kwgg/
 iciba.com##div[class|=ad],div.newpc-entry
 |http://cdn.iciba.com/web/co/ci/$image
+||files.jb51.net/image/*.gif|
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
