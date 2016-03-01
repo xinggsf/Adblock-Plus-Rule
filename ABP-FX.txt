@@ -1,11 +1,11 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.2.28 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.3.1 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-!@@$stylesheet
+@@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|goooj.com|dygang.com|hjwzw.com|bttiantang.com
+|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 |https://$third-party,domain=greasyfork.org
 @@*jquery.min.js|
@@ -254,7 +254,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http:/*/svnad/$image,script
 @@||dwstatic.com/b=amkit
 ||stat.
-||stats.
+||stats.$domain=~stats.gov.cn
 |http://*/stat.
 ||wan.$third-party
 ||iwan.$third-party
@@ -303,8 +303,7 @@ zol.com.cn##[id^='ad_']
 @@|http://cq.qq.com/js/cody/scroll_ad.js
 @@|http://cdn.exp.qq.com/img/
 @@|http://stat.pc.music.qq.com/fcgi-bin/player_
-|http://adsrich.qq.com
-|http://btrace.qq.com/
+|http://adsrich.qq.com/
 ||btrace.video.qq.com/
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
@@ -375,8 +374,7 @@ open.163.com###j-hbtj,#j-footertj
 v.163.com##div[id^="v_shape"].bg
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
 |http://shared.youdao.com/dao/search/outweb/js/
-www.youdao.com###spTop
-youdao.com##div#topImgAd
+youdao.com###topImgAd,#spTop
 !-------------------360-----------------------
 haosou.com##div.tuiguang
 |http://hao.360.cn/festival_shuang11.html
@@ -551,9 +549,6 @@ jiyingdm.com##div.abcde,#otherWindowBox
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
-|http://www.jiaosm.net/*/yhc.html|
-jiaosm.net###weizhi-a,div.viewt_cc,#gouwu,#__jx_l_div,[id^=BAIDU_],[id^=cpro],.commendType2,.dmcms-notice,#tpAdv,#classpage:first-child
-|http://static.comment.acfun.
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 v.duba.com###fixedad,div[id|=ad]
 |http://v.duba.com/$object
