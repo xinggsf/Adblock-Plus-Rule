@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.3.1 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.3.5 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -17,8 +17,7 @@
 !@@*clipboard.swf|$object
 @@|http://js.rrsub.net/ZeroClipboard10.swf
 !--------------------------百度----------------------------------
-||bdstatic.com/$script,domain=www.baidu.com
-|http://cpro.$script,object-subrequest
+||cpro.$script,object-subrequest
 ||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
@@ -29,7 +28,6 @@
 |http://cbjslog.baidu.com/
 |http://crs.baidu.com/
 |http://entry.baidu.com/$subdocument
-!@@||hm.baidu.com/hm.js /hm.gif? 都是统计收集信息用！
 ||hm.baidu.com/
 |http://imgsrc.baidu.com/tieba/pic/item/$image
 |http://eclick.baidu.com/
@@ -255,8 +253,8 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 @@||dwstatic.com/b=amkit
 ||stat.
 ||stats.$domain=~stats.gov.cn
-|http://*/stat.
-||wan.$third-party
+|http://*/stat.$domain=~chouti.com
+||wan.$subdocument,script,object-subrequest
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
 |http://*.cn/s.php?id=
@@ -336,6 +334,7 @@ zol.com.cn##[id^='ad_']
 |http:/*/vmind.qqvideo.tc.qq.com/
 v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"]
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
+daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
 qq.com##div[bosszone$=ad],div[id^=AdZone]
@@ -622,7 +621,6 @@ v.pps.tv##div.pgbox-content
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
 tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
-|http://*.swz|$domain=tudou.com|youku.com|bilibili.com
 @@|http://v2html.atm.youku.com/vhtml
 ||atm.youku.com/
 @@|http://hudong.pl.youku.com/crossdomain.xml
