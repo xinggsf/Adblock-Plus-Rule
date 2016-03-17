@@ -1,16 +1,16 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.3.5 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.3.17 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=xbiquge.com|dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
+|http://$script,third-party,domain=dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
-|https://$third-party,domain=greasyfork.org
+*$third-party,domain=greasyfork.org|xbiquge.com
 @@*jquery.min.js|
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.so|storebt.com
+*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.so|storebt.com|btbbt.cc
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !@@*upload.swf^$object
@@ -71,16 +71,16 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://tieba.baidu.com/tb/cms/game/*_banner.jpg
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
-|http://*/ad.
-|http://*/ad/
-|http://*/ad_
-|http://*/ad-
+*/ad.
+*/ad/
+*/ad_
+*/ad-
 ||ads.
-|http://*/ads.
-|http://*/ads/
+*/ads.
+*/ads/
 |http:/*/adload.
 ||adsense.
-|http://*/adsense/
+*/adsense/
 ||adserver.
 ! _banner.$script,object,image
 ||changyan.$subdocument
@@ -109,6 +109,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||38ra.com/$third-party
 ||49wanwan.com/
 ||51.la/
+||5188yy.com
 ||52kmh.com^$third-party
 ||6711.com/
 ||e70123.com/
@@ -120,6 +121,8 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||91hui.com^$third-party
 ||927go.com/
 ! 9377的弹窗真烦
+||x9377a.com/
+||9377ku.com/
 ||859377.com/
 ||9377.com/$third-party
 ||937744.com/
@@ -203,7 +206,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||t70123.com/
 ||tanx.com^$third-party
 |http://union$third-party
-*_union$script,subdocument,domain=~bitauto.com|~captcha.qq.com
+*_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.doudouguo.com
 ||union.vancl.com
 ||union.youdao.com
@@ -306,7 +309,7 @@ zol.com.cn##[id^='ad_']
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
 @@|http://v.gdt.qq.com/gdt_stats.fcg?
-||aq.qq.com/$script
+!||aq.qq.com/$script,third-party
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
 @@||l.qq.com/livemsg?ty=web&ad_type=
@@ -319,11 +322,14 @@ zol.com.cn##[id^='ad_']
 ||lives.l.qq.com
 @@|http://livew.l.qq.com/crossdomain.xml
 ||livew.l.qq.com
-||isdspeed.qq.com/cgi-bin/
+||isdspeed.qq.com
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?ad
 @@|http://pinghot.qq.com/pingd?dm=music.qq.com.hot&
 @@|http://pinghot.qq.com/pingd?dm=y.qq.com.hot&url=
 ||pinghot.qq.com/
+||pingfore.qq.com
+||pingjs.qq.com
+||tj.video.qq.com
 |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
 |http://qzs.qq.com/qzone/biz/res/v.swf?loc=
 ||rh.qq.com^
@@ -464,7 +470,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div#job_box.content_body.cber_body,div.tools > div.time,div.content > a:last-child
+cnbeta.com##div#job_box.content_body.cber_body,div.tools > div.time,div.content > a:last-child,div.cbimage-fixed
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
 coladrive.com##.ad1>div.tui
