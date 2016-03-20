@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.3.17 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.3.20 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -8,9 +8,9 @@
 |http://$script,third-party,domain=dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 *$third-party,domain=greasyfork.org|xbiquge.com
-@@*jquery.min.js|
+@@*/jquery.$script
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.so|storebt.com|btbbt.cc
+*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.biz|storebt.com|btbbt.cc
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
 !@@*upload.swf^$object
@@ -108,6 +108,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||37wan.com/$third-party
 ||38ra.com/$third-party
 ||49wanwan.com/
+||4wad.com
 ||51.la/
 ||5188yy.com
 ||52kmh.com^$third-party
