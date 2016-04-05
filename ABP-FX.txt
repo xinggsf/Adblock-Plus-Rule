@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.3.20 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.4.6 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -30,8 +30,10 @@
 |http://entry.baidu.com/$subdocument
 ||hm.baidu.com/
 |http://imgsrc.baidu.com/tieba/pic/item/$image
-|http://eclick.baidu.com/
-|http://nsclick.baidu.com/
+||eclick.baidu.com/
+||fexclick.baidu.com/
+||nsclick.baidu.com/
+||qianclick.baidu.com/
 |http://list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
 |http://znsv.baidu.com/
@@ -73,6 +75,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||ad.
 */ad.
 */ad/
+@@|http://s0.pstatp.com/resource/toutiao_web/pagelet/model/ad_$script
 */ad_
 */ad-
 ||ads.
@@ -491,8 +494,9 @@ ftchinese.com##div.rightad,#topad,#topadcontainer
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
+|http://t1.hoopchina.com.cn/$subdocument
+hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|='div-gpt-ad'],[class^='nba-ad'],[class^='hp-ad']
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing]
-|http://hxjs.tool.hexun.com/news/pageMediaControl
 |http://itv.hexun.com/
 |http://utrack.hexun.com/
 |http://hrtsea.com/936x90.gif
@@ -582,27 +586,26 @@ baofeng.com##[class|=ad]
 |http://v.aty.sohu.com/v
 |http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&
-|http://res.hunantv.com/r.js
-|http://res.hunantv.com/FrameWork/*.swf|
-|http://image.res.hunantv.com/mediafiles/creative/
+||res.hunantv.com/mediafiles/wiad_creative/
+||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe
 |http://www.iqiyi.com/v_$subdocument
 |http://a.ckm.iqiyi.com/
-|http://static.iqiyi.com/js/pingback/
 |http://pic9.qiyipic.com/common/201*.jpg|
 |http://static.qiyi.com/ext/
 |http://static.iqiyi.com/js/common/ares$script
 |http://static.qiyi.com/js/cupid/20130813/ares.js
 |http://static.qiyi.com/js/cupid/20140106/poseidon.js
+|http://static.iqiyi.com/js/pingback/
 |http://nl.notice.iqiyi.com/apis/msg/$script
 |http://nl.rcd.iqiyi.com/cro
 |http://msg.video.qiyi.com/
 ||msg.71.am/
 |http://am.cupid.iqiyi.com/am
 |http://api.credit.iqiyi.com/
-|http://api.cupid.iqiyi.com/etx?
+||api.cupid.iqiyi.com/etx?
 ||api.cupid.qiyi.com/show2
 ||api.cupid.iqiyi.com/policy2
 |http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv
@@ -612,11 +615,11 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 |http://www.iqiyi.com/player/201*/theatre*.swf
 |http://www.iqiyi.com/player/cupid/*/pageer.swf?
 |http://www.iqiyi.com/player/cupid/common/icon_exclusive.swf
+|http://www.iqiyi.com/player/cupid/common/skipgg_zz.swf
+|http://www.iqiyi.com/player/cupid/common/clear.swf
 |http://www.iqiyi.com/*/pause.swf|
 |http://dispatcher.video.qiyi.com/dispn/iamo.swf
 |http://p.bloxy.cn/antiphish.swf
-|http://www.iqiyi.com/player/cupid/common/skipgg_zz.swf
-|http://www.iqiyi.com/player/cupid/common/clear.swf
 pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
@@ -1630,8 +1633,6 @@ tucao.tv##div.a2013d
 |http://www.fengbuy.com/recommend-new.php
 |http://www.fjlyfdc.com.cn/Files/Xw/$image
 |http://www.fjlyfdc.com.cn/hxhad/
-|http://www.flvcd.com/image/partner/soufun_468.gif
-|http://www.flvcd.com/image/partner/zhangyisheng.jpg
 |http://www.fmdisk.com/ima/$image
 |http://www.fuyuanweb.net/ajds/
 |http://www.ghoffice.com/bbs/attachment/Fid_161$image
@@ -1933,7 +1934,6 @@ tucao.tv##div.a2013d
 ||asimgs.pplive.cn/imgs/materials/
 ||at918.com^$third-party
 ||at98.com^
-!||aty.sohu.com
 ||avd.qidian.com$popup
 ||b2b.cn$third-party
 ||badao37.net
