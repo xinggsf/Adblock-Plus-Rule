@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.4.9 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.4.10 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -366,6 +366,7 @@ qq.com##div[bosszone$=ad],div[id^=AdZone]
 |http://ra.gtimg.com/web/crystal/v$script
 |http://wb.gtimg.com/adwin/
 !-------------------网易--------------------
+@@||account.bnet.163.com/
 @@|http://analytics.163.com/ntes.js
 ||g.163.com/$~object-subrequest
 |http://img1.126.net/
@@ -374,7 +375,7 @@ qq.com##div[bosszone$=ad],div[id^=AdZone]
 |http://img6.126.net/
 ||126.net/silver/
 @@|http://oc-caption-srt.nos.netease.com/
-nos.netease.com/$image
+nos.netease.com/$image,domain=~blizzard.cn|~battlenet.com.cn
 |http://adgeo.163.com/
 |http://bobo.163.com/
 |http://baoxian.163.com/$subdocument
@@ -565,6 +566,7 @@ jiyingdm.com##div.abcde,#otherWindowBox
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
+|http://img.kankan.xunlei.com/*.gif|
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 v.duba.com###fixedad,div[id|=ad]
 |http://v.duba.com/$object
@@ -585,11 +587,13 @@ baofeng.com##[class|=ad]
 |http://sohu.vod.cdn.myqcloud.com/*&prod=ad
 |http://js.tv.itc.cn/hdpv.js
 |http://a1.itc.cn/pv/js/spv.
+||hd.sohu.com.cn
 |http://push.my.tv.sohu.com/$script
 |http://tv.sohu.com/upload/swf/201*/panel/QianFanAdPalyer.swf
 |http://vstat.v.blog.sohu.com/dostat.do?
 |http://api.my.tv.sohu.com/wm/getads.do?
 |http://v.aty.sohu.com/v
+tv.sohu.com###playerBar > div.area ~a
 |http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&
 ||res.hunantv.com/mediafiles/wiad_creative/
@@ -680,8 +684,10 @@ www.bilibili.com##div.ad-f
 ||webp2p.letv.com
 ||letvimg.com/$object-subrequest
 ||letvimg.com/gugwl/201*.jpg
-letv.com##div.H-tg,div#egg.egg,div#j-adr-playBT,div[id^="JS_AD_M_P_Banner"],div[id^="a_column_banner_0"],div[id^="JS_H_ad_"].Banner,div.column.Ad,div.pai_bar[data-itemhldr="a"],div[name="words_psmall"],.banner_ad,div.ad_layer
-cloud.letv.com##div#ad_show_box
+le.com###rightBottomPop
+||shark.douyucdn.cn//app/douyu/res/flash/swfcover.gif
+||staticlive.douyutv.com/upload/signs/$object
+||dotcounter.douyutv.com/deliver/
 v.yinyuetai.com##video~div,.shopMoney
 ||yytcdn.com/crossdomain.xml
 @@||yytcdn.com/others/admin/*/0/-M-$image
@@ -2046,7 +2052,7 @@ tucao.tv##div.a2013d
 ||hanzify.org/Main/Template/Images/ak47/$image
 ||haobk.taobao.com$domain=ysfx.howbbs.com
 ||hauchi.com.tw^$third-party
-||hd.sohu.com$object_subrequest,image
+||hd.sohu.com$image,object-subrequest
 ||hefan365.com
 ||heima8.com^$third-party
 ||hh6666.com
@@ -2383,7 +2389,6 @@ tianya.cn##div[id$="banner_950_90"].banner-img-mt10,div[id*="_AD_"],div[class*="
 tiexue.net##iframe[src^="http://x.tiexue.net/domain-policy/"],div.junph-new-tmp.mTop10
 tom.com##div#popupDivgame
 trakt.tv##div#large-banner-ad,div#small-banner-ad,div#large-banner-bottom-ad,div#small-banner-bottom-ad
-tv.sohu.com##a.us_left.abs,a.us_right.abs,div#comicRecomm.comics-recomm
 v.17173.com##div#playAdLeftTop,div.txt-ad,div.list-beauty,div.js-lol-ad,span.js-lol-adtime,div.ad03.col-r,div[id^="liveAdMiddle"],div.focus_ad
 verycd.com##div#advertisement_bottom,div[style="width:250px;height:200px;padding:4px;border:1px solid #ccc;"]
 weather.com.cn##div#ccs,div[class^=ad]
