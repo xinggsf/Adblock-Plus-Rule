@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.4.6 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.4.9 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -136,6 +136,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||admaster.com.cn
 ||admtpmp124.com/
 ||adrotator.se/
+||ahzlep.com
 ||aiyujie.com/$third-party,script
 ||allyes.$third-party
 |http:/*/allyes
@@ -147,6 +148,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||chenwen7788.com/
 ||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
+||cnbole.net
 ||cnzz.
 ||csad.cc^
 ||ctsywy.com
@@ -186,6 +188,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||jtxh.net/
 ||ju33.com^
 ||jzyx.com/$third-party
+||liuliguo.com
 ||lndjj.com/
 ||lx167.com/$third-party
 ||knet.cn^$third-party
@@ -252,7 +255,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 |http://*/html/click/
 @@|http://shurufa.baidu.com/img/ime/index_banner_btn.png
 |http://*/index_banner_
-|http:/*/pageMediaControl
+*/pageMediaControl
 |http:/*/piaofu.
 |http://*/piaofu/
 |http:/*/piwik.
@@ -309,6 +312,7 @@ zol.com.cn##[id^='ad_']
 @@|http://cdn.exp.qq.com/img/
 @@|http://stat.pc.music.qq.com/fcgi-bin/player_
 |http://adsrich.qq.com/
+||btrace.qq.com/
 ||btrace.video.qq.com/
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
@@ -342,7 +346,7 @@ zol.com.cn##[id^='ad_']
 ||tcss.qq.com^
 |http://view.news.qq.com/PL_ad$subdocument
 |http:/*/vmind.qqvideo.tc.qq.com/
-v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"]
+v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
@@ -474,9 +478,10 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div#job_box.content_body.cber_body,div.tools > div.time,div.content > a:last-child,div.cbimage-fixed
+cnbeta.com##div#job_box.content_body.cber_body,div.tools > div.time,div.content > a:last-child,div.cbimage-fixed,section.wrapper> :last-child
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
+|http://static.cnbetacdn.com/*.gif|
 coladrive.com##.ad1>div.tui
 |http://www.coladrive.com/templates/cola3beta/js/anti.js
 @@|http://my.csdn.net/service/favorite/add_favorite?
@@ -494,14 +499,15 @@ ftchinese.com##div.rightad,#topad,#topadcontainer
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
+||orz.hupu.com
 |http://t1.hoopchina.com.cn/$subdocument
-hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|='div-gpt-ad'],[class^='nba-ad'],[class^='hp-ad']
+hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|='div-gpt-ad'],[class^='nba-ad'],[class^='hp-ad'],.sidebar>div[class^='ad'],div.ad980-60,div.ad720-90
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing]
 |http://itv.hexun.com/
 |http://utrack.hexun.com/
 |http://hrtsea.com/936x90.gif
 ithome.com##div#hd_float,#side_func,#con>#tt5>div
-|http://file.ithome.com/js/money/
+||ithome.com/file/js/money/
 @@|http://i.kuwo.cn/US/login.$document
 ||kuwo.cn/kuwolive/
 |http://config.kuwo.cn/uc/s
