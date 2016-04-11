@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.4.10 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.4.11 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -12,7 +12,7 @@
 !---------------------NoScript，可加上自己要过滤的域名--------------------
 *$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|hrtsea.com|btkitty.biz|storebt.com|btbbt.cc
 !--------------FlashBlock。免过滤白名单如下----------------------
-!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~letv.com|~jiaosm.net|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~hunantv.com|~pptv.com
+!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
 @@|http://js.rrsub.net/ZeroClipboard10.swf
@@ -118,6 +118,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||6711.com/
 ||e70123.com/
 ||f70123.com/
+||75to.com/
 ||7pk.com/
 ||7z66.com/
 ||85rere.com/
@@ -148,7 +149,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||chenwen7788.com/
 ||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
-||cnbole.net
+||cnbole.net/
 ||cnzz.
 ||csad.cc^
 ||ctsywy.com
@@ -180,7 +181,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||img80.net/
 ||irs01.com/$third-party
 ||irs01.net/$third-party
-||jd.com/$third-party
+||x.jd.com/
 ||jiathis.com^$third-party
 ||jiawen88.com/
 ||jointreport-switch.com
@@ -243,10 +244,11 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||youxi.com^$third-party
 ||yug8.com/
 ||yule8.net^
-||yunjiasu.com/$domain=~jiaosm.net
+||yunjiasu.com/
 ||yunshipei.com/$third-party
+||ylog.hiido.com/
 ||yy.com^$third-party,domain=~huya.com|~duowan.com
-||yystatic.com^$third-party,domain=~huya.com
+||yystatic.com^$third-party,domain=~huya.com|~yy.com
 ##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
 ~mail.google.com##.ads
 ~mail.google.com##.adsbygoogle
@@ -479,10 +481,9 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div#job_box.content_body.cber_body,div.tools > div.time,div.content > a:last-child,div.cbimage-fixed,section.wrapper> :last-child
+cnbeta.com##div.tools>div.time,div.content>:last-of-type,div.cbimage-fixed,section.wrapper>section:last-of-type,.mask-layer,.mask-box
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
-|http://static.cnbetacdn.com/*.gif|
 coladrive.com##.ad1>div.tui
 |http://www.coladrive.com/templates/cola3beta/js/anti.js
 @@|http://my.csdn.net/service/favorite/add_favorite?
@@ -596,6 +597,7 @@ baofeng.com##[class|=ad]
 tv.sohu.com###playerBar > div.area ~a
 |http://www.1905.com/coll/ad$subdocument
 |http://bs.da.hunantv.com/a.htm?pv=1&
+||click.hunantv.com/
 ||res.hunantv.com/mediafiles/wiad_creative/
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
@@ -670,7 +672,6 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 v.youku.com##div#dragDIV
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box,#lotteryToolbar,#lotteryToolbar+li,a[href^="http://poll.youku."]
 ||bilibili.com/html/$~xmlhttprequest
-|http://interface.bilibili.com/count?$script
 ||hdslb.com/u_user/*.jpg|$object-subrequest
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
