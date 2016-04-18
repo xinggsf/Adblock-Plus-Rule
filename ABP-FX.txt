@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.4.11 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.4.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -478,10 +478,12 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://vd.51cto.com/
 ||52pk.com/$object
 ||live.ali213.net/$domain=~live.ali213.net
+baike.com###right_ad_div
+||hdad.baike.com/
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div.tools>div.time,div.content>:last-of-type,div.cbimage-fixed,section.wrapper>section:last-of-type,.mask-layer,.mask-box
+cnbeta.com##div.tools>div.time,div.content>:last-of-type,div.cbimage-fixed,section.wrapper>section:last-of-type
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
 coladrive.com##.ad1>div.tui
@@ -603,6 +605,7 @@ tv.sohu.com###playerBar > div.area ~a
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe
+||t7z.cupid.iqiyi.com/$domain=acfun.tudou.com|acfun.tv
 |http://www.iqiyi.com/v_$subdocument
 |http://a.ckm.iqiyi.com/
 |http://pic9.qiyipic.com/common/201*.jpg|
@@ -686,7 +689,7 @@ www.bilibili.com##div.ad-f
 ||letvimg.com/$object-subrequest
 ||letvimg.com/gugwl/201*.jpg
 le.com###rightBottomPop
-||shark.douyucdn.cn//app/douyu/res/flash/swfcover.gif
+||shark.douyucdn.cn/app/douyu/res/flash/swfcover.gif
 ||staticlive.douyutv.com/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
 v.yinyuetai.com##video~div,.shopMoney
