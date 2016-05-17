@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.4.28 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.5.17 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -18,7 +18,6 @@
 @@|http://js.rrsub.net/ZeroClipboard10.swf
 !--------------------------百度----------------------------------
 ||cpro.$script,object-subrequest
-||baidustatic.com^$third-party
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
 ||iwanad.baidu.com/
@@ -206,6 +205,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||optimix.asia^$third-party
 ||pic9382.com^$third-party
 ||projectwonderful.com^$third-party
+||public6.com/
 ||qiqipower.com
 ||qucaigg.com^$third-party
 ||questionmarket.com^$third-party
@@ -298,7 +298,7 @@ wrating.$script,object-subrequest
 */piao.js|
 */pop.js^
 .pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com
 */float.js|
 gonggao.js|
 |http:/*/tan.$script
@@ -343,6 +343,7 @@ zol.com.cn##[id^='ad_']
 ||pinghot.qq.com/
 ||pingfore.qq.com
 ||pingjs.qq.com
+||rcgi.video.qq.com
 ||tj.video.qq.com
 |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
 |http://qzs.qq.com/qzone/biz/res/v.swf?loc=
@@ -357,7 +358,7 @@ user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-r
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
-qq.com##div[bosszone$=ad],div[id^=AdZone]
+qq.com##div[bosszone$=ad],div[bosszone=tymyd],div[id^=AdZone],a[href^="http://mp.weixin."],#coo_qqBrowser
 ||gtimg.com/qqlive/
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js$domain=~kafan.cn
 ||pgdt.gtimg.cn/gdt/
@@ -371,6 +372,8 @@ qq.com##div[bosszone$=ad],div[id^=AdZone]
 |http://ra.gtimg.com/uv/1712104/index.js
 |http://ra.gtimg.com/web/crystal/v$script
 |http://wb.gtimg.com/adwin/
+chuangshi.qq.com##.topbanner,.mainbox>div.adv
+||chuangshi.qq.com/upload/cmsv2/Banner/
 !-------------------网易--------------------
 @@||account.bnet.163.com/
 @@|http://analytics.163.com/ntes.js
@@ -487,7 +490,7 @@ baike.com###right_ad_div
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div.tools>div.time,div.cbimage-fixed,section.wrapper>section:last-of-type
+cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb_box.article+section.mt5
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
 coladrive.com##.ad1>div.tui
@@ -656,7 +659,8 @@ tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
 @@|http://hudong.pl.youku.com/interact/live/get/live
 @@|http://hudong.pl.youku.com/player/getLive?liveid=
 ||hudong.pl.youku.com^
-|http://hz.youku.com/red/ggnotice.php?
+||hz.youku.com/red/ggnotice.php?
+||hz.youku.com/red/click.php?
 ||l.youku.com/*log?
 |http://passport-log.youku.com/logsys/logstorage/
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
@@ -688,23 +692,27 @@ www.bilibili.com##div.ad-f
 |http://*/letv-gug/
 |http://apple.www.letv.com/
 |http://ark.letv.com/
+|http://ark.le.com/
+|http://fz.letv.cm/
 ||dc.letv.com/
+||my.le.com/
 ||webp2p.letv.com
 ||letvimg.com/$object-subrequest
 ||letvimg.com/gugwl/201*.jpg
-le.com###rightBottomPop
+le.com###rightBottomPop,.banner_ad
 ||shark.douyucdn.cn/app/douyu/res/flash/swfcover.gif
 ||staticlive.douyutv.com/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
-v.yinyuetai.com##video~div,.shopMoney
+v.yinyuetai.com##video~div,.shopMoney,div[class^=ad_]
 ||yytcdn.com/crossdomain.xml
 @@||yytcdn.com/others/admin/*/0/-M-$image
-@@||yytcdn.com/others/admin/*_220x125.jpg|$image
-@@||yytcdn.com/others/admin/*.png|$image
+@@||yytcdn.com/others/admin/*_220x125.jpg|
+@@||yytcdn.com/others/admin/*.png|
 ||yytcdn.com/others/admin/
 ||yytcdn.com/others/avt/
 |http://acjs.aliyun.com/flash/JSocket.swf
 |http://hc.yinyuetai.com/partner/yyt/
+||yinyuetai.com/others/admin/*_610x100.jpg|
 tucao.tv##div.a2013d
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument
 |http://www.tucao.tv/uploadfile/201*.jpg|$object-subrequest
