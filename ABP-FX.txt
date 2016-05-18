@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.5.17 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.5.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -343,7 +343,6 @@ zol.com.cn##[id^='ad_']
 ||pinghot.qq.com/
 ||pingfore.qq.com
 ||pingjs.qq.com
-||rcgi.video.qq.com
 ||tj.video.qq.com
 |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
 |http://qzs.qq.com/qzone/biz/res/v.swf?loc=
@@ -653,6 +652,7 @@ v.pps.tv##div.pgbox-content
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
 tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
+www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 @@|http://v2html.atm.youku.com/vhtml
 ||atm.youku.com/
 @@|http://hudong.pl.youku.com/crossdomain.xml
@@ -2398,7 +2398,6 @@ ref.so##div#tg2_main
 renren.com##.wp-rrzm-popup
 sogou.com##div#bdfs0.rb,div#promotion_adv_container,div.sponsored,a.js_bannerImg
 sohu.com##div.adA.area,div.adB.area,div#adList.area,div.ad-listB.clear,div.ad680,div.ad300,div[id^="ad_"],sohuadcode,div#turn-ad.area,div.adarea.area,div.adtop.area,div[class^="ad"].area,#vcr_60_1,div.titleA[collection="Y"],#newsCommentBar~*,div[data-tongji]
-soku.com##div.sk-banner,div.sk_banner
 soso.com##div#promotion_adv_container.sponsored,div#leftbottomleadContainer.sponsored,div#rads,div.ad1
 sz1001.net##SPAN#soft_top_900
 tianya.cn##div[id$="banner_950_90"].banner-img-mt10,div[id*="_AD_"],div[class*="_AD_"],embed[src^="http://80"],div#travel_float
