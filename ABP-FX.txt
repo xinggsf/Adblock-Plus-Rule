@@ -1,5 +1,5 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.5.18 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.5.20 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -75,6 +75,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 */ad.
 */ad/
 @@|http://s0.pstatp.com/resource/toutiao_web/pagelet/model/ad_$script
+@@||pstatp.com/resource/toutiao_web/pagelet/model/ad_$script
 */ad_
 */ad-
 ||ads.
@@ -150,6 +151,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
 ||cnbole.net/
+@@||cnzz.com/z_stat.php?$script
 ||cnzz.
 ||csad.cc^
 ||ctsywy.com
@@ -323,12 +325,11 @@ zol.com.cn##[id^='ad_']
 |http://games.qq.com/playgame/gamesad/js/swfobject.js
 @@|http://c.gdt.qq.com/gdt_click.
 @@|http://v.gdt.qq.com/gdt_stats.fcg?
-!||aq.qq.com/$script,third-party
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
 @@||l.qq.com/livemsg?ty=web&ad_type=
 ||qq.com/livemsg?
-||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
+!||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 ||l.qq.com/lview?
 ||l.qq.com/p?
 ||livem.l.qq.com
@@ -343,6 +344,7 @@ zol.com.cn##[id^='ad_']
 ||pinghot.qq.com/
 ||pingfore.qq.com
 ||pingjs.qq.com
+||rcgi.video.qq.com/
 ||tj.video.qq.com
 |http://qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
 |http://qzs.qq.com/qzone/biz/res/v.swf?loc=
@@ -351,6 +353,7 @@ zol.com.cn##[id^='ad_']
 ||taobao.qq.com
 ||tcss.qq.com^
 |http://view.news.qq.com/PL_ad$subdocument
+||tencentmind.com/
 |http:/*/vmind.qqvideo.tc.qq.com/
 v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
@@ -703,16 +706,13 @@ le.com###rightBottomPop,.banner_ad
 ||shark.douyucdn.cn/app/douyu/res/flash/swfcover.gif
 ||staticlive.douyutv.com/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
-v.yinyuetai.com##video~div,.shopMoney,div[class^=ad_]
+yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 ||yytcdn.com/crossdomain.xml
-@@||yytcdn.com/others/admin/*/0/-M-$image
-@@||yytcdn.com/others/admin/*_220x125.jpg|
-@@||yytcdn.com/others/admin/*.png|
-||yytcdn.com/others/admin/
-||yytcdn.com/others/avt/
 |http://acjs.aliyun.com/flash/JSocket.swf
 |http://hc.yinyuetai.com/partner/yyt/
 ||yinyuetai.com/others/admin/*_610x100.jpg|
+||yinyuetai.com/others/admin/*_1600x110.jpg|
+*.jpg|$object-subrequest,domain=yinyuetai.com
 tucao.tv##div.a2013d
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument
 |http://www.tucao.tv/uploadfile/201*.jpg|$object-subrequest
