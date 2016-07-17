@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.7.17 精简xwhyc+自用整合， 处理国内视频站、通用广告、门户站、广告联盟、贴吧
+! title: xinggsf v2016.7.17国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-@@$stylesheet
+!@@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
@@ -162,13 +162,12 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||f6ce.com/
 ||fd7c.com/
 ||findicons.com^$third-party
+||getnormalizedurl.com^$third-party
 ||googleadservices.com
 ||googlesyndication.com
 ||google-analytics.com
 ||googletagservices.com
 ||googletagmanager.com
-! 没翻墙可启用下条规则~可提高某些页面加载速度
-! /^https?:\/\/\w+\.google-?\w+\.com/$third-party
 ||govids.net/
 ||gridsumdissector.com^$third-party
 ||gw630.com
@@ -215,6 +214,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||reachmax.cn^$third-party
 ||s8x1.com
 ||scorecardresearch.com^$third-party
+||shouyou.com/$third-party
 ||statcounter.com/
 ||t70123.com/
 ||tanx.com^$third-party
@@ -252,11 +252,9 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||yunjiasu.com/
 ||yunshipei.com/$third-party
 ||ylog.hiido.com/
-||yy.com/$third-party,domain=~huya.com|~duowan.com|~daiyuline.com
 ||dataaq.yy.com/
 ||stat2.web.yy.com/
 ||statistics.yy.com/
-||yystatic.com^$third-party,domain=~huya.com|~yy.com|~daiyuline.com
 ##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
 ~mail.google.com##.adsbygoogle,.ads
 |http://*.com/ads
@@ -273,7 +271,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||stat.
 ||stats.$domain=~stats.gov.cn
 |http://*/stat.$domain=~chouti.com
-||wan.$subdocument,script,object-subrequest
+||wan.$subdocument,script,object,object-subrequest
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
 |http://*.cn/s.php?id=
@@ -331,7 +329,6 @@ zol.com.cn##[id^='ad_']
 ||qq.com/js/adswf_tl_object.js$script
 @@||l.qq.com/livemsg?ty=web&ad_type=
 ||qq.com/livemsg?
-!||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 ||l.qq.com/lview?
 ||l.qq.com/p?
 ||livem.l.qq.com
@@ -563,7 +560,7 @@ qiushibaike.com##div.shopwindow
 |http://www.toutiao.com/api/web_ads/
 @@||pstatp.com/toutiao/resource/toutiao_web/pagelet/model/ad_
 ttmeiju.com###wrapper~div,ul.menu~*
-|http://pic.yupoo.com/*/medish.jpg
+|http://pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 |http://www.sz1001.net/ab$script
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
@@ -581,7 +578,8 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus,a#adbg,div#ads460,a[class^="
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
-*.com/pic/fgr/$script,object-subrequest
+||.com/pic/fgr/$script,object-subrequest
+||log1.17173.com/
 |http://www.36dm.com/js/nu
 dygang.com,6vhao.com,6vhao.net###gd
 jiyingdm.com##div.abcde,#otherWindowBox
@@ -589,6 +587,7 @@ jiyingdm.com##div.abcde,#otherWindowBox
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
+||float.kankan.com/finalfiles/$object-subrequest
 |http://img.kankan.xunlei.com/*.gif|
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 v.duba.com###fixedad,div[id|=ad]
@@ -696,7 +695,7 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 www.bilibili.com##div.ad-f
 @@||stat.letv.com/$script
 |http://*/letv-gug/$object-subrequest
-|http://apple.www.letv.com/
+!|http://apple.www.letv.com/
 |http://ark.letv.com/
 |http://ark.le.com/
 |http://fz.letv.cm/
