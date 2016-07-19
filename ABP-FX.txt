@@ -1,16 +1,16 @@
 ﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.7.17国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.7.19国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
-!@@$stylesheet
+@@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
-*$third-party,domain=greasyfork.org|xbiquge.com
+*$third-party,domain=greasyfork.org|xxbiquge.com
 @@*/jquery.$script
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|btkitty.biz|storebt.com|btbbt.cc|baishuku.com
+*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.la|btkitty.red
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
@@ -96,6 +96,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||0427d7.se/
 ||0xxd.com
 ||1133.cc^
+||1234xm.com
 ||123hala.com
 ||168wangluo.com
 ! 电信截持弹窗3行
@@ -113,6 +114,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||4wad.com
 ||51.la^
 ||5188yy.com
+||520jr.com/
 ||52kmh.com^$third-party
 ||6711.com/
 ||e70123.com/
@@ -125,6 +127,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||91hui.com^$third-party
 ||927go.com/
 ! 9377的弹窗真烦
+||ad9377.com/
 ||x9377a.com/
 ||9377ku.com/
 ||859377.com/
@@ -145,6 +148,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||bfdcdn.com/$third-party
 ||biddingx.com/
 ||bjjingda.com/
+||cccrir.com/
 ||chenwen7788.com/
 ||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
@@ -154,6 +158,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||csad.cc^
 ||ctsywy.com
 ||dazhantai.com
+||dleke.com/
 ||dian500.com
 ||dian5000.com
 !||duoshuo.com^$third-party,domain=~lite6.com
@@ -184,6 +189,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||irs01.net/$third-party
 ||x.jd.com/
 ||jiathis.com^$third-party
+||jianbaimei.com/
 ||jiawen88.com/
 ||jointreport-switch.com
 ||jspg.cc^
@@ -205,6 +211,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||olcdn.com/
 ||optimix.asia^$third-party
 ||pic9382.com^$third-party
+||powergg.top/
 ||projectwonderful.com^$third-party
 ||public6.com/
 ||qihaoqu.com/$third-party
@@ -215,6 +222,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||s8x1.com
 ||scorecardresearch.com^$third-party
 ||shouyou.com/$third-party
+||sscefsol.com/
 ||statcounter.com/
 ||t70123.com/
 ||tanx.com^$third-party
@@ -241,11 +249,14 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||wrating.com^$third-party,domain=~tudou.com
 ||xcdf.cn^
 ||xe2c.com/
+||weareqy.com/
+||xibei70.com/
 ||xmgktt.com/$popup
 ||xtgreat.com^$third-party
 ||xyxy01.com
 ||yccdn.com/
 ||yeabble.com/
+||yongkang6.com^
 ||youxi.com^$third-party
 ||yug8.com/
 ||yule8.net^
@@ -361,7 +372,7 @@ coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
 qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser
 ||gtimg.com/qqlive/
-||discuz.gtimg.cn/cloud/scripts/discuz_tips.js$domain=~kafan.cn
+||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
 ||pgdt.gtimg.cn/gdt/
 ||wa.gtimg.com^
 |http://ca.gtimg.com/client/
@@ -578,7 +589,7 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus,a#adbg,div#ads460,a[class^="
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
-||.com/pic/fgr/$script,object-subrequest
+||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
 |http://www.36dm.com/js/nu
 dygang.com,6vhao.com,6vhao.net###gd
@@ -587,6 +598,9 @@ jiyingdm.com##div.abcde,#otherWindowBox
 @@|http://resource.redirect.kukuplay.com/upload/zhangyu*.swf
 |http://$object-subrequest,domain=flvcd.com
 yatu.tv###loadimg,#daohang
+||biz5.kankan.com/
+||cpm.cm.kankan.com/
+||distf.kankan.com/
 ||float.kankan.com/finalfiles/$object-subrequest
 |http://img.kankan.xunlei.com/*.gif|
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
@@ -598,7 +612,7 @@ v.duba.com###fixedad,div[id|=ad]
 ||wasu.cn/mediafiles/creative/
 ||baofeng.net/*.html?&adid=
 ||static.hd.baofeng.com/script/baidu_
-baofeng.com##[class|=ad]
+baofeng.com##[class|=ad],div.play-top-ad
 @@||stat.v-56.com/player
 56.com##div.qf_float
 ||qf.56.itc.cn^$image
@@ -623,11 +637,11 @@ tv.sohu.com###playerBar > div.area ~a
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
-iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,[id^=100000000],#widget-jingdongAd,[data-widget-adparam]
+iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^=100000000],#widget-jingdongAd,[data-widget-adparam]
 @@|http://meta.video.qiyi.com/201*/ad/$object-subrequest,domain=iqiyi.com
 @@|http://*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
-||t7z.cupid.iqiyi.com/$domain=acfun.tudou.com|acfun.tv
-|http://www.iqiyi.com/v_$subdocument
+||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
+||iqiyi.com/$subdocument
 |http://a.ckm.iqiyi.com/
 ||qiyipic.com/common/201*/site/jd-*.png|
 |http://am.cupid.iqiyi.com/am
@@ -698,11 +712,11 @@ www.bilibili.com##div.ad-f
 !|http://apple.www.letv.com/
 |http://ark.letv.com/
 |http://ark.le.com/
-|http://fz.letv.cm/
+|http://fz.letv.com/
 ||dc.letv.com/
 ||my.le.com/
 ||webp2p.letv.com
-||letvimg.com/$object-subrequest
+||letvimg.com/$object,object-subrequest
 ||letvimg.com/gugwl/201*.jpg
 le.com###rightBottomPop,.banner_ad
 ||shark.douyucdn.cn/app/douyu/res/flash/swfcover.gif
