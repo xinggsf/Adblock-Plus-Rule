@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.16国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.17国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
