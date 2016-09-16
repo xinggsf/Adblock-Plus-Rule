@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.17国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.16国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -644,7 +644,7 @@ tv.sohu.com###playerBar > div.area ~a
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
-iqiyi.com##div.vip_rec_main,div[data-widget-3rdads],div.crossAd,#widget-indexad,#adflash,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,div[id^=100000000],#widget-jingdongAd,div[data-widget-adparam]
+iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 @@|http://meta.video.qiyi.com/201*/ad/$object-subrequest,domain=iqiyi.com
 @@|http://*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
@@ -652,21 +652,8 @@ iqiyi.com##div.vip_rec_main,div[data-widget-3rdads],div.crossAd,#widget-indexad,
 |http://a.ckm.iqiyi.com/
 ||qiyipic.com/common/201*/site/jd-*.png|
 |http://am.cupid.iqiyi.com/am
-|http://api.credit.iqiyi.com/
-||api.cupid.iqiyi.com/etx?
-||api.cupid.qiyi.com/show2
-||api.cupid.iqiyi.com/policy2
-|http://policy.cupid.qiyi.com/policy2?a=qc_100001_$domain=~iqiyi.com|~v.pps.tv
-|http://policy.video.iqiyi.com/qiyi-flash.policy?ran=
 |http://www.iqiyi.com/common/clientPopLstyle.html
 ||qiyu.iqiyi.com/crossdomain.xml
-|http://www.iqiyi.com/player/201*/theatre*.swf
-|http://www.iqiyi.com/player/cupid/*/pageer.swf?
-|http://www.iqiyi.com/player/cupid/common/icon_exclusive.swf
-|http://www.iqiyi.com/player/cupid/common/skipgg_zz.swf
-|http://www.iqiyi.com/*/pause.swf|
-|http://dispatcher.video.qiyi.com/dispn/iamo.swf
-|http://p.bloxy.cn/antiphish.swf
 pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
