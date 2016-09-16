@@ -1,5 +1,5 @@
-﻿[Adblock Plus 2.0]
-! title: xinggsf v2016.7.19国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+[Adblock Plus 2.0]
+! title: xinggsf v2016.9.16国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -43,6 +43,9 @@ fanyi.baidu.com##div.banner-wrap.inner
 pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
 wenku.baidu.com##div.mod.lastcell-dialog
+||img.baidu.com/hunter/wenkumonkey.min.js
+||bdimg.share.baidu.com/static/js/logger.js
+||img.baidu.com/hunter/alog/alog.min.js
 |http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
 www.baidu.com###content_left>div:not(.c-container)
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
@@ -365,6 +368,7 @@ zol.com.cn##[id^='ad_']
 |http://view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
 |http:/*/vmind.qqvideo.tc.qq.com/
+||qq.com/games/$subdocument
 v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 daohang.qq.com##[id^=AD_]
@@ -446,6 +450,7 @@ v.360.cn##div.banner-g4
 !-------------------ifeng.com--------------------
 ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 ||deliver.ifeng.com/
+||ifeng.com/statics/all_content_ad_
 |http://img3.fdc.com.cn/cms/js/bbs/$script
 |http://*/sc_ifeng/js/
 ||games.ifeng.com/1403m/$subdocument
@@ -631,13 +636,13 @@ baofeng.com##[class|=ad],div.play-top-ad
 |http://v.aty.sohu.com/v
 tv.sohu.com###playerBar > div.area ~a
 |http://www.1905.com/coll/ad$subdocument
-|http://bs.da.hunantv.com/a.htm?pv=1&
 ||click.hunantv.com/
-||res.hunantv.com/mediafiles/wiad_creative/
+|http://sdk.yunfan.com/crossdomain.xml
+||res.hunantv.com/
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
-iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^=100000000],#widget-jingdongAd,[data-widget-adparam]
+iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^=100000000],#widget-jingdongAd,[data-widget-adparam],div.leftAd
 @@|http://meta.video.qiyi.com/201*/ad/$object-subrequest,domain=iqiyi.com
 @@|http://*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
@@ -670,7 +675,7 @@ v.pps.tv##div.pgbox-content
 |http://www.tudou.com/feeportal/getPayMsg.html?
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
-tudou.com##body>iframe,body>iframe ~*,div.ab_banner.ad_banner
+tudou.com##body>iframe,body>iframe ~*,div.ad_banner
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 @@|http://v2html.atm.youku.com/vhtml
 ||atm.youku.com/
@@ -687,7 +692,7 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 |http://nc.youku.com/user/~ajax/qrcodeLogin.html?
 ! |http://v.l.youku.com/uep?
 ! |http://*/check_ikuacc?callback=jQuery$domain=v.youku.com
-|http://static.youku.com/v*/index/js/ikuAdapterNew.js
+|http://static.youku.com/*/js/ikuAdapterNew.js
 |http://static.youku.com/v*/index/js/iresearch.js
 |http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
@@ -725,9 +730,6 @@ le.com###rightBottomPop,.banner_ad
 yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 ||yytcdn.com/crossdomain.xml
 |http://acjs.aliyun.com/flash/JSocket.swf
-|http://hc.yinyuetai.com/partner/yyt/
-||yinyuetai.com/others/admin/*_610x100.jpg|
-||yinyuetai.com/others/admin/*_1600x110.jpg|
 *.jpg|$object-subrequest,domain=yinyuetai.com
 tucao.tv##div.a2013d
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument
