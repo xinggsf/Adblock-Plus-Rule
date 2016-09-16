@@ -638,6 +638,8 @@ baofeng.com##[class|=ad],div.play-top-ad
 |http://v.aty.sohu.com/v
 tv.sohu.com###playerBar > div.area ~a
 |http://www.1905.com/coll/ad$subdocument
+!||afp.m1905.com/mediafiles/creative/$object-subrequest
+||afpssp.alimama.com/crossdomain.xml$domain=1905.com
 ||click.hunantv.com/
 |http://sdk.yunfan.com/crossdomain.xml
 ||res.hunantv.com/
