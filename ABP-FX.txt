@@ -644,7 +644,7 @@ tv.sohu.com###playerBar > div.area ~a
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
 @@|http://www.dm456.com/player/$subdocument
-iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd.margin_b20,div#widget-indexad,#adflash,div.ad-wrapper.clearfix,div#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^=100000000],#widget-jingdongAd,[data-widget-adparam],div.leftAd
+iqiyi.com##div.vip_rec_main,div[data-widget-3rdads],div.crossAd,#widget-indexad,#adflash,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,div[id^=100000000],#widget-jingdongAd,div[data-widget-adparam]
 @@|http://meta.video.qiyi.com/201*/ad/$object-subrequest,domain=iqiyi.com
 @@|http://*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
