@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.17国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.18国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -370,7 +370,8 @@ zol.com.cn##[id^='ad_']
 ||tencentmind.com/
 |http:/*/vmind.qqvideo.tc.qq.com/
 ||qq.com/games/$subdocument
-v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc
+||v.qq.com/x/webtips?$subdocument
+v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc,div.site_footer~*
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
@@ -660,12 +661,13 @@ pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
 ||js.tudouui.com/tspecial/assets/PauseContainer.swf
-|http://js.tudouui.com/bin/lingtong/app_
+||js.tudouui.com/bin/lingtong/app_
 ||goods.tudou.com/
 !|http://www.tudou.com/uis/
 |http://www.tudou.com/feeportal/getPayMsg.html?
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
+@@||c.wrating.com/a1.js$domain=tudou.com
 tudou.com##body>iframe,body>iframe ~*,div.ad_banner
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 @@|http://v2html.atm.youku.com/vhtml
