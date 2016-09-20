@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.18国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.20国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -7,7 +7,7 @@
 !-----------------------屏蔽第三方资源---------------------------
 |http://$script,third-party,domain=dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
-*$third-party,domain=greasyfork.org|xxbiquge.com
+*$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
 @@*/jquery.$script
 !---------------------NoScript，可加上自己要过滤的域名--------------------
 *$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.la|btkitty.red
@@ -23,22 +23,22 @@
 ||iwanad.baidu.com/
 ||pos.baidu.com/
 ||spcode.baidu.com/
-|http://cbjs.baidu.com/
-|http://cbjslog.baidu.com/
-|http://crs.baidu.com/
-|http://entry.baidu.com/$subdocument
+||cbjs.baidu.com/
+||cbjslog.baidu.com/
+||crs.baidu.com/
+||entry.baidu.com/$subdocument
 ||hm.baidu.com/
-|http://imgsrc.baidu.com/tieba/pic/item/$image
+||imgsrc.baidu.com/tieba/pic/item/$image
 ||eclick.baidu.com/
 ||fexclick.baidu.com/
 ||nsclick.baidu.com/
 ||qianclick.baidu.com/
-|http://list.video.baidu.com/pc_static/promotion/
+||list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
-|http://znsv.baidu.com/
-|http://pups.bdimg.com/
+||znsv.baidu.com/
+||pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
-|http://baike.baidu.com/api/wikiad/
+||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
 pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
@@ -46,7 +46,7 @@ wenku.baidu.com##div.mod.lastcell-dialog
 ||img.baidu.com/hunter/wenkumonkey.min.js
 ||bdimg.share.baidu.com/static/js/logger.js
 ||img.baidu.com/hunter/alog/alog.min.js
-|http://static.wenku.bdimg.com/static/wkview/widget/crmAd/
+||static.wenku.bdimg.com/static/wkview/widget/crmAd/
 www.baidu.com###content_left>div:not(.c-container)
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
@@ -82,7 +82,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||ads.
 */ads.
 */ads/
-|http:/*/adload.
+*/adload.
 ||adsense.
 */adsense/
 ||adserver.
@@ -156,7 +156,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
 ||cnbole.net/
-@@||cnzz.com/z_stat.php?$script
+@@||cnzz.com/z_stat.php?$script,domain=toutiao.com
 ||cnzz.
 ||csad.cc^
 ||ctsywy.com
@@ -642,7 +642,7 @@ tv.sohu.com###playerBar > div.area ~a
 !||afp.m1905.com/mediafiles/creative/$object-subrequest
 ||afpssp.alimama.com/crossdomain.xml$domain=1905.com
 ||click.hunantv.com/
-|http://sdk.yunfan.com/crossdomain.xml
+||sdk.yunfan.com/crossdomain.xml
 ||res.hunantv.com/
 ||log.$domain=mgtv.com
 dm456.com##div[style*="height:90px;"],#bdleft,#p-right,#p-left
@@ -697,9 +697,10 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||vip.com/cm/youku?
 |http://module.youku.com/*.html$script
 |http://passport.youku.com/index_loginregGuide/$subdocument
-v.youku.com##div#dragDIV
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],#lotteryPic,#lotteryToolbarBig,.pop-prompt-box,#lotteryToolbar,#lotteryToolbar+li,a[href^="http://poll.youku."]
 ||bilibili.com/html/$~xmlhttprequest
+!播放器右侧广告图片XHR请求
+||api.bilibili.com/x/web-show/res/loc?
 ||hdslb.com/u_user/*.jpg|$object-subrequest
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
@@ -719,6 +720,7 @@ www.bilibili.com##div.ad-f
 le.com###rightBottomPop,.banner_ad
 ||shark.douyucdn.cn/app/douyu/res/flash/swfcover.gif
 ||staticlive.douyutv.com/upload/signs/$object
+||staticlive.douyucdn.cn/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
 yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 ||yytcdn.com/crossdomain.xml
