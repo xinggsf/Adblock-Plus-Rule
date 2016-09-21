@@ -5,7 +5,7 @@
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=dy1000.com|yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
+|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 *$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
 @@*/jquery.$script
@@ -148,6 +148,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||allyes.$third-party
 */allyes
 ||amazingmagics.com/$third-party
+||andmejs.com^$third-party
 ||baifendian.com/$third-party
 ||bfdcdn.com/$third-party
 ||biddingx.com/
@@ -165,7 +166,6 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||dleke.com/
 ||dian500.com
 ||dian5000.com
-!||duoshuo.com^$third-party,domain=~lite6.com
 ||e708.net/
 ||eclkspbn.com/
 ||f6ce.com/
@@ -598,6 +598,8 @@ yxdown.com##.baiduimageplus-s, .ad-widget-imageplus,a#adbg,div#ads460,a[class^="
 zimuzu.tv##ul.room
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
+|http://dy1000.applecdn.net/js/
+dy1000.com##div[class^=random]
 ||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
 |http://www.36dm.com/js/nu
