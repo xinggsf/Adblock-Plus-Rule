@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.23国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.25国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|bttiantang.com
+|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 *$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
 @@*/jquery.$script
@@ -396,19 +396,20 @@ chuangshi.qq.com##.topbanner,.mainbox>div.adv
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !-------------------网易--------------------
 @@||account.bnet.163.com/
-@@|http://analytics.163.com/ntes.js
+@@||analytics.163.com/ntes.js
 ||g.163.com/$~object-subrequest
-|http://img1.126.net/
-|http://img2.126.net/
-|http://img3.126.net/
-|http://img6.126.net/
+||img1.126.net/
+||img2.126.net/
+||img3.126.net/
+||img6.126.net/
 ||126.net/silver/
-@@|http://oc-caption-srt.nos.netease.com/
+@@||oc-caption-srt.nos.netease.com/
+@@||nos.netease.com/smartcamera-public/$image
 nos.netease.com/$image,domain=~blizzard.cn|~battlenet.com.cn|~manhua.163.com
-|http://adgeo.163.com/
-|http://bobo.163.com/
-|http://baoxian.163.com/$subdocument
-|http://caipiao.163.com/$subdocument
+||adgeo.163.com/
+||bobo.163.com/
+||baoxian.163.com/$subdocument
+||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
 163.com###bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,.m-adv,.quickmark,.vhouse_ad_houselist,div.float-bar,div.post_adtop_main,div.post_adtop_side
 163.com,~love.163.com##A[href^="http://love.163.com/"]
@@ -416,7 +417,7 @@ blog.163.com##div#lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
 v.163.com##div[id^="v_shape"].bg
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
-|http://shared.youdao.com/dao/search/outweb/js/
+||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
 !-------------------360-----------------------
 haosou.com##div.tuiguang
@@ -590,13 +591,10 @@ u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 v2ex.com##.box>.inner>a:first-child,.box>.inner>.sep10+a,.box>.inner>.sep10
 |http://cdn.v2ex.co/assets/sidebar/$image
 xiazaiba.com##div.test-90
-yahoo.com###adbn_UMU
-|https://s.yimg.com/rq/darla/
-|https://s.yimg.com/*/yfpad/combo/$script
-|https://*/yahoop.js|
 ||ygdy8.com/jsy/
-yxdown.com##.baiduimageplus-s, .ad-widget-imageplus,a#adbg,div#ads460,a[class^="lad_"],a[href="http://kf.yxdown.com/?index_kf"],iframe[src^="http://gg.yxdown.com/html/"],div#ad300x120,div.gg
-|http://www.yxdown.com/ghtml/
+yxdown.com##div.gg,div[id$=_ads]
+||yxdown.com/open/$script
+||tt.yxdown.com/$image,object
 ||zchot.com/images/jiaoyou
 zimuzu.tv##ul.room
 ||www.zhihu.com/node/Banner?
