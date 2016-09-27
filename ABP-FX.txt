@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.25国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.9.27国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -256,6 +256,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||xcdf.cn^
 ||xe2c.com/
 ||weareqy.com/
+||werpig.com/$third-party
 ||xibei70.com/
 ||xmgktt.com/$popup
 ||xtgreat.com^$third-party
@@ -291,6 +292,7 @@ tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.
 ||wan.$subdocument,script,object,object-subrequest
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
+*/51ads/
 *.cn/s.php?id=
 *.com/ga.js^
 -ads-$script
