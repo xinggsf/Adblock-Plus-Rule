@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.9.27国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.1国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -49,6 +49,7 @@ wenku.baidu.com##div.mod.lastcell-dialog
 ||img.baidu.com/hunter/alog/alog.min.js
 ||static.wenku.bdimg.com/static/wkview/widget/crmAd/
 www.baidu.com###content_left>div:not(.c-container)
+www.baidu.com##div.result.c-container:has(h3>a[data-landurl])
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
@@ -590,8 +591,8 @@ ttmeiju.com###wrapper~div,ul.menu~*
 |http://www.sz1001.net/ab$script
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
-v2ex.com##.box>.inner>a:first-child,.box>.inner>.sep10+a,.box>.inner>.sep10
-|http://cdn.v2ex.co/assets/sidebar/$image
+v2ex.com###Rightbar>.box:nth-child(2)~div,div.sidebar_units
+||v2ex.co/assets/sidebar/$image
 xiazaiba.com##div.test-90
 ||ygdy8.com/jsy/
 yxdown.com##div.gg,div[id$=_ads]
@@ -708,7 +709,7 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 ||bilibili.com/html/$~xmlhttprequest
 ||elec.bilibili.com/
 !播放器右侧广告图片XHR请求
-||api.bilibili.com/x/web-show/res/loc?
+||api.bilibili.com/x/web-show/res/loc?pf=
 ||hdslb.com/u_user/*.jpg|$object-subrequest
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
