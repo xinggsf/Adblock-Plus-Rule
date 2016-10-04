@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.3国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.4国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -16,7 +16,6 @@
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
-@@|http://js.rrsub.net/ZeroClipboard10.swf
 !--------------------------百度----------------------------------
 ||cpro.$script,object-subrequest
 @@||eiv.baidu.com/fcimg
@@ -48,7 +47,7 @@ wenku.baidu.com##div.mod.lastcell-dialog
 ||bdimg.share.baidu.com/static/js/logger.js
 ||img.baidu.com/hunter/alog/alog.min.js
 ||static.wenku.bdimg.com/static/wkview/widget/crmAd/
-www.baidu.com###content_left>div:not(.c-container):not(.hit_top_new),#content_right > table > tbody > tr > td > :not(#con-ar)
+www.baidu.com###content_left>div:not(.c-container):not(.hit_top_new),#content_right>table td>:not(#con-ar),body>div.result-op.xpath-log
 www.baidu.com##div.result.c-container:has(h3>a[data-landurl])
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
@@ -61,6 +60,7 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 |http://music.baidu.com/cms/tingbox/$script
 !--贴吧---
 tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside,div.search_main_wrap~*,#aside_ad
+tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 @@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
 @@|http://tb1.bdstatic.com/??/tb/_/forum_info_$script
 |http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
@@ -526,6 +526,9 @@ csdn.net##div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-
 ||downxia.com/dgjs/pic/
 downxia.com##.download-ad
 duowan.com###udbsdk_cookieFrm~*,a[adid]
+eastmoney.com##.footer-ads,#rightAD,.adbox
+||cmsjs.eastmoney.com/$subdocument
+||fund.eastmoney.com/trade/Hot_$subdocument
 ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 firefoxchina.cn##div[trace-key=ad_banner],div[track-key=side_tpth]
 ||firefoxchina.cn/html/$subdocument
@@ -604,8 +607,11 @@ zimuzu.tv##ul.room
 ||www.zhihu.com/node/Banner?
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
+pptv.com##.re_980[tj_id^="www_adv"]
+www.pptv.com###index-slider:style(overflow: visible !important;)
 |http://dy1000.applecdn.net/js/
 dy1000.com##div[class^=random]
+||wsacdn1.miaopai.com/upload-pic/*.jpg|
 ||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
 |http://www.36dm.com/js/nu
@@ -624,6 +630,7 @@ yatu.tv###loadimg,#daohang
 v.duba.com###fixedad,div[id|=ad]
 |http://v.duba.com/$object
 |http://afp.wasu.cn/a.htm?pv=
+||afpcreative.wasu.cn^$script
 |http://apistat.wasu.cn/$script
 !||mlt01.com^$third-party
 ||wasu.cn/mediafiles/creative/
@@ -647,9 +654,11 @@ baofeng.com##[class|=ad],div.play-top-ad
 |http://api.my.tv.sohu.com/wm/getads.do?
 |http://v.aty.sohu.com/v
 tv.sohu.com###playerBar > div.area ~a
+1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
+||afp.m1905.com^
+||afp.alicdn.com/afp-creative/$object-subrequest
+||afpssp.alimama.com/$domain=1905.com
 |http://www.1905.com/coll/ad$subdocument
-!||afp.m1905.com/mediafiles/creative/$object-subrequest
-||afpssp.alimama.com/crossdomain.xml$domain=1905.com
 ||click.hunantv.com/
 ||sdk.yunfan.com/crossdomain.xml
 ||res.hunantv.com/
@@ -739,6 +748,7 @@ yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yin
 tucao.tv##div.a2013d
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument
 |http://www.tucao.tv/uploadfile/201*.jpg|$object-subrequest
+@@||union.bokecc.com/flash/pocle/player.swf$object
 ||bokecc.com/*.jpg|$object-subrequest
 ||bokecc.com/flash/playlog?
 |http://click.bokecc.com/
@@ -2375,7 +2385,6 @@ pc6.com##div#topbanner2,div.ad2,div[style="width:960px;margin:0 0 10px 5px;"]
 people.com.cn,msn.com.cn##div.w1000.m0.top_ad.clearfix,li.ad01,li.ad02,div.banNSch.clearfix,div.clearfix.shangxun
 piaoliang.com##div.hot960
 portable.easylife.tw##div.googleplus,div#ddr
-pptv.com##.re_980.sp_h90[tj_id^="www_adv"]
 ptbus.com##div.ad300_250,div.weixin_ad,div.content14
 q.115.com##div.gb-advs
 readnovel.com##div[style*="px; height: 90px; "],div.bottomAd728,iframe[id^="ads_"]
