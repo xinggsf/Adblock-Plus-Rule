@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.4国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.6国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com
+|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|23zw.com
 |http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
 *$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
 @@*/jquery.$script
@@ -361,8 +361,8 @@ zol.com.cn##[id^='ad_']
 @@||pinghot.qq.com/pingd?dm=music.qq.com.hot&
 @@||pinghot.qq.com/pingd?dm=y.qq.com.hot&url=
 ||pinghot.qq.com/
-||pingfore.qq.com
-||pingjs.qq.com
+||pingfore.qq.com/
+||pingjs.qq.com/$domain=~lol.qq.com
 ||rcgi.video.qq.com/
 ||tj.video.qq.com
 ||qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
@@ -378,6 +378,7 @@ zol.com.cn##[id^='ad_']
 ||v.qq.com/x/webtips?$subdocument
 v.qq.com##div.mod_ad.l_qq_com,div.pop_ads_wide,div#QQlive_SP_RM.l_qq_com,div[class^="mod_ads mod_ads_main_"],div.mod_float_pc,div.site_footer~*
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-mod.icenter-right-ad,div#QM_100005_Body.bd,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
+user.qzone.qq.com##li.f-single:has(div.feed-hot-bar)
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
@@ -515,7 +516,7 @@ baike.com###right_ad_div
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
-cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb_box.article+section.mt5,a[href^="http://qiyukf.com"],a[href^="http://click.aliyun.com"]
+cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb_box.article+section.mt5,a[href^="http://qiyukf.com"],a[href^="http://click.aliyun.com"],div.item.cooperation
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
 coladrive.com##.ad1>div.tui
@@ -1170,8 +1171,6 @@ tucao.tv##div.a2013d
 */AdShowCache
 */adsview/
 */adUtils.js
-*/adv/$script,object,object-subrequest,domain=~www.32666.com|~lepan.cc|~sx566.com
-*/adv_
 */advertisement/
 */advimg/
 */advpic/$image
