@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.6国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.7国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -220,7 +220,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||projectwonderful.com^$third-party
 ||public6.com/
 ||qihaoqu.com/$third-party
-||qihucdn.com/$third-party
 ||qiqipower.com
 ||qucaigg.com^$third-party
 ||questionmarket.com^$third-party
@@ -534,7 +533,9 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 firefoxchina.cn##div[trace-key=ad_banner],div[track-key=side_tpth]
 ||firefoxchina.cn/html/$subdocument
 ||firefoxchina.cn/iframes/$subdocument
-ftchinese.com##div.rightad,#topad,#topadcontainer
+ftchinese.com##div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
+||ftchinese.com/m/marketing/$subdocument
+||static.ftchinese.com/n/main-barrier.js
 |http://dolphin.ftimg.net/$script
 @@|http://union.bokecc.com/player
 |http://www.ftchinese.com/index.php/jsapi/
@@ -608,7 +609,7 @@ zimuzu.tv##ul.room
 ||www.zhihu.com/node/Banner?
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
-pptv.com##.re_980[tj_id^="www_adv"]
+pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 www.pptv.com###index-slider:style(overflow: visible !important;)
 |http://dy1000.applecdn.net/js/
 dy1000.com##div[class^=random]
@@ -648,6 +649,7 @@ baofeng.com##[class|=ad],div.play-top-ad
 |http://sohu.vod.cdn.myqcloud.com/*&prod=ad
 |http://js.tv.itc.cn/hdpv.js
 |http://a1.itc.cn/pv/js/spv.
+@@||click.hd.sohu.com.cn/s.gif?*_loginaccount
 ||hd.sohu.com.cn
 |http://push.my.tv.sohu.com/$script
 |http://tv.sohu.com/upload/swf/201*/panel/QianFanAdPalyer.swf
@@ -670,7 +672,7 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 @@|http://meta.video.qiyi.com/201*/ad/$object-subrequest,domain=iqiyi.com
 @@*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
-||iqiyi.com/$subdocument
+||www.iqiyi.com/$subdocument
 |http://a.ckm.iqiyi.com/
 ||qiyipic.com/common/201*/site/jd-*.png|
 |http://am.cupid.iqiyi.com/am
@@ -682,12 +684,11 @@ v.pps.tv##div.pgbox-content
 ||js.tudouui.com/tspecial/assets/PauseContainer.swf
 ||js.tudouui.com/bin/lingtong/app_
 ||goods.tudou.com/
-!|http://www.tudou.com/uis/
 |http://www.tudou.com/feeportal/getPayMsg.html?
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
 @@||c.wrating.com/a1.js$domain=tudou.com
-tudou.com##body>iframe,body>iframe ~*,div.ad_banner
+tudou.com##body>iframe,div.ad_banner
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 !@@|http://v2html.atm.youku.com/vhtml
 ||atm.youku.com/
