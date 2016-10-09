@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.8国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.10国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -521,10 +521,20 @@ cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
 coladrive.com##.ad1>div.tui
 |http://www.coladrive.com/templates/cola3beta/js/anti.js
-www.cr173.com###foot~*,div.show_970
-||cr173.com/js/
+cr173.com###foot~*,div.show_970,[data=viewAds]
+@@||cr173.com/*/js/jquery$script
+@@||cr173.com/*/js/mac.js
 ||cr173.com/show/$script
-||cr173.com/skin/new2015/js/new.js
+||cr173.com/show/img/
+||cr173.com/skin/new201$script
+||cr173.com/skin/library/js/head-
+||cr173.com/skina/$script
+||cr173.com/skinb/$script
+crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square
+@@||crsky.com/ggao/images/$image
+||crsky.com/img/hezi
+||crsky.com/theme/images/fast_down.
+||crsky.com/theme/images/rd0
 @@|http://my.csdn.net/service/favorite/add_favorite?
 csdn.net##div[class^="ad_"],iframe#Topic_Top,div#ad_left,div#ad_right,div.AD.mb-bg,#header
 |http://static.blog.csdn.net/skin/*.jpg|
@@ -2353,7 +2363,6 @@ cn.msn.com##div.topAd.cf,div.left_Bg,div.right_Bg,div.bottomAd.cf
 cngba.com##iframe#page_980x100x1,div[id^="index_980x100x"],div.cngba_ad_wrap.ad_ri,div#page_300x250_1
 cntv.cn##div.ad_w960,div[id^="div-gpt-ad-"],div.brand_show_w:first-child,div[id^="adCrossing"][class^="adStyle"],iframe#kejiaojxhzh
 cqsq.com##div.tanx_banner,div.cqsq_banner
-crsky.com##div[class^="banner banner-"]
 dm5.com##div#float_tc_pop_299,div[adgroupid="0"],div.beitouc,div.cl760,div.cl970
 dmzj.com##div[style^="width:960px;height:60px;"]
 do189.com##div.bimg,div#tab1.tabcontent
