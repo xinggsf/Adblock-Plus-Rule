@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.11国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.12国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -17,11 +17,18 @@
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
 !--------------------------百度----------------------------------
-||cpro.$script,object-subrequest
+||cpro.
+||cpro.baidustatic.com^
+||dup.baidustatic.com^
+||ubmcmm.baidustatic.com^
+||adscdn.baidu.com^
+||als.baidu.com/dalog/log
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
 ||iwanad.baidu.com/
 ||pos.baidu.com/
+||sp1.baidu.com^
+||sp0.baidu.com^
 ||spcode.baidu.com/
 ||cbjs.baidu.com/
 ||cbjslog.baidu.com/
@@ -75,6 +82,11 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 |http://tb1.bdstatic.com/tb/r/image/201$image
 |http://image.cache.xiu8.com/live/
 |http://tieba.baidu.com/tb/cms/game/*_banner.jpg
+!----------------------黑站，uBo支持-----------------------
+||114so.cn/
+||tduou.com^
+||tudown.com^
+||wy119.com^
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
 */ad.
@@ -146,6 +158,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||adrotator.se/
 ||ahzlep.com
 ||aiyujie.com/$third-party,script
+||promotion.aliyun.com/promotion/adv/getAliyunAdv.htm?
 ||allyes.$third-party
 */allyes
 ||amazingmagics.com/$third-party
@@ -156,7 +169,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||bjjingda.com/
 ||cccrir.com/
 ||chenwen7788.com/
-||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
+!||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
 ||cnbole.net/
 @@||cnzz.com/z_stat.php?$script,domain=toutiao.com
@@ -341,6 +354,7 @@ cr173.com###foot~*,div.show_970,[data=viewAds]
 crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square
 @@||crsky.com/ggao/images/$image
 ||crsky.com/img/hezi
+||www.crsky.com/img/pic.js
 ||crsky.com/theme/images/fast_down.
 ||crsky.com/theme/images/rd0
 ||ddooo.com/ddshow/$script
@@ -368,7 +382,7 @@ huacolor.com##td[valign=top],div.huadown,.download-list>div
 ||greenxf.com/js/gyong.js
 greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div
 ||www.greenxiazai.com/green/
-onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"]
+onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,.softinfoBox a[href^="http://dl.cjsdxz.com/"][href$=exe]
 ||onlinedown.net/newhuagg/
 orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
 ||www.orsoon.com/zhuanti/$script,image
@@ -396,8 +410,11 @@ sd173.com,sdbeta.com##.downlink_l>div,.downlink_l>:nth-child(2),.file_urls>div,.
 ||www.sd173.com/images/sd173down
 sdbeta.com##div.soft_info>.col1
 ||www.sdbeta.com/images/sdbeta.gif
-||www.skycn.com/js/$script,image
-||count.612.com//index.php?$subdocument,domain=skycn.com
+skycn.com###top970,ul.ul_Address>h3,a[href^="http://down.xiazaidc.com/"]
+!ul.ul_Address a[href$=exe]:not([href^="http://skycnxz"])
+||www.skycn.com/show/d2.gif
+||www.skycn.com/js/$image
+||www.skycn.com/js/info.js
 ||www.sz1001.net/ab$script
 xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
 ||www.xiazaiba.com/data/xzb_haha.js?
