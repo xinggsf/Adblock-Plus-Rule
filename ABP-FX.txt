@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! title: xinggsf v2016.10.12国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
+! title: xinggsf v2016.10.15国内视频站、通用广告、门户站、广告联盟、贴吧,精简xwhyc+自用整合
 ! 反馈：http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -18,7 +18,6 @@
 !@@*clipboard.swf|$object
 !--------------------------百度----------------------------------
 ||cpro.
-||cpro.baidustatic.com^
 ||dup.baidustatic.com^
 ||ubmcmm.baidustatic.com^
 ||adscdn.baidu.com^
@@ -27,8 +26,6 @@
 ||eiv.baidu.com/
 ||iwanad.baidu.com/
 ||pos.baidu.com/
-||sp1.baidu.com^
-||sp0.baidu.com^
 ||spcode.baidu.com/
 ||cbjs.baidu.com/
 ||cbjslog.baidu.com/
@@ -48,7 +45,9 @@ baike.baidu.com###adLayerSideWrap
 ||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap.inner
 pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
-v.baidu.com##div#search-union-ad,div.text-advertise,a[static="tn=kanShort_hao123&bl=experienceAD"],div.coop-suning,div.adv-container,div[videoadv]
+v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
+||app.video.baidu.com/adver?
+||v.baidu.com/staticapi/videoAd.json?
 wenku.baidu.com##div.mod.lastcell-dialog
 ||img.baidu.com/hunter/wenkumonkey.min.js
 ||bdimg.share.baidu.com/static/js/logger.js
@@ -169,11 +168,9 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||bjjingda.com/
 ||cccrir.com/
 ||chenwen7788.com/
-!||cloudfront.net/$domain=~pcloud.com|~camelcamelcamel.com|~duolingo.cn
 ||cmp288.com/
 ||cnbole.net/
-@@||cnzz.com/z_stat.php?$script,domain=toutiao.com
-||cnzz.
+||cnzz.$domain=~live.bilibili.com|~toutiao.com
 ||csad.cc^
 ||ctsywy.com
 ||dazhantai.com
@@ -307,7 +304,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 !-------------------通用脚本广告--------------------
 */51ads/
 *.cn/s.php?id=
-*.com/ga.js^
+*/ga.js^
 -ads-$script
 _ad.js|
 _ads.js|
@@ -655,13 +652,14 @@ ithome.com##div#hd_float,#side_func,#con>#tt5>div
 |http://wa.kuwo.cn/lyrics/img/kwgg/
 iciba.com##div[class|=ad],div.newpc-entry
 |http://cdn.iciba.com/web/co/ci/$image
-||files.jb51.net/image/*.gif|
+||jb51.net/image/aliyun
+||jb51.net/image/kuyun
 lepan.cc##div.alert_windows
 |http://image.lepan.cc/vipcz/$image
 |http://image.lepan.cc/ydxz/
 wiki.mbalib.com###ad-phone
-oschina.net##div.google_ads,#QuestionWizard+div
-|http://static.oschina.net/*_banner_$image
+oschina.net##a[data-traceid]
+||static.oschina.net/*_banner_$image
 pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 ||33.pcpop.com
 ||ashow.pcpop.com/
@@ -795,11 +793,11 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 ||elec.bilibili.com/
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
-||hdslb.com/u_user/*.jpg|$object-subrequest
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
 |http://acg.tv/$domain=bilibili.com
 www.bilibili.com##div.ad-f
+live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
 */letv-gug/$object-subrequest
 !|http://apple.www.letv.com/
