@@ -11,7 +11,7 @@
 @@*/jquery.$script
 @@*/jquery-$script
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.la|btkitty.red
+*$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.la|btkitty.bid
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
@@ -81,7 +81,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 |http://tb1.bdstatic.com/tb/r/image/201$image
 |http://image.cache.xiu8.com/live/
 |http://tieba.baidu.com/tb/cms/game/*_banner.jpg
-!----------------------黑站，uBo支持-----------------------
+!----------------------黑站，仅uBo支持-----------------------
 ||114so.cn/
 ||tduou.com^
 ||tudown.com^
@@ -610,6 +610,7 @@ baike.com###right_ad_div
 bitauto.com##div.col-ad,div.col-adside,div[id^=bitAd_],#video_floatBox
 ||bitautoimg.com/$object
 ||bitauto.com/ResourceFiles/$object
+||btkitty.$script
 cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb_box.article+section.mt5,a[href^="http://qiyukf.com"],a[href^="http://click.aliyun.com"],div.item.cooperation
 |https://static.tigerbrokers.com/activity-cnbeta/img/banner_
 |https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
@@ -744,10 +745,10 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 @@*/videos/v0/201*/ad/$object-subrequest,domain=iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
 ||www.iqiyi.com/$subdocument
-|http://a.ckm.iqiyi.com/
-||qiyipic.com/common/201*/site/jd-*.png|
-|http://am.cupid.iqiyi.com/am
 |http://www.iqiyi.com/common/clientPopLstyle.html
+|http://www.iqiyi.com/player/cupid/common/icon_exclusive.swf
+|http://a.ckm.iqiyi.com/
+|http://am.cupid.iqiyi.com/am
 ||qiyu.iqiyi.com/crossdomain.xml
 pps.tv##div#J_sideTool,side-tool,div#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
