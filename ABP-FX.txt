@@ -1,15 +1,16 @@
 [Adblock Plus 2.0]
 ! title: xinggsf 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
 ! Version: 201610171
-! Last modified: 2016/10/17
+! Last modified: 2016/10/21
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 |http://$subdocument,domain=u17.com|iqiyi.com|dm456.com|sz1001.net|music.baidu.com
 !-----------------------屏蔽第三方资源---------------------------
-|http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|23zw.com
-|http://$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
-*$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
+! 会拖慢规则解析速度，用uBlock的可用动态规则代替
+! *$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|23zw.com
+! *$subdocument,third-party,domain=lepan.cc|tieba.baidu.com|yatu.tv
+! *$third-party,domain=greasyfork.org|xxbiquge.com|shumilou.co
 @@*/jquery.$script
 @@*/jquery-$script
 !---------------------NoScript，可加上自己要过滤的域名--------------------
@@ -240,11 +241,13 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||reachmax.cn^$third-party
 ||s8x1.com
 ||scorecardresearch.com^$third-party
+||sharrysweb.com^
 ||shouyou.com/$third-party
 ||sscefsol.com/
 ||statcounter.com/
 ||t70123.com/
 ||tanx.com^$third-party
+||click.taobao.com/$third-party
 |http://union$third-party
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.doudouguo.com
@@ -672,9 +675,10 @@ pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 ||ashow.pcpop.com/
 |http://count.pcpop.com/ClickPv.js
 qiushibaike.com##div.shopwindow
+||subhd.com/images/**.gif|
 ||www.toutiao.com/api/web_ads/
 ||toutiao.com/adsafe/$subdocument
-toutiao.com##[ga_event=ad_item_click],div[ga_event^=click_banner],iframe[src^="http://toutiao.com/adsafe/"],#pagelet-detailadd,div.carAd
+toutiao.com##[ga_event=ad_item_click],div[ga_event^=click_banner],div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"]
 ttmeiju.com###wrapper~div,ul.menu~*
 |http://pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
