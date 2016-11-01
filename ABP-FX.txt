@@ -1,7 +1,8 @@
 ﻿[Adblock Plus 2.0]
 ! title: xinggsf 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201610261
-! Last modified: 2016/10/26
+! Version: 201611011
+! Last modified: 2016/11/01
+! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -335,7 +336,7 @@ wrating.$script,object-subrequest
 */piao.js|
 */pop.js^
 .pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com|~qidian.com
 */float.js|
 gonggao.js|
 */tan.$script
@@ -799,8 +800,8 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 |http://passport.youku.com/index_loginregGuide/$subdocument
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],.pop-prompt-box,li.js-draw,a[href^="http://poll.youku."]
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
-@@||www.bilibili.com/html/html5player.html
-||bilibili.com/html/$~xmlhttprequest
+@@||www.bilibili.com/html/$websocket
+||bilibili.com/html/$~xmlhttprequest,~subdocument
 ||elec.bilibili.com/
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
@@ -827,6 +828,7 @@ le.com###rightBottomPop,.banner_ad
 ||dotcounter.douyutv.com/deliver/
 yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 ||yytcdn.com/crossdomain.xml
+||hc.yinyuetai.com/partner/yyt/
 |http://acjs.aliyun.com/flash/JSocket.swf
 *.jpg|$object-subrequest,domain=yinyuetai.com
 tucao.tv##div.a2013d
