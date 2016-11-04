@@ -576,23 +576,13 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 |http://vgg.ifeng
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 |http://zx.cp.ifeng.com/export/js/ifeng_sport_lottery_channel_pic.js
-!-------------------起点、纵横-----------------------
-qidian.com##div[class^="gg"],div[class^="show_ggpic_"],div[id^="div_100"],div.qd_sms_pop,div.top_game_info,div#down_3g_20130621,div.game_info,iframe#dongfangIframe,span#ctl00_MainZonePart_spanADFrame,div.spn_gg02,div.skin_box_hd,div.splb_txtbox,div.RightAD,div[class*="_gg"],a[href^="http://c.aa.sdo.com"],ins
-||game.qidian.com/$domain=~game.qidian.com
-@@|http://cj.qidian.com/Picture/201*.jpg|
-|http://cj.qidian.com/$domain=~game.qidian.com
-||qidian.com/javascript/_QIDIAN_.js
-*.com/javascript/SNDAADAltern.js$domain=qidian.com|qdmm.com|qdwenxue.com
-|http://www.qidian.com/javascript/fkk*.js
-|http://www.qidian.com/Javascript/kiywyq_aystw.js
-|http://www.qidian.com/Javascript/luaiwyuui.js
-|http://www.qidian.com/javascript/nodie.js
-|http://www.qidian.com/javascript/nozuo.js
-|http://www.qidian.com/javascript/ppccload.js
-|http://www.qidian.com/javascript/qdad1.js
-|http://www.qidian.com/javascript/ssos.js
-|http://www.qidian.com/Javascript/__sjaayuaywilsm__.js
-||qidian.com/iframe/footer_qidian.html
+!-------------------起点、纵横、创世-----------------------
+qidian.com###topOpBox,div.games-op-wrap,div.banner-wrap,#tr-banner
+||qidian.qpic.cn/qidian_common/$object
+||script.cmfu.com/script/adbgscript
+||qidian.com/ejs/qd/js/index/banner$xmlhttprequest
+chuangshi.qq.com##.banner_index,.main_banner
+||js.aq.qq.com/js/aq_common.js
 zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://static.zongheng.com/*/ad$script
 |http://static.zongheng.com/*/logger.min.js
@@ -677,7 +667,7 @@ qiushibaike.com##div.shopwindow
 ||subhd.com/images/**.gif|
 ||www.toutiao.com/api/web_ads/
 ||toutiao.com/adsafe/$subdocument
-toutiao.com##[ga_event=ad_item_click],div[ga_event^=click_banner],div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"]
+toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add
 ttmeiju.com###wrapper~div,ul.menu~*
 |http://pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
@@ -808,7 +798,7 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
 |http://acg.tv/$domain=bilibili.com
-www.bilibili.com##div.ad-f
+bilibili.com##div.ad-f
 live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
 */letv-gug/$object-subrequest
