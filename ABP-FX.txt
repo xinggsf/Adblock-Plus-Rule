@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703041
-! Last modified: 2017/03/04
+! Version: 201703111
+! Last modified: 2017/03/11
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -176,7 +176,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||chenwen7788.com/
 ||cmp288.com/
 ||cnbole.net/
-||cnzz.$domain=~live.bilibili.com|~toutiao.com
+||cnzz.$domain=~live.bilibili.com
 ||code222.com^
 ||csad.cc^
 ||ctsywy.com
@@ -456,11 +456,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
 @@||v.gdt.qq.com/gdt_stats.fcg?
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
-@@||l.qq.com/livemsg?ty=web&ad_type=
-@@||livew.l.qq.com/livemsg?
-||qq.com/livemsg?
-||l.qq.com/lview?
-||l.qq.com/p?
+@@||l.qq.com/livemsg?
 ||livem.l.qq.com
 ||livep.l.qq.com
 ||lives.l.qq.com
@@ -501,9 +497,7 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser
 ||mat1.qq.com/www/js/swfobjectopt.js
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
 ||mat1.gtimg.com/hb/zxb/tm1.gif
-||ra.gtimg.com/sc/vqq/crystal-min.js$domain=v.qq.com
 ||ra.gtimg.com/uv/1712104/index.js
-||ra.gtimg.com/web/crystal/v$script
 ||wb.gtimg.com/adwin/
 chuangshi.qq.com##.topbanner,.mainbox>div.adv
 ||chuangshi.qq.com/upload/cmsv2/Banner/
@@ -591,7 +585,6 @@ qidian.com###topOpBox,div.games-op-wrap,div.banner-wrap,#tr-banner
 ||script.cmfu.com/script/adbgscript
 ||qidian.com/ejs/qd/js/index/banner$xmlhttprequest
 chuangshi.qq.com##.banner_index,.main_banner
-||js.aq.qq.com/js/aq_common.js
 zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://static.zongheng.com/*/ad$script
 |http://static.zongheng.com/*/logger.min.js
@@ -2409,7 +2402,7 @@ tucao.tv##div.a2013d
 21cn.com##div.xuantu,div.embedHzh,div.h-gg
 360doc.com##div#ADAboveArtContent,div#artrightad1,div.both[style="padding-top: 10px; height: 260px;"]
 520xs.com##div.ad250left
-acfun.tv###ad-comment,#ad-player-view
+acfun.cn###ad-comment,#ad-player-view
 aiku.me##div#bar_show_lm
 all.qidian.com##img[width="990"][height="40"]
 bing.com##div.sb_adsNv2
@@ -2447,7 +2440,8 @@ mp3.51.com##div[style=" margin:10px 0 0; *margin:3px 0 0; height:280px;"]
 msn.com.cn##div.adbanner.slide_ad,div.ad_980x90,div.adv_topbanner,div.adv_rgbanner,iframe[src^="http://msn.allyes.com/main/adfshow?"]
 mwsl.org.cn##div.textwidget
 mydigit.cn##div.radio.mb10
-mydrivers.com##table[width="998"][height="90"],table[width="1000"][height="90"],div.menu + div.baidu_box,div#code_lb.code_lb
+mydrivers.com##[class^=ad_],[id^=ad_],#thread_subject+div,div.adggg1
+|http://icons.mydrivers.com/news/201*.gif|
 narutom.com##div#naruto_desk[style="height:195px;"],script + div#naruto_desk,a.body-bg-left,a.body-bg-right
 neonan.com##div#razer_ad
 newhua.com##div.taobaoad,div.unionad,div.adr,div.ad_center,div[class^="ad_ritht_"],div.ad_top,div.i1,div.i2,div.i3
