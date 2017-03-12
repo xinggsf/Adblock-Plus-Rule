@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703111
-! Last modified: 2017/03/11
+! Version: 201703121
+! Last modified: 2017/03/12
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -443,7 +443,6 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
 ||api.zol.com/js/zolRequestTuan.js
 ||zol.com.cn/tips/$script
 !-------------------QQ--------------------
-@@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
 @@||cq.qq.com/js/cody/scroll_ad.js
 @@||cdn.exp.qq.com/img/
 @@||stat.pc.music.qq.com/fcgi-bin/player_
@@ -456,13 +455,16 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
 @@||v.gdt.qq.com/gdt_stats.fcg?
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
-@@||l.qq.com/livemsg?
+||cm.l.qq.com/$image,script
+!@@||l.qq.com/livemsg?
 ||livem.l.qq.com
 ||livep.l.qq.com
 ||lives.l.qq.com
 @@||livew.l.qq.com/crossdomain.xml
 ||livew.l.qq.com
-||isdspeed.qq.com
+||imgcache.qq.com/qzone/biz/comm/js/qbs.js
+@@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
+||isdspeed.qq.com/
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?ad
 @@||pinghot.qq.com/pingd?dm=music.qq.com.hot&
 @@||pinghot.qq.com/pingd?dm=y.qq.com.hot&url=
@@ -487,8 +489,9 @@ user.qzone.qq.com##li.f-single:has(div.feed-hot-bar)
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
-qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser
+qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad
 ||gtimg.com/qqlive/
+||gtimg.com/*/adbox/$image
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
 ||pgdt.gtimg.cn/gdt/
 ||wa.gtimg.com^
@@ -498,6 +501,7 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
 ||mat1.gtimg.com/hb/zxb/tm1.gif
 ||ra.gtimg.com/uv/1712104/index.js
+||ra.gtimg.com/web/crystal/v*/crystal-min.js
 ||wb.gtimg.com/adwin/
 chuangshi.qq.com##.topbanner,.mainbox>div.adv
 ||chuangshi.qq.com/upload/cmsv2/Banner/
