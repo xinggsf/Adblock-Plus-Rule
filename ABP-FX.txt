@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703121
-! Last modified: 2017/03/12
+! Version: 201703141
+! Last modified: 2017/03/14
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -448,7 +448,6 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
 @@||stat.pc.music.qq.com/fcgi-bin/player_
 ||adsrich.qq.com/
 ||btrace.qq.com/
-||btrace.video.qq.com/
 ||games.qq.com/playgame/videoweb/
 ||games.qq.com/playgame/gamesad/js/swfobject.js
 @@||c.gdt.qq.com/gdt_click.
@@ -456,7 +455,6 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
 ||gdt.qq.com^
 ||qq.com/js/adswf_tl_object.js$script
 ||cm.l.qq.com/$image,script
-!@@||l.qq.com/livemsg?
 ||livem.l.qq.com
 ||livep.l.qq.com
 ||lives.l.qq.com
@@ -695,6 +693,9 @@ zimuzu.tv##ul.room
 ||www.zhihu.com/node/Banner?
 ||6rooms.com/$image,domain=~6.cn
 !-------------------视频站点--------------------
+||www.youtube.com/annotations_invideo?$xmlhttprequest
+!youtube.com##div.video-annotations
+||s.youtube.com/api/stats/
 pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 www.pptv.com###index-slider:style(overflow: visible !important;)
 |http://dy1000.applecdn.net/js/
@@ -2476,9 +2477,7 @@ win7china.com##div#pc_c.countdown_counter,div#recommend.recommend_box,div.site_a
 win9cn.com##ul.adspic,div#rightbottom
 www.360doc.com##div[id^="divad"],div#fullbg
 www.7k7k.com##div.tools-ad
-www.aiyuke.com##div.GGad,div#Playerpad.Padhtml
 www.cnblogs.com##div#ad_under_post_holder
-www.cnrexue.com##div[id^="f21ac82b21eeb7322631b6aa94e17f"]
 www.fkzww.net##div.ad_textlink2,div.ad_textlink1
 www.hahade.com##span#loadimg.movieload
 www.kugou.com##div.adv,div.adv1,div.adv2
@@ -2498,9 +2497,3 @@ dianying.fm##div[id^="ad"]:not([style="height:90px;margin-botton:5px;"])
 ||crl.microsoft.com
 ||rad.microsoft.com
 ||watson.microsoft.com
-|http://q.ptbus.com/newdata.ashx?
-|http://www.jj20.com/js/yx$script
-www.kumi.cn##div.floatwindow
-www.myhack58.com##ul.adv32
-hexun.com##div.advp.clearfix
-52tian.net##div.bdad
