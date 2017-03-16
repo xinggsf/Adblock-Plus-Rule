@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703141
-! Last modified: 2017/03/14
+! Version: 201703161
+! Last modified: 2017/03/16
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -61,29 +61,29 @@ www.baidu.com##div.result.c-container:has(h3>a[data-landurl])
 zhidao.baidu.com##div#left-promotion,div#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
-|http://static.tieba.baidu.com/tb/pms/wpo_alog_speed.js
-|http://img.baidu.com/hunter/musicmonkey.min.js
-|http://hiphotos.baidu.com/ting/pic/item/
-|http://log.music.baidu.com/maamonitor/v.gif?
-|http://music.baidu.com/data/69xiu/
-|http://music.baidu.com/cms/tingbox/$script
+||static.tieba.baidu.com/tb/pms/wpo_alog_speed.js
+||img.baidu.com/hunter/musicmonkey.min.js
+||hiphotos.baidu.com/ting/pic/item/
+||log.music.baidu.com/maamonitor/v.gif?
+||music.baidu.com/data/69xiu/
+||music.baidu.com/cms/tingbox/$script
 !--贴吧---
 tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside,div.search_main_wrap~*,#aside_ad
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
-@@|http://tb1.bdstatic.com/??/tb/_/*/ad_$script
-@@|http://tb1.bdstatic.com/??/tb/_/forum_info_$script
-|http://tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
-|http://tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
-|http://tb1.bdstatic.com/??/tb/_/app_forum_$script
-|http://tb1.bdstatic.com/??/tb/_/my_app_$script
-|http://tb1.bdstatic.com/??/tb/_/xiu8_$script
-|http://tbmsg.baidu.com/gmessage/get?$script
-|http://tb1.bdstatic.com/tb/cms/frs/bg/$image
-|http://tb1.bdstatic.com/tb/cms/activity_head/$image
-|http://tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
-|http://tb1.bdstatic.com/tb/r/image/201$image
-|http://image.cache.xiu8.com/live/
-|http://tieba.baidu.com/tb/cms/game/*_banner.jpg
+@@||tb1.bdstatic.com/??/tb/_/*/ad_$script
+@@||tb1.bdstatic.com/??/tb/_/forum_info_$script
+||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
+||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
+||tb1.bdstatic.com/??/tb/_/app_forum_$script
+||tb1.bdstatic.com/??/tb/_/my_app_$script
+||tb1.bdstatic.com/??/tb/_/xiu8_$script
+||tbmsg.baidu.com/gmessage/get?$script
+||tb1.bdstatic.com/tb/cms/frs/bg/$image
+||tb1.bdstatic.com/tb/cms/activity_head/$image
+||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
+||tb1.bdstatic.com/tb/r/image/201$image
+||image.cache.xiu8.com/live/
+||tieba.baidu.com/tb/cms/game/*_banner.jpg
 !----------------------黑站，仅uBo支持-----------------------
 ||114so.cn/
 ||tduou.com^
@@ -253,7 +253,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||t70123.com/
 ||tanx.com^$third-party
 ||click.taobao.com/$third-party
-|http://union$third-party
+||union$third-party
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.doudouguo.com
 ||union.vancl.com
@@ -302,7 +302,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 *.com/ads
 *_350_330.$image
 */html/click/
-@@|http://shurufa.baidu.com/img/ime/index_banner_btn.png
+@@||shurufa.baidu.com/img/ime/index_banner_btn.png
 */index_banner_
 */pageMediaControl
 */mediaController
@@ -499,7 +499,7 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
 ||mat1.gtimg.com/hb/zxb/tm1.gif
 ||ra.gtimg.com/uv/1712104/index.js
-||ra.gtimg.com/web/crystal/v*/crystal-min.js
+||ra.gtimg.com/*/crystal-min.js
 ||wb.gtimg.com/adwin/
 chuangshi.qq.com##.topbanner,.mainbox>div.adv
 ||chuangshi.qq.com/upload/cmsv2/Banner/
@@ -704,6 +704,9 @@ dy1000.com##div[class^=random]
 ||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
 |http://www.36dm.com/js/nu
+acfun.cn###ad-comment,#ad-player-view
+||static.acfun.tv/json/addata.json
+|http://www.acfun.tv/adnew.aspx
 dygang.com,6vhao.com,6vhao.net###gd
 jiyingdm.com##div.abcde,#otherWindowBox
 |http://jiyingdm.com/js/loadingshow.html
@@ -812,6 +815,7 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 ||elec.bilibili.com/
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
+||data.bilibilijj.com/free/*.txt
 |http://static.hdslb.com/cloud/
 |http://static.hdslb.com/swz_crossdomain.xml
 |http://acg.tv/$domain=bilibili.com
@@ -2289,7 +2293,6 @@ tucao.tv##div.a2013d
 ||star8.net
 ||static.115img.com/static/115tj.js
 ||static.115img.com/static/delivery/
-||static.acfun.tv/json/addata.json
 ||suimeng.com/js/$subdocument
 ||super.cat898.com^
 ||syilm.net
@@ -2407,7 +2410,6 @@ tucao.tv##div.a2013d
 21cn.com##div.xuantu,div.embedHzh,div.h-gg
 360doc.com##div#ADAboveArtContent,div#artrightad1,div.both[style="padding-top: 10px; height: 260px;"]
 520xs.com##div.ad250left
-acfun.cn###ad-comment,#ad-player-view
 aiku.me##div#bar_show_lm
 all.qidian.com##img[width="990"][height="40"]
 bing.com##div.sb_adsNv2
