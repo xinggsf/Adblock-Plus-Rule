@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703163
-! Last modified: 2017/03/16
+! Version: 201703171
+! Last modified: 2017/03/17
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -16,7 +16,7 @@
 !---------------------NoScript，可加上自己要过滤的域名--------------------
 *$script,domain=ty2016.net|eywedu.com|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.ws|btkitty.bid
 !--------------FlashBlock。免过滤白名单如下----------------------
-!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.tv|~fun.tv|~dj92cc.com|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
+!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.cn|~fun.tv|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
 !@@*clipboard.swf|$object
 !--------------------------百度----------------------------------
@@ -679,7 +679,7 @@ qiushibaike.com##div.shopwindow
 ||www.toutiao.com/api/web_ads/
 ||toutiao.com/adsafe/$subdocument
 toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add
-ttmeiju.com###wrapper~div,ul.menu~*
+ttmeiju.com###wrapper~div
 |http://pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
@@ -700,7 +700,8 @@ dy1000.com##div[class^=random]
 ||wsacdn1.miaopai.com/upload-pic/*.jpg|
 ||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
-|http://www.36dm.com/js/nu
+|http://www.36dm.com/js/
+|http://www.36dm.com/tbklb/
 acfun.cn###ad-comment,#ad-player-view
 |http://www.acfun.cn/adnew.aspx
 dygang.com,6vhao.com,6vhao.net###gd
@@ -719,7 +720,7 @@ v.duba.com###fixedad,div[id|=ad]
 |http://v.duba.com/$object
 ||baofeng.net/*.html?adid=
 |http://static.hd.baofeng.com/script/baidu.js
-baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box
+baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 @@||stat.v-56.com/player
 56.com##div.qf_float
 ||qf.56.itc.cn^$image
