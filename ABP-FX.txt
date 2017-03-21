@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703201
-! Last modified: 2017/03/20
+! Version: 201703211
+! Last modified: 2017/03/21
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -184,6 +184,10 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||dleke.com/
 ||dian500.com
 ||dian5000.com
+||e7001.com/
+||e7002.com/
+||e702.net/
+||e703.net/
 ||e706.net/
 ||e708.net/
 ||eclkspbn.com/
@@ -566,16 +570,15 @@ v.360.cn##div.banner-g4
 ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 ||deliver.ifeng.com/
 ||ifeng.com/statics/all_content_ad_
-|http://img3.fdc.com.cn/cms/js/bbs/$script
 */sc_ifeng/js/
 ||games.ifeng.com/1403m/$subdocument
 ||games.ifeng.com/webgame/
 ||ifengimg.com/*/inice.$script
-||ifengimg.com/*/sta_collection.$script
-||ifengimg.com/6e0e559e19f25e8b/$object
 ||ifengimg.com/ifeng/sources/
 ||ifengimg.com/mappa/
-||ifengimg.com/xingzhao/JS/bsgspecial.js
+||ifeng.com/a_if/taobao/
+||ifengimg.com/a/$object
+|http://y0.ifengimg.com/d0169b18072caddd/2015/1015/yingguang-h5-20151015.js
 ||y2.ifengimg.com/*.flv^
 */mfp/mfpMultipleDelivery.do?
 |http://vgg.ifeng
@@ -676,7 +679,7 @@ qiushibaike.com##div.shopwindow
 ||www.toutiao.com/api/web_ads/
 ||toutiao.com/adsafe/$subdocument
 toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add
-ttmeiju.com###wrapper~div
+ttmeiju.com###wrapper~div,#header+div
 |http://pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
