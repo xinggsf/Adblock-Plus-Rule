@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703211
-! Last modified: 2017/03/21
+! Version: 201703221
+! Last modified: 2017/03/22
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -1017,10 +1017,13 @@ tucao.tv##div[class$="_poster"]
 *.com/code/cpv.asp?
 *.com/code1/
 *.com/cpc/
+*/js/cpc_
+*.com/cpf/
 *.com/cpm/
 *.com/cpv.js^$script
 *.com/cpv/
 *.com/cpv_
+*/js/cpv_
 *.com/cs/jsfile/
 *.com/ecom?di=$domain=~www.400gb.com|~www.pipipan.com|~7958.com|~www.9ku.com|~www.u148.net|~www.redocn.com|~colafile.com|~bbs.tiexue.net|~www.narutom.com|~www.neihan8.com|~666ccc.com|~yue365.com
 *.com/gg*.gif|$image
@@ -1034,7 +1037,7 @@ tucao.tv##div[class$="_poster"]
 *.com/js/union/
 *.com/main/s?user=
 *.com/otherhtml/$script
-*.com/page/?s=
+*ge/?s=$script
 *.com/page/s.php?s=
 *.com/pagecpv/
 *.com/s?z=
@@ -1741,14 +1744,11 @@ tucao.tv##div[class$="_poster"]
 |http://www.17173.com/if/$script,domain=17173.com
 |http://www.400gb.com/img/600.gif
 |http://www.abab.com/iframe/76090.swf
-|http://100.admin5.com/
-|http://www.admin5.com/hezuo/action/$script
-|http://www.admin5.com/lib/js/07$script
+||100.admin5.com/
+||upload.admin5.com/201$image
+@@||upload.admin5.com/201*/thumb_$image
+admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 |http://www.a5.net/top$subdocument
-|http://www.bxwx8.org/files/yd.js
-|http://www.bxwx8.org/js/$subdocument
-|http://www.bxwx8.org/js/box_$script
-|http://www.bxwx8.org/myabc/index$script
 |http://www.cbber.com/source/plugin/zyx_xialagg/AD$script
 |http://www.ccwzz.cc/dmf.js
 |http://www.drivergenius.com/inc/driverwwwad.js?
@@ -1834,7 +1834,6 @@ tucao.tv##div[class$="_poster"]
 |http://www.poxiao.com/template/default/images/12345$script
 |http://www.qjbxw.com/bbsgg/
 |http://www.qjbxw.com/rljx1/rljx1.js
-|http://www.qqxs.cc/neixiong/js/neirongye300-250.js
 |http://www.qqzhibo.net/res/zhibo/js/floatad.js?r=
 |http://www.qtfy30.cn/*.gif|
 |http://www.qutuku.com/qutu/good.js
@@ -1843,17 +1842,12 @@ tucao.tv##div[class$="_poster"]
 |http://www.riju.com/pr/$domain=jpfans.com|jpseek.com
 |http://www.rsdown.cn/static/t/$script
 |http://www.ruan8.com/img/foot.js
-|http://www.ruan8.com/img/head.js
+|http://www.ruan8.com/guanggao.js
 |http://www.saaee.com/view/youkuvip/750.png
 |http://www.shanhaimiwenlu.com/sh.js
 |http://www.shanwen.com/scripts/$script
 |http://www.shousibaocai.com/static/ssbc.js?v=
 |http://www.siqiboke.com/upload/winpop.js
-|http://www.smzy.com/apps/footer2.js
-|http://www.smzy.com/apps/webtg$script
-|http://www.smzy.com/apps/top970.js
-|http://www.smzy.com/apps/index$script
-|http://www.smzy.com/newjava/$script
 |http://www.soft711.com/2013/$script,image
 |http://www.ssdao.com/js/main.js
 |http://www.sznews.com/71460.files/$image,object
@@ -2397,20 +2391,13 @@ tucao.tv##div[class$="_poster"]
 17173.tv.sohu.com##div.list-beauty,div#playAdLeftTop,div.win17173.maximize
 21cn.com##div.xuantu,div.embedHzh,div.h-gg
 360doc.com##div#ADAboveArtContent,div#artrightad1,div.both[style="padding-top: 10px; height: 260px;"]
-520xs.com##div.ad250left
-aiku.me##div#bar_show_lm
-all.qidian.com##img[width="990"][height="40"]
-bing.com##div.sb_adsNv2
 bt.ktxp.com##div.item-box2.money
-bxwx.org##div.pagead_3,iframe[src^="http://js.bxwxtxt.com/"]
 china.com##div.adclass,div#ep_tl.clearfix,div.gg265,div.gg960,div.gg,div.place.ggSpace
 china.com.cn##iframe#eeww,iframe#fq12,div[style="width:310px;height:250px;padding-left:5px;"],div.banner,iframe#gggg,div.Photos
 chinairn.com##div.bizrpt
 chinanews.com##div.advert_nav,div#qizhi_div980,div[id^="ad_banner"],div.advert_dingtong,div.advert_right,div[class="2014adv"],img[width="1000"][height="60"]
-cn.bing.com##li.b_ad
 cn.msn.com##div.topAd.cf,div.left_Bg,div.right_Bg,div.bottomAd.cf
 cngba.com##iframe#page_980x100x1,div[id^="index_980x100x"],div.cngba_ad_wrap.ad_ri,div#page_300x250_1
-cntv.cn##div.ad_w960,div[id^="div-gpt-ad-"],div.brand_show_w:first-child,div[id^="adCrossing"][class^="adStyle"],iframe#kejiaojxhzh
 cqsq.com##div.tanx_banner,div.cqsq_banner
 dm5.com##div#float_tc_pop_299,div[adgroupid="0"],div.beitouc,div.cl760,div.cl970
 dmzj.com##div[style^="width:960px;height:60px;"]
@@ -2463,9 +2450,9 @@ v.17173.com##div#playAdLeftTop,div.txt-ad,div.list-beauty,div.js-lol-ad,span.js-
 verycd.com##div#advertisement_bottom,div[style="width:250px;height:200px;padding:4px;border:1px solid #ccc;"]
 weather.com.cn##div#ccs,div[class^=ad]
 weibo.com##div#pl_content_biztips,div#v6_pl_content_biztips
-win7china.com##div#pc_c.countdown_counter,div#recommend.recommend_box,div.site_ad,div.site-ad-box,div.side_ad
-win9cn.com##ul.adspic,div#rightbottom
-www.360doc.com##div[id^="divad"],div#fullbg
+win7china.com###pc_c.countdown_counter,#recommend.recommend_box,div.site_ad,div.site-ad-box,div.side_ad
+win9cn.com##ul.adspic,#rightbottom
+www.360doc.com##div[id^=divad],#fullbg
 www.7k7k.com##div.tools-ad
 www.cnblogs.com##div#ad_under_post_holder
 www.fkzww.net##div.ad_textlink2,div.ad_textlink1
@@ -2473,7 +2460,7 @@ www.hahade.com##span#loadimg.movieload
 www.kugou.com##div.adv,div.adv1,div.adv2
 www.mtv-ktv.net##div.softshow
 www.narutom.com##div#beitou,div#cg3.wraps.gt1
-www.nba98.com##iframe[src^="http://www.nba98.com/proxy.html?id="],div.sidepanel_ad
+www.nba98.com##div.sidepanel_ad
 www.portablesoft.org##div.postads
 xunlei.com##div.file_right.adv_right
 yesky.com##div#bdadv.bd_adv,div.wth200 > div.baidu,div.ad190
