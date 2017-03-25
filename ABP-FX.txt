@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703231
-! Last modified: 2017/03/23
+! Version: 201703251
+! Last modified: 2017/03/25
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -297,9 +297,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||yunjiasu.com/
 ||yunshipei.com/$third-party
 ||ylog.hiido.com/
-||dataaq.yy.com/
-||stat2.web.yy.com/
-||statistics.yy.com/
+||zhudiaosz.com^
 ||zzbaowen.com^
 ##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
 ~mail.google.com##.adsbygoogle,.ads
@@ -584,7 +582,7 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 |http://zx.cp.ifeng.com/export/js/ifeng_sport_lottery_channel_pic.js
 !-------------------起点、纵横、创世-----------------------
-qidian.com###j-topHeadBox,#tr-banner,a[href*="game.qidian.com/"]
+qidian.com###j-topHeadBox,div.banner-wrap,a[href*="game.qidian.com/"],div.book-list li:last-child,div.focus-img.cf
 ||qidian.qpic.cn/qidian_common/$object,image
 ||qidian.com/ejs/qd/js/read.qidian.com/gameBox.
 ||book.qidian.com/ajax/book/getFansHall?$xmlhttprequest
@@ -616,10 +614,7 @@ baike.com###right_ad_div
 ||hdad.baike.com/
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
-||btkitty.$script
-cnbeta.com##div.tools>div.time,div.cbimage-fixed,.main_content+*,div.commt-r,.cb_box.article+section.mt5,a[href^="http://qiyukf.com"],a[href^="http://click.aliyun.com"],div.item.cooperation
-|https://static.tigerbrokers.com/activity-cnbeta/img/banner_
-|https://www.tigerbrokers.com/activity/quotation/cnbeta_pop/popular.html
+||static.cnbetacdn.com/frontend/vipics/$image
 coladrive.com##.ad1>div.tui
 |http://www.coladrive.com/templates/cola3beta/js/anti.js
 @@|http://my.csdn.net/service/favorite/add_favorite?
@@ -804,10 +799,8 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
 ||data.bilibilijj.com/free/*.txt
-|http://static.hdslb.com/cloud/
-|http://static.hdslb.com/swz_crossdomain.xml
-|http://acg.tv/$domain=bilibili.com
-bilibili.com##div.ad-f
+||hdslb.com/bfs/sycp/creative_img/$image
+bilibili.com##div.ad-f,span[data-ad-type=banner]
 live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
 */letv-gug/$object-subrequest
