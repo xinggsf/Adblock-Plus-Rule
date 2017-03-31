@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201703251
-! Last modified: 2017/03/25
+! Version: 201703311
+! Last modified: 2017/03/31
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -237,6 +237,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||newrelic.com/
 ||niuxgame77.com/
 ||nr1234.com/
+||nthyn.com/
 ||olcdn.com/
 ||optimix.asia^$third-party
 ||pic9382.com^$third-party
@@ -283,6 +284,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||xe2c.com/
 ||weareqy.com/
 ||werpig.com/$third-party
+||xiacaidd.com/
 ||xibei70.com/
 ||xk2012.com^$third-party
 ||xmgktt.com/$popup
@@ -328,12 +330,7 @@ _ads.js|
 /\/ad\d+\.js(?:$|\?)/$script
 */adSide/$script
 */adSide.$script
-*/analytics/$script
-analytics.$script
-*/analysis/$script
-analysis.$script
 */adwidget$script
-wrating.$script,object-subrequest
 */gg.$script
 ||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
 */images/banner
@@ -503,6 +500,7 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 ||ra.gtimg.com/uv/1712104/index.js
 ||ra.gtimg.com/*/crystal-min.js
 ||wb.gtimg.com/adwin/
+sports.qq.com##.ad-wrapper
 chuangshi.qq.com##.topbanner,.mainbox>div.adv
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !-------------------网易--------------------
@@ -563,24 +561,24 @@ v.360.cn##div.banner-g4
 |http://sh.sina.com.cn/js/441/ZwyArticle_commo_23.js
 |http://src.house.sina.com.cn/imp/imp/deal/$object
 !-------------------ifeng.com--------------------
-@@||ifengimg.com/a/201*/ad.js
 ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 ||deliver.ifeng.com/
 ||ifeng.com/statics/all_content_ad_
 */sc_ifeng/js/
-||games.ifeng.com/1403m/$subdocument
+||games.ifeng.com/$subdocument
 ||games.ifeng.com/webgame/
 ||ifengimg.com/*/inice.$script
 ||ifengimg.com/ifeng/sources/
 ||ifengimg.com/mappa/
 ||ifeng.com/a_if/taobao/
-||ifengimg.com/a/$object
-|http://y0.ifengimg.com/d0169b18072caddd/2015/1015/yingguang-h5-20151015.js
-||y2.ifengimg.com/*.flv^
+||ifengimg.com/$object
+||ifengimg.com/*/yingguang-$script
 */mfp/mfpMultipleDelivery.do?
 |http://vgg.ifeng
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 |http://zx.cp.ifeng.com/export/js/ifeng_sport_lottery_channel_pic.js
+v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300
+@@||ifengimg.com/*/ad.js
 !-------------------起点、纵横、创世-----------------------
 qidian.com###j-topHeadBox,div.banner-wrap,a[href*="game.qidian.com/"],div.book-list li:last-child,div.focus-img.cf
 ||qidian.qpic.cn/qidian_common/$object,image
@@ -691,6 +689,7 @@ zimuzu.tv##ul.room
 pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 |http://dy1000.applecdn.net/js/
 dy1000.com##div[class^=random]
+||www.dy2018.com/js$script
 ||wsacdn1.miaopai.com/upload-pic/*.jpg|
 ||com/pic/fgr/$script,object-subrequest
 ||log1.17173.com/
@@ -2391,9 +2390,7 @@ chinanews.com##div.advert_nav,div#qizhi_div980,div[id^="ad_banner"],div.advert_d
 cn.msn.com##div.topAd.cf,div.left_Bg,div.right_Bg,div.bottomAd.cf
 cngba.com##iframe#page_980x100x1,div[id^="index_980x100x"],div.cngba_ad_wrap.ad_ri,div#page_300x250_1
 cqsq.com##div.tanx_banner,div.cqsq_banner
-dm5.com##div#float_tc_pop_299,div[adgroupid="0"],div.beitouc,div.cl760,div.cl970
-dmzj.com##div[style^="width:960px;height:60px;"]
-do189.com##div.bimg,div#tab1.tabcontent
+dm5.com###float_tc_pop_299,div[adgroupid="0"],div.beitouc,div.cl760,div.cl970
 duba.com##img[width="960"][height="60"],div[style^="width:960px;height:90px;"],div.baidu_ad,div.taobao_ad,div.code_yx,div[style^="width:645px;height:200px;"]
 feng.com##div.wea_d_960_80,div[class^="wep_e_"][class$="0"],div.wep_e_wrap.clearfix
 fengniao.com##div.ad-div,div.adContainer
@@ -2431,9 +2428,7 @@ reboyc.com##div.ad96090
 rednet.cn##div#topbanner,object#FlashId_ad1
 ref.so##div#tg2_main
 renren.com##.wp-rrzm-popup
-sogou.com##div#bdfs0.rb,div#promotion_adv_container,div.sponsored,a.js_bannerImg
-sohu.com##div.adA.area,div.adB.area,div#adList.area,div.ad-listB.clear,div.ad680,div.ad300,div[id^="ad_"],sohuadcode,div#turn-ad.area,div.adarea.area,div.adtop.area,div[class^="ad"].area,#vcr_60_1,div.titleA[collection="Y"],#newsCommentBar~*,div[data-tongji]
-soso.com##div#promotion_adv_container.sponsored,div#leftbottomleadContainer.sponsored,div#rads,div.ad1
+sohu.com##div.adA,div.adB,div#adList,div.ad-listB,div.ad680,div.ad300,div[id^="ad_"],sohuadcode,#turn-ad,div.adarea,div.adtop,#vcr_60_1,#newsCommentBar~*,div[data-tongji]
 tianya.cn##div[id$="banner_950_90"].banner-img-mt10,div[id*="_AD_"],div[class*="_AD_"],embed[src^="http://80"],div#travel_float
 tiexue.net##iframe[src^="http://x.tiexue.net/domain-policy/"],div.junph-new-tmp.mTop10
 tom.com##div#popupDivgame
