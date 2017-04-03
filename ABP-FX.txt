@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704022
-! Last modified: 2017/04/02
+! Version: 201704031
+! Last modified: 2017/04/03
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -52,11 +52,9 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||app.video.baidu.com/adver?
 ||v.baidu.com/staticapi/videoAd.json?
 wenku.baidu.com##div.mod.lastcell-dialog
-||img.baidu.com/hunter/wenkumonkey.min.js
-||static.wenku.bdimg.com/static/wkview/widget/crmAd/
 www.baidu.com###content_left>div:not(.c-container):not(.hit_top_new),#content_right>table td>:not(#con-ar),body>div.result-op.xpath-log
-www.baidu.com##div.result.c-container:has(h3>a[data-landurl])
-zhidao.baidu.com##div#left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
+www.baidu.com##div.c-container:has(h3>a[data-landurl])
+zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
 ||img.baidu.com/hunter/musicmonkey.min.js
@@ -65,7 +63,7 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 ||music.baidu.com/data/69xiu/
 ||music.baidu.com/cms/tingbox/$script
 !--贴吧---
-tieba.baidu.com###footer~*,#guide_fc,.firework_sender_wrap,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,[id$=xiu8_aside_slide],.dialogJmodal,.dialogJmodal+.dialogJ,div.live_show_aside,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap
+tieba.baidu.com###footer~*,#guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,.dialogJmodal,.dialogJmodal+.dialogJ,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 @@||tb1.bdstatic.com/??/tb/_/forum_info_$script
@@ -80,9 +78,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tieba.baidu.com/tb/cms/game/*_banner.jpg
 !----------------------黑站，仅uBo支持-----------------------
 ||114so.cn/
-||tduou.com^
-||tudown.com^
-||wy119.com^
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
 */ad.
@@ -596,7 +591,7 @@ bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 btmee.net###footer~*,#ggg_tool
 ||btmee.net/static/img/*.gif$image
 ||static.cnbetacdn.com/frontend/vipics/$image
-chinanews.com##div.advert_nav,#news_top_advert,#zhengwenvideo~*
+chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 ||afp.chinanews.com
 ||i8.chinanews.com^$subdocument
 @@|http://my.csdn.net/service/favorite/add_favorite?
@@ -606,9 +601,9 @@ eastmoney.com##.footer-ads,#rightAD,.adbox
 ||cmsjs.eastmoney.com/$subdocument
 ||fund.eastmoney.com/trade/Hot_$subdocument
 ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
-firefoxchina.cn##div[trace-key=ad_banner],div[track-key=side_tpth]
+www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
+||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
-||firefoxchina.cn/iframes/$subdocument
 ftchinese.com##div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
 ||ftchinese.com/m/marketing/$subdocument
 ||static.ftchinese.com/n/main-barrier.js
@@ -764,14 +759,10 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 |http://passport-log.youku.com/logsys/logstorage/
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
 ||l.ykimg.com^
-|http://nc.youku.com/user/~ajax/qrcodeLogin.html?
-! |http://v.l.youku.com/uep?
-! */check_ikuacc?callback=jQuery$domain=v.youku.com
 |http://static.youku.com/*/js/ikuAdapterNew.js
 |http://static.youku.com/v*/index/js/iresearch.js
 |http://static.youku.com/v*/index/js/tdstat.js
 |http://static.youku.com/*/js/cps.js
-|http://uo.youku.com/channelstore/rank/$script
 ||lstat.youku.com/log.
 ||urchin.lstat.youku.com/index/js/
 ||l.youku.com/rec_ad_show?
@@ -811,11 +802,11 @@ yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yin
 tucao.tv##div[class$="_poster"]
 |http://www.tucao.tv/index.php?m=poster&c=index$subdocument,popup
 |http://www.tucao.tv/uploadfile/201$image,object-subrequest
-@@||union.bokecc.com/*player$object
+@@||union.bokecc.com/player
 ||bokecc.com/*.jpg|$object-subrequest
 ||bokecc.com/flash/playlog?
-|http://click.bokecc.com/
-|http://imedia.bokecc.com/
+||click.bokecc.com/
+||imedia.bokecc.com/
 !精简自adbyby规则2015.5，部分元素屏蔽规则移到stylish，请到https://userstyles.org/styles/117992/theme安装
 @@*.org/admin$image
 @@*/ad_js.php?aid=10004
@@ -2080,7 +2071,6 @@ mydrivers.com##[class^=ad_],[id^=ad_],#thread_subject+div,div.adggg1
 |http://icons.mydrivers.com/news/201*.gif|
 neonan.com###razer_ad
 newhua.com##div.taobaoad,div.unionad,div.adr,div.ad_center,div[class^="ad_ritht_"],div.ad_top,div.i1,div.i2,div.i3
-piaoliang.com##div.hot960
 portable.easylife.tw##div.googleplus,div#ddr
 ptbus.com##div.ad300_250,div.weixin_ad,div.content14
 reboyc.com##div.ad96090
