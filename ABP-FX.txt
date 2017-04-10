@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704061
-! Last modified: 2017/04/06
+! Version: 201704101
+! Last modified: 2017/04/10
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -63,7 +63,7 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 ||music.baidu.com/data/69xiu/
 ||music.baidu.com/cms/tingbox/$script
 !--贴吧---
-tieba.baidu.com###footer~*,#guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,.dialogJmodal,.dialogJmodal+.dialogJ,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
+tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,.dialogJmodal,.dialogJmodal+.dialogJ,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 @@||tb1.bdstatic.com/??/tb/_/forum_info_$script
@@ -570,6 +570,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://www.zongheng.com/zhda/zhda.html
 |http://static.zongheng.com/upload/recommend/game/201$image
 */zongheng_chat_loader
+||bxwx9.org^$script
 ||www.dhzw.org/xiaoyi/$script
 ||www.hjwzw.com/js/n$script
 ||i.zhuoyaju.com^$script
@@ -704,10 +705,8 @@ pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 ||log1.17173.com/
 acfun.cn###ad-comment,#ad-player-view
 |http://www.acfun.cn/adnew.aspx
-||biz5.kankan.com/
 ||cpm.cm.kankan.com/
 ||distf.kankan.com/
-||float.kankan.com/finalfiles/$object-subrequest
 |http://img.kankan.xunlei.com/*.gif|
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 |http://static.hd.baofeng.com/script/baidu.js
@@ -717,9 +716,6 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 ||qf.56.itc.cn^$image
 ||tv.sohu.com/upload/Trace/$script
 |http://data.vod.itc.cn:8080
-|http://data.vod.itc.cn/?new=*.mp4|
-|http://data.vod.itc.cn/?pt=1&pg=1&prod=ad&
-|http://sohu.vod.cdn.myqcloud.com/*&prod=ad
 |http://js.tv.itc.cn/hdpv.js
 |http://a1.itc.cn/pv/js/spv.
 @@||click.hd.sohu.com.cn/s.gif?*_loginaccount
@@ -753,37 +749,27 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 pps.tv###J_sideTool,#download_soft.tonglan-fixed
 v.pps.tv##div.pgbox-content
 |http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
+tudou.com##body>iframe,div.ad_banner
 ||js.tudouui.com/tspecial/assets/PauseContainer.swf
 ||js.tudouui.com/bin/lingtong/app_
 ||goods.tudou.com/
 |http://www.tudou.com/feeportal/getPayMsg.html?
 |http://www.tudou.com/crp/getOtherItemInfo.action?
 |http://www.tudou.com/crp/getLoginLimit.action?
-@@||c.wrating.com/a1.js$domain=tudou.com
-tudou.com##body>iframe,div.ad_banner
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
+@@||mmstat.com/$object-subrequest,domain=v.youku.com
 ||atm.youku.com/
-@@|http://hudong.pl.youku.com/crossdomain.xml
-@@|http://hudong.pl.youku.com/interact/live/get/live
-@@|http://hudong.pl.youku.com/player/getLive?liveid=
-||hudong.pl.youku.com^
-||hz.youku.com/red/ggnotice.php?
-||hz.youku.com/red/click.php?
+||dot.youku.com/
+||alicdn.com/iku/$object-subrequest
+@@||hudong.pl.youku.com/crossdomain.xml
+||hudong.pl.youku.com/
 ||l.youku.com/*log?
-|http://passport-log.youku.com/logsys/logstorage/
 |http://yk.pp.navi.youku.com/playpolicy/get.json?
-||l.ykimg.com^
+||l.ykimg.com/
 |http://static.youku.com/*/js/ikuAdapterNew.js
-|http://static.youku.com/v*/index/js/iresearch.js
-|http://static.youku.com/v*/index/js/tdstat.js
-|http://static.youku.com/*/js/cps.js
 ||lstat.youku.com/log.
-||urchin.lstat.youku.com/index/js/
 ||l.youku.com/rec_ad_show?
-||l.youku.com/*&t=ad_
-||vip.com/cm/youku?
 |http://module.youku.com/*.html$script
-|http://passport.youku.com/index_loginregGuide/$subdocument
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],.pop-prompt-box,li.js-draw,a[href^="http://poll.youku."]
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/$websocket
@@ -796,7 +782,6 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 bilibili.com##div.ad-f,span[data-ad-type=banner]
 live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
-*/letv-gug/$object-subrequest
 |http://ark.letv.com/
 |http://ark.le.com/
 |http://fz.letv.com/
