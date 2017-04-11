@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704101
-! Last modified: 2017/04/10
+! Version: 201704111
+! Last modified: 2017/04/11
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -35,10 +35,9 @@
 ||crs.baidu.com/
 ||entry.baidu.com/$subdocument
 ||hm.baidu.com/
-||imgsrc.baidu.com/tieba/pic/item/$image
 ||eclick.baidu.com/
 ||fexclick.baidu.com/
-||nsclick.baidu.com/
+||nsclick.baidu.com/$domain=~www.hao123.com
 ||qianclick.baidu.com/
 ||list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
@@ -63,7 +62,7 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 ||music.baidu.com/data/69xiu/
 ||music.baidu.com/cms/tingbox/$script
 !--贴吧---
-tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,.dialogJmodal,.dialogJmodal+.dialogJ,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
+tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 @@||tb1.bdstatic.com/??/tb/_/forum_info_$script
@@ -75,6 +74,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tb1.bdstatic.com/tb/cms/activity_head/$image
 ||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 ||tb1.bdstatic.com/tb/r/image/201$image
+||imgsrc.baidu.com/tieba/pic/item/$image
 ||tieba.baidu.com/tb/cms/game/*_banner.jpg
 !----------------------黑站，仅uBo支持-----------------------
 ||114so.cn/
@@ -309,9 +309,9 @@ _ads.js|
 */market-$script
 |http://media.$third-party,script,subdocument
 */ge/?s=$script
+*/pge/?s=$script
 */page/?s=$script
 */page/s.$script
-*/pge/?s=$script
 */pagead$script
 */s.php?id=$script,third-party
 */piao.js|
@@ -374,6 +374,7 @@ orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
 ouyaoxiazai.com##.header+div,div.ad_show
 @@||www.ouyaoxiazai.com/*/*.gif|$image
 ||www.ouyaoxiazai.com/*.gif|$image
+|http://a.oyksoft.com/show/$script
 pc6.com###topbanner2
 ||pc6.com/$subdocument
 bbs.pcbeta.com###wp>style+div,#scbar+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
@@ -662,6 +663,7 @@ v2ex.com###Rightbar>.box:nth-child(2)~div,div.sidebar_units
 ||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
 ||www.zhujiceping.com/F/$image
+||www.zhujiceping.com/wp-content/uploads/$script
 !-------------------影视资源--------------------
 ||2kandy.com/js/$script
 |http://www.36dm.com/js/
@@ -689,6 +691,7 @@ yatu.tv###loadimg,#daohang
 ||com/pic/fgr/$script,object-subrequest
 !-------------------视频站点--------------------
 ||6rooms.com/$image,domain=~6.cn
+||www.hao123.com/erji/hao123/$object-subrequest
 ||www.youtube.com/annotations_invideo?$xmlhttprequest
 !youtube.com##div.video-annotations
 ||s.youtube.com/api/stats/
@@ -774,10 +777,10 @@ youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="y
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/$websocket
 ||bilibili.com/html/$~xmlhttprequest,~subdocument
-||elec.bilibili.com/
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
 ||data.bilibilijj.com/free/*.txt
+||qiniu.bilibilijj.com/$image
 ||hdslb.com/bfs/sycp/creative_img/$image
 bilibili.com##div.ad-f,span[data-ad-type=banner]
 live.bilibili.com##.video-section+a
@@ -1476,11 +1479,11 @@ tucao.tv##div[class$="_poster"]
 */yuegui.js|
 */yxCoupletsAd
 */Zotac600x60
-*_300_250_
-*_728x90_
+*_300_250_$image
+*_728x90_$image
 *_950x90.gif$image
-*_960_60.
-*_960_90.
+*_960_60.$image
+*_960_90.$image
 *_ad.php?
 *_ad_close.$image
 *_ads.swf|
@@ -1489,12 +1492,10 @@ tucao.tv##div[class$="_poster"]
 *_index_ad_
 *_index_banner$script
 *_right_ad.$domain=~dzwww.com
-|http://360.safe.go.360safego.com/
 |http://801.tianya.cn
 |http://806.tianya.cn
 |http://a.36krcnd.com/poster/
 |http://a.cs090.com/biz_icon/
-|http://a.oyksoft.com/show/s.php/
 |http://a.xigua110.com/a/xigua/$script
 |http://aagw.sdo.
 |http://abc.hkepc.com/www/d/
