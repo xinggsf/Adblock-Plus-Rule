@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704111
-! Last modified: 2017/04/11
+! Version: 201704131
+! Last modified: 2017/04/13
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -14,7 +14,7 @@
 ! |http://$subdocument,third-party,domain=tieba.baidu.com|yatu.tv
 ! *$third-party,domain=xxbiquge.com|shumilou.co|btkitty.bid|diggbt.ws|btfuli.com
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=ty2016.net|eywedu.org|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.ws|btkitty.bid
+*$script,domain=eywedu.org|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.ws|btkitty.bid
 !--------------FlashBlock。免过滤白名单如下----------------------
 !|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.cn|~fun.tv|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
 !@@*upload.swf^$object
@@ -90,6 +90,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 */ad3$script
 */adbox/
 *?adid=
+@@||openwebgame.qq.com/app/$script
 *&adid=
 ||ads.
 */ads.
@@ -361,6 +362,7 @@ huacolor.com##td[valign=top],div.huadown,.download-list>div
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 |http://ja.gamersky.com/$script
+||cp.greenxf.cn/$script
 ||greenxf.com/asp/$script
 ||greenxf.com/GreenxfAD/
 ||greenxf.com/js/maim.js
@@ -415,11 +417,9 @@ yxdown.com##div.gg,div[id$=_ads]
 ||afpmm.alicdn.com/g/
 ||tt.yxdown.com/$image,object
 ! 中关村在线
-zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],[class|=ad],[id^=ad_]
+zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
 ||icon.zol-img.com.cn/public/js/web_foot$script
-||icon.zol-img.com.cn/xiazai/detail/xiazai_downloaderAD.gif
 ||p.zol-img.com.cn/$script
-||api.zol.com/js/zolRequestTuan.js
 ||zol.com.cn/tips/$script
 !-------------------QQ--------------------
 @@||cq.qq.com/js/cody/scroll_ad.js
@@ -574,6 +574,8 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||bxwx9.org^$script
 ||www.dhzw.org/xiaoyi/$script
 ||www.hjwzw.com/js/n$script
+ty2016.net##div[class^=bread_]
+||www.ty2016.net/$script
 ||i.zhuoyaju.com^$script
 !-------------------杂项--------------------
 1ting.com##[id^='tingx_']
@@ -623,24 +625,15 @@ quote.futures.hexun.com###topFullWidthBanner
 @@||www.infoq.com/scripts/ads.js
 ithome.com###hd_float,#side_func,#con>#tt5>div
 ||ithome.com/file/js/money/
-||img.ithome.com/file/js/slick.
-||img.ithome.com/file/js/lapin
 ||img.ithome.com/file/js/7hot.js
-||www.ithome.com/js/lapin/hot.js
-@@|http://i.kuwo.cn/US/login.$document
-||kuwo.cn/kuwolive/
-|http://config.kuwo.cn/uc/s
-|http://topmusic.kuwo.cn/today_recommend/images/201311/
-|http://wa.kuwo.cn/lyrics/img/kwgg/
 iciba.com##div[class|=ad],div.newpc-entry
 |http://cdn.iciba.com/web/co/ci/$image
-jb51.net###txtlink,div.topimg
-||common.jb51.net/js/jbLoader.js
-||alicdn.com/$image,domain=jb51.net
-||www.yuaniis.com/jb51/$image
-||files.jb51.net/image/*.gif|$image
+jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd
+||files.jb51.net/image/$image
+||img.jb51.net/images/sl/$image
 wiki.mbalib.com###ad-phone
 ||www.myhack58.com/*.gif|
+||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
 ||files.nyaa.se/be-$image
 oschina.net###project_ad_banner,a[data-traceid]
@@ -794,8 +787,7 @@ live.bilibili.com##.video-section+a
 ||letvimg.com/$object,object-subrequest
 ||letvimg.com/gugwl/201*.jpg
 le.com###rightBottomPop,.banner_ad
-||staticlive.douyutv.com/upload/signs/$object
-||staticlive.douyucdn.cn/upload/signs/$object
+||staticlive.douyucdn.cn/upload/signs/$object,image
 ||dotcounter.douyutv.com/deliver/
 yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 ||yytcdn.com/crossdomain.xml
