@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704131
-! Last modified: 2017/04/13
+! Version: 201704171
+! Last modified: 2017/04/17
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -72,7 +72,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tb1.bdstatic.com/??/tb/_/my_app_$script
 ||tb1.bdstatic.com/tb/cms/frs/bg/$image
 ||tb1.bdstatic.com/tb/cms/activity_head/$image
-||tb1.bdstatic.com/tb/cms/tbmall/floatlayer_close.png
 ||tb1.bdstatic.com/tb/r/image/201$image
 ||imgsrc.baidu.com/tieba/pic/item/$image
 ||tieba.baidu.com/tb/cms/game/*_banner.jpg
@@ -89,9 +88,8 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 */ad2$script
 */ad3$script
 */adbox/
-*?adid=
+*^adid=
 @@||openwebgame.qq.com/app/$script
-*&adid=
 ||ads.
 */ads.
 */ads/
@@ -460,7 +458,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
 www.qq.com##.adLeft,.adRight
-v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,div.site_footer~*,a[href*=".tmall.com/"]
+v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"]
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 user.qzone.qq.com##li.f-single:has(div.feed-hot-bar)
 daohang.qq.com##[id^=AD_]
@@ -481,8 +479,6 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 ||ra.gtimg.com/*/crystal-min.js
 ||wb.gtimg.com/adwin/
 sports.qq.com##.ad-wrapper
-chuangshi.qq.com##.topbanner,.mainbox>div.adv
-||chuangshi.qq.com/upload/cmsv2/Banner/
 !-------------------网易--------------------
 @@||account.bnet.163.com/
 ||g.163.com/$~object-subrequest
@@ -540,9 +536,10 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 |http://sh.sina.com.cn/js/441/ZwyArticle_commo_23.js
 |http://src.house.sina.com.cn/imp/imp/deal/$object
 !-------------------ifeng.com--------------------
-ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
+ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02
+||ifeng.com/a_if/iis/$subdocument
 ||ifeng.com/a_if/taobao/
-||ifeng.com/statics/all_content_ad_
+||ifeng.com/ssi-incs/$subdocument
 ||deliver.ifeng.com/
 ||games.ifeng.com/$subdocument
 ||games.ifeng.com/webgame/
@@ -551,11 +548,12 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=ad10]
 ||ifengimg.com/mappa/
 @@||vxml.ifengimg.com/$object
 ||ifengimg.com/$object
+||ifengimg.com/9252$script
 ||ifengimg.com/*/yingguang-$script
+||ifengimg.com/iis/$script
 */mfp/mfpMultipleDelivery.do?
 |http://vgg.ifeng
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
-|http://zx.cp.ifeng.com/export/js/ifeng_sport_lottery_channel_pic.js
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300
 @@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
@@ -563,7 +561,7 @@ qidian.com###j-topHeadBox,div.banner-wrap,a[href*="game.qidian.com/"],div.book-l
 ||qidian.qpic.cn/qidian_common/$object,image
 ||qidian.com/ejs/qd/js/read.qidian.com/gameBox.
 ||book.qidian.com/ajax/book/getFansHall?$xmlhttprequest
-chuangshi.qq.com##.banner_index,.main_banner
+chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
 zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://static.zongheng.com/*/ad$script
 |http://static.zongheng.com/upload/hzds/column/$script,image
@@ -768,8 +766,8 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 |http://module.youku.com/*.html$script
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],.pop-prompt-box,li.js-draw,a[href^="http://poll.youku."]
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
-@@||www.bilibili.com/html/$websocket
-||bilibili.com/html/$~xmlhttprequest,~subdocument
+@@||www.bilibili.com/html/iframemessage.html
+||bilibili.com/html/$~xmlhttprequest
 !播放器右侧广告图片XHR请求
 ||api.bilibili.com/x/web-show/res/loc?pf=
 ||data.bilibilijj.com/free/*.txt
