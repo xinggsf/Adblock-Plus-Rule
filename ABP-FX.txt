@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704171
-! Last modified: 2017/04/17
+! Version: 201704191
+! Last modified: 2017/04/19
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -12,13 +12,9 @@
 !-----------------------屏蔽第三方资源---------------------------
 ! |http://$script,third-party,domain=yatu.tv|xunzai.com|dygang.com|hjwzw.com|23zw.me
 ! |http://$subdocument,third-party,domain=tieba.baidu.com|yatu.tv
-! *$third-party,domain=xxbiquge.com|shumilou.co|btkitty.bid|diggbt.ws|btfuli.com
+! *$third-party,domain=xxbiquge.com|shumilou.co|btkitty.kim|diggbt.ws|btfuli.com
 !---------------------NoScript，可加上自己要过滤的域名--------------------
-*$script,domain=eywedu.org|365essay.com|xsbashi.com|zdfans.com|storebt.com|baishuku.com|btspread.ws|btkitty.bid
-!--------------FlashBlock。免过滤白名单如下----------------------
-!|http://$object,domain=~youku.com|~tudou.com|~iqiyi.com|~pps.tv|~yatu.tv|~baidu.com|~bilibili.com|~1905.com|~acfun.cn|~fun.tv|~qq.com|~163.com|~cntv.cn|~ku6.com|~56.com|~le.com|~nba.com|~yinyuetai.com|~51zxw.net|~tv.sohu.com|~flvcd.com|~mgtv.com|~pptv.com
-!@@*upload.swf^$object
-!@@*clipboard.swf|$object
+*$script,domain=eywedu.org|365essay.com|xsbashi.com|zdfans.com|storebt.org|baishuku.com|btspread.fyi|btkitty.kim
 !--------------------------百度----------------------------------
 ||cpro.
 ||dup.baidustatic.com^
@@ -125,8 +121,10 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||49wanwan.com/
 ||4wad.com
 ||51.la^
+||5207470.com/
 ||52kmh.com^$third-party
 ||6711.com/
+||6huu.com^
 ||f70123.com/
 ||75to.com/
 ||7pk.com/
@@ -176,6 +174,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||f6ce.com/
 ||fd7c.com/
 ||findicons.com^$third-party
+||gdbly.com/
 ||getnormalizedurl.com^$third-party
 ||googleadservices.com
 ||googlesyndication.com
@@ -186,6 +185,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||gridsumdissector.$third-party
 ||gw630.com
 ||gyyx.cn/$third-party
+||hascosafety.com^
 ||hinet.net^third-party
 ||hr41.cn^
 ||hr44.com/
@@ -233,12 +233,15 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||reachmax.cn^$third-party
 ||s8x1.com
 ||scorecardresearch.com^$third-party
+||shanglinli.com/
 ||shouyou.com/$third-party
 ||sscefsol.com/
 ||statcounter.com/
 ||tanx.com^$third-party
 ||tk001.com/$third-party
+||tongqing2015.com/
 ||click.taobao.com/$third-party
+||um29.com/$third-party
 ||union$third-party
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.
@@ -258,6 +261,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||xk2012.com^$third-party
 ||xmgktt.com/$popup
 ||xtgreat.com^$third-party
+||xyly2016.com/
 ||xyxy01.com
 ||yccdn.com/
 ||yeabble.com/
@@ -265,6 +269,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||yongkang6.com^
 ||youxi.com^$third-party
 ||yug8.com/
+||yunbofangbt.com/$third-party
 ||yule8.net^
 ||yunjiasu.com/
 ||yunshipei.com/$third-party
@@ -446,8 +451,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||pinghot.qq.com/
 ||pingfore.qq.com/
 ||tj.video.qq.com/
-||qzs.qq.com/qzone/biz/res/tmpl/vehicle.html
-||qzs.qq.com/qzone/biz/res/v.swf?loc=
+||qzs.qq.com/qzone/biz/
 ||rh.qq.com^
 ||tajs.qq.com$domain=~wuxia.qq.com
 ||taobao.qq.com
@@ -458,7 +462,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
 www.qq.com##.adLeft,.adRight
-v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"]
+v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"],div.player_bg_ad
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
 user.qzone.qq.com##li.f-single:has(div.feed-hot-bar)
 daohang.qq.com##[id^=AD_]
@@ -467,18 +471,17 @@ gd.qq.com###r_ad
 qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad
 ||gtimg.com/qqlive/
 ||gtimg.com/*/adbox/$image
-||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
-||pgdt.gtimg.cn/gdt/
-||wa.gtimg.com^
 ||ca.gtimg.com/client/
+||ca.gtimg.com/adplugin/js/adplayer.js
+||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
+||mat1.gtimg.com/sports/000_AD/$image
 ||mat1.gtimg.com/$object
-||mat1.qq.com/www/js/swfobjectopt.js
 ||mat1.gtimg.com/comic/newqshou/js/AD2v1.1.js
-||mat1.gtimg.com/hb/zxb/tm1.gif
+||pgdt.gtimg.cn/gdt/
 ||ra.gtimg.com/uv/1712104/index.js
-||ra.gtimg.com/*/crystal-min.js
+||wa.gtimg.com/
 ||wb.gtimg.com/adwin/
-sports.qq.com##.ad-wrapper
+sports.qq.com##.ad-wrapper,#focus_jordon
 !-------------------网易--------------------
 @@||account.bnet.163.com/
 ||g.163.com/$~object-subrequest
@@ -487,9 +490,6 @@ sports.qq.com##.ad-wrapper
 ||img3.126.net/
 ||img6.126.net/
 ||126.net/silver/
-@@||oc-caption-srt.nos.netease.com/
-@@||nos.netease.com/smartcamera-public/$image
-nos.netease.com/$image,domain=~blizzard.cn|~battlenet.com.cn|~manhua.163.com
 ||adgeo.163.com/
 ||bobo.163.com/
 ||baoxian.163.com/$subdocument
@@ -497,9 +497,8 @@ nos.netease.com/$image,domain=~blizzard.cn|~battlenet.com.cn|~manhua.163.com
 ||lofter.com/$subdocument
 163.com##[class$="_ad"],div.mod_ad_text,div.mod_index_ad,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side
 163.com,~love.163.com##A[href^="http://love.163.com/"]
-blog.163.com##div#lofter_single,div.f-trans
+blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
-v.163.com##div[id^="v_shape"].bg
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
 ||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
@@ -507,7 +506,6 @@ youdao.com###topImgAd,#spTop
 haosou.com##div.tuiguang
 ||tf.360.cn/
 bbs.360safe.com##a.cl.signin-box~*
-360.cn###wifiAnywhere
 hao.360.cn##div.small-obj.animate,#corner-flash
 !-------------------新浪--------------------
 ||sinaimg.cn/unipro/$domain=~video.sina.com.cn|~weibo.com
@@ -547,7 +545,7 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>
 ||ifengimg.com/ifeng/sources/
 ||ifengimg.com/mappa/
 @@||vxml.ifengimg.com/$object
-||ifengimg.com/$object
+||ifengimg.com/$object,subdocument
 ||ifengimg.com/9252$script
 ||ifengimg.com/*/yingguang-$script
 ||ifengimg.com/iis/$script
