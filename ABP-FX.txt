@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－ 视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201704191
-! Last modified: 2017/04/19
+! Version: 201704201
+! Last modified: 2017/04/20
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -112,7 +112,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||189.cn/$popup,third-party
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
-||360buyimg.com/$domain=~jd.com|~jd.hk
 ||addthis.com/
 ||ads360.cn/
 ||37.com/$third-party
@@ -174,6 +173,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||f6ce.com/
 ||fd7c.com/
 ||findicons.com^$third-party
+||fu68.com/
 ||gdbly.com/
 ||getnormalizedurl.com^$third-party
 ||googleadservices.com
@@ -233,14 +233,18 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||reachmax.cn^$third-party
 ||s8x1.com
 ||scorecardresearch.com^$third-party
+||sc1369.com/
 ||shanglinli.com/
 ||shouyou.com/$third-party
 ||sscefsol.com/
 ||statcounter.com/
-||tanx.com^$third-party
+||ta80.com/
+||tanwanyx.com/
+||tanx.com^
+||th21333.com/
+||click.taobao.com/$third-party
 ||tk001.com/$third-party
 ||tongqing2015.com/
-||click.taobao.com/$third-party
 ||um29.com/$third-party
 ||union$third-party
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
@@ -331,56 +335,57 @@ gonggao.js|
 */tk.*.php?id=
 !-------------------下载站点-----------------------
 52z.com###softdown>div,div.syGaosuDa:first-child
+||www.fxxz.com/show/html/$subdocument
+91danji.com###bg_ad,div.hr.hr48
+||www.91danji.com/js/$script
 cr173.com###foot~*,div.show_970,[data=viewAds]
-@@||cr173.com/*/js/jquery$script
-@@||cr173.com/*/js/mac.js
+@@||cr173.com/*/jquery$script
+@@||cr173.com/*/mac.js
 ||cr173.com/show/$script
 ||cr173.com/show/img/
 ||cr173.com/skin/new201$script
 ||cr173.com/skin/library/js/head-
 ||cr173.com/skina/$script
 ||cr173.com/skinb/$script
-crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square
+crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square,li.yellowdown
 @@||crsky.com/ggao/images/$image
 ||crsky.com/img/hezi
 ||www.crsky.com/img/pic.js
 ||crsky.com/theme/images/fast_down.
 ||crsky.com/theme/images/rd0
 ||ddooo.com/ddshow/$script
-||www.ddooo.com/get$script
 ||www.downbank.cn/js/gong.js
-||www.downbank.cn/soft6/$script
 downxia.com##.download-ad,#gaosu_div0,ul.list-down>h3,a[href^="http://url.tduou.com/down/"]
 ||downxia.com/dgjs/pic/
 ||www.downxia.com/dgjs/$script
 |http://www.downyi.com/tg/$script
-downza.cn##a[href*=".9377wan.cn/"],.address-wrap>h3,.ul_Address:first-of-type
-||res.xzstatic.com/downza/pc/v2015/images/downloader_ad.gif
-|http://www.downza.cn/2013/
-|http://www.downza.cn/topsoft/$script
+|http://res.njxzwh.com/downza/pc/v2017/images/downAD.gif
+duote.com###quickDown
+*/2345explorer.$script
+||www.2345.com/cnxh/$script
+||2345.com/duoteimg/duotehtml/$script
 huacolor.com##td[valign=top],div.huadown,.download-list>div
 @@||huacolor.com/js/$script
 @@||huacolor.com/skins/$script
 ||huacolor.com/$script
+|http://www.huacolor.com/YD/*.gif$image
 @@|http://www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
-|http://ja.gamersky.com/$script
+||ja.gamersky.com/$script
 ||cp.greenxf.cn/$script
 ||greenxf.com/asp/$script
 ||greenxf.com/GreenxfAD/
 ||greenxf.com/js/maim.js
 ||greenxf.com/js/gyong.js
-greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div
+greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div,div.list_lg
 ||www.greenxiazai.com/green/
-onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,.softinfoBox a[href^="http://dl.cjsdxz.com/"][href$=exe]
-||onlinedown.net/newhuagg/
+onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div
 orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
 ||www.orsoon.com/zhuanti/$script,image
 ouyaoxiazai.com##.header+div,div.ad_show
 @@||www.ouyaoxiazai.com/*/*.gif|$image
 ||www.ouyaoxiazai.com/*.gif|$image
 |http://a.oyksoft.com/show/$script
-pc6.com###topbanner2
 ||pc6.com/$subdocument
 bbs.pcbeta.com###wp>style+div,#scbar+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
 pcbeta.com###sitefocus,#weixinqr
@@ -388,36 +393,33 @@ pcbeta.com###sitefocus,#weixinqr
 pconline.com.cn##div.jcztl,#JrightSideFocus,div.box.best,div.ivy-330
 ||buy.pconline.com.cn/$script
 |http://www.pconline.com.cn/*/intf$subdocument,script
-|http://www.pconline.com.cn/_hux_*/index.js
+|http://www.pconline.com.cn/_hux_$script
 |http://www.pconline.com.cn/jrzcz/$script
-|http://www.pconline.com.cn/ssi/*/download/
 ||ivy.pconline.com.cn/show$script
 ||ivy.pconline.com.cn/adpuba/show
 ||pconline.com.cn/download/images/soft/dl_ad.jpg
-||js.3conline.com/min/temp/v1/dpl-msclass_v2.js
-||js.3conline.com/min/temp/v1/dpl-contentslider
 ||jwz.3conline.com/adpuba/
 ||pacd.3conline.com/$script
 ||pconline.com.cn/pconline/download/fz/$image
-sd173.com,sdbeta.com##.downlink_l>div,.downlink_l>:nth-child(2),.file_urls>div,.file_urls>:nth-child(2)
-!div.file_urls>:not(div:nth-of-type(2)~*)
-||www.sd173.com/images/rilisdbeta.gif
-||www.sd173.com/images/sd173ad
-||www.sd173.com/images/sd173down
-sdbeta.com##div.soft_info>.col1
-||www.sdbeta.com/images/sdbeta.gif
+!sd173.com
+||down.tgjkbx.cn/xxjs/$script
+||www.sdbeta.com/images/$image
 skycn.com###top970,ul.ul_Address>h3,a[href^="http://down.xiazaidc.com/"]
 !ul.ul_Address a[href$=exe]:not([href^="http://skycnxz"])
 ||www.skycn.com/show/d2.gif
 ||www.skycn.com/js/$image
 ||www.skycn.com/js/info.js
+||www.uzzf.com/skin/know/$script
 ||www.xdowns.com/js/$script
 xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
-||www.xiazaiba.com/data/xzb_haha.js?
+||www.xiazaiba.com/data/xzb_haha.js
+||www-static.xunzai.com/static/wwwimg/$image
 yxdown.com##div.gg,div[id$=_ads]
-! ||yxdown.com/open/$script
+||yxdown.com/open/$script
 @@||gg.yxdown.com/count/countzt.js
 ||afpmm.alicdn.com/g/
+||static.yxdown.com/images/link$image
+||static.yxdown.com/images/adbox$image
 ||tt.yxdown.com/$image,object
 ! 中关村在线
 zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
@@ -434,7 +436,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||games.qq.com/playgame/gamesad/js/swfobject.js
 @@||c.gdt.qq.com/gdt_click.
 @@||v.gdt.qq.com/gdt_stats.fcg?
-||gdt.qq.com^
+||gdt.qq.com/
 ||qq.com/js/adswf_tl_object.js$script
 ||cm.l.qq.com/$image,script
 ||livem.l.qq.com
@@ -446,9 +448,6 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
 ||isdspeed.qq.com/
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?
-@@||pinghot.qq.com/pingd?dm=music.qq.com.hot&
-@@||pinghot.qq.com/pingd?dm=y.qq.com.hot&url=
-||pinghot.qq.com/
 ||pingfore.qq.com/
 ||tj.video.qq.com/
 ||qzs.qq.com/qzone/biz/
@@ -463,14 +462,12 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||v.qq.com/x/webtips?$subdocument
 www.qq.com##.adLeft,.adRight
 v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"],div.player_bg_ad
-user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box
-user.qzone.qq.com##li.f-single:has(div.feed-hot-bar)
+user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
 qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad
 ||gtimg.com/qqlive/
-||gtimg.com/*/adbox/$image
 ||ca.gtimg.com/client/
 ||ca.gtimg.com/adplugin/js/adplayer.js
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
@@ -480,8 +477,9 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 ||pgdt.gtimg.cn/gdt/
 ||ra.gtimg.com/uv/1712104/index.js
 ||wa.gtimg.com/
+||swa.gtimg.com/
 ||wb.gtimg.com/adwin/
-sports.qq.com##.ad-wrapper,#focus_jordon
+sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35,div[adconfig_charset]
 !-------------------网易--------------------
 @@||account.bnet.163.com/
 ||g.163.com/$~object-subrequest
@@ -527,7 +525,6 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 ||pfp.sina.com.cn/
 ||rm.sina.com.cn/$script,subdocument
 ||sax.sina.
-|http://dcads.sina.com.cn/html.ng/pos=tvselbanner&site=sina
 |http://henan.sina.com.cn/iframe/7/$subdocument
 |http://adm.leju.sina.com.cn/get_abp_list/$script
 |http://imgcdn.house.sina.com.cn/2.0/abp/cmslead_new.js
@@ -642,7 +639,6 @@ qiushibaike.com##div.shopwindow
 ||galaxy.sogoucdn.com/galaxy/
 ||api.huo360.com/www/back/$image
 ||www.toutiao.com/api/web_ads/
-||toutiao.com/adsafe/$subdocument
 toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add
 ttmeiju.com###wrapper~div,#header+div
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
@@ -961,13 +957,14 @@ tucao.tv##div[class$="_poster"]
 ||com/code/cpv.asp?
 ||com/code1/
 ||com/cpc/
-*/js/cpc_
+*/js/cpc.$script
+*/js/cpc_$script
+*/js/cpv_$script
 ||com/cpf/
 ||com/cpm/
-||com/cpv.js^$script
+||com/cpv.$script
 ||com/cpv/
 ||com/cpv_
-*/js/cpv_
 ||com/cs/jsfile/
 ||com/ecom?di=$domain=~7958.com|~www.redocn.com|~bbs.tiexue.net|~www.narutom.com|~www.neihan8.com|~666ccc.com|~yue365.com
 ||com/gg*.gif|$image
@@ -1341,8 +1338,6 @@ tucao.tv##div[class$="_poster"]
 */js/bd1.js^
 */js/bd2.js^
 */js/bd3.js^
-*/js/cpc.js^$script
-*/js/cpc_$script
 */js/ddd.js|
 */js/eteadx*.js|$script
 */js/floatadv.js
@@ -1540,13 +1535,10 @@ tucao.tv##div[class$="_poster"]
 |http://res.kaifu.
 |http://same.jrj.com.cn^
 |http://static.aizhan.com/jsa/$script
-|http://static.ikafan
-|http://static.xunzai.com/www/all_common.js
 |http://tad.suning.com/snoad/
 |http://tga.pcgames.com.cn/adpuba/show?
 |http://wangyou.pcgames.com.cn/jctj/$script
 |http://we.1*bt.info
-|http://wvw.grabpo.com/bofangqi/
 |http://ww.xitek.com/idzone/
 |http://www.17173.com/if/$script
 abab.com##footer~*
@@ -1836,7 +1828,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||hh6666.com
 ||home.xdf.cn/lee_sq/js/
 ||huahuaka.com
-||icast.cn^$third-party
 ||ie.5500w.com^$third-party
 ||ihualun.com$third-party
 ||images.chinaz.com^
