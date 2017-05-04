@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201705041
+! Version: 201705042
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -574,7 +574,7 @@ ty2016.net##div[class^=bread_]
 ||www.ty2016.net/$script
 ||i.zhuoyaju.com^$script
 !-------------------杂项--------------------
-1ting.com##[id^='tingx_']
+1ting.com##[id^=tingx_]
 |http://www.1ting.com/$subdocument
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 |http://www.4399.com/loadimg/iframe_$subdocument
@@ -613,8 +613,8 @@ ftchinese.com##div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div
 |http://dolphin.ftimg.net/$script
 |http://www.ftchinese.com/index.php/jsapi/
 ||orz.hupu.com
-|http://t1.hoopchina.com.cn/$subdocument
-hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|='div-gpt-ad'],[class^='nba-ad'],[class^='hp-ad'],.sidebar>div[class^='ad'],div.ad980-60,div.ad720-90
+||t1.hoopchina.com.cn/$subdocument
+hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing]
 |http://itv.hexun.com/
 @@||hxsame.hexun.com/s?z=hexun&
