@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则－视频站、通用广告、门户站、广告联盟、贴吧，精简xwhyc+自用整合
-! Version: 201705042
+! Version: 201705051
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@$stylesheet
@@ -263,7 +263,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||werpig.com/$third-party
 ||xiacaidd.com/
 ||xk2012.com^$third-party
-||xmgktt.com/$popup
 ||xtgreat.com^$third-party
 ||xyly2016.com/
 ||xyxy01.com
@@ -310,7 +309,7 @@ _ads.js|
 */adwidget$script
 */gg.$script
 ||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
-*/images/banner$domain=~ipo.chinairn.com
+*/images/banner$domain=~ipo.chinairn.com|~www.shuame.com
 */impservice$script
 */market.$script
 */market_$script
@@ -423,6 +422,9 @@ yxdown.com##div.gg,div[id$=_ads]
 ||static.yxdown.com/images/link$image
 ||static.yxdown.com/images/adbox$image
 ||tt.yxdown.com/$image,object
+||www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
+||www.zolsky.com/hotsoft/$subdocument,script
+||www.zolsky.com/read/readad/$subdocument
 ! 中关村在线
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
 www.zol.com.cn,www.91danji.com,btbtt.co##body:style(background: center !important)
@@ -549,14 +551,12 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>
 ||ifengimg.com/9252$script
 ||ifengimg.com/*/yingguang-$script
 ||ifengimg.com/iis/$script
-*/mfp/mfpMultipleDelivery.do?
-|http://vgg.ifeng
 |http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300
 @@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
 qidian.com###j-topHeadBox,div.banner-wrap,a[href*="game.qidian.com/"],div.book-list li:last-child,div.focus-img.cf
-||qidian.qpic.cn/qidian_common/$object,image
+||qidian.qpic.cn/qidian_common/$object
 ||qidian.com/ejs/qd/js/read.qidian.com/gameBox.
 ||book.qidian.com/ajax/book/getFansHall?$xmlhttprequest
 chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
@@ -738,30 +738,15 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 |http://a.ckm.iqiyi.com/
 |http://am.cupid.iqiyi.com/am
 ||qiyu.iqiyi.com/crossdomain.xml
-pps.tv###J_sideTool,#download_soft.tonglan-fixed
-v.pps.tv##div.pgbox-content
-|http://v.pps.tv/ugc/ajax/ugc$xmlhttprequest
 tudou.com##body>iframe,div.ad_banner
-||js.tudouui.com/tspecial/assets/PauseContainer.swf
-||js.tudouui.com/bin/lingtong/app_
-||goods.tudou.com/
-|http://www.tudou.com/feeportal/getPayMsg.html?
-|http://www.tudou.com/crp/getOtherItemInfo.action?
-|http://www.tudou.com/crp/getLoginLimit.action?
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
-@@||mmstat.com/$object-subrequest,domain=v.youku.com
 ||atm.youku.com/
-||dot.youku.com/
 ||alicdn.com/iku/$object-subrequest
-@@||hudong.pl.youku.com/crossdomain.xml
-||hudong.pl.youku.com/
 ||l.youku.com/*log?
-|http://yk.pp.navi.youku.com/playpolicy/get.json?
 ||l.ykimg.com/
 |http://static.youku.com/*/js/ikuAdapterNew.js
 ||lstat.youku.com/log.
 ||l.youku.com/rec_ad_show?
-|http://module.youku.com/*.html$script
 youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],.pop-prompt-box,li.js-draw,a[href^="http://poll.youku."]
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/iframemessage.html
@@ -832,17 +817,17 @@ tucao.tv##div[class$="_poster"]
 */acadv
 */adadmin
 */adfile$script,subdocument
-*/adflashes$image,object,object-subrequest
+*/adflashes
 */adhead
-*/adImgCover$image,object,object-subrequest
+*/adImgCover
 */adnet
-*/adPictures$image,object,object-subrequest
+*/adPictures
 */adpolestar
 */ads1.
 */ads?click
 */adshow.$script,subdocument
 */adslvfile
-*/at-img*.swf|$object,object-subrequest
+*/at-img*.swf|
 */bqzn000
 */cc222ads
 */cpv123
@@ -869,9 +854,6 @@ tucao.tv##div[class$="_poster"]
 */nadScreenFloat
 */nadTimeFlashLayer
 */newSNDAPop
-*/nrads.$image,object,object-subrequest
-*/ntny_360$image,object,object-subrequest
-*/pconlineAD$image,object,object-subrequest
 */pickcode_
 */popiq123
 */popme.
@@ -1180,9 +1162,7 @@ tucao.tv##div[class$="_poster"]
 */adgg/
 */adiframe/
 */adimages/$image,object,object-subrequest
-*/adjs.asp?bid=
-*/adjs.php?bid=
-*/adjs.php?n=
+*/adjs.
 */adjs/
 */adplayer/*.swf?v=
 */adposjs/$script
@@ -1215,7 +1195,7 @@ tucao.tv##div[class$="_poster"]
 */banner.js?v=$script
 */banner/$subdocument
 */banner960.htm^$subdocument
-*/banners?$domain=~www.shuame.com|~futureshop.ca|~bestbuy.ca
+*/banners?
 */bbs/paypic/*.gif|
 */bdun.bsc?$subdocument
 */bill/s201$subdocument
@@ -1233,7 +1213,7 @@ tucao.tv##div[class$="_poster"]
 */code/popjs.asp?
 */code_img/
 */codepic/
-*/common/cf/$image,object,object-subrequest,domain=~wifi.liebao.cn|~fei3d.com
+*/common/cf/$image,object,object-subrequest,domain=~wifi.liebao.cn|~96fei.com
 */cont_adL
 */cont_adr
 */cont_bottom.js|
@@ -1307,7 +1287,7 @@ tucao.tv##div[class$="_poster"]
 */html/hot_s
 */html/yuedu$subdocument
 */hxli/$image,object,object-subrequest
-*/i.js|$script,third-party
+*/i.js^$script,third-party
 */icast/
 */idcgg/
 */if/07top-new
@@ -1351,7 +1331,6 @@ tucao.tv##div[class$="_poster"]
 */js/gg.$script,subdocument
 */js/gg_$script,subdocument,domain=~www.111ttt.com
 */js/ggcommon$script
-*/js/i.js?$script,third-party
 */js/indexgg
 */js/jctj
 */js/js1.js
@@ -1433,7 +1412,6 @@ tucao.tv##div[class$="_poster"]
 */tdcm/adcontrol
 */teleplayvip/
 */tengyou960.gif$image
-*/tieba_index_banner960x90.
 */top_950
 */top_all.js|
 */tpl/kg/
@@ -1454,7 +1432,7 @@ tucao.tv##div[class$="_poster"]
 */vstart-$image
 */VV_MOYU
 */wb/dldl
-*/webimg08/dot.gif$image,object,object-subrequest
+*/webimg08/dot.gif^
 */widget.jsp?bId$subdocument
 */wizard.js^
 */www/deliver/
@@ -1545,7 +1523,6 @@ tucao.tv##div[class$="_poster"]
 |http://tad.suning.com/snoad/
 |http://tga.pcgames.com.cn/adpuba/show?
 |http://wangyou.pcgames.com.cn/jctj/$script
-|http://we.1*bt.info
 |http://ww.xitek.com/idzone/
 |http://www.17173.com/if/$script
 abab.com##footer~*
@@ -1612,7 +1589,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 |http://www.xp85.com/caches/poster_js/$script
 |http://www.xp85.com/statics/js/all.js
 |http://www.youxiaxiazai.com/db_top/$subdocument
-|http://www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
 |http://x.tiexue.net/domain-policy/
 |http://x.xso.$subdocument
 |http://zalra.qiniudn.com/zhou2.jpg
@@ -1629,7 +1605,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||1797wan.com^$third-party
 ||17leyi.com
 ||198game.com^$third-party
-||1lo0.net
 ||1qwe3r.com
 ||1tlm.cn^
 ||1x3x.com
@@ -1885,7 +1860,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||mediav.com^$third-party
 ||mgwl668.com
 ||miaozhen.com/
-||mmstat.com^$third-party
+||mmstat.com/$domain=~v.youku.com|~tudou.com
 ||mnwan.com
 ||mosa86.com
 ||mtxsk.com
