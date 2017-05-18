@@ -1,9 +1,9 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201705182
+! Version: 201705191
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
-@@$stylesheet
+@@*$stylesheet
 @@*/jquery.$script
 @@*/jquery-$script
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
@@ -122,7 +122,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||7z66.com/
 ||8521448.com/
 ||85655095.com/
-||85rere.com/$popup,third-party
+||85rere.com/$popup,~font
 ||91hui.com^$third-party
 ! 9377的弹窗真烦
 ||ad9377.com/
@@ -251,7 +251,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||union.
 ||uoyrsd.com
 ||uyan.cc/$third-party
-||uum6.com/$third-party,popup
+||uum6.com/$~font,popup
 ||vamaker.com/$third-party
 */vamaker/
 ||w8.com.cn
@@ -275,7 +275,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||yongkang6.com^
 ||youxi.com^$third-party
 ||yug8.com/
-||yunbofangbt.com/$third-party,popup
+||yunbofangbt.com/$~font,popup
 ||yule8.net^
 ||yunjiasu.com/
 ||yunshipei.com/
@@ -765,6 +765,7 @@ live.bilibili.com##.video-section+a
 ||webp2p.letv.com/
 ||letvimg.com/$object,object-subrequest
 ||letvimg.com/*_gugwl/$image
+||js.letvcdn.com/*_banner_$script
 le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
 douyutv.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad]
 ||staticlive.douyucdn.cn/upload/signs/$object
