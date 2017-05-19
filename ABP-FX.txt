@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201705191
+! Version: 201705192
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -8,11 +8,11 @@
 @@*/jquery-$script
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
-*$third-party,~image,~font,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com
-*$third-party,domain=hjwzw.com|23zw.me|xxbiquge.com|shumilou.co|diggbt.ws|btfuli.com
+*$third-party,~image,~font,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
+*$third-party,domain=hjwzw.com|23zw.me|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.mom|btkitty.kim|storebt.org
 *$third-party,subdocument,domain=tieba.baidu.com|yatu.tv
 ! NoScript，可加上自己要过滤的域名
-*$script,domain=eywedu.org|365essay.com|xsbashi.com|zdfans.com|storebt.org|baishuku.com|btspread.mom|btkitty.kim
+*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
 *$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
 ||cpro.
@@ -113,7 +113,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||4wad.com
 ||51.la/
 ||5207470.com/
-||52kmh.com^$third-party
+||52kmh.com^
 ||6711.com/
 ||6huu.com^
 ||f70123.com/
@@ -123,7 +123,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||8521448.com/
 ||85655095.com/
 ||85rere.com/$popup,~font
-||91hui.com^$third-party
+||91hui.com^
 ! 9377的弹窗真烦
 ||ad9377.com/
 ||x9377a.com/
@@ -141,8 +141,8 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||ads360.cn/
 ||promotion.aliyun.com/promotion/adv/getAliyunAdv.htm?
 ||market.aliyun.com/
-||allyes.$third-party
-||andmejs.com^$third-party
+||allyes.
+||andmejs.com^
 ||baifendian.com/$third-party
 ||bfdcdn.com/
 ||biddingx.com/
@@ -162,7 +162,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||eclkspbn.com/
 ||f6ce.com/
 ||fd7c.com/
-||findicons.com^$third-party
+||findicons.com^
 ||fu68.com/
 ||gdbly.com/
 ||getnormalizedurl.com^
@@ -174,19 +174,19 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||gyyx.cn/$third-party
 ||gzktpf.com/
 ||hascosafety.com^
-||hinet.net^third-party
+||hinet.net^
 ||hr41.cn^
 ||hr44.com/
 ||humanding.com/
 ||id528.com/
 ||idcot.com/$third-party
-||il8r.com^$third-party
+||il8r.com^
 ||imeijiajia.com
 ||img80.net/
 ||irs01.
 ||x.jd.com/
 ||jfqkj.com/
-||jiathis.com^$third-party
+||jiathis.com^
 ||jianbaimei.com/
 ||jiawen88.com/
 ||jointreport-switch.com
@@ -201,7 +201,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||kuhou.com/$third-party
 ||liuliguo.com
 ||lndjj.com/
-||lx167.com/$third-party
+||lx167.com/
 ||maomaotang.com
 ||mipujia.com/$third-party
 ||msads.net^
@@ -223,10 +223,10 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||qiqipower.com
 ||qiqivv.com^
 ||qiqiww.com^
-||qucaigg.com^$third-party
+||qucaigg.com^
 ||questionmarket.com^
 ||qzdfc.com/
-||reachmax.cn^$third-party
+||reachmax.cn^
 ||rpaulfrank.com/
 ||s8x1.com
 ||scorecardresearch.com^
@@ -245,35 +245,35 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||click.taobao.com/$third-party
 ||tk001.com/$third-party
 ||tongqing2015.com/
-||um29.com/$third-party
 ||union$third-party
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.
 ||uoyrsd.com
 ||uyan.cc/$third-party
-||uum6.com/$~font,popup
+||uum6.com/$third-party,~font,popup
+||um29.com/$third-party,~font,popup
 ||vamaker.com/$third-party
 */vamaker/
 ||w8.com.cn
 ||wangdq.com/
-||whytoss.com^$third-party
+||whytoss.com^
 ||winvestern.com.cn
-||wrating.com^$third-party,domain=~tudou.com
+||wrating.com/$domain=~tudou.com
 ||xcdf.cn^
 ||xe2c.com/
 ||weareqy.com/
-||werpig.com/$third-party
+||werpig.com/
 ||xiacaidd.com/
-||xk2012.com^$third-party
+||xk2012.com^
 ||xtgreat.com^
 ||xyly2016.com/
 ||xyxy01.com
 ||xzzyi.com^
 ||yccdn.com/
 ||yeabble.com/
-||yezilm.com/$third-party
+||yezilm.com/
 ||yongkang6.com^
-||youxi.com^$third-party
+||youxi.com/$third-party
 ||yug8.com/
 ||yunbofangbt.com/$~font,popup
 ||yule8.net^
@@ -296,7 +296,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||stat.
 ||stats.$domain=~stats.gov.cn
 */stat.
-||wan.$subdocument,script,object,object-subrequest
+||wan.$~image
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
 */51ads/
