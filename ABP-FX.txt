@@ -1,18 +1,18 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201705221
+! Version: 201705271
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*/jquery.$script
 @@*/jquery-$script
-@@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|i.qq.com|my.csdn.net
+@@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
 *$third-party,~image,~font,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
 *$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.mom|btkitty.kim|storebt.org
 *$third-party,subdocument,domain=tieba.baidu.com|yatu.tv
 ! NoScript，可加上自己要过滤的域名
-*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com|23zw.me
+*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
 *$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
 ||cpro.
@@ -303,7 +303,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
 */51ads/
-*.cn/s.php?id=
 */ga.js^
 -ads-$script
 _ad.js|
@@ -562,6 +561,7 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 |http://www.zongheng.com/zhda/zhda.html
 |http://static.zongheng.com/upload/recommend/game/201$image
 */zongheng_chat_loader
+||23zw.me/$subdocument
 ||bxwx9.org^$script
 ||www.dhzw.org/xiaoyi/$script
 ||www.hjwzw.com/js/n$script
@@ -974,7 +974,7 @@ tucao.tv##div[class$="_poster"]
 ||com/pagecpv/
 ||com/s?z=
 ||com/svnad/
-||com/union/$script
+||com/union/$script,domain=~linkstars.com
 ||com/vShow.php?id=
 ||com/webad/
 *.cpm.cm.sandai.net
@@ -1858,7 +1858,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||madadsmedia.com^$third-party
 ||manyou.com$third-party
 ||market.178.com
-||media.news18a.com/js/$third-party,script
 ||media8.cn^
 ||mediav.com^$third-party
 ||mgwl668.com
