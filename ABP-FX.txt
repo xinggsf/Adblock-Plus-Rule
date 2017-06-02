@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201705271
+! Version: 201706021
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -89,8 +89,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||changyan.$subdocument
 @@||g.alicdn.com/
 @@||g.tbcdn.cn/
-@@||g.live.panda.tv/
-||g.$third-party
+||g.$third-party,subdocument,script
 ||gg.
 ||ggg.
 ||000dn.com/
@@ -133,6 +132,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||9377co.com/
 ||hi9377.com/
 ||9377.com/$third-party
+||9ads.net/
 ||acxiom-online.com^
 ||addthis.com/
 ||admaster.com.cn
@@ -1281,7 +1281,7 @@ tucao.tv##div[class$="_poster"]
 */guang/
 */guangao/
 */guangg/
-*/guanggao/
+*/guanggao
 */gupiao.gif$image
 */hj_end.js|
 */homeadver.js|
@@ -1575,7 +1575,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 |http://www.rar8.net/htmljs/
 |http://www.rsdown.cn/static/t/$script
 |http://www.ruan8.com/img/foot.js
-|http://www.ruan8.com/guanggao.js
 |http://www.shanhaimiwenlu.com/sh.js
 |http://www.soft711.com/2013/$script,image
 ||www.sznews.com/adv/$script
