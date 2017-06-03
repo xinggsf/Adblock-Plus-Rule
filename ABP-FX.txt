@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706021
+! Version: 201706031
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -44,6 +44,7 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||v.baidu.com/staticapi/videoAd.json?
 wenku.baidu.com##div.mod.lastcell-dialog
 www.baidu.com###content_left>div:not(.c-container),#content_right>table td>:not(#con-ar)
+www.baidu.com##div.c-container:has(a[data-landurl])
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--百度音乐---
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
@@ -164,6 +165,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||fd7c.com/
 ||findicons.com^
 ||fu68.com/
+||g1c5.com/
 ||gdbly.com/
 ||getnormalizedurl.com^
 ||googleadservices.com
@@ -289,7 +291,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||com/ads
 *_350_330.$image
 */html/click/
-*/pageMediaControl
+pageMediaControl
 */mediaController
 */piaofu.
 */piaofu/
@@ -508,7 +510,6 @@ youdao.com###topImgAd,#spTop
 ||tf.360.cn/
 www.so.com##div.e-buss
 ||www.so.com/paOScore/ads
-bbs.360safe.com##a.cl.signin-box~*
 hao.360.cn##div.small-obj.animate,#corner-flash
 !-------------------新浪--------------------
 ||sinaimg.cn/unipro/$domain=~video.sina.com.cn|~weibo.com
@@ -591,6 +592,7 @@ baike.com###right_ad_div
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
 ||static.cnbetacdn.com/$script
+||cnbeta.com/js/pages/$subdocument
 ||china.com.cn/2016ads/$subdocument
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 ||afp.chinanews.com
@@ -617,7 +619,8 @@ ftchinese.com##div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing]
-|http://itv.hexun.com/
+||itv.hexun.com/
+||www.hexun.com/hxpage/index.html$subdocument
 @@||hxsame.hexun.com/s?z=hexun&
 quote.futures.hexun.com###topFullWidthBanner
 @@||www.infoq.com/scripts/ads.js
