@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706031
+! Version: 201706041
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -8,8 +8,8 @@
 @@*/jquery-$script
 @@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
-*$third-party,~image,~font,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.mom|btkitty.kim|storebt.org
+*$third-party,~image,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
+*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.pw|btkitty.kim|storebt.org
 *$third-party,subdocument,domain=tieba.baidu.com|yatu.tv
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
@@ -666,10 +666,6 @@ www.zhihu.com##.Banner.Card
 |http://www.36dm.com/images/bdjd.gif
 btmee.net###footer~*,#ggg_tool
 ||btmee.net/static/img/*.gif$image
-! dianying.fm
-!动漫花园||dmhy.aewb.cn/*.jpg
-v.duba.com###fixedad,div[id|=ad]
-|http://v.duba.com/$object
 dy1000.com##div[class^=random]
 |http://dy1000.applecdn.net/js/
 ||www.dy2018.com/js$script
@@ -677,7 +673,6 @@ dygang.com,6vhao.com,6vhao.net###gd
 ||www.6vhao.com/d/$script
 ||www.6vhao.net/d/$script
 ||www.dygang.com/d/$script
-|http://$object-subrequest,domain=flvcd.com
 jiyingdm.com##div.abcde,#otherWindowBox
 ||jiyingdm.com/js/loadingshow.html$subdocument
 subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
