@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706041
+! Version: 201706081
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -10,7 +10,7 @@
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
 *$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.pw|btkitty.kim|storebt.org
-*$third-party,subdocument,domain=tieba.baidu.com|yatu.tv
+*$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
 *$subdocument,domain=u17.com|music.baidu.com
@@ -506,6 +506,10 @@ open.163.com###j-hbtj,#j-footertj
 www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
 ||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
+mail.163.com,mail.126.com###theme
+||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
+||mimg.127.net/m/lb/img/inboxBottom/$image
+||mimg.127.net/m/lb/img/leftNavBottom/$image
 !-------------------360-----------------------
 ||tf.360.cn/
 www.so.com##div.e-buss
@@ -745,6 +749,7 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 |http://am.cupid.iqiyi.com/am
 ||qiyu.iqiyi.com/crossdomain.xml
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
+@@||log.mmstat.com/eg.js$script
 ||atm.youku.com/
 ||alicdn.com/iku/$object-subrequest
 ||l.youku.com/*log?
