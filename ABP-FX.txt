@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706111
+! Version: 201706131
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -727,14 +727,12 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 56.com##div.qf_float
 ||qf.56.itc.cn^$image
 ||tv.sohu.com/upload/Trace/$script
+||data.vod.itc.cn/?*&prod=ad&$media
 |http://data.vod.itc.cn:8080
-|http://js.tv.itc.cn/hdpv.js
 |http://a1.itc.cn/pv/js/spv.
 @@||click.hd.sohu.com.cn/s.gif?*_loginaccount
+||hd.sohu.com
 ||hd.sohu.com.cn
-|http://push.my.tv.sohu.com/$script
-|http://tv.sohu.com/upload/swf/201*/panel/QianFanAdPalyer.swf
-|http://vstat.v.blog.sohu.com/dostat.do?
 |http://api.my.tv.sohu.com/wm/getads.do?
 |http://v.aty.sohu.com/v
 tv.sohu.com###playerBar > div.area ~a
@@ -1816,7 +1814,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||hanzify.org/Main/Template/Images/ak47/$image
 ||haobk.taobao.com$domain=ysfx.howbbs.com
 ||hauchi.com.tw^$third-party
-||hd.sohu.com$image,object-subrequest
 ||hefan365.com
 ||heima8.com^$third-party
 ||hh6666.com
