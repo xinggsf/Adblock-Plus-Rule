@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706131
+! Version: 201706141
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -726,16 +726,17 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 @@||stat.v-56.com/player
 56.com##div.qf_float
 ||qf.56.itc.cn^$image
-||tv.sohu.com/upload/Trace/$script
+||css.tv.itc.cn/m/img/player/dlBanner.$image
 ||data.vod.itc.cn/?*&prod=ad&$media
 |http://data.vod.itc.cn:8080
 |http://a1.itc.cn/pv/js/spv.
 @@||click.hd.sohu.com.cn/s.gif?*_loginaccount
+@@||pl.hd.sohu.com/videolist?
 ||hd.sohu.com
 ||hd.sohu.com.cn
 |http://api.my.tv.sohu.com/wm/getads.do?
 |http://v.aty.sohu.com/v
-tv.sohu.com###playerBar > div.area ~a
+tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
 ||afp.m1905.com^
 ||afp.alicdn.com/afp-creative/$image,object-subrequest
