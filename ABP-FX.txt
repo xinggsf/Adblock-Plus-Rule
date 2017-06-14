@@ -728,14 +728,8 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 ||qf.56.itc.cn^$image
 ||css.tv.itc.cn/m/img/player/dlBanner.$image
 ||data.vod.itc.cn/?*&prod=ad&$media
-|http://data.vod.itc.cn:8080
-|http://a1.itc.cn/pv/js/spv.
-@@||click.hd.sohu.com.cn/s.gif?*_loginaccount
-@@||pl.hd.sohu.com/videolist?
-||hd.sohu.com
-||hd.sohu.com.cn
-|http://api.my.tv.sohu.com/wm/getads.do?
-|http://v.aty.sohu.com/v
+||api.my.tv.sohu.com/wm/getads.do?
+||v.aty.sohu.com/v
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
 ||afp.m1905.com^
