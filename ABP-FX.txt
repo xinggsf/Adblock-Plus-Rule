@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706141
+! Version: 201706151
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -50,9 +50,7 @@ zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,
 play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
 ||img.baidu.com/hunter/musicmonkey.min.js
 ||hiphotos.baidu.com/ting/pic/item/
-||log.music.baidu.com/maamonitor/v.gif?
 ||music.baidu.com/data/69xiu/
-||music.baidu.com/cms/tingbox/$script
 !--贴吧---
 tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,div.card_head,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
@@ -511,7 +509,6 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
-www.126.com,mail.163.com##div.APP-dashi-botBanner,div.gWel-promt
 ||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
 mail.163.com,mail.126.com###theme
@@ -537,11 +534,6 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 ||sax.sina.
 blog.sina.cn##div.item_hide+div,#pl-blog-artad
 ||dmp.sina.cn/
-|http://henan.sina.com.cn/iframe/7/$subdocument
-|http://adm.leju.sina.com.cn/get_abp_list/$script
-|http://imgcdn.house.sina.com.cn/2.0/abp/cmslead_new.js
-|http://sh.sina.com.cn/js/441/ZwyArticle_commo_23.js
-|http://src.house.sina.com.cn/imp/imp/deal/$object
 !-------------------ifeng.com--------------------
 ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02
 ||ifeng.com/a_if/iis/$subdocument
@@ -557,7 +549,6 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>
 ||ifengimg.com/$object,subdocument
 ||ifengimg.com/9252$script
 ||ifengimg.com/*yingguang$script
-|http://zx.cp.ifeng.com/export/ifeng_sport_lottery_bet.htm
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
 @@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
@@ -568,11 +559,11 @@ qidian.com###j-topHeadBox,#tr-banner,#topGameOp,div.banner-wrap,a[href*="game.qi
 ||qidian.qpic.cn/qidian_common/$object
 chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
 zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
-|http://static.zongheng.com/*/ad$script
-|http://static.zongheng.com/upload/hzds/column/$script,image
-|http://static.zongheng.com/upload/zhds/column/$script,image
-|http://www.zongheng.com/zhda/zhda.html
-|http://static.zongheng.com/upload/recommend/game/201$image
+||static.zongheng.com/*/ad$script
+||static.zongheng.com/upload/hzds/column/$script,image
+||static.zongheng.com/upload/zhds/column/$script,image
+||www.zongheng.com/zhda/zhda.html
+||static.zongheng.com/upload/recommend/game/201$image
 */zongheng_chat_loader
 ||23zw.me/$subdocument
 ||bxwx9.org^$script
@@ -729,7 +720,7 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 ||css.tv.itc.cn/m/img/player/dlBanner.$image
 ||data.vod.itc.cn/?*&prod=ad&$media
 ||api.my.tv.sohu.com/wm/getads.do?
-||v.aty.sohu.com/v
+||aty.sohu.com/
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
 ||afp.m1905.com^
