@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706151
+! Version: 201706261
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -252,7 +252,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||th21333.com/
 ||thxnr.com/
 ||tui1999.com/
-||click.taobao.com/$third-party
+||click.taobao.com/$third-party,popup
 ||tk001.com/$third-party
 ||tongqing2015.com/
 ||union$third-party
@@ -260,6 +260,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||union.
 ||uoyrsd.com
 ||uyan.cc/$third-party
+||u26u.com/$third-party,~font,popup
 ||uum6.com/$third-party,~font,popup
 ||um29.com/$third-party,~font,popup
 ||vamaker.com/$third-party
@@ -454,6 +455,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||v.gdt.qq.com/gdt_stats.fcg?
 ||gdt.qq.com/
 ||qq.com/js/adswf_tl_object.js$script
+@@||union.video.qq.com/fcgi-bin/data?$script
 @@||livew.l.qq.com/crossdomain.xml
 @@||l.qq.com/lview?
 ||l.qq.com/
@@ -602,8 +604,8 @@ chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 ||i8.chinanews.com^$subdocument
 @@|http://my.csdn.net/service/favorite/add_favorite?
 csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
-ctfile.com##a[href^="https://union.ctfile.com"],#ad-300x250,a[href^="http://mydisplay.ctfile.com/"]
-||mydisplay.ctfile.com/$script,subdocument
+ctfile.com,www.pipipan.com##a[href^="https://union.ctfile.com"],div[id|=ad],div[id^=ad_]
+||mydisplay.ctfile.com/$script,subdocument,popup
 ||uniondm.cz88.net/
 duowan.com##a[adid]
 eastmoney.com##.footer-ads,#rightAD,.adbox
@@ -1798,7 +1800,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||haiyunx.com$third-party
 ||haizhangs.com$third-party
 ||hanzify.org/Main/Template/Images/ak47/$image
-||haobk.taobao.com$domain=ysfx.howbbs.com
 ||hauchi.com.tw^$third-party
 ||hefan365.com
 ||heima8.com^$third-party
