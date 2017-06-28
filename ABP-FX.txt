@@ -1,15 +1,15 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706261
+! Version: 201706281
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*/jquery.$script
 @@*/jquery-$script
-@@*$domain=taobao.com|alipay.com|suning.com|www.vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
+@@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.pw|btkitty.kim|storebt.org
+*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.xyz|btkitty.kim|storebt.org
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
@@ -76,8 +76,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 */ad2$script
 */ad3$script
 */adbox/
-@@^adid=^
-*^adid=
 ||ads.
 */ads.
 */ads/
@@ -86,7 +84,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 */adsense/
 ||adserver.
 ||changyan.$subdocument
-@@||g.alicdn.com/
+@@||g.alicdn.com/$script
 @@||g.tbcdn.cn/
 ||g.$third-party,subdocument,script
 ||gg.
@@ -149,12 +147,13 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||baifendian.com/$third-party
 ||bfdcdn.com/
 ||biddingx.com/
+||bjcathay.com/
 ||boyxu.cn^
 ||cccrir.com/
 ||chenwen7788.com/
 ||cmp288.com/
 ||cnbole.net/
-||cnzz.$domain=~live.bilibili.com
+||cnzz.
 ||code222.com^
 ||csad.cc^
 ||ctsywy.com
@@ -507,7 +506,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||baoxian.163.com/$subdocument
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
-163.com##[class$="_ad"],div.mod_ad_text,div.mod_index_ad,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side
+163.com##[class$="_ad"],div.mod_ad_text,div.mod_index_ad,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
@@ -730,29 +729,31 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||afpssp.alimama.com/$domain=1905.com
 |http://www.1905.com/coll/ad$subdocument
 ||res.mgtv.com/video/$object-subrequest
-||click.hunantv.com/
 ||sdk.yunfan.com/crossdomain.xml
+||da.hunantv.com/
+||click.hunantv.com/
 ||res.hunantv.com/
 ||log.$domain=mgtv.com
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
 ||qiyipic.com/common/201$object-subrequest
 ||www.iqiyi.com/$subdocument
-|http://www.iqiyi.com/common/clientPopLstyle.html
-|http://www.iqiyi.com/player/cupid/common/icon_exclusive.swf
-|http://a.ckm.iqiyi.com/
-|http://am.cupid.iqiyi.com/am
+||www.iqiyi.com/common/clientPopLstyle.html
+||www.iqiyi.com/player/cupid/common/icon_exclusive.swf
+||a.ckm.iqiyi.com/
+||am.cupid.iqiyi.com/am
 ||qiyu.iqiyi.com/crossdomain.xml
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
+||tip.soku.com/searches/soku/kubox/v4/sideads.json?
 @@||log.mmstat.com/eg.js$script
 ||atm.youku.com/
 ||alicdn.com/iku/$object-subrequest
 ||l.youku.com/*log?
 ||l.ykimg.com/
-|http://static.youku.com/*/js/ikuAdapterNew.js
+||static.youku.com/*/js/ikuAdapterNew.js
 ||lstat.youku.com/log.
 ||l.youku.com/rec_ad_show?
-youku.com###youku_ad_crazy,#ad_crazy_youku_taobao,div[id^="ab_v_"],div[class^="yk-AD-"],.pop-prompt-box,li.js-draw,a[href^="http://poll.youku."]
+youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/iframemessage.html
 ||bilibili.com/html/$~xmlhttprequest,~websocket
@@ -1453,6 +1454,7 @@ tucao.tv##div[class$="_poster"]
 *_300_250_$image
 *_728x90_$image
 *_950x90.gif$image
+*_960.$image
 *_960_60.$image
 *_960_90.$image
 *_ad.php?
