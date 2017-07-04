@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201706281
+! Version: 201707041
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -113,6 +113,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||5207470.com/
 ||52kmh.com^
 ||6711.com/
+||6728812.com/
 ||6huu.com^
 ||f70123.com/
 ||75to.com/
@@ -140,6 +141,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||admtpmp124.com/
 ||adrotator.se/
 ||ads360.cn/
+||adyun.com/
 ||promotion.aliyun.com/promotion/adv/getAliyunAdv.htm?
 ||market.aliyun.com/
 ||allyes.
@@ -193,6 +195,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||irs01.
 ||x.jd.com/
 ||jfqkj.com/
+||jiaheyonggu.com/
 ||jiathis.com^
 ||jianbaimei.com/
 ||jiawen88.com/
@@ -220,6 +223,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||nmpcdn.com/
 ||nr1234.com/
 ||nthyn.com/
+||oa129.com/
 ||olcdn.com/
 ||optimix.asia^
 ||pingshetrip.com/
@@ -271,6 +275,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||wrating.com/$domain=~tudou.com
 ||xcdf.cn^
 ||xe2c.com/
+||xmshqh.com/
 ||weareqy.com/
 ||werpig.com/
 ||xiacaidd.com/
@@ -335,7 +340,7 @@ _ads.js|
 */piao.js|
 */pop.js^
 .pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com|~qidian.com
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com|~qidian.com|~mop.com
 */float.js|
 gonggao.js|
 */tan.$script
@@ -398,7 +403,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 ||www.ouyaoxiazai.com/*.gif|$image
 |http://a.oyksoft.com/show/$script
 ||pc6.com/$subdocument
-bbs.pcbeta.com###wp>style+div,#scbar+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
+bbs.pcbeta.com###wp>style+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
 pcbeta.com###sitefocus,#weixinqr
 ||pcgames.com.cn/g/extlin/pcdownpic/$script
 pconline.com.cn##div.jcztl,#JrightSideFocus,div.box.best,div.ivy-330
@@ -497,16 +502,18 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 @@||bnet.163.com/
 ||g.163.com/$~object-subrequest
 ||img1.126.net/
+@@||img2.126.net/ntesrich/2015/1127/float_logo_gt2015.11.30.js
 ||img2.126.net/
 ||img3.126.net/
 ||img6.126.net/
 ||126.net/silver/
 ||adgeo.163.com/
 ||bobo.163.com/
+||bobo.com/special/$subdocument
 ||baoxian.163.com/$subdocument
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
-163.com##[class$="_ad"],div.mod_ad_text,div.mod_index_ad,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad
+163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
@@ -633,9 +640,10 @@ ithome.com###hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-ch
 iciba.com##div[class|=ad],div.newpc-entry
 |http://cdn.iciba.com/web/co/ci/$image
 jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd
+||dm.jb51.net/$script
+||bdjs.jb51.net/$script
 ||files.jb51.net/image/$image
 ||img.jb51.net/images/sl/$image
-||bdjs.jb51.net/
 wiki.mbalib.com###ad-phone
 ||www.myhack58.com/*.gif|
 ||www.myhack58.com/Articleacb0$image
@@ -771,6 +779,8 @@ live.bilibili.com##.video-section+a
 ||letvimg.com/*_gugwl/$image
 ||js.letvcdn.com/*_banner_$script
 le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
+cctv.com###bgAd_div
+|http://player.cntv.cn/adplayer/$object
 douyutv.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad]
 ||staticlive.douyucdn.cn/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
