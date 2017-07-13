@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201707041
+! Version: 201707131
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -340,7 +340,7 @@ _ads.js|
 */piao.js|
 */pop.js^
 .pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~greasyfork.org|~mgpyh.com|~baidu.com|~qidian.com|~mop.com
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com
 */float.js|
 gonggao.js|
 */tan.$script
@@ -600,6 +600,7 @@ autohome.com.cn###s2287
 baike.com###right_ad_div
 ||hdad.baike.com/
 ||www.bdsola.com/js/common.js
+bing.com##li.b_ad
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
 ||static.cnbetacdn.com/$script
@@ -736,11 +737,13 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||afp.alicdn.com/afp-creative/$image,object-subrequest
 ||afpssp.alimama.com/$domain=1905.com
 |http://www.1905.com/coll/ad$subdocument
+www.mgtv.com##.on.footAd
+||click.hunantv.com/
+||da.hunantv.com/
+||da.mgtv.com/crossdomain.xml$object-subrequest
+||res.hunantv.com/
 ||res.mgtv.com/video/$object-subrequest
 ||sdk.yunfan.com/crossdomain.xml
-||da.hunantv.com/
-||click.hunantv.com/
-||res.hunantv.com/
 ||log.$domain=mgtv.com
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
