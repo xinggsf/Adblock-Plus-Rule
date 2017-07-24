@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201707131
+! Version: 201707241
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -275,6 +275,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||wrating.com/$domain=~tudou.com
 ||xcdf.cn^
 ||xe2c.com/
+||webterren.com/
 ||xmshqh.com/
 ||weareqy.com/
 ||werpig.com/
@@ -288,6 +289,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||yccdn.com/
 ||yeabble.com/
 ||yezilm.com/
+||yhzm.cc/
 ||yongkang6.com^
 ||youxi.com/$third-party
 ||yug8.com/
@@ -740,7 +742,7 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 www.mgtv.com##.on.footAd
 ||click.hunantv.com/
 ||da.hunantv.com/
-||da.mgtv.com/crossdomain.xml$object-subrequest
+||da.mgtv.com/
 ||res.hunantv.com/
 ||res.mgtv.com/video/$object-subrequest
 ||sdk.yunfan.com/crossdomain.xml
