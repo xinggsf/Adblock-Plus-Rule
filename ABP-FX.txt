@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201707241
+! Version: 201708091
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -9,12 +9,13 @@
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.xyz|btkitty.kim|storebt.org
+*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.xyz|btkitty.pet
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
 *$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
+@@||img1.bdstatic.com/static/common/widget/ui/admanager/ad/$script
 ||cpro.
 ||dup.baidustatic.com/
 ||ubmcmm.baidustatic.com/
@@ -285,6 +286,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||xtgreat.com^
 ||xyly2016.com/
 ||xyxy01.com
+||xyz^$third-party
 ||xzzyi.com^
 ||yccdn.com/
 ||yeabble.com/
@@ -405,8 +407,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 ||www.ouyaoxiazai.com/*.gif|$image
 |http://a.oyksoft.com/show/$script
 ||pc6.com/$subdocument
-bbs.pcbeta.com###wp>style+div,#pt+div>div[style$=";border:9px solid #EDEEF0;"]
-pcbeta.com###sitefocus,#weixinqr
+pcbeta.com###sitefocus
 ||pcgames.com.cn/g/extlin/pcdownpic/$script
 pconline.com.cn##div.jcztl,#JrightSideFocus,div.box.best,div.ivy-330
 ||buy.pconline.com.cn/$script
@@ -546,7 +547,7 @@ blog.sina.cn##div.item_hide+div,#pl-blog-artad
 ||dmp.sina.cn/
 !-------------------ifeng.com--------------------
 ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02
-||ifeng.com/a_if/iis/$subdocument
+||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
 ||deliver.ifeng.com/
@@ -559,6 +560,9 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>
 ||ifengimg.com/$object,subdocument
 ||ifengimg.com/9252$script
 ||ifengimg.com/*yingguang$script
+||ifengimg.com/*/embed$script
+||y2.ifengimg.com/xingzhao/JS/bsgspecial.js$script
+||ifengimg.com/iis/iis_v$script
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
 @@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
@@ -771,7 +775,7 @@ youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 @@||www.bilibili.com/html/iframemessage.html
 ||bilibili.com/html/$~xmlhttprequest,~websocket
 !播放器右侧广告图片
-||api.bilibili.com/x/web-show/res/loc?pf=
+||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||data.bilibilijj.com/free/*.txt
 ||qiniu.bilibilijj.com/$image
 ||hdslb.com/bfs/sycp/creative_img/$image
