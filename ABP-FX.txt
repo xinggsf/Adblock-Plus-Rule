@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201708091
+! Version: 201708181
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -752,21 +752,18 @@ www.mgtv.com##.on.footAd
 ||sdk.yunfan.com/crossdomain.xml
 ||log.$domain=mgtv.com
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
+*/videos/other/201$xmlhttprequest,domain=pps.tv|iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
 ||qiyipic.com/common/201$object-subrequest
 ||www.iqiyi.com/$subdocument
-||www.iqiyi.com/common/clientPopLstyle.html
-||www.iqiyi.com/player/cupid/common/icon_exclusive.swf
 ||a.ckm.iqiyi.com/
 ||am.cupid.iqiyi.com/am
-||qiyu.iqiyi.com/crossdomain.xml
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
-@@||log.mmstat.com/eg.js$script
+@@||mmstat.com/$script,image,domain=v.youku.com|tudou.com
 ||atm.youku.com/
 ||alicdn.com/iku/$object-subrequest
 ||l.youku.com/*log?
-||l.ykimg.com/
 ||static.youku.com/*/js/ikuAdapterNew.js
 ||lstat.youku.com/log.
 ||l.youku.com/rec_ad_show?
@@ -1878,7 +1875,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||mediav.com^$third-party
 ||mgwl668.com
 ||miaozhen.com/
-||mmstat.com/$domain=~v.youku.com|~tudou.com
 ||mnwan.com
 ||mosa86.com
 ||mtxsk.com
