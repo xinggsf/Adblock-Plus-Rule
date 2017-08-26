@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201708181
+! Version: 201708261
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -331,7 +331,7 @@ _ads.js|
 ||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
 */index_banner_
 ! _banner.$script,object,image
-*/images/banner$domain=~ipo.chinairn.com|~www.shuame.com
+*/images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
 */impservice$script
 */market.$script
 */market_$script
@@ -646,7 +646,7 @@ ithome.com###hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-ch
 ||ithome.com/file/js/money/
 iciba.com##div[class|=ad],div.newpc-entry
 |http://cdn.iciba.com/web/co/ci/$image
-jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd
+jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd,div.r300.clearfix.mt10
 ||dm.jb51.net/$script
 ||bdjs.jb51.net/$script
 ||files.jb51.net/image/$image
@@ -656,7 +656,7 @@ wiki.mbalib.com###ad-phone
 ||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
 ||files.nyaa.se/be-$image
-oschina.net###project_ad_banner,a[data-traceid]
+oschina.net###project_ad_banner,a[data-traceid],a[href^="http://click.aliyun."]
 ||static.oschina.net/*_banner_$image
 pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 ||33.pcpop.com
@@ -666,7 +666,7 @@ qiushibaike.com##div.shopwindow
 ||galaxy.sogoucdn.com/galaxy/
 ||api.huo360.com/www/back/$image
 ||www.toutiao.com/api/web_ads/
-toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name]
+toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name],li[ad_id]
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
 v2ex.com###Rightbar>.box:nth-child(2)~div,div.sidebar_units
@@ -704,6 +704,7 @@ yatu.tv###loadimg,#daohang
 ||com/pic/fgr/$script,object-subrequest
 ||www.youtube.com/annotations_invideo?$xmlhttprequest
 ||s.youtube.com/api/stats/
+||ya1.dwstatic.com/201*.flv^$object-subrequest,domain=video.duowan.com
 ||6rooms.com/$image,domain=~6.cn
 ||www.92miaopai.com/abc/*.gif$image
 ||www.99miaopai.com/abc/*.gif$image
@@ -1456,7 +1457,7 @@ tucao.tv##div[class$="_poster"]
 */widget.jsp?bId$subdocument
 */wizard.js^
 */www/deliver/
-*/www/delivery/
+*/www/delivery/$domain=~elecfans.com
 */wzduilian/$image,object,object-subrequest
 */wzygg/$image,object,object-subrequest
 */xy/js/
