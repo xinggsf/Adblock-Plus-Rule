@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201708261
+! Version: 201709151
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -9,7 +9,7 @@
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.com|btspread.xyz|btkitty.pet
+*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.org|btspread.xyz|btkitty.pet
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
@@ -85,7 +85,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 */adsense/
 ||adserver.
 ||changyan.$subdocument
-@@||g.alicdn.com/$script
+@@||g.alicdn.com/$script,subdocument
 @@||g.tbcdn.cn/
 ||g.$third-party,subdocument,script
 ||gg.
@@ -465,6 +465,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||union.video.qq.com/fcgi-bin/data?$script
 @@||livew.l.qq.com/crossdomain.xml
 @@||l.qq.com/lview?
+@@||l.qq.com/proxyhttp$xmlhttprequest
 ||l.qq.com/
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
@@ -478,7 +479,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
-*/vmind.qqvideo.tc.qq.com/
+*.tc.qq.com/*.mp4?vkey=$media,object-subrequest
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
 www.qq.com##.adLeft,.adRight
@@ -516,7 +517,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||baoxian.163.com/$subdocument
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
-163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad
+163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,.ntes_nav_wrap,#js-epTabDS,#js-epBobo
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
@@ -656,8 +657,9 @@ wiki.mbalib.com###ad-phone
 ||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
 ||files.nyaa.se/be-$image
-oschina.net###project_ad_banner,a[data-traceid],a[href^="http://click.aliyun."]
+oschina.net##.blog-left-ad,#project_ad_banner,a[data-traceid],a[href^="http://click.aliyun."]
 ||static.oschina.net/*_banner_$image
+||static.oschina.net/uploads/space/20*.jpg|$image
 pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 ||33.pcpop.com
 ||ashow.pcpop.com/
@@ -1945,6 +1947,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||tbjfw.com
 ||tc600.com
 ||tenoad.com^$third-party
+||toushibao.com^
 ||ttlm.cc^
 ||tuigoo.com
 ||tukj.net
@@ -1959,6 +1962,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||ulink.cc^$third-party
 ||up.hiao.com
 ||up.qingdaonews.com
+||uuu9.com^
 ||v.17173.com/advideo/
 ||vipads.cn^
 ||vpie.net^$third-party
