@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201709151
+! Version: 201709261
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -161,6 +161,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||csad.cc^
 ||ctsywy.com
 ||dazhantai.com
+||dobest.com/$third-party
 ||dleke.com/
 ||e7001.com/
 ||e7002.com/
@@ -172,7 +173,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||fu68.com/
 ||g1c5.com/
 ||gdbly.com/
-||getnormalizedurl.com^
+||getnormalizedurl.com
 ||googleadservices.com
 ||googlesyndication.com
 ||google-analytics.com
@@ -302,7 +303,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||zhudiaosz.com^
 ||zzbaowen.com^
 ##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
-~mail.google.com##.adsbygoogle,.ads
+~mail.google.com##.adsbygoogle,div.ads
 ||com/ads
 *_350_330.$image
 */html/click/
@@ -399,7 +400,7 @@ huacolor.com##td[valign=top],div.huadown,.download-list>div
 ||greenxf.com/js/gyong.js
 greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div,div.list_lg
 ||www.greenxiazai.com/green/
-onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div
+onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div,#ItemXGJC,#ItemXGXZ,#ItemXGZT,#ItemSSZT
 orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
 ||www.orsoon.com/zhuanti/$script,image
 ouyaoxiazai.com##.header+div,div.ad_show
@@ -517,7 +518,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||baoxian.163.com/$subdocument
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
-163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,.ntes_nav_wrap,#js-epTabDS,#js-epBobo
+163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
@@ -678,6 +679,7 @@ v2ex.com###Rightbar>.box:nth-child(2)~div,div.sidebar_units
 www.zhihu.com##.Banner.Card
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
+@@||www.zimuku.net/$script
 !-------------------影视资源--------------------
 ||2kandy.com/js/$script
 |http://www.36dm.com/js/
@@ -1962,7 +1964,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||ulink.cc^$third-party
 ||up.hiao.com
 ||up.qingdaonews.com
-||uuu9.com^
+||uuu9.com/$third-party
 ||v.17173.com/advideo/
 ||vipads.cn^
 ||vpie.net^$third-party
