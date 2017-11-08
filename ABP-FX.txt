@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201709261
+! Version: 201711081
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -153,6 +153,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||bjcathay.com/
 ||boyxu.cn^
 ||cccrir.com/
+||cdnjsp.wang^
 ||chenwen7788.com/
 ||cmp288.com/
 ||cnbole.net/
@@ -314,6 +315,7 @@ pageMediaControl
 */piwik.
 */svnad/$image,script
 @@||dwstatic.com/b=amkit
+@@||log.vdn.apps.cntv.cn/stat.html?
 ||stat.
 ||stats.$domain=~stats.gov.cn
 */stat.
@@ -356,6 +358,7 @@ gonggao.js|
 !-------------------下载站点-----------------------
 52z.com###softdown>div,div.syGaosuDa:first-child
 ||www.fxxz.com/show/html/$subdocument
+||www.fxxz.com/skin/know/html/$subdocument
 91danji.com###bg_ad,div.hr.hr48
 ||www.91danji.com/js/$script
 ||js.cncrk.com/
@@ -568,7 +571,7 @@ ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
 @@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
-qidian.com###j-topHeadBox,#tr-banner,#topGameOp,div.banner-wrap,a[href*="game.qidian.com/"],div.book-list li:last-child,div.focus-img.cf,#DoublePop_right,#DoublePop_left
+qidian.com##.body-rec-mask~*,#j-topHeadBox,#tr-banner,#topGameOp,div.banner-wrap,a[href*="game.qidian.com/"],div.book-list li:last-child,div.focus-img.cf,#DoublePop_right,#DoublePop_left
 ||qidian.com/ejs/qd/js/read.qidian.com/gameBox.
 ||cj.qidian.com/Picture/$image
 ||cj.qidian.com/$object,object-subrequest,subdocument
@@ -630,7 +633,7 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
-ftchinese.com##div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
+ftchinese.com##.app-download-container,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
 ||ftchinese.com/m/marketing/$subdocument
 ||static.ftchinese.com/n/main-barrier.js
 |http://dolphin.ftimg.net/$script
@@ -760,7 +763,6 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 */videos/other/201$xmlhttprequest,domain=pps.tv|iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
 ||qiyipic.com/common/201$object-subrequest
-||www.iqiyi.com/$subdocument
 ||a.ckm.iqiyi.com/
 ||am.cupid.iqiyi.com/am
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
@@ -1345,7 +1347,7 @@ tucao.tv##div[class$="_poster"]
 */js/asp.js^$script
 */js/autosize.js|
 */js/bann.js|
-*/js/bd.js^
+*/js/bd.js^$domain=~share.dmhy.org
 */js/bd1.js^
 */js/bd2.js^
 */js/bd3.js^
