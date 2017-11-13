@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201711081
+! Version: 201711131
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -12,7 +12,7 @@
 *$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.org|btspread.xyz|btkitty.pet
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
-*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.com
+*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.la
 *$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
 @@||img1.bdstatic.com/static/common/widget/ui/admanager/ad/$script
@@ -257,6 +257,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tanx.com/
 ||th21333.com/
 ||thxnr.com/
+||tudown.com/
 ||tui1999.com/
 ||click.taobao.com/$third-party,popup
 ||tk001.com/$third-party
@@ -347,7 +348,7 @@ _ads.js|
 */piao.js|
 */pop.js^
 .pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com
+popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
 */float.js|
 gonggao.js|
 */tan.$script
@@ -356,6 +357,9 @@ gonggao.js|
 */tongji.js|$domain=~zongheng.com
 */tk.*.php?id=
 !-------------------下载站点-----------------------
+*.gif|$image,domain=3987.com|www.ouyaoxiazai.com|www.myhack58.com
+www.3987.com##.downinfo > .fr, .show.xiazai_bj
+||statics.3987.com/all_site/$script
 52z.com###softdown>div,div.syGaosuDa:first-child
 ||www.fxxz.com/show/html/$subdocument
 ||www.fxxz.com/skin/know/html/$subdocument
@@ -408,7 +412,6 @@ orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
 ||www.orsoon.com/zhuanti/$script,image
 ouyaoxiazai.com##.header+div,div.ad_show
 @@||www.ouyaoxiazai.com/*/*.gif|$image
-||www.ouyaoxiazai.com/*.gif|$image
 |http://a.oyksoft.com/show/$script
 ||pc6.com/$subdocument
 pcbeta.com###sitefocus
@@ -483,6 +486,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
+@@*/sports.tc.qq.com/$media,object-subrequest
 *.tc.qq.com/*.mp4?vkey=$media,object-subrequest
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
@@ -657,7 +661,6 @@ jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd,div.r300.clearfix.m
 ||files.jb51.net/image/$image
 ||img.jb51.net/images/sl/$image
 wiki.mbalib.com###ad-phone
-||www.myhack58.com/*.gif|
 ||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
 ||files.nyaa.se/be-$image
