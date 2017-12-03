@@ -1,18 +1,19 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201711131
+! Version: 201712011
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*/jquery.$script
 @@*/jquery-$script
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
+|http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.me
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.ws|btbiti.com|btfuli.org|btspread.xyz|btkitty.pet
+*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
+*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.fyi|btbiti.com|btfuli.org|btspread.rip|btkitty.fyi
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
-*$script,domain=eywedu.org|365essay.com|zdfans.com|baishuku.la
+*$script,domain=eywedu.org|365essay.com|baishuku.la
 *$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
 @@||img1.bdstatic.com/static/common/widget/ui/admanager/ad/$script
@@ -514,7 +515,6 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 @@||bnet.163.com/
 ||g.163.com/$~object-subrequest
 ||img1.126.net/
-@@||img2.126.net/ntesrich/2015/1127/float_logo_gt2015.11.30.js
 ||img2.126.net/
 ||img3.126.net/
 ||img6.126.net/
@@ -525,13 +525,14 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||baoxian.163.com/$subdocument
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument
-163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
+|https://nex.163.com/q?
+163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo,div.gg300
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
 ||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
-mail.163.com,mail.126.com###theme
+mail.163.com,mail.126.com##.emailSuggest,#theme,.gWel-bottom
 ||mimg.127.net/m/lc/img/LoginBackgroundPic/$image
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
@@ -618,6 +619,7 @@ baike.com###right_ad_div
 bing.com##li.b_ad
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
+www.cnbeta.com##a[href^="http://item.jd.com/"]
 ||static.cnbetacdn.com/$script
 ||cnbeta.com/js/pages/$subdocument
 ||china.com.cn/2016ads/$subdocument
@@ -645,7 +647,7 @@ ftchinese.com##.app-download-container,div[data-id|=banner],div[data-id|=storymp
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
-www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing]
+www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
 ||itv.hexun.com/
 ||www.hexun.com/hxpage/index.html$subdocument
 @@||hxsame.hexun.com/s?z=hexun&
@@ -678,8 +680,8 @@ qiushibaike.com##div.shopwindow
 toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name],li[ad_id]
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
-v2ex.com###Rightbar>.box:nth-child(2)~div,div.sidebar_units
-||v2ex.co/assets/sidebar/$image
+www.v2ex.com##.sidebar_units,.sidebar_compliance
+||v2ex.assets.uxengine.net/assets/sidebar/$image
 ||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
 www.zhihu.com##.Banner.Card
