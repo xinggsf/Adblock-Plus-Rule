@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201712011
+! Version: 201712141
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -639,11 +639,8 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
-ftchinese.com##.app-download-container,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
-||ftchinese.com/m/marketing/$subdocument
-||static.ftchinese.com/n/main-barrier.js
-|http://dolphin.ftimg.net/$script
-|http://www.ftchinese.com/index.php/jsapi/
+cn.ft.com##.app-download-container,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
+||cn.ft.com/m/marketing/$subdocument
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
@@ -677,7 +674,7 @@ qiushibaike.com##div.shopwindow
 ||galaxy.sogoucdn.com/galaxy/
 ||api.huo360.com/www/back/$image
 ||www.toutiao.com/api/web_ads/
-toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name],li[ad_id]
+toutiao.com##div.adTab,div.carAd,#pagelet-detailadd,iframe[onload^="var adWrap"],li.item.J_add,div[ad_name]
 u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
 www.v2ex.com##.sidebar_units,.sidebar_compliance
