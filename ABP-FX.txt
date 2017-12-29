@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201712141
+! Version: 201712291
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -398,9 +398,6 @@ huacolor.com##td[valign=top],div.huadown,.download-list>div
 @@||huacolor.com/skins/$script
 ||huacolor.com/$script
 |http://www.huacolor.com/YD/*.gif$image
-@@|http://www.gamersky.com/gsinc/$subdocument
-||gamersky.com/$subdocument
-||ja.gamersky.com/$script
 ||cp.greenxf.cn/$script
 ||greenxf.com/asp/$script
 ||greenxf.com/GreenxfAD/
@@ -639,8 +636,13 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
-cn.ft.com##.app-download-container,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
+cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
 ||cn.ft.com/m/marketing/$subdocument
+@@|http://www.gamersky.com/gsinc/$subdocument
+||gamersky.com/$subdocument
+||click.gamersky.com/
+||ja.gamersky.com/
+||ja1.gamersky.com/
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
