@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201712291
+! Version: 201801211
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -10,7 +10,7 @@
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
-*$third-party,domain=hjwzw.com|xxbiquge.com|diggbt.fyi|btbiti.com|btfuli.org|btspread.rip|btkitty.fyi
+*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.com|btfuli.me|cnbtspread.net|cnbtkitty.com
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -310,7 +310,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||com/ads
 *_350_330.$image
 */html/click/
-pageMediaControl
+pageMediaControl*$script
 */mediaController
 */piaofu.
 */piaofu/
@@ -647,10 +647,9 @@ cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id|=storympu],di
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
+||hxsame.hexun.com/
 ||itv.hexun.com/
 ||www.hexun.com/hxpage/index.html$subdocument
-@@||hxsame.hexun.com/s?z=hexun&
-quote.futures.hexun.com###topFullWidthBanner
 @@||www.infoq.com/scripts/ads.js
 ithome.com###hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
 ||ithome.com/file/js/money/
@@ -774,10 +773,10 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 @@||mmstat.com/$script,image,domain=v.youku.com|tudou.com
 ||atm.youku.com/
 ||alicdn.com/iku/$object-subrequest
-||l.youku.com/*log?
-||static.youku.com/*/js/ikuAdapterNew.js
+||iku.youku.com/
+||l.youku.com/
 ||lstat.youku.com/log.
-||l.youku.com/rec_ad_show?
+||module.youku.com/
 youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/iframemessage.html
@@ -1499,10 +1498,10 @@ tucao.tv##div[class$="_poster"]
 |http://a.xigua110.com/a/xigua/$script
 |http://aagw.sdo.
 |http://abc.hkepc.com/www/d/
-|http://acs.
+||acs.
 |http://adf.dahe.cn
 |http://adpic.
-|http://adsame.
+||adsame.
 |http://adsfile.
 |http://adv-first.ru/
 |http://afpimages.eastday
