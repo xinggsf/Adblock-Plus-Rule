@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201801211
+! Version: 201801281
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -264,6 +264,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tk001.com/$third-party
 ||tongqing2015.com/
 ||union$third-party
+@@||captcha.guard.qcloud.com/cap_union_prehandle?$script,domain=www.sf-express.com
 *_union$script,subdocument,domain=~bitauto.com|~qq.com
 ||union.
 ||uoyrsd.com
@@ -638,7 +639,8 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||firefoxchina.cn/html/$subdocument
 cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
 ||cn.ft.com/m/marketing/$subdocument
-@@|http://www.gamersky.com/gsinc/$subdocument
+||cn.ft.com/a.html?$subdocument
+@@||www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 ||click.gamersky.com/
 ||ja.gamersky.com/
@@ -771,11 +773,10 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
 @@||mmstat.com/$script,image,domain=v.youku.com|tudou.com
+*/ikuAdapterNew.js^$script,domain=v.youku.com|tudou.com
+*$media,domain=v.youku.com
 ||atm.youku.com/
-||alicdn.com/iku/$object-subrequest
-||iku.youku.com/
 ||l.youku.com/
-||lstat.youku.com/log.
 ||module.youku.com/
 youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
