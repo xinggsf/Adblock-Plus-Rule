@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201801281
+! Version: 201802051
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -160,6 +160,8 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||cnbole.net/
 ||cnzz.
 ||code222.com^
+||coinhive.com
+||coin-hive.com
 ||csad.cc^
 ||ctsywy.com
 ||dazhantai.com
@@ -348,6 +350,7 @@ _ads.js|
 */pagead$script
 */s.php?id=$script,third-party
 */piao.js|
+@@||patch.ali213.net/js/pop.js^$script
 */pop.js^
 .pop.js^$script
 popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
@@ -415,7 +418,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 ||pc6.com/$subdocument
 pcbeta.com###sitefocus
 ||pcgames.com.cn/g/extlin/pcdownpic/$script
-pconline.com.cn##div.jcztl,#JrightSideFocus,div.box.best,div.ivy-330
+pconline.com.cn##div.jcztl,div.box.best,div.ivy-330
 ||buy.pconline.com.cn/$script
 |http://www.pconline.com.cn/*/intf$subdocument,script
 |http://www.pconline.com.cn/_hux_$script
