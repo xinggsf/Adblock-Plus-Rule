@@ -1,12 +1,12 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201803051
+! Version: 201803131
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*/jquery.$script
 @@*/jquery-$script
-@@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
+@@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net|yiyaojd.com
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
@@ -776,13 +776,19 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 ||am.cupid.iqiyi.com/am
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
-@@||mmstat.com/$script,image,domain=v.youku.com|tudou.com
+@@||log.mmstat.com/$domain=v.youku.com|tudou.com
 */ikuAdapterNew.js^$script,domain=v.youku.com|tudou.com
-*$media,domain=v.youku.com
+*/youku/*.mp4?sid=$media,domain=v.youku.com|tudou.com
 ||atm.youku.com/
+||iku.youku.com/
 ||l.youku.com/
 ||module.youku.com/
+||fourier.alibaba.com/$domain=v.youku.com|tudou.com
+||hudong.alicdn.com/$domain=v.youku.com|tudou.com
+||ynuf.alipay.com/$domain=v.youku.com|tudou.com
+!||yt.mmstat.com/$domain=v.youku.com|tudou.com
 youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
+
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/iframemessage.html
 ||bilibili.com/html/$~xmlhttprequest,~websocket
