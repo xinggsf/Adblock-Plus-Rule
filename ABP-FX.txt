@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201803141
+! Version: 201803161
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -777,13 +777,13 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
 @@||log.mmstat.com/$domain=v.youku.com|tudou.com
-@@||yt.mmstat.com/$domain=v.youku.com|tudou.com
 */ikuAdapterNew.js^$script,domain=v.youku.com|tudou.com
 */youku/*.mp4?sid=$media,domain=v.youku.com|tudou.com
 ||atm.youku.com/
 ||l.youku.com/
 ||pl-ali.youku.com/
 ||module.youku.com/
+@@||hudong.alicdn.com/
 ||alicdn.com/$domain=v.youku.com|tudou.com
 youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 
@@ -806,7 +806,8 @@ live.bilibili.com##.video-section+a
 le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
 cctv.com###bgAd_div
 |http://player.cntv.cn/adplayer/$object
-douyutv.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad]
+douyu.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad]
+||wan.douyu.com/
 ||staticlive.douyucdn.cn/upload/signs/$object
 ||dotcounter.douyutv.com/deliver/
 ||luckstatic.v1.cn/st/10000/
