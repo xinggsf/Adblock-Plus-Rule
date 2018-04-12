@@ -329,6 +329,7 @@ pageMediaControl*$script
 ||iwan.$third-party
 !-------------------通用脚本广告--------------------
 */51ads/
+@@||img05.zhaopin.cn/2014/common/js/za/ga.js
 */ga.js^
 -ads-$script
 _ad.js|
