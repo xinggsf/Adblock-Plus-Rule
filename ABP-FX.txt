@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201804081
+! Version: 201804151
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -783,7 +783,7 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||atm.youku.com/
 ||l.youku.com/
 ||module.youku.com/
-youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
+youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
 
 @@||acgvideo.com/*/ad/$xmlhttprequest,object-subrequest,domain=bilibili.com
 @@||www.bilibili.com/html/iframemessage.html
@@ -793,7 +793,8 @@ youku.com##div[id^=ab_v_],li.js-draw,div.listcontrol
 ||data.bilibilijj.com/free/*.txt
 ||qiniu.bilibilijj.com/$image
 ||hdslb.com/bfs/sycp/creative_img/$image
-bilibili.com##div.ad-f,span[data-ad-type=banner]
+||hdslb.com/bfs/sycp/tmaterial/20$image
+bilibili.com##div.ad-f,span[data-ad-type=banner],div.gg-floor-module
 live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
 */letv-gug/*$media,object-subrequest
