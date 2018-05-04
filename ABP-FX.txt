@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201804151
+! Version: 201805041
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -10,7 +10,7 @@
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
-*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.com|btfuli.me|cnbtspread.net|cnbtkitty.com
+*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.org|cnbtkitty.net
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -44,7 +44,14 @@ pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||app.video.baidu.com/adver?
 ||v.baidu.com/staticapi/videoAd.json?
-wenku.baidu.com##div.mod.lastcell-dialog
+wenku.baidu.com##.banner-wrap
+||eduad.baidu.com/
+||wenku.baidu.com/xpage/$xmlhttprequest
+||as2.wenku.baidu.com/$subdocument
+||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
+||wkstatic.bdimg.com/static/wkview/widget/ui/tools/hao123common/$script
+||wkstatic.bdimg.com/static/wkview/widget/jigou_tuijian/$script
+
 www.baidu.com###content_left>div:not(.c-container),#content_right>table td>:not(#con-ar)
 www.baidu.com##div.c-container:has(a[data-landurl])
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
@@ -445,12 +452,13 @@ xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
 ||www.xiazaiba.com/data/xzb_haha.js
 ||www-static.xunzai.com/static/wwwimg/$image
 ||xz7.com/js/
-yxdown.com##div.gg,div[id$=_ads]
+yxdown.com##div.gg,div[id$=_ads],#dl_right,#dl_left
 ||yxdown.com/open/$script
 @@||gg.yxdown.com/count/countzt.js
 ||afpmm.alicdn.com/g/
 ||static.yxdown.com/images/link$image
 ||static.yxdown.com/images/adbox$image
+||static.yxdown.com/cjimages/$image
 ||tt.yxdown.com/$image,object
 ||www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
 ||www.zolsky.com/hotsoft/$subdocument,script
@@ -762,6 +770,7 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||afpssp.alimama.com/$domain=1905.com
 |http://www.1905.com/coll/ad$subdocument
 www.mgtv.com##.on.footAd
+@@||player.mgtv.com/mgtv_*/ad.swf
 ||click.hunantv.com/
 ||da.hunantv.com/
 ||da.mgtv.com/
