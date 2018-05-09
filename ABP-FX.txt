@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201805041
+! Version: 201805091
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -10,7 +10,7 @@
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
 *$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
-*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.org|cnbtkitty.net
+*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.xyz|cnbtkitty.org
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -208,6 +208,8 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||imeijiajia.com
 ||img80.net/
 ||irs01.
+||cee1.iteye.com/
+||cee2.iteye.com/
 ||x.jd.com/
 ||jfqkj.com/
 ||jiaheyonggu.com/
@@ -497,6 +499,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
+@@*/vlive.qqvideo.tc.qq.com/$media,object-subrequest
 @@*/sports.tc.qq.com/$media,object-subrequest
 *.tc.qq.com/*.mp4?$media,object-subrequest
 ||qq.com/games/$subdocument
@@ -694,6 +697,8 @@ u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
 www.v2ex.com##.sidebar_units,.sidebar_compliance
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
+||img.cmm.xmfish.com/pages/uploads/20$image
+bbs.xmfish.com##div[id^=adm_show_]
 ||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
 www.zhihu.com##.Banner.Card
