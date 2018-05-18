@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201805121
+! Version: 201805181
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -44,13 +44,10 @@ pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||app.video.baidu.com/adver?
 ||v.baidu.com/staticapi/videoAd.json?
-wenku.baidu.com##.banner-wrap
-||eduad.baidu.com/
+
 ||wenku.baidu.com/xpage/$xmlhttprequest
+||eduad.baidu.com/
 ||as2.wenku.baidu.com/$subdocument
-||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
-||wkstatic.bdimg.com/static/wkview/widget/ui/tools/hao123common/$script
-||wkstatic.bdimg.com/static/wkview/widget/jigou_tuijian/$script
 
 www.baidu.com###content_left>div:not(.c-container),#content_right>table td>:not(#con-ar)
 www.baidu.com##div.c-container:has(a[data-landurl])
