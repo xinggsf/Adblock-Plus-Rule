@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201805181
+! Version: 201805251
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -48,6 +48,7 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||wenku.baidu.com/xpage/$xmlhttprequest
 ||eduad.baidu.com/
 ||as2.wenku.baidu.com/$subdocument
+||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
 
 www.baidu.com###content_left>div:not(.c-container),#content_right>table td>:not(#con-ar)
 www.baidu.com##div.c-container:has(a[data-landurl])
@@ -103,9 +104,9 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||114so.cn/
 ||1234xm.com/
 ! 电信截持弹窗 3行
-||greenet.cn/$popup,third-party
-||189.gd/$popup,third-party
-||189.cn/$popup,third-party
+||189.cn/$popunder
+||greenet.cn/$popunder
+||189.gd/$popunder
 ||24haitao.net/
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
@@ -270,7 +271,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||thxnr.com/
 ||tudown.com/
 ||tui1999.com/
-||click.taobao.com/$third-party,popup
+||click.taobao.com/$third-party,popunder
 ||tk001.com/$third-party
 ||tongqing2015.com/
 ||union$third-party
