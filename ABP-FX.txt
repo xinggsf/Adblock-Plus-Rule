@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201806221
+! Version: 201807011
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -498,6 +498,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
 @@*/sports.tc.qq.com/$media,object-subrequest
+@@*/music.qqvideo.tc.qq.com/$media,object-subrequest
 *.tc.qq.com/*.mp4?$media,object-subrequest
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
@@ -649,9 +650,10 @@ ebusinessreview.cn##div.header,.adarticle,div.ad_s,[id^=ad_]
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
-cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
+ftchinese.com,cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id|=storympu],div[data-id|=mpu],div.o-barrier
 ||cn.ft.com/m/marketing/$subdocument
 ||cn.ft.com/a.html?$subdocument
+||www.ftchinese.com/a.html$subdocument
 @@||www.gamersky.com/gsinc/$subdocument
 ||gamersky.com/$subdocument
 ||click.gamersky.com/
