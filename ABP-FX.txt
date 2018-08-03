@@ -1,11 +1,9 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201807271
+! Version: 201808031
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
-@@*/jquery.$script
-@@*/jquery-$script
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net|yiyaojd.com
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
@@ -271,7 +269,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||thxnr.com/
 ||tudown.com/
 ||tui1999.com/
-||click.taobao.com/$third-party,popup
+||click.taobao.com/$third-party,popunder
 ||tk001.com/$third-party
 ||tongqing2015.com/
 ||union$third-party
