@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201808161
+! Version: 201808181
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -450,12 +450,13 @@ xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
 ||www.xiazaiba.com/data/xzb_haha.js
 ||www-static.xunzai.com/static/wwwimg/$image
 ||xz7.com/js/
-yxdown.com##div.gg,div[id$=_ads],#dl_right,#dl_left
+yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ||yxdown.com/open/$script
 @@||gg.yxdown.com/count/countzt.js
 ||afpmm.alicdn.com/g/
 ||static.yxdown.com/images/link$image
 ||static.yxdown.com/images/adbox$image
+||static.yxdown.com/cj/$script
 ||static.yxdown.com/cjimages/$image
 ||tt.yxdown.com/$image,object
 ||www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
@@ -499,6 +500,9 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||tencentmind.com/
 ||ltsdl.qq.com/$xmlhttprequest
 @@*/sports.tc.qq.com/
+@@*/sportsts.tc.qq.com/
+@@*/omts.tc.qq.com/
+@@*/vipzj.video.tc.qq.com/
 *.tc.qq.com/$domain=~y.qq.com
 ||qq.com/games/$subdocument
 ||v.qq.com/x/webtips?$subdocument
