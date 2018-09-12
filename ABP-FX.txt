@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201808181
+! Version: 201809121
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -563,6 +563,7 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 ||sina.com.cn/litong/
 ||adbox.sina.com.cn/
 ||beacon.sina.com.cn/
+||sbeacon.sina.com.cn/
 ||d1.sina.com.cn/
 ||d2.sina.com.cn/
 ||d3.sina.com.cn/
@@ -635,7 +636,9 @@ baike.com###right_ad_div
 bing.com##li.b_ad
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
-www.cnbeta.com##a[href^="http://item.jd.com/"]
+www.cnbeta.com##div.tac~*,div.tac,a[href^=http]>img,#upcoming_box
+||duomai.com/
+||taboola.com/
 ||static.cnbetacdn.com/$script
 ||cnbeta.com/js/pages/$subdocument
 ||china.com.cn/2016ads/$subdocument
@@ -705,7 +708,7 @@ www.v2ex.com##.sidebar_units,.sidebar_compliance
 bbs.xmfish.com##div[id^=adm_show_]
 ||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
-www.zhihu.com##.Banner.Card
+www.zhihu.com##.Banner.Card,.shameimaru-section
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
 @@||www.zimuku.net/$script
@@ -794,6 +797,7 @@ iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.c
 ||qiyipic.com/common/201$object-subrequest
 ||a.ckm.iqiyi.com/
 ||am.cupid.iqiyi.com/am
+||ssports.iqiyi.com/app/$object-subrequest
 www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
 @@||mmstat.com/$domain=v.youku.com|tudou.com
@@ -813,7 +817,7 @@ youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
 ||qiniu.bilibilijj.com/$image
 ||hdslb.com/bfs/sycp/creative_img/$image
 ||hdslb.com/bfs/sycp/tmaterial/20$image
-bilibili.com##div.ad-f,span[data-ad-type=banner],div.gg-floor-module
+bilibili.com##div.ad-f,span[data-ad-type=banner],.gg-floor-module,.slide-gg
 live.bilibili.com##.video-section+a
 @@||stat.letv.com/$script
 */letv-gug/*$media,object-subrequest
