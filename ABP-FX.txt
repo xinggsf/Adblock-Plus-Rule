@@ -1,14 +1,14 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201809121
+! Version: 201809161
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net|yiyaojd.com
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xs.la|dhzw.org|m.muyuge.com|88dushu.com|92to.com|xunzai.com|xsbashi.com|xs84.la
-*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.xyz|cnbtkitty.org
+*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xs84.la
+*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.xyz
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -60,16 +60,9 @@ play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wra
 tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
-@@||tb1.bdstatic.com/??/tb/_/forum_info_$script
 ||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
 ||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
-||tb1.bdstatic.com/??/tb/_/app_forum_$script
-||tb1.bdstatic.com/??/tb/_/my_app_$script
 ||tb1.bdstatic.com/tb/cms/frs/bg/$image
-||tb1.bdstatic.com/tb/cms/activity_head/$image
-||tb1.bdstatic.com/tb/r/image/201$image
-||imgsrc.baidu.com/tieba/pic/item/$image
-||tieba.baidu.com/tb/cms/game/*_banner.jpg
 !----------------------通用、广告联盟站点-----------------------
 ||ad.
 */ad.
@@ -464,7 +457,7 @@ yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ||www.zolsky.com/read/readad/$subdocument
 ! 中关村在线
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
-www.zol.com.cn,www.91danji.com,btbtt.co##body:style(background: center !important)
+www.zol.com.cn,www.91danji.com,btbtt.me##body:style(background: center !important)
 zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
 ||icon.zol-img.com.cn/public/js/web_foot$script
 ||p.zol-img.com.cn/$script
@@ -776,6 +769,7 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 ||api.my.tv.sohu.com/wm/getads.do?
 ||aty.sohu.com/
 ||go.sohu.com/
+||tv.sohu.com/upload/csad/admaster/$image
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
 ||afp.m1905.com^
@@ -819,29 +813,22 @@ youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
 ||hdslb.com/bfs/sycp/tmaterial/20$image
 bilibili.com##div.ad-f,span[data-ad-type=banner],.gg-floor-module,.slide-gg
 live.bilibili.com##.video-section+a
+@@||ark.letv.com/adx?adzone=
 @@||stat.letv.com/$script
 */letv-gug/*$media,object-subrequest
-||webp2p.letv.com/
 ||letvimg.com/$object,object-subrequest
 ||letvimg.com/*_gugwl/$image
 ||js.letvcdn.com/*_banner_$script
+||banana.le.com/
 le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
 cctv.com###bgAd_div
 |http://player.cntv.cn/adplayer/$object
 douyu.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad],div.no-login,.his-sign-cont,.f-sign-cont
 ||wan.douyu.com/
-||staticlive.douyucdn.cn/upload/signs/$object
-||dotcounter.douyutv.com/deliver/
 ||g.huya.com/
 ||luckstatic.v1.cn/st/10000/
 ||luck.v1.cn/$object-subrequest
 yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
-||yytcdn.com/crossdomain.xml
-||hc.yinyuetai.com/partner/yyt/
-*.jpg|$object-subrequest,domain=yinyuetai.com
-tucao.tv##div[class$="_poster"]
-|http://www.tucao.tv/index.php?m=poster&c=index$subdocument,popup
-|http://www.tucao.tv/uploadfile/201$image,object-subrequest
 @@||union.bokecc.com/player
 ||bokecc.com/*.jpg|$object-subrequest
 ||bokecc.com/flash/playlog?
