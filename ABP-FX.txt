@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201809161
+! Version: 201809261
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -266,6 +266,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||tk001.com/$third-party
 ||tongqing2015.com/
 ||union$third-party
+@@||ssl.captcha.qq.com/cap_union_$script,subdocument
 *_union$script,subdocument,domain=~bitauto.com|~qq.com|~sf-express.com
 ||union.
 ||uoyrsd.com
@@ -629,7 +630,7 @@ baike.com###right_ad_div
 bing.com##li.b_ad
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||bitautoimg.com/ResourceFiles/$image,object
-www.cnbeta.com##div.tac~*,div.tac,a[href^=http]>img,#upcoming_box
+www.cnbeta.com##div.tac~*,div.tac,#upcoming_box
 ||duomai.com/
 ||taboola.com/
 ||static.cnbetacdn.com/$script
@@ -660,6 +661,7 @@ ftchinese.com,cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id
 ||click.gamersky.com/
 ||ja.gamersky.com/
 ||ja1.gamersky.com/
+||aa.gushiwen.org/
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
@@ -724,6 +726,7 @@ dygang.com,6vhao.com,6vhao.net###gd
 jiyingdm.com##div.abcde,#otherWindowBox
 ||jiyingdm.com/js/loadingshow.html$subdocument
 subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
+||subhd.com/images/ap/$image
 ttmeiju.com##.midder>div[style="float:left;margin-bottom:27px;margin-top:27px;"],#miaov_float_layer,#dialog-overlay,#new-user,div.trailer li:last-child,#footer img,#header+div
 ||pic.yupoo.com/*/medish.jpg$domain=~ttmeiju.com
 yatu.tv###loadimg,#daohang
@@ -772,10 +775,8 @@ baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
 ||tv.sohu.com/upload/csad/admaster/$image
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
-||afp.m1905.com^
-||afp.alicdn.com/afp-creative/$image,object-subrequest
-||afpssp.alimama.com/$domain=1905.com
-|http://www.1905.com/coll/ad$subdocument
+||aliyun.com^$domain=1905.com
+||aliyuncs.com^$domain=1905.com
 www.mgtv.com##.on.footAd
 @@||player.mgtv.com/mgtv_*/ad.swf
 ||click.hunantv.com/
@@ -807,12 +808,12 @@ youku.com##.right-sidepopup,div[id^=ab_v_],li.js-draw,#yk-player-curtain
 ||bilibili.com/html/$~xmlhttprequest,~websocket
 !播放器右侧广告图片
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
-||data.bilibilijj.com/free/*.txt
-||qiniu.bilibilijj.com/$image
 ||hdslb.com/bfs/sycp/creative_img/$image
 ||hdslb.com/bfs/sycp/tmaterial/20$image
 bilibili.com##div.ad-f,span[data-ad-type=banner],.gg-floor-module,.slide-gg
 live.bilibili.com##.video-section+a
+||data.bilibilijj.com/free/*.txt
+||qiniu.bilibilijj.com/$image
 @@||ark.letv.com/adx?adzone=
 @@||stat.letv.com/$script
 */letv-gug/*$media,object-subrequest
