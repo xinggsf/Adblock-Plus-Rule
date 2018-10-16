@@ -1,13 +1,13 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201810091
+! Version: 201810161
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net|yiyaojd.com
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xs84.la
+*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xs84.la|m.biqudao.com|m.bequge.com
 *$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.xyz
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
@@ -99,6 +99,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||greenet.cn/$popunder
 ||189.gd/$popunder
 ||24haitao.net/
+||2wxb5.cn^$xmlhttprequest,script
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
 ||360buyimg.com/$~image
@@ -555,7 +556,7 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 ||sina.com.cn/iframe/76/$subdocument
 ||sina.com.cn/litong/
 ||adbox.sina.com.cn/
-||beacon.sina.com.cn/
+||beacon.
 ||sbeacon.sina.com.cn/
 ||d1.sina.com.cn/
 ||d2.sina.com.cn/
@@ -612,7 +613,7 @@ ty2016.net##div[class^=bread_]
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 360doc.com##div[id^=divad],#fullbg
 |http://www.4399.com/loadimg/iframe_$subdocument
-|http://a.5054399.com/4399_js/$script
+||5054399.com/4399_js/$script
 51cto.com###ft~div
 51cto.com##div:has(#tonglanad)
 ||52pk.com/$object
@@ -637,7 +638,8 @@ cnbeta.com##.cbv,#artibody~*,#upcoming_box
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
 ||afp.chinanews.com
 ||i8.chinanews.com^$subdocument
-@@|http://my.csdn.net/service/favorite/add_favorite?
+||img-ads.csdn.net/
+||rabc1.iteye.com/
 csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
 ctfile.com,www.pipipan.com##a[href^="https://union.ctfile.com"],div[id|=ad],div[id^=ad_]
 ||mydisplay.ctfile.com/$script,subdocument,popup
@@ -730,6 +732,7 @@ ttmeiju.com##.midder>div[style="float:left;margin-bottom:27px;margin-top:27px;"]
 yatu.tv###loadimg,#daohang
 ||ygdy8.com/jsy/
 ||img.zimuzu.tv/52meiju$image
+||img.91dict.com/$image,domain=zimuzu.tv
 !-------------------视频站点--------------------
 ||com/pic/fgr/$script,object-subrequest
 ||www.youtube.com/annotations_invideo?$xmlhttprequest
