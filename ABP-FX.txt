@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201810161
+! Version: 201810281
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -294,6 +294,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||xtgreat.com^
 ||xyly2016.com/
 ||xyxy01.com
+@@||xyz/captcha$image
 ||xyz^$third-party
 ||xzzyi.com^
 ||yccdn.com/
@@ -770,14 +771,8 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
 ||aliyun.com^$domain=1905.com
 ||aliyuncs.com^$domain=1905.com
-www.mgtv.com##.on.footAd
-@@||player.mgtv.com/mgtv_*/ad.swf
-||click.hunantv.com/
-||da.hunantv.com/
+@@||tb.mgtv.com/sdk/*/ad-sdk.js$script
 ||da.mgtv.com/
-||res.hunantv.com/
-||res.mgtv.com/video/$object-subrequest
-||sdk.yunfan.com/crossdomain.xml
 ||log.$domain=mgtv.com
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 */videos/other/201$xmlhttprequest,object-subrequest,domain=pps.tv|iqiyi.com
@@ -790,7 +785,7 @@ www.soku.com##li.sb_ad,div.sk-banner,div.sk_banner
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json?
 @@||mmstat.com/$domain=v.youku.com|tudou.com
 */ikuAdapterNew.js^$script,domain=youku.com|tudou.com
-*/youku/*.mp4?$media,domain=youku.com|tudou.com
+*/youku/*.mp4?$media,object-subrequest,domain=youku.com|tudou.com
 ||atm.youku.com/
 ||l.youku.com/
 ||module.youku.com/
