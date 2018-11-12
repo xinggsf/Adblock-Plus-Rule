@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201810281
+! Version: 201811081
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -479,7 +479,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||union.video.qq.com/fcgi-bin/data?$script
 @@||livew.l.qq.com/crossdomain.xml
 @@||l.qq.com/lview?
-@@||vi.l.qq.com/proxyhttp^
+@@||l.qq.com/proxyhttp^
 ||l.qq.com/
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
@@ -537,7 +537,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument,third-party
 |https://nex.163.com/q?
-163.com##[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo,div.gg300
+163.com##.gg200,.gg300,.gg200x300,.N-nav-bottom~*,[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
 open.163.com###j-hbtj,#j-footertj
@@ -568,7 +568,7 @@ hao.360.cn##div.small-obj.animate,#corner-flash
 blog.sina.cn##div.item_hide+div,#pl-blog-artad
 ||dmp.sina.cn/
 !-------------------ifeng.com--------------------
-ifeng.com##div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02,#picTxt~*,div.topAd
+ifeng.com##.slide_popo_modal,div[class^=pao_],div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02,#picTxt~*,div.topAd
 ||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
