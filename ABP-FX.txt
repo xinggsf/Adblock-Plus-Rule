@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201811081
+! Version: 201811291
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -479,7 +479,8 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||union.video.qq.com/fcgi-bin/data?$script
 @@||livew.l.qq.com/crossdomain.xml
 @@||l.qq.com/lview?
-@@||l.qq.com/proxyhttp^
+@@||l.qq.com/livemsg?
+@@||l.qq.com/proxyhttp
 ||l.qq.com/
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
@@ -758,6 +759,7 @@ pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 |http://misc.t.kankan.com/level_demo/iframe/$subdocument
 |http://static.hd.baofeng.com/script/baidu.js
 baofeng.com##[class|=ad],div.play-top-ad,.play-ad-box,.play-ad-left
+@@||js.tv.itc.cn/gg.seed.js
 @@||stat.v-56.com/player
 56.com##div.qf_float
 ||qf.56.itc.cn^$image
@@ -777,6 +779,7 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 */videos/other/201$xmlhttprequest,object-subrequest,domain=pps.tv|iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
+||msg.qy.net^$script
 ||qiyipic.com/common/201$object-subrequest
 ||a.ckm.iqiyi.com/
 ||am.cupid.iqiyi.com/am
