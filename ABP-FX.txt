@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201811291
+! Version: 201812091
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -20,10 +20,15 @@
 ||ubmcmm.baidustatic.com/
 ||adscdn.baidu.com/
 ||als.baidu.com/dalog/log
+||eclick.baidu.com/
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
+||f11.baidu.com/
 ||iwanad.baidu.com/
 ||pos.baidu.com/
+||sp0.baidu.com/
+||sp1.baidu.com/
+||sp2.baidu.com/
 ||spcode.baidu.com/
 ||cbjs.baidu.com/
 ||cbjslog.baidu.com/
@@ -479,9 +484,8 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 @@||union.video.qq.com/fcgi-bin/data?$script
 @@||livew.l.qq.com/crossdomain.xml
 @@||l.qq.com/lview?
-@@||l.qq.com/livemsg?
 @@||l.qq.com/proxyhttp
-||l.qq.com/
+||l.qq.com/$~image
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
 ||isdspeed.qq.com/
@@ -618,6 +622,9 @@ ty2016.net##div[class^=bread_]
 ||5054399.com/4399_js/$script
 51cto.com###ft~div
 51cto.com##div:has(#tonglanad)
+||i1.51cto.com/
+||i2.51cto.com/
+||i3.51cto.com/
 ||52pk.com/$object
 ||dm.92to.com/
 ||tj.ali213.net/
@@ -663,6 +670,8 @@ ftchinese.com,cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id
 ||click.gamersky.com/
 ||ja.gamersky.com/
 ||ja1.gamersky.com/
+||dm.gucheng.com/
+||dmjs.gucheng.com/
 ||aa.gushiwen.org/
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
@@ -701,6 +710,7 @@ u17.com##[id^=u17-advert-fix-ad],div.ad_wrap
 |http://tj.u17t.com/$script
 www.v2ex.com##.sidebar_units,.sidebar_compliance
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
+||tongj.xilu.com/
 ||img.cmm.xmfish.com/pages/uploads/20$image
 bbs.xmfish.com##div[id^=adm_show_]
 ||www.you85.com/ling/$script
