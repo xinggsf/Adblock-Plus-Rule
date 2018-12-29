@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201812091
+! Version: 201812291
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -26,9 +26,6 @@
 ||f11.baidu.com/
 ||iwanad.baidu.com/
 ||pos.baidu.com/
-||sp0.baidu.com/
-||sp1.baidu.com/
-||sp2.baidu.com/
 ||spcode.baidu.com/
 ||cbjs.baidu.com/
 ||cbjslog.baidu.com/
@@ -190,7 +187,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||gyyx.cn/$third-party
 ||gzktpf.com/
 ||hascosafety.com^
-||hinet.net^
 ||hk9600.com/
 ||hnol.net/
 ||hr41.cn^
@@ -491,6 +487,7 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||isdspeed.qq.com/
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?
 ||tj.video.qq.com/
+!||trace.qq.com/
 ||qzs.qq.com/qzone/biz/
 ||rh.qq.com/
 ||tajs.qq.com/$domain=~wuxia.qq.com
@@ -626,7 +623,8 @@ ty2016.net##div[class^=bread_]
 ||i2.51cto.com/
 ||i3.51cto.com/
 ||52pk.com/$object
-||dm.92to.com/
+||ku.92to.com/
+||92to.com/skin/js/
 ||tj.ali213.net/
 ||live.ali213.net/$domain=~live.ali213.net
 autohome.com.cn###s2287
@@ -785,7 +783,6 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||aliyuncs.com^$domain=1905.com
 @@||tb.mgtv.com/sdk/*/ad-sdk.js$script
 ||da.mgtv.com/
-||log.$domain=mgtv.com
 iqiyi.com##div.vip_rec_main,div.box_right.rightAdv,div[data-widget-3rdads],div.crossAd,#widget-indexad,div.ad-wrapper,#addiv,div.s_main.liveTop_adv,div.leftAd,#sina_anywhere_iframe,#adflash,div[id^="100000000"],#widget-jingdongAd,div[data-widget-adparam]
 */videos/other/201$xmlhttprequest,object-subrequest,domain=pps.tv|iqiyi.com
 ||t7z.cupid.iqiyi.com/$domain=~iqiyi.com|~pps.tv
