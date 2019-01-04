@@ -2092,4 +2092,4 @@ yesky.com##div#bdadv.bd_adv,div.wth200 > div.baidu,div.ad190
 ||crl.microsoft.com
 ||rad.microsoft.com
 ||watson.microsoft.com
-jianshu.com##note-fixed-ad-container
+jianshu.com###note-fixed-ad-container
