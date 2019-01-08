@@ -1,14 +1,14 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201812291
+! Version: 201903061
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
 @@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net|yiyaojd.com
 |http://js$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xs84.la|m.biqudao.com|m.bequge.com
-*$third-party,domain=hjwzw.com|xxbiquge.com|btbiti.org|btfuli.me|cnbtspread.xyz
+*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xxs84.com|m.biqudao.com|m.bequge.com
+*$third-party,domain=hjwzw.com|xbiquge6.com|btspread.cc
 *$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 *$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -496,9 +496,10 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
 ||ltsdl.qq.com/$xmlhttprequest
+@@||streamoc.music.tc.qq.com/
+@@*/omts.tc.qq.com/
 @@*/sports.tc.qq.com/
 @@*/sportsts.tc.qq.com/
-@@*/omts.tc.qq.com/
 @@*/vipzj.video.tc.qq.com/
 *.tc.qq.com/$domain=~y.qq.com
 ||qq.com/games/$subdocument
@@ -542,6 +543,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 163.com##.gg200,.gg300,.gg200x300,.N-nav-bottom~*,[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
 163.com,~love.163.com##A[href^="http://love.163.com/"]
 blog.163.com###lofter_single,div.f-trans
+news.163.com###js-cnxh-content~:not(#js-epTabRank)
 open.163.com###j-hbtj,#j-footertj
 ||shared.youdao.com/dao/search/outweb/js/
 youdao.com###topImgAd,#spTop
@@ -610,6 +612,12 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ty2016.net##div[class^=bread_]
 ||www.ty2016.net/$script
 ||i.zhuoyaju.com^$script
+
+||img16.diyifanwen.com
+||yijiuningyia.gushiwen.org
+||a.lz13.cn/
+||cgm.shicimingju.com
+||www.shicimingju.com/scmjddd/
 !-------------------杂项--------------------
 1ting.com##[id^=tingx_]
 |http://www.1ting.com/$subdocument
@@ -619,6 +627,7 @@ ty2016.net##div[class^=bread_]
 ||5054399.com/4399_js/$script
 51cto.com###ft~div
 51cto.com##div:has(#tonglanad)
+blog.51cto.com###topbanner14
 ||i1.51cto.com/
 ||i2.51cto.com/
 ||i3.51cto.com/
@@ -670,7 +679,6 @@ ftchinese.com,cn.ft.com##.mpu-container-instory,div[data-id|=banner],div[data-id
 ||ja1.gamersky.com/
 ||dm.gucheng.com/
 ||dmjs.gucheng.com/
-||aa.gushiwen.org/
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
@@ -688,6 +696,10 @@ jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd,div.r300.clearfix.m
 ||bdjs.jb51.net/$script
 ||files.jb51.net/image/$image
 ||img.jb51.net/images/sl/$image
+jianshu.com###note-fixed-ad-container
+||jianshu.io/assets/web/*-ads-$image
+juejin.im##.banner,.wechat-banner
+||gold-cdn.xitu.io/asset/sidbar-banner/$image
 wiki.mbalib.com###ad-phone
 ||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
@@ -713,7 +725,7 @@ www.v2ex.com##.sidebar_units,.sidebar_compliance
 bbs.xmfish.com##div[id^=adm_show_]
 ||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
-zhihu.com##.Banner.Card,.shameimaru-section
+zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image,.Banner-image
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
 @@||www.zimuku.net/$script
