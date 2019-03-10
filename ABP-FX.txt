@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201903072
+! Version: 201903101
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -311,7 +311,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||yunshipei.com/
 ||zhudiaosz.com^
 ||zzbaowen.com^
-##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
+~ziodslzz.zez##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
 ~mail.google.com##.adsbygoogle,div.ads
 ||com/ads
 *_350_330.$image
@@ -465,30 +465,34 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||icon.zol-img.com.cn/public/js/web_foot$script
 ||p.zol-img.com.cn/$script
 !-------------------QQ--------------------
+v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"],div.player_bg_ad
+||adss.video.qq.com/
+@@||union.video.qq.com/fcgi-bin/data?$script
+||l.qq.com/proxyhttp^$~script,domain=v.qq.com
+@@||streamoc.music.tc.qq.com/
+@@*/omts.tc.qq.com/
+@@*/sports.tc.qq.com/
+@@*/sportsts.tc.qq.com/
+@@*/vipzj.video.tc.qq.com/
+*.tc.qq.com/$domain=~y.qq.com
+||gtimg.com/qqlive/
+
 @@||wx.qq.com/*/ad_$script
 @@||cq.qq.com/js/cody/scroll_ad.js
 @@||cdn.exp.qq.com/img/
 @@||stat.pc.music.qq.com/fcgi-bin/player_
 ||adsrich.qq.com/
-||adss.video.qq.com/
 ||games.qq.com/playgame/videoweb/
 ||games.qq.com/playgame/gamesad/js/swfobject.js
 @@||c.gdt.qq.com/gdt_click.
 @@||v.gdt.qq.com/gdt_stats.fcg?
 ||gdt.qq.com/
 ||qq.com/js/adswf_tl_object.js$script
-@@||union.video.qq.com/fcgi-bin/data?$script
-@@||livew.l.qq.com/crossdomain.xml
-@@||vd.l.qq.com/proxyhttp?callback=
-||vd.l.qq.com/proxyhttp$domain=v.qq.com
-||vi.l.qq.com/proxyhttp$domain=v.qq.com
-||l.qq.com/$~image
+||qq.com/games/$subdocument
 ||imgcache.qq.com/qzone/biz/comm/js/qbs.js
 @@||isdspeed.qq.com/cgi-bin/r.cgi?flag1=
 ||isdspeed.qq.com/
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?
-||tj.video.qq.com/
-!||trace.qq.com/
 ||qzs.qq.com/qzone/biz/
 ||rh.qq.com/
 ||tajs.qq.com/$domain=~wuxia.qq.com
@@ -496,23 +500,12 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=
 ||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
 ||tencentmind.com/
-||ltsdl.qq.com/$xmlhttprequest
-@@||streamoc.music.tc.qq.com/
-@@*/omts.tc.qq.com/
-@@*/sports.tc.qq.com/
-@@*/sportsts.tc.qq.com/
-@@*/vipzj.video.tc.qq.com/
-*.tc.qq.com/$domain=~y.qq.com
-||qq.com/games/$subdocument
-||v.qq.com/x/webtips?$subdocument
 www.qq.com##.adLeft,.adRight
-v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc,a[href*=".tmall.com/"],div.player_bg_ad
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
 qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad
-||gtimg.com/qqlive/
 ||ca.gtimg.com/client/
 ||ca.gtimg.com/adplugin/js/adplayer.js
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
