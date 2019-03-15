@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201903101
+! Version: 201903151
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -125,14 +125,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||85rere.com/$popup,~font
 ||8866786.com/
 ||91hui.com^
-! 9377的弹窗真烦
-||ad9377.com/
-||x9377a.com/
-||9377ku.com/
-||859377.com/
-||937744.com/
-||9377co.com/
-||hi9377.com/
 ||9377.com/$third-party
 ||9ads.net/
 ||acasys88.cn/
@@ -267,9 +259,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||click.taobao.com/$third-party,popunder
 ||tk001.com/$third-party
 ||tongqing2015.com/
-||union$third-party
-@@||ssl.captcha.qq.com/cap_union_$script,subdocument
-*_union$script,subdocument,domain=~bitauto.com|~qq.com|~sf-express.com
 ||union.
 ||uoyrsd.com
 ||uyan.cc/$third-party
@@ -476,6 +465,7 @@ v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc
 @@*/vipzj.video.tc.qq.com/
 *.tc.qq.com/$domain=~y.qq.com
 ||gtimg.com/qqlive/
+||tencentmind.com/
 
 @@||wx.qq.com/*/ad_$script
 @@||cq.qq.com/js/cody/scroll_ad.js
@@ -499,7 +489,6 @@ v.qq.com##div.mod_ad,div.mod_ads,div.pop_ads_wide,#QQlive_SP_RM,div.mod_float_pc
 ||taobao.qq.com/
 ||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
-||tencentmind.com/
 www.qq.com##.adLeft,.adRight
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
 daohang.qq.com##[id^=AD_]
@@ -599,13 +588,11 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 ||www.zongheng.com/zhda/zhda.html
 ||static.zongheng.com/upload/recommend/game/201$image
 */zongheng_chat_loader
-||23zw.me/$subdocument
 ||bxwx9.org^$script
 ||www.dhzw.org/xiaoyi/$script
 ||www.hjwzw.com/js/n$script
 ty2016.net##div[class^=bread_]
 ||www.ty2016.net/$script
-||i.zhuoyaju.com^$script
 
 ||img16.diyifanwen.com
 ||yijiuningyia.gushiwen.org
@@ -759,7 +746,9 @@ acfun.cn###ad-comment,#ad-player-view
 |http://www.acfun.cn/adnew.aspx
 ||www.hao123.com/erji/hao123/$object-subrequest
 ||imall.cctv.com/$subdocument
+|http://player.cntv.cn/adplayer/$object
 ||bjcathay.com/
+cctv.com###bgAd_div
 ||www.dililitv.com/wp-author/tga/760_90.php?ad=$script
 ||pub.funshion.com
 www.halihali.me##.tuiguang,.guolewan
@@ -826,8 +815,6 @@ live.bilibili.com##.video-section+a
 ||js.letvcdn.com/*_banner_$script
 ||banana.le.com/
 le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
-cctv.com###bgAd_div
-|http://player.cntv.cn/adplayer/$object
 douyu.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad],div.no-login,.his-sign-cont,.f-sign-cont
 ||wan.douyu.com/
 ||g.huya.com/
