@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201904141
+! Version: 201904142
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@|http$stylesheet
@@ -644,14 +644,16 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
-hupu.com##.sidebar-ad-A,.sidebar-ad-B,.sidebar-ad-C,[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],.sidebar>div[class^=ad],div.ad980-60,div.ad720-90
+hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],div[class^=ad]
 
 @@||www.infoq.com/scripts/ads.js
-ithome.com###hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
+ithome.com##.categoryimg,#hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
 ||ithome.com/file/js/money/
+||img.ithome.com/newsuploadfiles/focus/$image
+||www.ithome.com/json/hot/$subdocument
 
-jb51.net###txtlink,div.topimg,#param.content-box+div,#xgd+dd,div.r300.clearfix.mt10
-||dm.jb51.net/$script
+jb51.net##.clearfix.mtb10:first-child,div.r300>.idc3,#txtlink,div.topimg,#param.content-box+div,#xgd+dd
+||dm.jb51.net/
 ||bdjs.jb51.net/$script
 ||files.jb51.net/image/$image
 ||img.jb51.net/images/sl/$image
@@ -675,7 +677,7 @@ pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 ||ashow.pcpop.com/
 |http://count.pcpop.com/ClickPv.js
 
-www.v2ex.com##.sidebar_units,.sidebar_compliance
+www.v2ex.com###Rightbar>div.box:nth-of-type(2)~*
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image,.Banner-image
 !-------------------杂项--------------------
