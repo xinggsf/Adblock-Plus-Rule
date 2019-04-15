@@ -169,6 +169,7 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||g1c5.com/
 ||gdbly.com/
 ||getnormalizedurl.com
+||ggweb.net/
 ||googleadservices.com
 ||googlesyndication.com
 ||google-analytics.com
