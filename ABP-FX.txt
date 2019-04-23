@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201904161
+! Version: 201904231
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@|http$stylesheet
@@ -102,7 +102,6 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||2wxb5.cn^$xmlhttprequest,script
 ||301pk.com/$third-party
 ||lianmeng.360.cn/
-||360buyimg.com/$~image,domain=~jd.com|~jd.hk
 ||37.com/$third-party
 ||37wan.com/$third-party
 ||38ra.com/$third-party
@@ -407,7 +406,13 @@ ouyaoxiazai.com##.header+div,div.ad_show
 |http://a.oyksoft.com/show/$script
 ||pc6.com/$subdocument
 pcbeta.com###sitefocus
+||pbcdn.com/data/attachment/album/$image
+||pcbeta.com/static/image/biz/$image
 ||pcgames.com.cn/g/extlin/pcdownpic/$script
+||pcgames.com.cn/adpuba/show?
+||pcgames.com.cn/g/*/fz/
+||img0.pcgames.com.cn^$object,object-subrequest
+||wangyou.pcgames.com.cn/jctj/$script
 pconline.com.cn##div.jcztl,div.box.best,div.ivy-330
 ||buy.pconline.com.cn/$script
 |http://www.pconline.com.cn/*/intf$subdocument,script
@@ -447,8 +452,9 @@ yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ||www.zolsky.com/read/readad/$subdocument
 ! 中关村在线
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
-www.zol.com.cn,www.91danji.com,btbtt.me##body:style(background: center !important)
+www.zol.com.cn,www.91danji.com,92btbtt.com##body:style(background: center !important)
 zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
+||p.zol.com.cn/$script
 ||icon.zol-img.com.cn/public/js/web_foot$script
 ||p.zol-img.com.cn/$script
 !-------------------QQ--------------------
@@ -686,8 +692,9 @@ zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image,.Banner-image
 ||52pk.com/$object
 ||ku.92to.com/
 ||92to.com/skin/js/
+||click.ali213.net/
+||pbmp.ali213.net/
 ||tj.ali213.net/
-||live.ali213.net/$domain=~live.ali213.net
 baike.com###right_ad_div
 ||hdad.baike.com/
 ||www.bdsola.com/js/common.js
@@ -733,8 +740,16 @@ bbs.xmfish.com##div[id^=adm_show_]
 |http://www.36dm.com/js/
 |http://www.36dm.com/tbklb/
 ||www.36dm.com/images/$image
-btmee.net###footer~*,#ggg_tool
-||btmee.net/static/img/*.gif$image
+
+92btbtt.com,8btbtt.com,btbtt.biz##.error,body>a
+!||92btbtt.com/service/clickd/
+||8btbtt.com/imgs.js
+||8btbtt.com/view/image/QT_
+||92btbtt.com/imgs.js
+||92btbtt.com/view/image/QT_
+||btbtt.biz/imgs.js
+||btbtt.biz/view/image/QT_
+
 dy1000.com##div[class^=random]
 |http://dy1000.applecdn.net/js/
 ||www.dy2018.com/js$script
@@ -835,19 +850,18 @@ douyu.com##div.bglink,#lifter,[data-dysign-adid],div[class$=-ad],div[class|=ad],
 ||g.huya.com/
 ||luckstatic.v1.cn/st/10000/
 ||luck.v1.cn/$object-subrequest
-yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
+yinyuetai.com##.gbox,video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yinyuetai.com/"]
 @@||union.bokecc.com/player
 ||bokecc.com/*.jpg|$object-subrequest
 ||bokecc.com/flash/playlog?
 ||click.bokecc.com/
 ||imedia.bokecc.com/
-!------------------精简自adbyby规则2015.5------------------
+!------------------精简自adbyby规则------------------
 @@*.org/admin$image
 @@*/ad_js.php?aid=10004
 @@*/adpolestar/wayl
 @@*/adv_index
 @@*/adv_virtual.asp
-@@*/allyes.swf^
 @@*/bg_captchaF
 @@*/cpro/ui/y.js|
 @@*/cs/jsfile/js/bra
@@ -858,15 +872,12 @@ yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yin
 @@*/js/yzz/jqu
 @@*/mygg/sagg$image,object,object-subrequest
 @@|http://allyes.ctrip
-@@|http://appicon.manyou.com
 @@|http://jstv.
-@@|http://p.yiqifa.com/
 @@||player.polyv.net/common_player/player/
 @@|http://s.csbew.com/crossdomain.xml
 @@|http://s.csbew.com/FrameWork/AFP/ASP_
 @@|http://www.meilishuo.com/guang/
 @@||chinatelecom.com.cn
-@@||share.dmhy.org/images/$image
 @@||dvs.china.com/crossdomain.xml
 */7mad.$image,object,object-subrequest
 */9vads
@@ -1579,11 +1590,8 @@ yinyuetai.com##video~div,.shopMoney,div[class^=ad_],a.pic[href^="http://shop.yin
 |http://same.jrj.com.cn^
 |http://static.aizhan.com/jsa/$script
 |http://tad.suning.com/snoad/
-|http://tga.pcgames.com.cn/adpuba/show?
-|http://wangyou.pcgames.com.cn/jctj/$script
 |http://ww.xitek.com/idzone/
-|http://www.17173.com/if/$script
-abab.com##footer~*
+||17173.com/if/$script
 ||100.admin5.com/
 ||upload.admin5.com/201$image
 @@||upload.admin5.com/201*/thumb_$image
@@ -1868,7 +1876,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||images.sohu.com/ytv/*.jpg|
 ||img.libdd.com
 ||img.uu1001.cn^$third-party
-||img0.pcgames.com.cn^$object,object-subrequest
 ||innity.net
 ||insenz.com
 ||instreet.cn
@@ -1932,14 +1939,10 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||ouyaoxiazai.com/hengfu.js
 ||p.inte.sogou.com
 ||p.kugou.com/
-||p.zol.com.cn^$script
 ||pagechoice.com
 ||pagechoice.net
 ||paipaitxt.com/bans/
 ||pangu.cc^
-||pbcdn.com/data/attachment/album/$image
-||pcbeta.com/static/image/biz/$image
-||pcgames.com.cn/g/*/fz/
 ||pee.cn^
 ||piaodown.com/other/$script,subdocument
 ||pic.0597kk.com/pic/$image
