@@ -13,6 +13,8 @@
 ! NoScript，可加上自己要过滤的域名
 |http*$script,domain=eywedu.org|365essay.com|baishuku.la
 |http*$subdocument,domain=u17.com|music.baidu.com
+
+test
 !--------------------------百度----------------------------------
 ||cpro.
 ||dup.baidustatic.com/
