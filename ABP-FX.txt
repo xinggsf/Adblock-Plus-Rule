@@ -1,18 +1,18 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201904231
+! Version: 201904261
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
-@@|http$stylesheet
-@@|http$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
-|http://js$xmlhttprequest,third-party
+@@|http*$stylesheet
+@@|http*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
+|http://js*$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-|http$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xxs84.com|m.biqudao.com|m.bequge.com
-|http$third-party,domain=hjwzw.com|xbiquge6.com|btspread.cc
-|http$third-party,subdocument,domain=tieba.baidu.com
+|http*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xxs84.com|m.biqudao.com|m.bequge.com
+|http*$third-party,domain=hjwzw.com|xbiquge6.com|btspread.cc
+|http*$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
-|http$script,domain=eywedu.org|365essay.com|baishuku.la
-|http$subdocument,domain=u17.com|music.baidu.com
+|http*$script,domain=eywedu.org|365essay.com|baishuku.la
+|http*$subdocument,domain=u17.com|music.baidu.com
 !--------------------------百度----------------------------------
 ||cpro.
 ||dup.baidustatic.com/
@@ -318,16 +318,16 @@ pageMediaControl*$script
 */51ads/
 @@||img05.zhaopin.cn/2014/common/js/za/ga.js
 */ga.js^
--ads-$script
-_ad.js|
-_ads.js|
+*-ads-$script
+*_ad.js|
+*_ads.js|
 */adSide/$script
 */adSide.$script
 */adwidget$script
 */gg.$script
 ||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
 */index_banner_
-! _banner.$script,object,image
+! *_banner.$script,object,image
 */images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
 */impservice$script
 */market.$script
@@ -341,10 +341,10 @@ _ads.js|
 */piao.js|
 @@||patch.ali213.net/js/pop.js^$script
 */pop.js^
-.pop.js^$script
-popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
+*.pop.js^$script
+*popup.js^$domain=~qzone.qq.com|~flvcd.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
 */float.js|
-gonggao.js|
+*gonggao.js|
 */tan.$script
 */tan1.$script
 */tj.js|
