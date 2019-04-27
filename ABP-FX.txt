@@ -8,7 +8,7 @@
 |http://js*$xmlhttprequest,third-party
 ! 屏蔽第三方资源
 |http*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xxs84.com|m.biqudao.com|m.bequge.com
-|http*$third-party,domain=hjwzw.com|xbiquge6.com|btspread.cc
+|http*$third-party,domain=hjwzw.com|xbiquge6.com|newbtspread.com|share.dmhy.org
 |http*$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
 |http*$script,domain=eywedu.org|365essay.com|baishuku.la
@@ -749,6 +749,8 @@ bbs.xmfish.com##div[id^=adm_show_]
 ||92btbtt.com/view/image/QT_
 ||btbtt.biz/imgs.js
 ||btbtt.biz/view/image/QT_
+
+||share.dmhy.org^$image
 
 dy1000.com##div[class^=random]
 |http://dy1000.applecdn.net/js/
@@ -1966,7 +1968,6 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||s1.qiuyi.cn
 ||shaft.jebe.renren.com^
 ||shanghaironghua.com
-||share.dmhy.org$image
 ||sharele.cn^$third-party
 ||show.qx15.com
 ||show.xiazai16.com
