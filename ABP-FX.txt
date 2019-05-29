@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201904261
+! Version: 201905291
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@|http*$stylesheet
@@ -563,9 +563,10 @@ ifeng.com##.slide_popo_modal,div[class^=pao_],div[class^=adList],div[class^=adbo
 ||games.ifeng.com/$subdocument
 ||games.ifeng.com/webgame/
 ||stadig.ifeng.com/
-@@||ifengimg.com/ifeng/sources/inice_v1.js
+@@||ifengimg.com/ifeng/sources/inice_$script
 ||ifengimg.com/ifeng/sources/
-||ifengimg.com/mappa/
+||ifengimg.com/mappa
+||c1.ifengimg.com/feather/images/$image
 @@||vxml.ifengimg.com/$object
 ||ifengimg.com/$object,subdocument
 ||ifengimg.com/9252$script
@@ -2101,6 +2102,3 @@ www.nba98.com##div.sidepanel_ad
 www.portablesoft.org##div.postads
 xunlei.com##div.file_right.adv_right
 yesky.com##div#bdadv.bd_adv,div.wth200 > div.baidu,div.ad190
-||crl.microsoft.com
-||rad.microsoft.com
-||watson.microsoft.com
