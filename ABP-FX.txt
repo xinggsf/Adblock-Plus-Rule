@@ -1,13 +1,13 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 201905291
+! Version: 2019006031
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@|http*$stylesheet
 @@|http*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 |http://js*$xmlhttprequest,third-party
 ! 屏蔽第三方资源
-|http*$third-party,~image,domain=m.snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|m.muyuge.com|92to.com|xunzai.com|xxs84.com|m.biqudao.com|m.bequge.com
+|http*$third-party,~image,domain=snwx8.com|m.xinguli.com|520xsla.com|dhzw.org|muyuge.com|92to.com|xunzai.com|xxs84.com|biqudao.com|bequge.com|qu.la
 |http*$third-party,domain=hjwzw.com|xbiquge6.com|newbtspread.com|share.dmhy.org
 |http*$third-party,subdocument,domain=tieba.baidu.com
 ! NoScript，可加上自己要过滤的域名
@@ -52,10 +52,6 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 www.baidu.com###content_left>div:not(.c-container),#content_right>table td>:not(#con-ar)
 www.baidu.com##div.c-container:has(a[data-landurl])
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
-!--百度音乐---
-play.baidu.com###m-client-product,#right-ads,div.rightAd-skin,.top-banner-ad-wrap
-||hiphotos.baidu.com/ting/pic/item/
-||music.baidu.com/data/69xiu/
 !--贴吧---
 tieba.baidu.com###guide_fc,#global_notice_wrap,.content_top,.forum_header>div:first-child,.app_forum_top_nav,#encourage_entry,[id^=pagelet_encourage-appforum],.iframe_wrapper.clearfix,.d_sign_split~*,#thread_list>li:not([class*=thread_]),#j_p_postlist>div:not([data-field]):not(#j_p_postlist),#j_p_postlist>div[data-isautoreply],#game_live_list,#com_u9_head,.play_list_panel.j_play_list_panel,div.search_main_wrap~*,#aside_ad,a.j_click_stats.img_wrap,div.firework-wrap
 tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
@@ -647,7 +643,7 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 
 ||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
-hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],div[class^=ad]
+hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],div[class^=ad],.topPub
 
 @@||www.infoq.com/scripts/ads.js
 ithome.com##.categoryimg,#hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
@@ -722,6 +718,7 @@ duowan.com##a[adid]
 ||dmjs.gucheng.com/
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
 qiushibaike.com##div.shopwindow
+||3.ssqzj.com/
 ||galaxy.sogoucdn.com/galaxy/
 ||api.huo360.com/www/back/$image
 ||www.toutiao.com/api/web_ads/
