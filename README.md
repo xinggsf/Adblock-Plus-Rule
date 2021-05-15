@@ -1,5 +1,4 @@
-# Adblock Plus 过滤规则
-已经转移至国内码云：https://gitee.com/xinggsf/Adblock-Rule/
+uBlock Origin 乘风广告过滤规则
 
-支持国内主要视频站点！
-已经主要支持UBO规则！
+rule.txt 是通用过滤规则。本规则并不包含mv.txt中的规则。
+mv.txt 是常用视频站点过滤规则
