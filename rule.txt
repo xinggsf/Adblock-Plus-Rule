@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202105151
+! Version: 202105191
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -510,31 +510,21 @@ track.sohu.com
 fpb.sohu.com
 qpb.sohu.com
 !-------------------ifeng.com--------------------
-ifeng.com##.slide_popo_modal,div[class^=pao_],div[class^=adList],div[class^=adbox],div[class^=FNewRAvtLisBox],body>div.Avt02,#picTxt~*,div.topAd
+ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left
 ||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
-@@||iis1.deliver.ifeng.com/$xmlhttprequest
-||deliver.ifeng.com/
 ||games.ifeng.com/$subdocument
 ||games.ifeng.com/webgame/
-||stadig.ifeng.com/
-@@||ifengimg.com/ifeng/sources/inice_$script
-||ifengimg.com/ifeng/sources/
+mfp.deliver.ifeng.com
+qcvf.ifeng.com
+|https://c0.ifengimg.com/p/ax_/pic_cpc_cpm_cpa_guanggao_gg_ads.js
 ||ifengimg.com/mappa
-||c1.ifengimg.com/feather/images/$image
-@@||vxml.ifengimg.com/$object
-||ifengimg.com/$object,subdocument
-||ifengimg.com/9252$script
-||ifengimg.com/*yingguang$script
-||ifengimg.com/*/embed$script
-x0.ifengimg.com
-||y2.ifengimg.com/xingzhao/JS/bsgspecial.js$script
+||ifengimg.com/feather/images/$image
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
-@@||ifengimg.com/*/ad.js
 !-------------------小说站点-----------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
-qidian.com###tr-banner,#topGameOp,div.banner-wrap,div.focus-img.cf
+qidian.com###tr-banner,#topGameOp,div.banner-wrap,div.focus-img.cf,#j_bodyRecWrap
 ||qidian.com/upload/gamesy/20$image
 ||qidian.qpic.cn/qidian_common/$image
 
