@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202105191
+! Version: 202105211
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -114,6 +114,8 @@ dyjihe.com##.tempWrap
 haitur.com,haicaoys.com##.dplayer-web-fullscreen-fix .float-box
 haitur.com##.container:style(max-width:90%!important;width:90%!important)
 haitur.com##.left-content:style(width:77%!important)
+haitur.com##.dplayer-web-fullscreen-fix header
+||haitur.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
 dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,vodxc.in##+js(ra, target, a[href^="/"])
@@ -524,7 +526,8 @@ qcvf.ifeng.com
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
 !-------------------小说站点-----------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
-qidian.com###tr-banner,#topGameOp,div.banner-wrap,div.focus-img.cf,#j_bodyRecWrap
+qidian.com###tr-banner,div.banner-wrap,div.focus-img.cf,#j_bodyRecWrap,#j-topHeadBox,#j-topBgBox,div.games-op-wrap
+qidian.com##.crumbs-nav.top-op:style(margin: auto!important)
 ||qidian.com/upload/gamesy/20$image
 ||qidian.qpic.cn/qidian_common/$image
 
