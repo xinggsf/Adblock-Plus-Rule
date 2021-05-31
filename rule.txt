@@ -5,7 +5,7 @@
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner
-youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
+v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 !v.youku.com##+js(nano-stb)
 ||atm.youku.com/
 ||cibntv.net/youku/$media
@@ -124,7 +124,6 @@ yatu.tv##+js(set,document.oncontextmenu,null)
 3z9e.cn
 7nsc.cn
 7b6l2j.cn
-anquanzhuomian.com
 ch-hr12333.com
 g1c5.com
 ieeod0.com
@@ -443,7 +442,7 @@ user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100
 daohang.qq.com##[id^=AD_]
 coral.qq.com##div[id^="PL_ad_cmt_"],div.mod-ad
 gd.qq.com###r_ad
-qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad
+qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.side_ad,#topAd
 ||ca.gtimg.com/client/
 ||ca.gtimg.com/adplugin/js/adplayer.js
 ||discuz.gtimg.cn/cloud/scripts/discuz_tips.js
