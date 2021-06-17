@@ -14,6 +14,7 @@ v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
 iqiyi.com##div[data-adzone],#block-V
+iqiyi.com##+js(aeld,dblclick,t.fullToggle)
 !iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 !||t7z.cupid.iqiyi.com/show$script,important
@@ -114,7 +115,7 @@ haitur.com##.dplayer-web-fullscreen-fix header
 ||haitur.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
-dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,vodxc.in##+js(ra, target, a[href^="/"])
+88kan.tv,dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,vodxc.in##+js(ra, target, a[href^="/"])
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
