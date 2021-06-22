@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202106081
+! Version: 202106221
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -101,6 +101,9 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 ||91p20.space^
 ||waust.at^
 
+agefans.cc##+js(noeval-if, devtoolsDetector)
+||pstatp.com/origin/$image,domain=agefans.cc|88kan.tv
+
 dililitv.cc,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
 ||www.dililitv.cc/*.php?ad=$script
 js.dilidd.com
@@ -115,9 +118,19 @@ haitur.com##.dplayer-web-fullscreen-fix header
 ||haitur.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
-88kan.tv,dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,vodxc.in##+js(ra, target, a[href^="/"])
+88kan.tv,dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,vodxc.org##+js(ra, target, a[href^="/"])
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
+
+nunuyy.cc##video:style(max-height:100% !important)
+@@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
+*$3p,script,domain=nunuyy.cc
+adx1.com
+ancheonyo.fun
+andcanbere.fun
+envyindebted.com
+freychang.fun
+in-page-push.com
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv##+js(set,document.oncontextmenu,null)
@@ -125,24 +138,24 @@ yatu.tv##+js(set,document.oncontextmenu,null)
 3z9e.cn
 7nsc.cn
 7b6l2j.cn
-ch-hr12333.com
-g1c5.com
-ieeod0.com
-fourier.taobao.com
-v4dwkcv.com
-weizhenwx.com
-youle55.com
-
 bmbaike.cn
 buzx53.cn
+ch-hr12333.com
 cqqc3.com
 dacedsfa.cn
+fourier.taobao.com
+g1c5.com
+ieeod0.com
+onenews.vip
 qdwght.com
 quickapp.cn
+v4dwkcv.com
+weizhenwx.com
 xcsci.cn
 xixiqiu.com
 xv5b.com
 xz6d.com
+youle55.com
 ||www.yatu.tv:88/image/*.gif^$image
 ||www.yatu.tv:88/m/images/$image
 
@@ -498,9 +511,11 @@ mail.163.com,mail.126.com##.emailSuggest,#theme,.gWel-bottom
 ||d2.sina.com.cn/
 ||d3.sina.com.cn/
 ||pfp.sina.com.cn/
+pfp.sina.net
 ||rm.sina.com.cn/$script,subdocument
 @@||sax.sina.com.cn/video/$script
 ||sax.sina.
+||saxs.sina.
 blog.sina.cn##div.item_hide+div,#pl-blog-artad
 ||dmp.sina.cn/
 !-------------------sohu.com--------------------
