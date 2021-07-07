@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202106221
+! Version: 202107071
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -37,6 +37,7 @@ scorecardresearch.com
 tencentmind.com
 xtgreat.com
 
+@@||g.w.bilicdn1.com/
 bilibili.com##.gg-floor-module,#slide_ad,#slide_ad+a[data-target-url]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||hdslb.com/bfs/sycp/creative_img/$image
@@ -146,6 +147,7 @@ dacedsfa.cn
 fourier.taobao.com
 g1c5.com
 ieeod0.com
+nd2z41.cn
 onenews.vip
 qdwght.com
 quickapp.cn
@@ -249,6 +251,7 @@ adservice.google.com
 gshtrl.top
 iclickcdn.com
 ||irs01.
+irs03.com
 ||x.jd.com/
 u-x.jd.com
 mediav.com
