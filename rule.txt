@@ -99,7 +99,8 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 ||pub.funshion.com
 
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-||www.youtube.com/pagead/
+||youtube.com/pagead/
+||youtube.com/ptracking?
 ||youtube.com/api/stats/
 ||google.*/pagead/
 ||gstatic.com/shopping?
