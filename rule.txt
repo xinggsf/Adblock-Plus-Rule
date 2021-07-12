@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202107071
+! Version: 202107121
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -166,6 +166,7 @@ youle55.com
 @@||bdstatic.com/static/common/widget/ui/admanager/$script,domain=image.baidu.com
 @@||cpro.baidustatic.com/cpro/ui/cm.js
 ||cpro.
+dlswbr.baidu.com
 ||dup.baidustatic.com/
 ||ubmcmm.baidustatic.com/
 ||adscdn.baidu.com/
@@ -174,6 +175,7 @@ youle55.com
 ||eiv.baidu.com/
 ||f11.baidu.com/
 ||iwanad.baidu.com/
+kstj.baidu.com
 ||pos.baidu.com/
 ||sp0.baidu.com/$third-party
 ||spcode.baidu.com/
@@ -184,10 +186,16 @@ youle55.com
 ||hm.baidu.com/
 @@||baidu.com/customer_search/api/
 ||znsv.baidu.com/
+
+s1.bdstatic.com
 ||pups.bdimg.com/
 baike.baidu.com###adLayerSideWrap
 ||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap
+
+jingyan.baidu.com##.wgt-cms-banner, .right-fixed-related-wrap, #bottom-ads-container
+||exp.bdstatic.com/static/exp-pc/common-jquery/widget/popup-$script
+
 pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||app.video.baidu.com/adver?
@@ -303,8 +311,7 @@ pageMediaControl*$script
 */pagead$script
 */s.php?id=$script,third-party
 */piao.js|
-@@||patch.ali213.net/js/pop.js^$script
-*/pop.js^
+*/pop.js^$domain=~autohome.com.cn|patch.ali213.net
 *.pop.js^$script
 *popup.js^$domain=~qzone.qq.com|~fupin832.com|~yinyuetai.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
 */float.js|
