@@ -98,6 +98,12 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 
 ||pub.funshion.com
 
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+||www.youtube.com/pagead/
+||youtube.com/api/stats/
+||google.*/pagead/
+||gstatic.com/shopping?
+
 */preroll/$media,domain=91porn.com
 ||91p20.space^
 ||waust.at^
@@ -249,6 +255,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img]
 *coinhive.min.js^$script
 ||coin-hive.com/
 ||coinhive-manager.com/
+doubleclick.net
 he2d.comhnjls.com.cn
 dlads.cn
 dmvbdfblevxvx.com
