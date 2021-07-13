@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202107121
+! Version: 202107131
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -98,7 +98,16 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 
 ||pub.funshion.com
 
-youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+! 以下十行规则摘自UBO内置规则
+youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container
+youtube.com###promotion-shelf
+*_ad_$media,domain=youtube.com,3p
+youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer
+youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+youtube.com#@#ytd-rich-item-renderer:-abp-has(ytd-display-ad-renderer)
+youtube.com##ytd-display-ad-renderer:upward(ytd-rich-item-renderer)
 ||youtube.com/pagead/
 ||youtube.com/ptracking?
 ||youtube.com/api/stats/
