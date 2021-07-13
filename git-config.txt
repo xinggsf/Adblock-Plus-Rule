@@ -1,0 +1,6 @@
+[http]
+    proxy = socks5://127.0.0.1:1089
+[https]
+    proxy = socks5://127.0.0.1:1089
+[git]
+    proxy = socks5://127.0.0.1:1089
