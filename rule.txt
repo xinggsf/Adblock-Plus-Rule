@@ -98,9 +98,8 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 
 ||pub.funshion.com
 
-! 以下十行规则摘自UBO内置规则
-youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container
-youtube.com###promotion-shelf
+! 以下8行规则摘自UBO内置规则
+youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer
 youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
