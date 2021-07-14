@@ -134,7 +134,7 @@ haitur.com##.dplayer-web-fullscreen-fix header
 ||haitur.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
-88kan.tv,dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.tv,qiqidongman.com,rijutv.co,vodxc.org##+js(ra, target, a[href^="/"])
+88kan.tv,dyjihe.com,haicaoys.com,haitur.com,imomoe.*,kakadm.com,milimili.*,qiqidongman.com,rijutv.co,vodxc.org##+js(ra, target, a[href^="/"])
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
