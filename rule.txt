@@ -131,6 +131,7 @@ haitum.com,haicaoys.com##.dplayer-web-fullscreen-fix .float-box
 haitum.com##.container:style(max-width:90%!important;width:90%!important)
 haitum.com##.left-content:style(width:77%!important)
 haitum.com##.dplayer-web-fullscreen-fix header
+thanosofcos5.com
 ||haitum.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
