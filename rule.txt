@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202107181
+! Version: 202107251
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -109,7 +109,7 @@ youtube.com#@#ytd-rich-item-renderer:-abp-has(ytd-display-ad-renderer)
 youtube.com##ytd-display-ad-renderer:upward(ytd-rich-item-renderer)
 ||youtube.com/pagead/
 ||youtube.com/ptracking?
-||youtube.com/api/stats/
+!||youtube.com/api/stats/
 ||google.*/pagead/
 ||gstatic.com/shopping?
 
