@@ -643,8 +643,6 @@ hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],di
 @@||www.infoq.com/scripts/ads.js
 
 ithome.com##.categoryimg,#hd_float,#side_func,#con>#tt5>div,div.related_buy,li.sb_list:nth-child(5)
-||ithome.com/file/js/money/
-||www.ithome.com/json/hot/$subdocument
 
 jb51.net##.clearfix.mtb10:first-child,div.r300>.idc3,#txtlink,div.topimg,#param.content-box+div,#xgd+dd
 ||jbzj.com^$script
