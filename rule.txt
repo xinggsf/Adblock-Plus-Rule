@@ -1,12 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202107251
+! Version: 202107291
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
-!v.youku.com##+js(nano-stb)
+m.youku.com,v.youku.com##+js(set, Object.prototype._adData, emptyObj)
+youku.com##+js(nano-stb, r--, , 0.02)
 ||atm.youku.com/
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
@@ -160,7 +161,6 @@ buzx53.cn
 ch-hr12333.com
 cqqc3.com
 dacedsfa.cn
-fourier.taobao.com
 g1c5.com
 ieeod0.com
 nd2z41.cn
