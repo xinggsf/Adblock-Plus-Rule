@@ -98,7 +98,6 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 
 ||pub.funshion.com
 
-! 以下8行规则摘自UBO内置规则
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer
@@ -106,7 +105,6 @@ youtube.com,youtube-nocookie.com##+js(set, Object.prototype.adPlacements, undefi
 youtube.com,youtube-nocookie.com##+js(set, Object.prototype.playerAds, undefined)
 ||youtube.com/pagead/
 ||youtube.com/ptracking?
-!||youtube.com/api/stats/
 ||google.*/pagead/
 ||gstatic.com/shopping?
 
@@ -122,13 +120,15 @@ dililitv.cc,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
 js.dilidd.com
 dililitv.cc,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
-dyjihe.com##.tempWrap
+dyjihe2.com##.tempWrap
 
+*$3p,popup,domain=haitum.com
 haitum.com,haicaoys.com##.dplayer-web-fullscreen-fix .float-box
 haitum.com##.container:style(max-width:90%!important;width:90%!important)
 haitum.com##.left-content:style(width:77%!important)
 haitum.com##.dplayer-web-fullscreen-fix header
 thanosofcos5.com
+fieldofbachus.com
 ||haitum.com/template/default/static/js/middle.js$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
