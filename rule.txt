@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202107311
+! Version: 202107312
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -748,31 +748,22 @@ dygang.com,hao6v.com###gd
 ||www.hao6v.com/d/$script
 ||www.dygang.com/d/$script
 
-czywssj.com
-88btbtt.com##body > a
-||88btbtt.com/$inline-script,script
-||88btbtt.com/view/image/$image
-
 ||share.dmhy.org^$image
 
 ||www.dy2018.com/js$script
 subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
 ||subhd.com/images/ap/$image
 ||ygdy8.com/jsy/
-!--人人影视 rrys2019.com ----
-iyoowi.com
-||jstucdn.com/g3/
-||lx167.com^$third-party
-quandangdang.net
-!-- 天天美剧 ttmeiju.me ----
-dieka888.com
 !-------------------视频站点--------------------
 ||mtime.cn/library/*/Goods$script
 trade.mtime.com
 !service.mall.mtime.com
 
 ||com/pic/fgr/$script,object-subrequest
+17173.com###vjs-ad-on-pause
 ||log1.17173.com/
+||17173.com/batch_show?ads=
+||17173.com/if/$script,subdocument
 
 ||luckstatic.v1.cn/st/10000/
 ||luck.v1.cn/$object-subrequest
@@ -1438,14 +1429,8 @@ trade.mtime.com
 ||adsame.
 ||adsfile.
 ||biz5.
-*/tienei.js$domain=hackp.com
 ||icast.
-||17173.com/if/$script
-||100.admin5.com/
-||upload.admin5.com/201$image
-@@||upload.admin5.com/201*/thumb_$image
-admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||168.it168.com$script
-||17173.com/if/$subdocument
-||17173.com/x/$script,subdocument,object,object-subrequest
-||17173.itc.cn/2013/www/if/$image,object,object-subrequest
+
+admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
+100.pncdn.cn
