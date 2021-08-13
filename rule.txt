@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202108112
+! Version: 202108131
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -401,7 +401,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 
 pcbeta.com###sitefocus
 bbs.pcbeta.com##script[src^="//cpro."]:upward(4)
-bbs.pcbeta.com##+js(acis, showDialog,广告屏蔽)
+bbs.pcbeta.com##+js(no-setTimeout-if, showADialog)
 ||pbcdn.com/data/attachment/album/$image
 ||pcbeta.com/static/image/biz/$image
 
