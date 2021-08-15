@@ -1,13 +1,12 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202108131
+! Version: 202108151
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
-m.youku.com,v.youku.com##+js(set, Object.prototype.ad.VAL, [])
-!m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
+m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 ||atm.youku.com/
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
@@ -102,8 +101,9 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer
-youtube.com,youtube-nocookie.com##+js(set, Object.prototype.adPlacements, undefined)
-youtube.com,youtube-nocookie.com##+js(set, Object.prototype.playerAds, undefined)
+youtube.com,youtube-nocookie.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 ||youtube.com/pagead/
 ||youtube.com/ptracking?
 ||google.*/pagead/
