@@ -401,7 +401,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 
 pcbeta.com###sitefocus
 bbs.pcbeta.com##script[src^="//cpro."]:upward(4)
-bbs.pcbeta.com##+js(no-setTimeout-if, showADialog)
+pcbeta.com##+js(no-setTimeout-if, showADialog)
 ||pbcdn.com/data/attachment/album/$image
 ||pcbeta.com/static/image/biz/$image
 
