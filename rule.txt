@@ -400,7 +400,7 @@ ouyaoxiazai.com##.header+div,div.ad_show
 ||pc6.com/$subdocument
 
 pcbeta.com###sitefocus
-||pcbeta.com/data/cache/chlnpuzIQWY.js^$script
+pcbeta.com##+js(aopr, MutationObserver)
 ||pbcdn.com/data/attachment/album/$image
 ||pcbeta.com/static/image/biz/$image
 
