@@ -351,12 +351,7 @@ www.3987.com##.downinfo > .fr, .show.xiazai_bj
 ||js.cncrk.com/
 
 cr173.com###foot~*,div.show_970,[data=viewAds]
-@@||cr173.com/*/jquery$script
-@@||cr173.com/*/mac.js
-||cr173.com/show/$script
-||cr173.com/skin/library/js/head-
-||cr173.com/skina/$script
-||cr173.com/skinb/$script
+||612.com^$script,domain=cr173.com
 
 crsky.com##div[class^=banner],div.fast_down,dl.mirror-special,div.banner-square,li.yellowdown
 @@||crsky.com/ggao/images/$image
