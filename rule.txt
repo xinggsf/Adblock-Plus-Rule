@@ -377,18 +377,6 @@ duote.com###quickDown
 ||www.2345.com/cnxh/$script
 ||2345.com/duoteimg/duotehtml/$script
 
-huacolor.com##td[valign=top],div.huadown,.download-list>div
-@@||huacolor.com/js/$script
-@@||huacolor.com/skins/$script
-||huacolor.com/$script
-|http://www.huacolor.com/YD/*.gif$image
-
-||cp.greenxf.cn/$script
-||greenxf.com/asp/$script
-||greenxf.com/GreenxfAD/
-||greenxf.com/js/maim.js
-||greenxf.com/js/gyong.js
-
 greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div,div.list_lg
 ||www.greenxiazai.com/green/
 onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div,#ItemXGJC,#ItemXGXZ,#ItemXGZT,#ItemSSZT
