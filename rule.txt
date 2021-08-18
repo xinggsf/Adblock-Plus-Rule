@@ -7,6 +7,7 @@
 v.youku.com##.control-phonewatch,#right-title-ad-banner
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
+m.youku.com,v.youku.com##+js(cookie-remover, cna)
 ||atm.youku.com/
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
