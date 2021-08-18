@@ -336,7 +336,7 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*popup.js^$domain=~qzone.qq.com|~fupin832.com|~yinyuetai.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
+*popup.js^$domain=~qq.com|~fupin832.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
 */float.js|
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
