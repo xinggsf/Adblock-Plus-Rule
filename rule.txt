@@ -156,6 +156,7 @@ yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,null)
 bmbaike.cn
 buzx53.cn
 ch-hr12333.com
+chushoushijian.cn
 cqqc3.com
 dacedsfa.cn
 g1c5.com
@@ -313,8 +314,10 @@ pageMediaControl*$script
 *-ads-$script
 *_ad.js|
 *_ads.js|
-*/adSide/$script
-*/adSide.$script
+*/adServer$script,xhr
+*/adService$script,xhr
+*/adSide/$script,xhr
+*/adSide.$script,xhr
 */adwidget$script
 */gg.$script
 ||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
