@@ -376,11 +376,6 @@ duote.com###quickDown
 greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div,div.list_lg
 ||www.greenxiazai.com/green/
 onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div,#ItemXGJC,#ItemXGXZ,#ItemXGZT,#ItemSSZT
-orsoon.com##.down_url li:first-child,a[href*=".9377wan.cn/"],div[class^=ad_show]
-||www.orsoon.com/zhuanti/$script,image
-ouyaoxiazai.com##.header+div,div.ad_show
-@@||www.ouyaoxiazai.com/*/*.gif|$image
-|http://a.oyksoft.com/show/$script
 ||pc6.com/$subdocument
 
 pcbeta.com###sitefocus
