@@ -41,7 +41,8 @@ tencentmind.com
 xtgreat.com
 
 @@||g.w.bilicdn1.com/
-bilibili.com##.gg-floor-module,#slide_ad,#slide_ad+a[data-target-url],a[href^="//cm.bilibili.com"]
+bilibili.com##.ad-report, .ad-floor
+bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||hdslb.com/bfs/sycp/creative_img/$image
 cm.bilibili.com
@@ -142,6 +143,7 @@ imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
 imomoe.*###adl,#adr
 
 nunuyy.cc##video:style(max-height:100% !important)
+nunuyy.cc##.gm-fp-body video:style(height:100% !important)
 @@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
 *$3p,script,domain=nunuyy.cc
 adx1.com
