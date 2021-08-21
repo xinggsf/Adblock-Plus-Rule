@@ -2,10 +2,9 @@ no-csp-reports: * true
 no-popups: haitum.com true
 * * 3p-frame block
 * * 3p-script block
-* aliapp.org * noop
 * alicdn.com * noop
 * aliyun.com * noop
-* libs.baidu.com * allow
+* libs.baidu.com * noop
 * lib.baomitu.com * noop
 * bcebos.com * noop
 * bdimg.com * noop
@@ -14,9 +13,7 @@ no-popups: haitum.com true
 * bootcss.com * noop
 * cctvpic.com * noop
 * cloudflare.com * noop
-* cloudfront.net * noop
 * cntv.cn * noop
-* g.csdnimg.cn * allow
 * doubanio.com * noop
 * douyucdn.cn * noop
 * geetest.com * noop
@@ -37,22 +34,20 @@ no-popups: haitum.com true
 * letv.com * noop
 * letvcdn.com * noop
 * live.com * noop
-* log.mmstat.com * allow
+* migu.cn * noop
+* mmiyue.com * noop
 * a.msstatic.com * noop
 * pplive.cn * noop
 * pptv.com * noop
 * pstatp.com * noop
 * recaptcha.net * noop
 * shankuwang.com * noop
-* sharethis.com * noop
 * sina.cn * noop
 * login.sina.com.cn * noop
 * sinaimg.cn * noop
 * sinajs.cn * noop
 * tedcdn.com * noop
 * tq121.com.cn * noop
-* tvkanba.com * noop
-* ykimg.com * noop
 * youku.com * noop
 * ytimg.com * noop
 * zhimg.com * noop
@@ -65,6 +60,7 @@ haitum.com * 3p-script noop
 ixigua.com * 3p-script noop
 yatu.tv * 3p-frame noop
 yatu.tv * 3p-script noop
+youku.com * 3p-script noop
 * http://cdn. * noop
 * https://cdn. * noop
 * https://iqiyi. * noop
