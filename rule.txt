@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202108211
+! Version: 202108251
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -425,13 +425,7 @@ xiazaiba.com##div.test-90,div.test-300,div.dl-item:first-child
 
 yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ||yxdown.com/open/$script
-@@||gg.yxdown.com/count/countzt.js
-||afpmm.alicdn.com/g/
-||static.yxdown.com/images/link$image
-||static.yxdown.com/images/adbox$image
 ||static.yxdown.com/cj/$script
-||static.yxdown.com/cjimages/$image
-||tt.yxdown.com/$image,object
 
 ||www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
 ||www.zolsky.com/hotsoft/$subdocument,script
@@ -549,6 +543,8 @@ qcvf.ifeng.com
 |https://c0.ifengimg.com/p/ax_/pic_cpc_cpm_cpa_guanggao_gg_ads.js
 ||ifengimg.com/mappa
 ||ifengimg.com/feather/images/$image
+||x0.ifengimg.com/ucms/$image
+||x0.ifengimg.com/$script,domain=~v.ifeng.com
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
 !-------------------小说站点-----------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
@@ -655,7 +651,7 @@ pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 
 v2ex.com##.box:has(.sidebar_compliance)
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
-zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image
+zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image, .Pc-word
 !-------------------杂项--------------------
 1ting.com##[id^=tingx_]
 ||www.1ting.com/$subdocument
