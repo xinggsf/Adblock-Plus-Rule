@@ -296,7 +296,7 @@ tanx.com
 */vamaker/
 wrating.com
 *##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
-~google.com##.ads
+~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
 ||com/ads
 *_350_330.$image
