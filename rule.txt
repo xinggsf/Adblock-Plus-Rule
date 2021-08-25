@@ -283,7 +283,8 @@ gshtrl.top
 iclickcdn.com
 ||irs01.
 irs03.com
-||x.jd.com/
+cm.jd.com
+x.jd.com
 u-x.jd.com
 mediav.com
 q1qfc323.com
@@ -540,10 +541,11 @@ ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[clas
 ||games.ifeng.com/webgame/
 mfp.deliver.ifeng.com
 qcvf.ifeng.com
+5hte21mz.com
 |https://c0.ifengimg.com/p/ax_/pic_cpc_cpm_cpa_guanggao_gg_ads.js
 ||ifengimg.com/mappa
 ||ifengimg.com/feather/images/$image
-||x0.ifengimg.com/ucms/$image
+||x0.ifengimg.com/ucms/$image,domain=~news.ifeng.com
 ||x0.ifengimg.com/$script,domain=~v.ifeng.com
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
 !-------------------小说站点-----------------------
@@ -720,13 +722,12 @@ d2.yiche.com
 |https://www.36dm.com/js/
 |https://www.36dm.com/tbklb/
 ||www.36dm.com/images/$image
-
 douban.com##div[ad-status]
-!#subject-others-interests~div
-
-dygang.com,hao6v.com###gd
-||www.hao6v.com/d/$script
-||www.dygang.com/d/$script
+huojua.com
+||hao6v.com/d/$script
+||dygang.cc/d/$script
+||6vw.cc/d/$script
+||6vgood.com/d/$script
 
 ||share.dmhy.org^$image
 
