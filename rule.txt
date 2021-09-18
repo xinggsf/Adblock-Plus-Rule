@@ -129,14 +129,13 @@ dililitv.cc,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 dyjihe2.com##.tempWrap
 
-*$3p,popup,domain=haitum.com
+!*$3p,popup,domain=haitum.com
 haitum.com,haicaoys.com##.dplayer-web-fullscreen-fix .float-box
 haitum.com##.container:style(max-width:90%!important;width:90%!important)
 haitum.com##.left-content:style(width:77%!important)
 haitum.com##.dplayer-web-fullscreen-fix header
-thanosofcos5.com
-fieldofbachus.com
-||haitum.com/template/default/static/js/middle.js$script
+||haitum.com/template/default/static/js/bottom.js^$script
+||haitum.com/template/default/static/js/middle.js^$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
 88kan.tv,dyjihe2.com,haitum.com,hehuady.com,imomoe.*,kakadm.com,milimili.*,qiqidongman.com,rijutv.co,vodxc.*##+js(ra, target, a[href^="/"])
