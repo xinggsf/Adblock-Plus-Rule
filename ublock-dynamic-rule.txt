@@ -1,5 +1,5 @@
 no-csp-reports: * true
-no-popups: haitum.com true
+no-popups: btsow.one true
 * * 3p-frame block
 * * 3p-script block
 * alicdn.com * noop
@@ -12,6 +12,7 @@ no-popups: haitum.com true
 * bing.com * noop
 * bootcss.com * noop
 * cctvpic.com * noop
+* cdn-go.cn * noop
 * cloudflare.com * noop
 * cntv.cn * noop
 * doubanio.com * noop
@@ -35,12 +36,10 @@ no-popups: haitum.com true
 * letvcdn.com * noop
 * live.com * noop
 * migu.cn * noop
-* mmiyue.com * noop
 * a.msstatic.com * noop
 * pplive.cn * noop
 * pptv.com * noop
 * pstatp.com * noop
-* recaptcha.net * noop
 * shankuwang.com * noop
 * sina.cn * noop
 * login.sina.com.cn * noop
@@ -52,7 +51,9 @@ no-popups: haitum.com true
 * ytimg.com * noop
 * zhimg.com * noop
 163.com * 3p-script noop
+1905.com * 3p-script noop
 acfun.cn * 3p-script noop
+www.bilibili.com api.live.bilibili.com * block
 github.com * 3p-script noop
 github.io * 3p-script noop
 haitum.com * 3p-frame noop
