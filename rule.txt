@@ -339,7 +339,7 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*popup.js^$domain=~qq.com|~fupin832.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
+*popup.js^$domain=~127.*|~10.*|~172.16.*|~172.31.*|~192.168.*|~qq.com|~fupin832.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
 */float.js|
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
