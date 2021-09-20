@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202109191
+! Version: 202109201
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -75,6 +75,7 @@ ys.da.mgtv.com
 ||tv.sohu.com/upload/csad/admaster/$image
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 
+le.com##+js(set, isAdLoaded, true)
 @@||ark.letv.com/adx?adzone=
 @@||stat.letv.com/$script
 */letv-gug/$media,object-subrequest
@@ -87,15 +88,16 @@ behe.com
 biddingx.com
 cr-nielsen.com
 fancyapi.com
+ipinyou.com
 kejet.net
 ||jd.com/$domain=le.com
 ulmdb.cn
+xelements.cn
 yoyi.com.cn
 zhiziyun.com
-le.com##.banner_ad,div.banner_left,div.banner_right,.min_pause_img
+le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
 ||douyucdn.cn/adxdsp/$image
 ||wan.douyu.com/
 douyu.com,huya.com##a[href^="https://g.wan."]
@@ -255,6 +257,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img]
 ||adsense.
 */adsense/
 ||adserver.
+||cm.$image,script,xhr,3p
 @@||g.alicdn.com/$script,subdocument
 @@||g.tbcdn.cn/
 ||g.$third-party,subdocument,script
@@ -296,7 +299,8 @@ tanx.com
 ||vamaker.com/$third-party
 */vamaker/
 wrating.com
-*##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
+*##.adtable, .adbox,[class$="-ad"],[class|=ad]
+*##div.ad960-90,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
 ||com/ads
@@ -324,7 +328,7 @@ pageMediaControl*$script
 */adSide.$script,xhr
 */adwidget$script
 */gg.$script
-||go.$domain=kickass.cd|thepiratebay.red|thepiratebay.ee
+||go.$domain=kickass.cd|thepiratebay.*|btsow.*
 */index_banner_
 ! *_banner.$script,object,image
 */images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
@@ -339,7 +343,7 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*popup.js^$domain=~127.*|~10.*|~172.16.*|~172.31.*|~192.168.*|~qq.com|~fupin832.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
+*popup.js^$domain=~127.*|~10.*|~172.16.*|~172.31.*|~192.168.*|~qq.com|~fupin832.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
 */float.js|
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
@@ -580,7 +584,7 @@ enennsa.gushiwen.cn
 ||www.chnmoney.com/dfile/$script,image
 www.chnmoney.com##.tonglan
 
-eastmoney.com##.footer-ads,#rightAD,.adbox
+eastmoney.com##.footer-ads,#rightAD
 ||cmsjs.eastmoney.com/$subdocument
 ||fund.eastmoney.com/trade/Hot_$subdocument
 
