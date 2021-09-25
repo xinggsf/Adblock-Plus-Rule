@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202109201
+! Version: 202109261
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -11,6 +11,7 @@ m.youku.com,v.youku.com##+js(cookie-remover, cna)
 cad.youku.com
 !||cp31.ott.cibntv.net/*/ad/X*.ts?$xhr,mp4,domain=youku.com
 ||atm.youku.com/
+@@||log.mmstat.com^$script,domain=youku.com
 ||cibntv.net/youku/$media,important
 ||valipl.cp31.ott.cibntv.net/$media
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
@@ -54,7 +55,6 @@ cctv.com,ddrk.me,miguvideo.com##+js(aeld,dblclick,isImmediatePropagationStopped)
 cctv.com###bgAd_div
 ||imall.cctv.com/$subdocument
 ||bjcathay.com/
-!||player.cntv.cn/h5vod/$script
 
 pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
 ||synacast.com
@@ -77,7 +77,6 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 
 le.com##+js(set, isAdLoaded, true)
 @@||ark.letv.com/adx?adzone=
-@@||stat.letv.com/$script
 */letv-gug/$media,object-subrequest
 ||letvimg.com/$object,object-subrequest
 ||letvimg.com/*_gugwl/$image
@@ -537,10 +536,12 @@ track.sohu.com
 fpb.sohu.com
 qpb.sohu.com
 !-------------------ifeng.com--------------------
-ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left
+ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"]
 ||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
+||ax.ifeng.com/$script
+||ztyumn.ifeng.com/$script
 ||games.ifeng.com/$subdocument
 ||games.ifeng.com/webgame/
 mfp.deliver.ifeng.com
@@ -550,7 +551,7 @@ qcvf.ifeng.com
 ||ifengimg.com/mappa
 ||ifengimg.com/feather/images/$image
 ||x0.ifengimg.com/ucms/$image,domain=~news.ifeng.com
-||x0.ifengimg.com/$script,domain=~v.ifeng.com
+||x0.ifengimg.com/feprod/c/web/d/coupletFloat.js
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
 !-------------------小说站点-----------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
