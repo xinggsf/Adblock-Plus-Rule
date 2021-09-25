@@ -536,7 +536,7 @@ track.sohu.com
 fpb.sohu.com
 qpb.sohu.com
 !-------------------ifeng.com--------------------
-ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"]
+ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
 ||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
@@ -547,12 +547,12 @@ ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[clas
 mfp.deliver.ifeng.com
 qcvf.ifeng.com
 5hte21mz.com
-|https://c0.ifengimg.com/p/ax_/pic_cpc_cpm_cpa_guanggao_gg_ads.js
+||ifengimg.com/*_guanggao_$script
 ||ifengimg.com/mappa
 ||ifengimg.com/feather/images/$image
 ||x0.ifengimg.com/ucms/$image,domain=~news.ifeng.com
 ||x0.ifengimg.com/feprod/c/web/d/coupletFloat.js
-v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
+v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol
 !-------------------小说站点-----------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
 qidian.com###tr-banner,div.banner-wrap,div.focus-img.cf,#j_bodyRecWrap,#j-topHeadBox,#j-topBgBox,div.games-op-wrap
