@@ -547,7 +547,7 @@ ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[clas
 mfp.deliver.ifeng.com
 qcvf.ifeng.com
 5hte21mz.com
-||ifengimg.com/*_guanggao_$script
+||ifengimg.com/*_guanggao_$script,xhr
 ||ifengimg.com/mappa
 ||ifengimg.com/feather/images/$image
 ||x0.ifengimg.com/feprod/c/web/d/coupletFloat.js
