@@ -614,6 +614,7 @@ autohome.com.cn###s2287
 cnbeta.com##+js(set, JB, noopFunc)
 cnbeta.com##.cbv,#artibody~*,#upcoming_box,div.article-global,div.meta > span.fr:last-child
 
+blog.csdn.net###content_views pre, #content_views pre code:style(user-select:auto!important)
 @@||g.csdnimg.cn/$script
 ||img-ads.csdn.net/
 csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
@@ -665,6 +666,9 @@ zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image, .Pc-word
 mail.21cn.com##.arale-dialog-1_2_3
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 360doc.com##div[id^=divad],#fullbg
+www.doc88.com,www.360doc.com##+js(set,document.body.oncopy,trueFunc)
+www.doc88.com,www.360doc.com##+js(set,logined,1)
+www.doc88.com,www.360doc.com##+js(set,u_v,1)
 ||webservice.360doc.com/
 |http://www.4399.com/loadimg/iframe_$subdocument
 ||5054399.com/4399_js/$script
