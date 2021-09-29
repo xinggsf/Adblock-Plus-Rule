@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202109271
+! Version: 202109291
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -27,6 +27,7 @@ iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 ||iqiyipic.com/image/20*_100000$image
 ||ssports.iqiyi.com/json/shop/shopInfo
 show.ssports.com
+static.g.iqiyi.com
 ||ssports.iqiyi.com/app/$object-subrequest
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com
@@ -130,11 +131,10 @@ dililitv.cc,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 dyjihe2.com##.tempWrap
 
-!*$3p,popup,domain=haitum.com
-haitum.com,haicaoys.com##.dplayer-web-fullscreen-fix .float-box
+!haitum.com##+js(set, document.writeln, noopFunc)
+haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
 haitum.com##.container:style(max-width:90%!important;width:90%!important)
 haitum.com##.left-content:style(width:77%!important)
-haitum.com##.dplayer-web-fullscreen-fix header
 ||haitum.com/template/default/static/js/bottom.js^$script
 ||haitum.com/template/default/static/js/middle.js^$script
 
