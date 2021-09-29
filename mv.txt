@@ -4,7 +4,7 @@
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
-v.youku.com##.control-phonewatch,#right-title-ad-banner
+v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 m.youku.com,v.youku.com##+js(cookie-remover, cna)
@@ -21,7 +21,6 @@ iqiyi.com##div[data-adzone],#block-V
 iqiyi.com##+js(aeld,dblclick,t.fullToggle)
 !iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
-!||t7z.cupid.iqiyi.com/show$script,important
 ||static.iqiyi.com/js/common/mars_v.js$script
 ||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
 ||iqiyipic.com/image/20*_100000$image
@@ -30,7 +29,7 @@ show.ssports.com
 static.g.iqiyi.com
 ||ssports.iqiyi.com/app/$object-subrequest
 
-qq.com##.mod_ad, .txp_ad, div.l_qq_com
+qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark
 v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||video.qq.com/fcgi-bin/
@@ -57,7 +56,7 @@ cctv.com###bgAd_div
 ||imall.cctv.com/$subdocument
 ||bjcathay.com/
 
-pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
+pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game,#p-mark
 ||synacast.com
 ||de.as.pptv.com^
 ||g.pptv.com/game/$subdocument
