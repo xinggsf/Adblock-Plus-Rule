@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202109301
-! Expires: 2 days
+! Version: 202110011
+! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
@@ -40,7 +40,7 @@ scorecardresearch.com
 tencentmind.com
 xtgreat.com
 
-@@||g.w.bilicdn1.com/
+@@||g.w.bilicdn1.com/$script
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
@@ -60,7 +60,7 @@ synacast.com
 de.as.pptv.com
 ||g.pptv.com/game/$subdocument
 
-! fun.tv
+! 风行网： fun.tv
 pub.funshion.com
 
 @@||tb.mgtv.com/sdk/*/ad-sdk.js$script
@@ -134,7 +134,7 @@ dililitv.cc,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 dyjihe2.com##.tempWrap
 
-!haitum.com##+js(set, document.writeln, noopFunc)
+haitum.com##+js(set, document.writeln, noopFunc)
 haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
 haitum.com##.container:style(max-width:90%!important;width:90%!important)
 haitum.com##.left-content:style(width:77%!important)
@@ -146,8 +146,8 @@ imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
 imomoe.*###adl,#adr
 
 nunuyy.cc##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
-@@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
-*$3p,script,domain=nunuyy.cc
+! @@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
+! |https://*$3p,script,domain=nunuyy.cc
 adx1.com
 ancheonyo.fun
 andcanbere.fun
@@ -156,7 +156,7 @@ freychang.fun
 in-page-push.com
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
-yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,null)
+yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,trueFunc)
 ||tracker.$xhr,websocket,script,ping
 3z9e.cn
 7nsc.cn
@@ -190,5 +190,5 @@ youle55.com
 ||click.bokecc.com/
 ||imedia.bokecc.com/
 
-! 去站内新开
+! 禁止站内新开窗
 *##+js(ra, target, a[target][href^="/"])
