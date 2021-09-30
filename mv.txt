@@ -142,7 +142,6 @@ haitum.com##.left-content:style(width:77%!important)
 ||haitum.com/template/default/static/js/middle.js^$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
-*##+js(ra, target, a[target][href^="/"])
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
@@ -190,3 +189,6 @@ youle55.com
 ||bokecc.com/flash/playlog?
 ||click.bokecc.com/
 ||imedia.bokecc.com/
+
+! 去站内新开
+*##+js(ra, target, a[target][href^="/"])
