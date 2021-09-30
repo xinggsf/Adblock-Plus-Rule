@@ -38,7 +38,6 @@ fanyi.baidu.com##div.banner-wrap
 jingyan.baidu.com##.wgt-cms-banner, .right-fixed-related-wrap, #bottom-ads-container
 ||exp.bdstatic.com/static/exp-pc/common-jquery/widget/popup-$script
 
-pan.baidu.com,music.baidu.com,yun.baidu.com##[class|=ad]
 v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||app.video.baidu.com/adver?
 ||v.baidu.com/staticapi/videoAd.json?
@@ -119,7 +118,7 @@ tanx.com
 ||vamaker.com/$third-party
 */vamaker/
 wrating.com
-*##.adtable, .adbox,[class$="-ad"],[class|=ad]
+*##.adtable, .adbox,[class$="-ad"],[class|=ad],[class^=ad_]
 *##div.ad960-90,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
@@ -258,7 +257,7 @@ yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ! 中关村在线
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
 www.zol.com.cn,www.91danji.com,92btbtt.com##body:style(background: center !important)
-zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
+zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[id^=AD_]
 ||p.zol.com.cn/$script
 ||icon.zol-img.com.cn/public/js/web_foot$script
 ||p.zol-img.com.cn/$script
@@ -357,7 +356,7 @@ track.sohu.com
 fpb.sohu.com
 qpb.sohu.com
 !-------------------ifeng.com--------------------
-ifeng.com##div[class^=adList],div[class^=adbox],[class|=ad],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
+ifeng.com##div[class^=adList],div[class^=adbox],[class|=topAd],[class^=ad_],#couplet3_right,#couplet3_left,[href^="//mall.ifeng.com"],#js_videopause_container
 ||ifeng.com/a_if/$subdocument
 ||ifeng.com/a_if/taobao/
 ||ifeng.com/ssi-incs/$subdocument
@@ -526,7 +525,7 @@ u8.hujiang.com
 ||dmjs.gucheng.com/
 www.hao123.com##div#ecom,div.widget-topbanner,A.link.download,#shortcut-box,#shortcut-box~*,div[monkey=yixing],.siye,#leftbannerv2
 
-iciba.com##div[class|=ad],div.newpc-entry
+iciba.com##div.newpc-entry
 ||cdn.iciba.com/web/co/ci/$image
 ! bbs.nga.cn
 g1.tagtic.cn

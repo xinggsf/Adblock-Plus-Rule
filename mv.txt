@@ -8,9 +8,8 @@ v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 m.youku.com,v.youku.com##+js(cookie-remover, cna)
+atm.youku.com
 cad.youku.com
-!||cp31.ott.cibntv.net/*/ad/X*.ts?$xhr,mp4,domain=youku.com
-||atm.youku.com/
 @@||log.mmstat.com^$script,domain=youku.com
 ||cibntv.net/youku/$media,important
 ||valipl.cp31.ott.cibntv.net/$media
@@ -24,10 +23,10 @@ iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 ||static.iqiyi.com/js/common/mars_v.js$script
 ||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
 ||iqiyipic.com/image/20*_100000$image
-||ssports.iqiyi.com/json/shop/shopInfo
-show.ssports.com
 static.g.iqiyi.com
+||ssports.iqiyi.com/json/shop/shopInfo
 ||ssports.iqiyi.com/app/$object-subrequest
+show.ssports.com
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark
 v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
@@ -54,12 +53,15 @@ acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
 cctv.com,ddrk.me,miguvideo.com##+js(aeld,dblclick,isImmediatePropagationStopped)
 cctv.com###bgAd_div
 ||imall.cctv.com/$subdocument
-||bjcathay.com/
+bjcathay.com
 
 pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game,#p-mark
-||synacast.com
-||de.as.pptv.com^
+synacast.com
+de.as.pptv.com
 ||g.pptv.com/game/$subdocument
+
+! fun.tv
+pub.funshion.com
 
 @@||tb.mgtv.com/sdk/*/ad-sdk.js$script
 ||video.da.mgtv.com/$media
@@ -102,12 +104,10 @@ le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 ||douyucdn.cn/adxdsp/$image
-||wan.douyu.com/
+wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
 huya.com###hy-ad,#hy-ab,#huya-ab
-||g.huya.com/
-
-||pub.funshion.com
+g.huya.com
 
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
@@ -121,8 +121,8 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 ||gstatic.com/shopping?
 
 */preroll/$media,domain=91porn.com
-||91p20.space^
-||waust.at^
+91p20.space
+waust.at
 
 agefans.cc##+js(noeval-if, devtoolsDetector)
 ||pstatp.com/origin/$image,domain=agefans.cc|88kan.tv
@@ -142,12 +142,11 @@ haitum.com##.left-content:style(width:77%!important)
 ||haitum.com/template/default/static/js/middle.js^$script
 
 imomoe.*,xiamov.com,xxdm8.com##+js(ra, target, base[target])
-88kan.tv,dyjihe2.com,haitum.com,mamatws.com,imomoe.*,kakadm.com,milimili.*,qiqidongman.com,rijutv.co,vodxc.*##+js(ra, target, a[href^="/"])
+*##+js(ra, target, a[target][href^="/"])
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-nunuyy.cc##video:style(max-height:100% !important)
-nunuyy.cc##.gm-fp-body video:style(height:100% !important)
+nunuyy.cc##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
 @@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
 *$3p,script,domain=nunuyy.cc
 adx1.com
@@ -186,10 +185,7 @@ youle55.com
 ||www.yatu.tv:88/image/*.gif^$image
 ||www.yatu.tv:88/m/images/$image
 
-||mtime.cn/library/*/Goods$script
-trade.mtime.com
 ||com/pic/fgr/$script,object-subrequest
-
 @@||union.bokecc.com/player
 ||bokecc.com/flash/playlog?
 ||click.bokecc.com/
