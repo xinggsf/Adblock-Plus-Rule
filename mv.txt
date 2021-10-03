@@ -31,6 +31,7 @@ show.ssports.com
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark
 v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+@@||rpt.gdt.qq.com/livemsg?$image
 @@||video.qq.com/fcgi-bin/
 ||mark.l.qq.com/fcgi-bin/get_video_mark_all?idlist=
 ||gtimg.com/qqlive/
