@@ -1,9 +1,8 @@
-no-csp-reports: * true
-no-popups: btsow.one true
 * * 3p-frame block
 * * 3p-script block
 * alicdn.com * noop
 * aliyun.com * noop
+* datax.baidu.com * noop
 * libs.baidu.com * noop
 * lib.baomitu.com * noop
 * bcebos.com * noop
@@ -17,9 +16,9 @@ no-popups: btsow.one true
 * cntv.cn * noop
 * doubanio.com * noop
 * douyucdn.cn * noop
+* dyncdn.me * noop
 * geetest.com * noop
 * github.com * noop
-* google.cn * noop
 * google.com * noop
 * googleapis.com * noop
 * gstatic.cn * noop
@@ -27,10 +26,7 @@ no-popups: btsow.one true
 * gtimg.cn * noop
 * gtimg.com * noop
 * hdslb.com * noop
-* ikafan.com * noop
-* iqiyi.com * noop
 * iqiyipic.com * noop
-* jquery.com * noop
 * lecloud.com * noop
 * letv.com * noop
 * letvcdn.com * noop
@@ -38,8 +34,8 @@ no-popups: btsow.one true
 * migu.cn * noop
 * a.msstatic.com * noop
 * pplive.cn * noop
-* pptv.com * noop
 * pstatp.com * noop
+* recaptcha.net * noop
 * shankuwang.com * noop
 * sina.cn * noop
 * login.sina.com.cn * noop
@@ -47,13 +43,13 @@ no-popups: btsow.one true
 * sinajs.cn * noop
 * tedcdn.com * noop
 * tq121.com.cn * noop
-* youku.com * noop
 * ytimg.com * noop
 * zhimg.com * noop
 163.com * 3p-script noop
 1905.com * 3p-script noop
 acfun.cn * 3p-script noop
 www.bilibili.com api.live.bilibili.com * block
+btsow.one * 3p block
 github.com * 3p-script noop
 github.io * 3p-script noop
 haitum.com * 3p-frame noop

@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202110063
+! Version: 202110071
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -31,8 +31,8 @@ static.g.iqiyi.com
 show.ssports.com
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link
-v.qq.com,sports.qq.com,news.qq.com##+js(json-prune,ad,vinfo)
-v.qq.com,sports.qq.com,news.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+v.qq.com,sports.qq.com,new.qq.com##+js(json-prune,ad,vinfo)
+v.qq.com,sports.qq.com,new.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||video.qq.com/fcgi-bin/
 @@||otheve.beacon.qq.com/analytics/$xhr
 ||l.qq.com/lview?
@@ -41,7 +41,7 @@ v.qq.com,sports.qq.com,news.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 ||gtimg.com/qqlive/
 ||qzonestyle.gtimg.cn/qzone/biz/ac/comm/$script
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
-*/variety.tc.qq.com/*.mp4?$media
+||v.smtcdns.com/*.tc.qq.com/$media,mp4,domain=new.qq.com
 ||news.ssp.qq.com/app
 miaozhen.com
 reachmax.cn
