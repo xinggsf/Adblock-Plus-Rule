@@ -549,16 +549,19 @@ d2.yiche.com
 ||www.zhujiceping.com/wp-content/uploads/$script
 !-------------------影视资源--------------------
 |https://www.36dm.com/js/
-|https://www.36dm.com/tbklb/
+lm343.com
+mjg0310.com
+tainicement.net
 ||www.36dm.com/images/$image
 douban.com##div[ad-status]
+erebor.douban.com
+||share.dmhy.org^$image
 huojua.com
+
 ||hao6v.com/d/$script
 ||dygang.cc/d/$script
 ||6vw.cc/d/$script
 ||6vgood.com/d/$script
-
-||share.dmhy.org^$image
 
 ||www.dy2018.com/js$script
 subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
