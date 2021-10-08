@@ -119,7 +119,7 @@ tanx.com
 ||vamaker.com/$third-party
 */vamaker/
 wrating.com
-*##.adtable, .adbox,[class$="-ad"],[class|=ad],[class^=ad_]
+*##.ad, .adtable, .adbox,[class$="-ad"],[class|=ad],[class^=ad_]
 *##div.ad960-90,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle

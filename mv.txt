@@ -7,7 +7,7 @@
 v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
-m.youku.com,v.youku.com##+js(cookie-remover, cna)
+!m.youku.com,v.youku.com##+js(cookie-remover, cna)
 atm.youku.com
 cad.youku.com
 @@||log.mmstat.com^$script,domain=youku.com
@@ -200,4 +200,5 @@ youle55.com
 
 ||com/pic/fgr/$script,object-subrequest
 ! 禁止站内新开窗
-~bilibili.com##+js(ra, target, a[target][href^="/"])
+bilibili.com#@#+js(ra, target, a[target][href^="/"])
+*##+js(ra, target, a[target][href^="/"])
