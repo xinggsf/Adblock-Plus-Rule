@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202110071
+! Version: 202110091
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -9,6 +9,8 @@
 @@||bdstatic.com/static/common/widget/ui/admanager/$script,domain=image.baidu.com
 @@||cpro.baidustatic.com/cpro/ui/cm.js
 ||cpro.
+ada.baidu.com
+cstm.baidu.com
 dlswbr.baidu.com
 ||dup.baidustatic.com/
 ||ubmcmm.baidustatic.com/
@@ -31,7 +33,7 @@ kstj.baidu.com
 ||znsv.baidu.com/
 
 ||pups.bdimg.com/
-baike.baidu.com###adLayerSideWrap
+baike.baidu.com##.after-content,#adLayerSideWrap
 ||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap
 
@@ -119,8 +121,12 @@ tanx.com
 ||vamaker.com/$third-party
 */vamaker/
 wrating.com
-*##.ad, .adtable, .adbox,[class$="-ad"],[class|=ad],[class^=ad_]
-*##div.ad960-90,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent
+*##.ad
+*##.ad960-90
+*##.adbox
+*##.adtable
+*##[id$="-ad"],[class|=ad],[id|=ad],[id^=ad_]
+*##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
 ||com/ads
