@@ -559,7 +559,8 @@ lm343.com
 mjg0310.com
 tainicement.net
 ||www.36dm.com/images/$image
-douban.com##div[ad-status]
+douban.com##.subject-banner, div[ad-status]
+at3.doubanio.com
 erebor.douban.com
 ||share.dmhy.org^$image
 huojua.com
