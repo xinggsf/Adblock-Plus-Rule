@@ -1,0 +1,222 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies: null
+proxy-providers:
+  sub_proxy:
+    type: file
+    path: /proxy-provider.yml
+    health-check:
+      enable: true
+      interval: 3600
+      url: http://www.gstatic.com/generate_204
+proxy-groups:
+  - name: ♻️ 自动选择
+    type: url-test
+    use:
+      - sub_proxy
+    url: http://www.gstatic.com/generate_204
+    interval: 500
+  - name: 🌍 国外媒体
+    proxies:
+      - ♻️ 自动选择
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 500
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+    url: http://www.gstatic.com/generate_204
+    interval: 400
+    _index: 2
+  - name: 🐟 漏网之鱼
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+    type: select
+    url: http://www.gstatic.com/generate_204
+    interval: 400
+    _index: 3
+rules:
+  - DOMAIN-SUFFIX,shuu.cf,DIRECT
+  - DOMAIN-KEYWORD,pianku.,DIRECT
+  - DOMAIN-SUFFIX,v2ex.com,♻️ 自动选择
+  - DOMAIN-KEYWORD,.nunuyy.,♻️ 自动选择
+  - DOMAIN-KEYWORD,.haitu,♻️ 自动选择
+  - DOMAIN-KEYWORD,github,♻️ 自动选择
+  - DOMAIN-SUFFIX,google.cn,DIRECT
+  - DOMAIN-KEYWORD,.google,♻️ 自动选择
+  - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
+  - DOMAIN-KEYWORD,.kkbox.,🌍 国外媒体
+  - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
+  - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
+  - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
+  - DOMAIN-SUFFIX,spoti.fi,🌍 国外媒体
+  - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
+  - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,himalaya.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,overcast.fm,🌍 国外媒体
+  - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,akamaized.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,primevideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,images-amazon.com,🌏 国内媒体
+  - DOMAIN-SUFFIX,amazon.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,akamaihd.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,cloudfront.net,DIRECT
+  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+  - DOMAIN-KEYWORD,.apple.,🌍 国外媒体
+  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
+  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+  - DOMAIN-SUFFIX,hinet.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,bbc.co.uk,🌍 国外媒体
+  - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
+  - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
+  - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
+  - DOMAIN-SUFFIX,biliintl.com,🌍 国外媒体
+  - DOMAIN,apm-misaka.biliapi.net,🌍 国外媒体
+  - DOMAIN,p.bstarstatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
+  - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,discoveryplus.,🌍 国外媒体
+  - DOMAIN-SUFFIX,dnitv.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
+  - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dmm.co.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,dmm.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,dmm-extension.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
+  - DOMAIN,hbolb.onwardsmg.com,🌍 国外媒体
+  - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
+  - DOMAIN,players.brightcove.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hulu.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,huluim.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,hulustream.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,happyon.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,hjholdings.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,hulu.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,iq.com,🌍 国外媒体
+  - DOMAIN,intl.iqiyi.com,🌍 国外媒体
+  - DOMAIN,intl-rcd.iqiyi.com,🌍 国外媒体
+  - DOMAIN,intl-subscription.iqiyi.com,🌍 国外媒体
+  - IP-CIDR,13.229.0.0/16,♻️ 自动选择
+  - IP-CIDR,20.205.243.0/24,♻️ 自动选择
+  - IP-CIDR,23.211.15.99/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
+  - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
+  - IP-CIDR,103.5.34.153/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,108.175.32.0/20,🌍 国外媒体,no-resolve
+  - IP-CIDR,104.109.129.153/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,110.238.107.47/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,118.26.32.178/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,150.109.28.51/32,🌍 国外媒体
+  - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
+  - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
+  - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
+  - IP-CIDR,203.74.95.131/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,203.74.95.139/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
+  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
+  - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+  - DOMAIN-SUFFIX,naver.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,smartmediarep.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.,🌍 国外媒体
+  - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
+  - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowe.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nowestatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cbsi.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cbsaavideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cbsivideo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,paramountplus.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pplusstatic.com,🌍 国外媒体
+  - DOMAIN,cbsi.live.ott.irdeto.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,syncbak.com,🌍 国外媒体
+  - DOMAIN,link.theplatform.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+  - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
+  - DOMAIN,hamifans.emome.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
+  - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
+  - DOMAIN-SUFFIX,tver.jp,🌍 国外媒体
+  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,wetv.vip,🌍 国外媒体
+  - DOMAIN-SUFFIX,wetvinfo.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ggpht.com,🌍 国外媒体
+  - IP-CIDR,1.255.62.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR,182.254.116.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR,185.188.32.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR,185.188.33.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR,185.188.34.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR,185.188.35.0/24,🌏 国内媒体,no-resolve
+  - IP-CIDR6,2a0b:b580::/48,🌏 国内媒体,no-resolve
+  - IP-CIDR6,2a0b:b581::/48,🌏 国内媒体,no-resolve
+  - IP-CIDR6,2a0b:b582::/48,🌏 国内媒体,no-resolve
+  - IP-CIDR6,2a0b:b583::/48,🌏 国内媒体,no-resolve
+  - GEOIP,CN,DIRECT
+  - MATCH,🐟 漏网之鱼
