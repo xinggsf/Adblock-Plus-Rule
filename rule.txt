@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202110091
+! Version: 202110121
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -19,13 +19,10 @@ dlswbr.baidu.com
 @@||eiv.baidu.com/fcimg
 ||eiv.baidu.com/
 ||f11.baidu.com/
-||iwanad.baidu.com/
 kstj.baidu.com
 ||pos.baidu.com/
 ||sp0.baidu.com/$third-party
-||spcode.baidu.com/
 ||cbjs.baidu.com/
-||cbjslog.baidu.com/
 ||crs.baidu.com/
 ||entry.baidu.com/$subdocument
 ||hm.baidu.com/
@@ -48,7 +45,6 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||as2.wenku.baidu.com/$subdocument
 ||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
 
-www.baidu.com##div.c-container:has(a[data-landurl])
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
 !--贴吧---
 tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img],#thread_list>li:not(.j_thread_list):not(.thread_top_list_folder),div[data-rank],a.j_click_stats
@@ -95,7 +91,6 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img]
 ||coinhive.com/
 *coinhive.min.js^$script
 ||coin-hive.com/
-||coinhive-manager.com/
 doubleclick.net
 he2d.comhnjls.com.cn
 dlads.cn
@@ -178,8 +173,6 @@ pageMediaControl*$script
 */tongji.js|$domain=~zongheng.com
 !-------------------下载站点-----------------------
 *.gif|$image,domain=3987.com|www.ouyaoxiazai.com|www.myhack58.com
-www.3987.com##.downinfo > .fr, .show.xiazai_bj
-||statics.3987.com/all_site/$script
 52z.com###softdown>div,div.syGaosuDa:first-child
 ||www.fxxz.com/show/html/$subdocument
 ||www.fxxz.com/skin/know/html/$subdocument
@@ -223,7 +216,6 @@ pcbeta.com##+js(aopr, Node.prototype.insertBefore)
 ||pcgames.com.cn/adpuba/show?
 ||pcgames.com.cn/g/*/fz/
 ||img0.pcgames.com.cn^$object,object-subrequest
-||wangyou.pcgames.com.cn/jctj/$script
 
 pconline.com.cn##div.jcztl,div.box.best,div.ivy-330
 ||buy.pconline.com.cn/$script
@@ -286,9 +278,8 @@ zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[id^=AD_
 ||open.show.qq.com/cgi-bin/qqshow_user_gdt_ad?
 ||qzs.qq.com/qzone/biz/
 ||rh.qq.com/
+taobao.qq.com
 ||tajs.qq.com/$domain=~wuxia.qq.com
-||taobao.qq.com/
-||tcss.qq.com/
 ||view.news.qq.com/PL_ad$subdocument
 www.qq.com##.adLeft,.adRight
 user.qzone.qq.com##div#idQbossHotbar.hotbar_wrap,div.icenter-right-ad,div#QM_100005_Body,div.fn-feed-mod-bd,div.ck-act,div#QM_Container_100005,div.gdtads_box,li.f-single-biz
@@ -312,7 +303,6 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 @@||bnet.163.com/
 ||g.163.com/$~object-subrequest
 ||img1.126.net/
-||img2.126.net/
 ||img3.126.net/
 ||img6.126.net/
 ||126.net/silver/
@@ -404,8 +394,6 @@ tianyabooks.com##div[class^=bread_]
 ||yijiuningyia.gushiwen.org
 enennsa.gushiwen.cn
 ||a.lz13.cn/
-||cgm.shicimingju.com
-||www.shicimingju.com/scmjddd/
 !-------------------财经--------------------
 ||www.chnmoney.com/skin/$script
 ||www.chnmoney.com/dfile/$script,image
@@ -454,7 +442,6 @@ www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
 
-||orz.hupu.com
 ||t1.hoopchina.com.cn/$subdocument
 hupu.com##[class|=sidebar-ad],[id|=div-gpt-ad],[class^=nba-ad],[class^=hp-ad],div[class^=ad],.topPub
 
@@ -503,7 +490,6 @@ www.doc88.com,www.360doc.com##+js(set,u_v,1)
 ||pbmp.ali213.net/
 ||tj.ali213.net/
 baike.com###right_ad_div
-||hdad.baike.com/
 ||www.bdsola.com/js/common.js
 bing.com##li.b_ad,#b_notificationContainer_bop
 bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
@@ -513,11 +499,9 @@ bitauto.com##.ad-tag-box,ins,body>div.container[style^=margin-top]
 ||static.cnbetacdn.com/frontend/vipics/$image
 ||china.com.cn/2016ads/$subdocument
 chinanews.com##div.advert_nav,#news_top_advert,#qizhi_div980,#zhengwenvideo~*
-||afp.chinanews.com
 ||i8.chinanews.com^$subdocument
 ctfile.com,www.pipipan.com##a[href^="https://union.ctfile.com"],div[id|=ad],div[id^=ad_]
 ||mydisplay.ctfile.com/$script,subdocument,popup
-||uniondm.cz88.net/
 duowan.com##a[adid]
 u8.hujiang.com
 
@@ -549,7 +533,6 @@ u17.com##[id|=u17-advert],div.ad_wrap
 ||img.cmm.xmfish.com/pages/uploads/20$image
 bbs.xmfish.com##div[id^=adm_show_]
 d2.yiche.com
-||www.you85.com/ling/$script
 ||zchot.com/images/jiaoyou
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
