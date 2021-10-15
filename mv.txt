@@ -133,13 +133,13 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 91p20.space
 waust.at
 
-agefans.cc##+js(noeval-if, devtoolsDetector)
-||pstatp.com/origin/$image,domain=agefans.cc|88kan.tv
+agefans.*##+js(noeval-if, devtoolsDetector)
+||pstatp.com/origin/$image,domain=agefans.*|88kan.tv|mgtv1.cc
 
-dililitv.cc,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
+dililitv.*,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
 ||www.dililitv.cc/*.php?ad=$script
 js.dilidd.com
-dililitv.cc,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
+dililitv.*,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 dyjihe2.com##.tempWrap
 
@@ -154,12 +154,13 @@ haitum.com##.left-content:style(width:77%!important)
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
 *##+js(ra, target, a[target][href^="/"])
+
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-nunuyy.cc##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
-! @@||cdn.jsdelivr.net/$script,domain=nunuyy.cc
-! |https://*$3p,script,domain=nunuyy.cc
+nunuyy.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
+! @@||cdn.jsdelivr.net/$script,domain=nunuyy.*
+! |https://*$3p,script,domain=nunuyy.*
 adx1.com
 ancheonyo.fun
 andcanbere.fun
@@ -201,4 +202,4 @@ youle55.com
 ||click.bokecc.com/
 ||imedia.bokecc.com/
 
-||com/pic/fgr/$script,object-subrequest
+!||com/pic/fgr/$script,object-subrequest
