@@ -134,7 +134,7 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 waust.at
 
 agefans.*##+js(noeval-if, devtoolsDetector)
-||pstatp.com/origin/$image,domain=agefans.*|88kan.tv|mgtv1.cc
+||pstatp.com/origin/$image,domain=agefans.*|mgtv1.cc
 
 dililitv.*,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
 ||www.dililitv.cc/*.php?ad=$script
