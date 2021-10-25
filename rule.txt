@@ -95,8 +95,8 @@ doubleclick.net
 he2d.comhnjls.com.cn
 dlads.cn
 dmvbdfblevxvx.com
-adservice.google.com
-||googleadservices.com
+||adservice.
+||googleadservices.
 ||googlesyndication.com
 ||google-analytics.com
 gshtrl.top
@@ -164,8 +164,8 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*popup.js^$domain=~maxthon.cn|~qq.com|~fupin832.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
-*/float.js|
+*popup.js^$domain=~127.*|~10.*|~192.*|~maxthon.cn|~qq.com|~fupin832.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
+*/float.js^$script
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
 */tan1.$script

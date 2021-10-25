@@ -167,6 +167,8 @@ andcanbere.fun
 freychang.fun
 envyindebted.com
 in-page-push.com
+stgowan.com
+trustedgatetocontent.com
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,trueFunc)
