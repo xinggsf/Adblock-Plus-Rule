@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202111051
+! Version: 202111131
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -30,7 +30,8 @@ static.g.iqiyi.com
 show.ssports.com
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link
-qq.com##+js(set, Beacon.prototype.fail, null)
+qq.com##+js(no-xhr-if, /\b(b?trace|beacon)\./)
+qq.com##+js(no-fetch-if, /\b(b?trace|beacon)\./)
 v.qq.com,sports.qq.com,new.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||video.qq.com/fcgi-bin/
@@ -137,11 +138,7 @@ waust.at
 agefans.*##+js(noeval-if, devtoolsDetector)
 ||pstatp.com/origin/$image,domain=agefans.*|mgtv1.cc
 
-dililitv.*,lzvod.net##+js(aeld,dblclick,dp.fullScreen.request)
-||www.dililitv.cc/*.php?ad=$script
-js.dilidd.com
-dililitv.*,hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
-
+hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 dyjihe2.com##.tempWrap
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
@@ -159,9 +156,9 @@ haitum.com##.left-content:style(width:77%!important)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-nunuyy.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
+dandanzan.cc,nunuyy.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
 ! @@||cdn.jsdelivr.net/$script,domain=nunuyy.*
-! |https://*$3p,script,domain=nunuyy.*
+! |https://*$3p,script,domain=nunuyy.*|dandanzan.cc
 adx1.com
 ancheonyo.fun
 andcanbere.fun
