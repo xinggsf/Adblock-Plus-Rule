@@ -121,7 +121,8 @@ wrating.com
 *##.ad960-90
 *##.adbox
 *##.adtable
-*##[id$="-ad"],[class|=ad],[id|=ad],[id^=ad_]
+~news.sina.com.cn##[id^=ad_]
+*##[id$="-ad"],[class|=ad],[id|=ad],
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
