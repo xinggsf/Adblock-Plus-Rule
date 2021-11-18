@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202111011
+! Version: 202111181
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -435,11 +435,6 @@ blog.csdn.net###content_views pre, #content_views pre code:style(user-select:aut
 ||img-ads.csdn.net/
 csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
 
-mydrivers.com##.duilian,a[href*="jd.com/"],div.tj_list_tu
-||icons.mydrivers.com/news/2018/ry$image
-||icons.mydrivers.com/20*.gif^$image
-||mydrivers.com/*_728_90.$image
-
 www.epinv.com###container>#sidebar~*,div.huadong,div.epinv_f
 ||www.epinv.com/wp-content/themes/ep/tu/
 ||firefoxchina.cn/html/$subdocument
@@ -456,9 +451,15 @@ zyzj360.com
 
 jianshu.com###note-fixed-ad-container
 ||jianshu.io/assets/web/*-ads-$image
+udiab1.jianshu.com
 juejin.im##.banner,.wechat-banner
 ||gold-cdn.xitu.io/asset/sidbar-banner/$image
 wiki.mbalib.com###ad-phone
+
+mydrivers.com##.duilian,a[href*="jd.com/"],div.tj_list_tu
+||icons.mydrivers.com/news/2018/ry$image
+||icons.mydrivers.com/20*.gif^$image
+||mydrivers.com/*_728_90.$image
 
 ||www.myhack58.com/Articleacb0$image
 myhack58.com##.CMBox>.adv32
