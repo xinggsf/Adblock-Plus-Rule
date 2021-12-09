@@ -143,7 +143,7 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 waust.at
 
 agefans.*##+js(noeval-if, devtoolsDetector)
-||pstatp.com/origin/$image,domain=agefans.*|mgtv1.cc
+||toutiaoimg.com/origin/$image,domain=agefans.*|mgtv1.cc
 
 hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 dyjihe2.com##.tempWrap
