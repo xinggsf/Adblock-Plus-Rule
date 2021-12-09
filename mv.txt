@@ -1,8 +1,12 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202111131
+! Version: 202112091
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
+
+! 屏蔽P2P
+qq.com,huya.com,dandanzan.cc,nunuyy.*##+js(set, RTCPeerConnection, undefined)
+qq.com,huya.com,dandanzan.cc,nunuyy.*##+js(set, webkitRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
@@ -114,6 +118,8 @@ zhiziyun.com
 le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
+www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
+www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
