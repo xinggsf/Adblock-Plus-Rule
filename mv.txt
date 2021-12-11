@@ -160,7 +160,7 @@ haitum.com##.left-content:style(width:77%!important)
 
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
-*##+js(ra, target, a[target][href^="/"])
+~mail.qq.com##+js(ra, target, a[target][href^="/"])
 
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
