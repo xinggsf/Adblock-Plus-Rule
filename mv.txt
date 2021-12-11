@@ -5,8 +5,8 @@
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, RTCPeerConnection, undefined)
-qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, webkitRTCPeerConnection, undefined)
+v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, RTCPeerConnection, undefined)
+v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, webkitRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
 v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
@@ -34,8 +34,8 @@ static.g.iqiyi.com
 show.ssports.com
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link
-~mail.qq.com,qq.com##+js(no-xhr-if, /\b(b?trace|beacon)\./)
-~mail.qq.com,qq.com##+js(no-fetch-if, /\b(b?trace|beacon)\./)
+v.qq.com##+js(no-xhr-if, /\b(b?trace|beacon)\./)
+v.qq.com##+js(no-fetch-if, /\b(b?trace|beacon)\./)
 v.qq.com,sports.qq.com,new.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||video.qq.com/fcgi-bin/
