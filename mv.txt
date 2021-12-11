@@ -34,8 +34,8 @@ static.g.iqiyi.com
 show.ssports.com
 
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link
-v.qq.com##+js(no-xhr-if, /\b(b?trace|beacon)\./)
-v.qq.com##+js(no-fetch-if, /\b(b?trace|beacon)\./)
+v.qq.com,sports.qq.com,new.qq.com##+js(no-xhr-if, /\b(b?trace|beacon)\./)
+v.qq.com,sports.qq.com,new.qq.com##+js(no-fetch-if, /\b(b?trace|beacon)\./)
 v.qq.com,sports.qq.com,new.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||video.qq.com/fcgi-bin/
@@ -55,7 +55,6 @@ tencentmind.com
 xtgreat.com
 
 @@||g.w.bilicdn1.com/$script,domain=bilibili.com
-bilibili.com#@#+js(ra, target, a[target][href^="/"])
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
@@ -160,7 +159,7 @@ haitum.com##.left-content:style(width:77%!important)
 
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
-~mail.qq.com##+js(ra, target, a[target][href^="/"])
+~mail.qq.com,~bilibili.com##+js(ra, target, a[target][href^="/"])
 
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
