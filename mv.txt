@@ -120,8 +120,8 @@ le.com##.min_pause_img
 ! 修正uBlock filters – Resource abuse规则导致的卡秒
 www.douyu.com##+js(no-xhr-if, sdkapi.douyucdn.cn/p2p)
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
-www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
+! www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
+! www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
