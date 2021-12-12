@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202112113
+! Version: 202112121
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -54,6 +54,7 @@ scorecardresearch.com
 tencentmind.com
 xtgreat.com
 
+mail.qq.com,bilibili.com#@#+js(ra, target, a[target][href^="/"])
 @@||g.w.bilicdn1.com/$script,domain=bilibili.com
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
@@ -117,8 +118,6 @@ yoyi.com.cn
 zhiziyun.com
 le.com##.min_pause_img
 
-! 修正uBlock filters – Resource abuse规则导致的卡秒
-! www.douyu.com##+js(no-xhr-if, sdkapi.douyucdn.cn/p2p)
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
 www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
@@ -159,7 +158,7 @@ haitum.com##.left-content:style(width:77%!important)
 
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
-~mail.qq.com,~bilibili.com##+js(ra, target, a[target][href^="/"])
+*##+js(ra, target, a[target][href^="/"])
 
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
