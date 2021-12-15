@@ -393,6 +393,7 @@ tianyabooks.com##div[class^=bread_]
 ||www.tianyabooks.com/$script,inline-script
 
 ||img16.diyifanwen.com
+gushiwen.cn###threeWeixin2
 ||yijiuningyia.gushiwen.org
 enennsa.gushiwen.cn
 ||a.lz13.cn/
