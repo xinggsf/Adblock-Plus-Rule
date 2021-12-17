@@ -483,11 +483,11 @@ zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image, .Pc-word
 mail.21cn.com##.arale-dialog-1_2_3
 ||mail.21cn.com/w2/source/images/firstpagecont/$image
 360doc.com##div[id^=divad],#fullbg
-www.doc88.com,www.360doc.com##+js(set,document.body.oncopy,trueFunc)
-www.doc88.com,www.360doc.com##+js(set,logined,1)
-www.doc88.com,www.360doc.com##+js(set,u_v,1)
+www.360doc.com##+js(set,document.body.oncopy,trueFunc)
+www.360doc.com##+js(set,logined,1)
+www.360doc.com##+js(set,u_v,1)
 ||webservice.360doc.com/
-|http://www.4399.com/loadimg/iframe_$subdocument
+||www.4399.com/loadimg/iframe_$subdocument
 ||5054399.com/4399_js/$script
 ||52pk.com/$object
 ||click.ali213.net/
