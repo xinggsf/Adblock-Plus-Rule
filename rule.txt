@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202111181
+! Version: 202112261
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -111,7 +111,7 @@ mediav.com
 q1qfc323.com
 sdqoi2d.com
 tanx.com
-@@||s.click.taobao.com^$third-party,popup
+@@||s.click.taobao.com^$popup
 ||click.taobao.com/$third-party,popunder
 ||union.
 ||vamaker.com/$third-party
@@ -230,6 +230,9 @@ pconline.com.cn##div.jcztl,div.box.best,div.ivy-330
 ||jwz.3conline.com/adpuba/
 ||pacd.3conline.com/$script
 ||pconline.com.cn/pconline/download/fz/$image
+
+||www.rjno1.com^$inline-script
+www.rjno1.com##body > *:nth-child(-n+5)
 
 !sd173.com
 ||down.tgjkbx.cn/xxjs/$script
@@ -394,6 +397,7 @@ tianyabooks.com##div[class^=bread_]
 
 ||img16.diyifanwen.com
 gushiwen.cn###threeWeixin2
+||gushiwen.cn/getTicket.aspx^$xhr
 ||yijiuningyia.gushiwen.org
 enennsa.gushiwen.cn
 ||a.lz13.cn/
