@@ -1217,6 +1217,7 @@ subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-
 *_index_ad_
 *_index_banner$script
 *_right_ad.$domain=~dzwww.com
+@@||acs.m.taobao.com
 ||acs.$domain=~youku.com|~tudou.com
 ||adpic.
 ||adsame.
