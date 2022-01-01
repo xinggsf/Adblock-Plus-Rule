@@ -4,8 +4,56 @@ allow-lan: false
 mode: Rule
 log-level: error
 external-controller: 127.0.0.1:9090
-proxies:[]
+dns:
+  enable: false
+  listen: 0.0.0.0:53
+  # ipv6: false # when the false, response to AAAA questions will be empty
+
+  # These nameservers are used to resolve the DNS nameserver hostnames below.
+  # Specify IP addresses only
+  default-nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+
+  enhanced-mode: redir-host # or fake-ip
+  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
+  # use-hosts: true # lookup hosts and return IP record
+
+  # Hostnames in this list will not be resolved with fake IPs
+  # i.e. questions to these domain names will always be answered with their
+  # real IP addresses
+  # fake-ip-filter:
+  #   - '*.lan'
+  #   - localhost.ptlogin2.qq.com
+
+  # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
+  # All DNS questions are sent directly to the nameserver, without proxies
+  # involved. Clash answers the DNS question with the first result gathered.
+  nameserver:
+    - 114.114.114.114 # default value
+    - 8.8.8.8 # default value
+    - tls://dns.rubyfish.cn:853 # DNS over TLS
+    - https://1.1.1.1/dns-query # DNS over HTTPS
+    - dhcp://en0 # dns from dhcp
+
+proxies:
+  - name: "ss1"
+    type: ss
+    server: server
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
 proxy-providers:
+  provider1:
+    type: http
+    url: https://ghproxy.com/https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml
+    interval: 3600
+    path: provider1.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
   subp:
     type: file
     path: proxys.yml
@@ -18,6 +66,7 @@ proxy-groups:
     type: url-test
     use:
       - subp
+      - provider1
     url: http://www.gstatic.com/generate_204
     interval: 500
   - name: 🌍 国外媒体
@@ -47,13 +96,13 @@ rules:
   - DOMAIN-SUFFIX,bilivideo.com,DIRECT
   - DOMAIN-KEYWORD,.agefans.,DIRECT
   - DOMAIN-SUFFIX,yatu.tv,DIRECT
-  - DOMAIN-KEYWORD,.nunuyy.,♻️ 自动选择
+  - DOMAIN-SUFFIX,bytednsdoc.com,DIRECT
   - DOMAIN-SUFFIX,hhmm0.com,DIRECT
   - DOMAIN-SUFFIX,mgtv1.cc,DIRECT
   - DOMAIN-KEYWORD,pianku.,DIRECT
   - DOMAIN-SUFFIX,crxdl.com,DIRECT
   - DOMAIN-SUFFIX,ghproxy.com,DIRECT
-  - DOMAIN-SUFFIX,google-fix.com,DIRECT
+  - DOMAIN-SUFFIX,sbdm.net,DIRECT
   - DOMAIN-SUFFIX,sjtu.cf,DIRECT
   - DOMAIN-SUFFIX,shuu.cf,DIRECT
   - DOMAIN-SUFFIX,iwiki.uk,DIRECT
