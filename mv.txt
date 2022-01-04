@@ -9,7 +9,7 @@ v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, RTCPeerConnection, undefined)
 v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, webkitRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner,div.youku-layer-logo
-v.youku.com##+js(aeld,dblclick,ykplayer.switchFullscreen)
+v.youku.com##+js(aeld,dblclick,triggerEvent)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 !m.youku.com,v.youku.com##+js(cookie-remover, cna)
 atm.youku.com
