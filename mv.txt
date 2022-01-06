@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202201052
+! Version: 202201061
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -38,7 +38,6 @@ qq.com##+js(no-xhr-if, trace.)
 qq.com##+js(no-fetch-if, trace.)
 qq.com##+js(json-prune,ad,vinfo)
 qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
-qq.com##+js(aeld,pause)
 qq.com##+js(set, Beacon.prototype.fail, null)
 @@||video.qq.com/fcgi-bin/
 ||l.qq.com/lview?
