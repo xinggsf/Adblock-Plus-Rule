@@ -59,7 +59,7 @@ proxy-providers:
     path: proxys.yml
     health-check:
       enable: true
-      interval: 9000
+      interval: 600
       url: http://www.gstatic.com/generate_204
 proxy-groups:
   - name: ♻️ 自动选择
