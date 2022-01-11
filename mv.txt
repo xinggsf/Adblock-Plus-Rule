@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202201061
+! Version: 202201111
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -56,7 +56,7 @@ scorecardresearch.com
 tencentmind.com
 xtgreat.com
 
-mail.qq.com,bilibili.com#@#+js(ra, target, a[target][href^="/"])
+bilibili.com#@#+js(ra, target, a[target=_blank][href^="/"])
 @@||g.w.bilicdn1.com/$script,domain=bilibili.com
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
@@ -160,7 +160,7 @@ haitum.com##.left-content:style(width:77%!important)
 
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
-*##+js(ra, target, a[target][href^="/"])
+*##+js(ra, target, a[target=_blank][href^="/"])
 
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
