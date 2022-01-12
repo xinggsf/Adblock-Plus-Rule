@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202201111
+! Version: 202201131
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -81,7 +81,7 @@ de.as.pptv.com
 ! 风行网： fun.tv
 pub.funshion.com
 
-@@||tb.mgtv.com/sdk/*/ad-sdk.js$script
+@@||tb.mgtv.com/sdk/*/ad-sdk.
 ||video.da.mgtv.com/$media
 ys.da.mgtv.com
 ||da.mgtv.com/mediafiles/wiad_creative/$image
