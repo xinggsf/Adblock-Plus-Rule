@@ -47,7 +47,7 @@ proxy-providers:
   provider1:
     type: http
     url: https://ghproxy.com/https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml
-    interval: 3600
+    interval: 800
     path: provider1.yaml
     health-check:
       enable: true
@@ -63,7 +63,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
 proxy-groups:
   - name: ♻️ 自动选择
-    type: url-test
+    type: load-balance
     use:
       - subp
       - provider1
@@ -72,11 +72,11 @@ proxy-groups:
   - name: 🌍 国外媒体
     proxies:
       - ♻️ 自动选择
-    type: load-balance
+    type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 500
   - name: 🌏 国内媒体
-    type: select
+    type: url-test
     proxies:
       - DIRECT
       - ♻️ 自动选择
@@ -87,7 +87,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - ♻️ 自动选择
-    type: select
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 400
     _index: 3
