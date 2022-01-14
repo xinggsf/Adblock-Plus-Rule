@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202201131
+! Version: 202201151
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, RTCPeerConnection, undefined)
-v.qq.com,huya.com,dandanzan.top,nunuyy.*##+js(set, webkitRTCPeerConnection, undefined)
+v.qq.com,huya.com,dandanzan.top,nunuyy1.*##+js(set, RTCPeerConnection, undefined)
+v.qq.com,huya.com,dandanzan.top,nunuyy1.*##+js(set, webkitRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,switchFullscreen)
@@ -165,9 +165,9 @@ haitum.com##.left-content:style(width:77%!important)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-dandanzan.top,nunuyy.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
-! @@||cdn.jsdelivr.net/$script,domain=nunuyy.*
-! |https://*$3p,script,domain=nunuyy.*|dandanzan.top
+dandanzan.top,nunuyy1.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
+! @@||cdn.jsdelivr.net/$script,domain=nunuyy1.*
+! |https://*$3p,script,domain=nunuyy1.*|dandanzan.top
 adx1.com
 ancheonyo.fun
 andcanbere.fun
