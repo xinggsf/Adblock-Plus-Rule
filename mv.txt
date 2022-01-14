@@ -73,10 +73,11 @@ cctv.com###bgAd_div
 ||imall.cctv.com/$subdocument
 bjcathay.com
 
-pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game,#p-mark
+pptv.com##.advView-two,#p-mark
 synacast.com
 de.as.pptv.com
 ||g.pptv.com/game/$subdocument
+||osswc.pplive.cn/cccms/$image
 
 ! 风行网： fun.tv
 pub.funshion.com
