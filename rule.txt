@@ -114,6 +114,8 @@ tanx.com
 ||union.
 ||vamaker.com/$third-party
 */vamaker/
+wegowan.com
+windows.net
 wrating.com
 *##.ad
 *##.ad960-90
