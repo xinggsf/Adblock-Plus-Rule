@@ -1,14 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202201172
+! Version: 202201231
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 @@*$stylesheet
 !--------------------------百度----------------------------------
 @@||bdstatic.com/static/common/widget/ui/admanager/$script,domain=image.baidu.com
-@@||cpro.baidustatic.com/cpro/ui/cm.js
-||cpro.
+||cpro.$domain=~baidu.com
 ada.baidu.com
 cstm.baidu.com
 dlswbr.baidu.com
