@@ -33,6 +33,7 @@ baike.baidu.com##.after-content,#adLayerSideWrap
 ||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap
 
+||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
 jingyan.baidu.com##.wgt-cms-banner, .right-fixed-related-wrap, #bottom-ads-container
 ||exp.bdstatic.com/static/exp-pc/common-jquery/widget/popup-$script
 
