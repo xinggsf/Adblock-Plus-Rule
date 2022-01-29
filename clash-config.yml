@@ -1,5 +1,5 @@
-# 快捷方式：clash.exe -d "."
-# 下载只包含中国GEOIP信息的Country.mmdb文件
+# 不要用CFW！！快捷方式：clash.exe -d "."
+# 下载只包含中国GEOIP信息的Country.mmdb文件，放入clash.exe所在目录
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -65,7 +65,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
     interval: 400
     _index: 2
