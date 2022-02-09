@@ -56,18 +56,18 @@
       "id": "ba842a18-f891-44bc-a73d-8dd5e0cf42de",
       "remarks": "ssrsub",
       "url": "https://ghproxy.com/https://raw.githubusercontent.com/ssrsub/ssr/master/V2Ray",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "cbef093d-e744-4487-8ba0-b0732b259416",
       "remarks": "工具大师",
       "url": "http://121.4.209.91:8888/down/QqbMkDz8D50j",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "acb1430e-d1f0-4bb0-92e5-bea2695f2e72",
-      "remarks": "netlify2",
-      "url": "https://jiang.netlify.com/?adoncn.com",
+      "remarks": "netlify",
+      "url": "https://jiang.netlify.app/?adoncn.com",
       "enabled": true
     }
   ],
