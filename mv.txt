@@ -186,13 +186,10 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,trueFunc)
 ||tracker.$xhr,websocket,script,ping
-3z9e.cn
-7nsc.cn
-7b6l2j.cn
 bmbaike.cn
-buzx53.cn
 ch-hr12333.com
 chushoushijian.cn
+cppoc.com
 cqqc3.com
 dacedsfa.cn
 g1c5.com
@@ -216,5 +213,3 @@ youle55.com
 ||bokecc.com/flash/playlog?
 ||click.bokecc.com/
 ||imedia.bokecc.com/
-
-!||com/pic/fgr/$script,object-subrequest
