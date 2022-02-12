@@ -1,3 +1,5 @@
+# 不必用clash for windows! 单clash.exe即可！ 定位配置目录为clash.exe所在目录~创建快捷方式：clash.exe -d "."
+# 下载只包含中国IP信息GEOIP文件：Country.mmdb ，保存于上述目录
 # port: 7890
 socks-port: 7891
 allow-lan: false
@@ -40,6 +42,8 @@ proxies:
   - {name: CA_ga_221, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
   - {name: CA_ga_388, server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: US_XX77, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}}
+  - {name: US_ga_337, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: YT_Tool3, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
 proxy-providers:
   subp:
     type: file
@@ -52,21 +56,17 @@ proxy-groups:
   - name: UQUICK
     type: load-balance
     proxies:
+      - YT_Tool3
       - US_XX77
+      - US_ga_337
       - CA_ga_221
       - CA_ga_388
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: ♻️ 自动选择
-    type: load-balance
+    type: url-test
     use:
       - subp
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: 🌍 国外媒体
-    proxies:
-      - ♻️ 自动选择
-    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: UDOWNLOAD
@@ -80,6 +80,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     proxies:
       - DIRECT
+      - UQUICK
       - ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -88,103 +89,89 @@ proxy-groups:
 rules:
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD
   - DOMAIN-SUFFIX,bucm.cf,DIRECT
-  - DOMAIN-SUFFIX,t.me,🌍 国外媒体
-  - DOMAIN-SUFFIX,dweb.link,DIRECT  
-  - DOMAIN-KEYWORD,ipfs.,🌍 国外媒体  
-  - DOMAIN-SUFFIX,tangrenjie.tv,REJECT
-  - DOMAIN-KEYWORD,.haitu,🌍 国外媒体
+  - DOMAIN-SUFFIX,t.me,♻️ 自动选择
+  - DOMAIN-SUFFIX,meiju.pro,DIRECT
+  - DOMAIN-SUFFIX,qdm8.com,DIRECT
   - DOMAIN-SUFFIX,hhmm0.com,DIRECT
+  - DOMAIN-SUFFIX,bdzybf.com,DIRECT
   - DOMAIN-SUFFIX,wenshibaowenbei.com,DIRECT
+  - DOMAIN-SUFFIX,ziyuan605.com,DIRECT
   - DOMAIN-SUFFIX,monidai.com,DIRECT
-  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,akamaihd.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,vidoevo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,fastly.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,fkzww.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,jshell.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,vpngate.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,w3schools.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,redditmedia.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,redditstatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,reddit.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,aiosearch.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ask.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,startpage.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ft.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,verycd.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,91porn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,facebook.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,twitter.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,twimg.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,airbnb.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,wikiwand.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,myspacecdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,4shared.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,free-ss.site,🌍 国外媒体
-  - DOMAIN-SUFFIX,avio.pw,🌍 国外媒体
-  - DOMAIN-SUFFIX,grossman.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,flickr.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,gitter.im,🌍 国外媒体
-  - DOMAIN-SUFFIX,nytimes.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,voachinese.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,voanews.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ftchinese.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,archive.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,wikipedia.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,dmhy.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,godoc.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,go-zh.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,golang.org,🌍 国外媒体
-  - DOMAIN-KEYWORD,.blogger,🌍 国外媒体
-  - DOMAIN-KEYWORD,.blogspot,🌍 国外媒体
-  - DOMAIN-SUFFIX,appspot.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chrome.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,duckduckgo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,v2ex.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,gitlab-static.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,gitcdn.xyz,🌍 国外媒体
-  - DOMAIN-KEYWORD,github,🌍 国外媒体
-  - DOMAIN-SUFFIX,git.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,gitbooks.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,rawgit.com,🌍 国外媒体
-  - IP-CIDR,13.229.0.0/16,🌍 国外媒体
-  - IP-CIDR,20.205.243.0/24,🌍 国外媒体
-  - IP-CIDR,23.211.15.99/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
-  - IP-CIDR,34.210.42.111/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
-  - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
-  - IP-CIDR,52.89.124.203/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,54.148.37.5/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
-  - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
-  - IP-CIDR,103.5.34.153/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,108.175.32.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,104.109.129.153/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,110.238.107.47/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,118.26.32.178/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,150.109.28.51/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
-  - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
-  - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.74.95.131/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.74.95.139/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
-  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
-  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,fastly.net,♻️ 自动选择
+  - DOMAIN-SUFFIX,w3schools.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,redditmedia.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,redditstatic.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,reddit.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,aiosearch.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,ask.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,startpage.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,twimg.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,wikiwand.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,myspacecdn.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,4shared.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,grossman.io,♻️ 自动选择
+  - DOMAIN-SUFFIX,flickr.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,gitter.im,♻️ 自动选择
+  - DOMAIN-SUFFIX,ftchinese.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,archive.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,wikipedia.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,dmhy.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,godoc.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,go-zh.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,golang.org,♻️ 自动选择
+  - DOMAIN-KEYWORD,.blogger,♻️ 自动选择
+  - DOMAIN-KEYWORD,.blogspot,♻️ 自动选择
+  - DOMAIN-SUFFIX,appspot.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,chrome.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,duckduckgo.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,v2ex.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,gitlab-static.net,♻️ 自动选择
+  - DOMAIN-SUFFIX,gitcdn.xyz,♻️ 自动选择
+  - DOMAIN-KEYWORD,github,♻️ 自动选择
+  - DOMAIN-SUFFIX,git.io,♻️ 自动选择
+  - DOMAIN-SUFFIX,gitbooks.io,♻️ 自动选择
+  - DOMAIN-SUFFIX,rawgit.com,♻️ 自动选择
+  - IP-CIDR,13.229.0.0/16,♻️ 自动选择
+  - IP-CIDR,20.205.243.0/24,♻️ 自动选择
+  - IP-CIDR,23.211.15.99/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,23.246.0.0/18,♻️ 自动选择,no-resolve
+  - IP-CIDR,34.210.42.111/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,37.77.184.0/21,♻️ 自动选择,no-resolve
+  - IP-CIDR,45.57.0.0/17,♻️ 自动选择,no-resolve
+  - IP-CIDR,52.89.124.203/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,54.148.37.5/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,64.120.128.0/17,♻️ 自动选择,no-resolve
+  - IP-CIDR,66.197.128.0/17,♻️ 自动选择,no-resolve
+  - IP-CIDR,103.5.34.153/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,108.175.32.0/20,♻️ 自动选择,no-resolve
+  - IP-CIDR,104.109.129.153/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,110.238.107.47/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,118.26.32.178/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,150.109.28.51/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,192.173.64.0/18,♻️ 自动选择,no-resolve
+  - IP-CIDR,198.38.96.0/19,♻️ 自动选择,no-resolve
+  - IP-CIDR,198.45.48.0/20,♻️ 自动选择,no-resolve
+  - IP-CIDR,203.74.95.131/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,203.74.95.139/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,203.211.4.169/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,203.211.4.193/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,210.201.32.8/32,♻️ 自动选择,no-resolve
+  - IP-CIDR,210.201.32.11/32,♻️ 自动选择,no-resolve
+  - DOMAIN-SUFFIX,twitch.tv,♻️ 自动选择
   - DOMAIN-SUFFIX,ttvnw.net,UQUICK
-  - DOMAIN-SUFFIX,ted.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ted.com,UQUICK
   - DOMAIN-SUFFIX,tedcdn.com,UQUICK
-  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,gstatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,gstatic.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,ytimg.com,♻️ 自动选择
   - DOMAIN-SUFFIX,googlevideo.com,UQUICK
-  - DOMAIN-SUFFIX,ggpht.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ggpht.com,♻️ 自动选择
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,mtalk.google.com,REJECT
-  - DOMAIN-KEYWORD,.google,🌍 国外媒体
+  - DOMAIN-KEYWORD,.google,UQUICK
   - IP-CIDR,1.255.62.0/24,DIRECT
   - IP-CIDR,182.254.116.0/24,DIRECT
   - IP-CIDR,185.188.32.0/24,DIRECT

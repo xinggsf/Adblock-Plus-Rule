@@ -186,25 +186,21 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,trueFunc)
 ||tracker.$xhr,websocket,script,ping
+geoparker.net
+uxrpkgh.cn
 bmbaike.cn
 ch-hr12333.com
 chushoushijian.cn
 cppoc.com
 cqqc3.com
-dacedsfa.cn
-g1c5.com
 ieeod0.com
 jinrongwang.net
-nd2z41.cn
 onenews.vip
 qdwght.com
 quickapp.cn
 v4dwkcv.com
 weizhenwx.com
-xcsci.cn
 xixiqiu.com
-xv5b.com
-xz6d.com
 youle55.com
 ||www.yatu.tv:88/image/*.gif^$image
 ||www.yatu.tv:88/m/images/$image
