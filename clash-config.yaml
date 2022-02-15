@@ -76,14 +76,6 @@ proxy-groups:
       - UQUICK
       - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
-    interval: 300
-  - name: 🐟 漏网之鱼
-    proxies:
-      - DIRECT
-      - UQUICK
-      - ♻️ 自动选择
-    type: fallback
-    url: http://www.gstatic.com/generate_204
     interval: 330
 # load-balance url-test fallback
 rules:
@@ -97,26 +89,19 @@ rules:
   - DOMAIN-SUFFIX,wenshibaowenbei.com,DIRECT
   - DOMAIN-SUFFIX,ziyuan605.com,DIRECT
   - DOMAIN-SUFFIX,monidai.com,DIRECT
-  - DOMAIN-SUFFIX,fastly.net,♻️ 自动选择
   - DOMAIN-SUFFIX,w3schools.com,♻️ 自动选择
   - DOMAIN-SUFFIX,redditmedia.com,♻️ 自动选择
   - DOMAIN-SUFFIX,redditstatic.com,♻️ 自动选择
   - DOMAIN-SUFFIX,reddit.com,♻️ 自动选择
   - DOMAIN-SUFFIX,aiosearch.com,♻️ 自动选择
   - DOMAIN-SUFFIX,ask.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,startpage.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
   - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
   - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
   - DOMAIN-SUFFIX,twimg.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,wikiwand.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,myspacecdn.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,4shared.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,grossman.io,♻️ 自动选择
-  - DOMAIN-SUFFIX,flickr.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,gitter.im,♻️ 自动选择
+  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
   - DOMAIN-SUFFIX,ftchinese.com,♻️ 自动选择
   - DOMAIN-SUFFIX,archive.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,wikiwand.com,♻️ 自动选择
   - DOMAIN-SUFFIX,wikipedia.org,♻️ 自动选择
   - DOMAIN-SUFFIX,dmhy.org,♻️ 自动选择
   - DOMAIN-SUFFIX,godoc.org,♻️ 自动选择
@@ -183,4 +168,4 @@ rules:
   - IP-CIDR6,2a0b:b582::/48,DIRECT
   - IP-CIDR6,2a0b:b583::/48,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🐟 漏网之鱼
+  - MATCH,UDOWNLOAD
