@@ -1,12 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202151
+! Version: 202202161
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
 v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, RTCPeerConnection, undefined)
 v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, webkitRTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, mozRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -103,7 +104,6 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||17173.com/if/$script,subdocument
 
 le.com##+js(set, isAdLoaded, true)
-@@||ark.letv.com/adx?adzone=
 */letv-gug/$media,object-subrequest
 ||letvimg.com/$object,object-subrequest
 ||letvimg.com/*_gugwl/$image
@@ -154,12 +154,12 @@ hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 dyjihe2.com##.tempWrap
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
-haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
+! haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
 ! .container 有头、尾、中部内容视频3项都可作用到
-haitum.com##.container:style(max-width:90%!important;width:90%!important)
-haitum.com##.left-content:style(width:77%!important)
-||haitum.com/template/default/static/js/bottom.js^$script
-||haitum.com/template/default/static/js/middle.js^$script
+! haitum.com##.container:style(max-width:90%!important;width:90%!important)
+! haitum.com##.left-content:style(width:77%!important)
+! ||haitum.com/template/default/static/js/bottom.js^$script
+! ||haitum.com/template/default/static/js/middle.js^$script
 
 ! 禁止站内新开窗
 *##+js(ra, target, base[target])
@@ -184,7 +184,7 @@ netflix.mom,netflixya.com,yanetflix.com##.tips-box
 netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
-yatu.tv,yhdm5.com##+js(set,document.oncontextmenu,trueFunc)
+yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 ||tracker.$xhr,websocket,script,ping
 geoparker.net
 uxrpkgh.cn
@@ -193,6 +193,7 @@ ch-hr12333.com
 chushoushijian.cn
 cppoc.com
 cqqc3.com
+g1c5.com
 ieeod0.com
 jinrongwang.net
 onenews.vip
