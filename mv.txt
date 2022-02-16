@@ -149,13 +149,12 @@ waust.at
 
 age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agefans.*|mgtv1.net|agemys.com
-
-hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
+!hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 dyjihe2.com##.tempWrap
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
 ! haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
-! .container 有头、尾、中部内容视频3项都可作用到
+! .container 在视频页面头、尾、中部都可作用到
 ! haitum.com##.container:style(max-width:90%!important;width:90%!important)
 ! haitum.com##.left-content:style(width:77%!important)
 ! ||haitum.com/template/default/static/js/bottom.js^$script
