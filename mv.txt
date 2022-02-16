@@ -1,13 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202163
+! Version: 202202165
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, RTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, webkitRTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, mozRTCPeerConnection, undefined)
+v.qq.com,bilibili.com,douyu.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(nowebrtc)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -124,8 +122,8 @@ zhiziyun.com
 le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
-www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
+! www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
+! www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
@@ -167,11 +165,9 @@ dyjihe2.com##.tempWrap
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-dandanzan.top,nunuyy1.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
+dandanzan.top,nunuyy1.*##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
-andcanbere.fun
-freychang.fun
 envyindebted.com
 in-page-push.com
 stgowan.com
