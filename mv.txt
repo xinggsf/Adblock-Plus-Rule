@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202161
+! Version: 202202163
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -15,7 +15,7 @@ m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 !m.youku.com,v.youku.com##+js(cookie-remover, cna)
 atm.youku.com
 cad.youku.com
-!@@||log.mmstat.com^$script,domain=youku.com
+@@||log.mmstat.com^$script,domain=youku.com
 ||cibntv.net/youku/$media,important
 ||valipl.cp31.ott.cibntv.net/$media
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
@@ -168,8 +168,6 @@ dyjihe2.com##.tempWrap
 imomoe.*###adl,#adr
 
 dandanzan.top,nunuyy1.*##.gm-fp-body video:style(max-height:100% !important;height:100% !important)
-! @@||cdn.jsdelivr.net/$script,domain=nunuyy1.*
-! |https://*$3p,script,domain=nunuyy1.*|dandanzan.top
 adx1.com
 aqours.today
 andcanbere.fun
