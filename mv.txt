@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202165
+! Version: 202202171
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -123,7 +123,6 @@ le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 ! www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
-! www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
@@ -181,6 +180,8 @@ yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 ||tracker.$xhr,websocket,script,ping
 geoparker.net
 uxrpkgh.cn
+anquanzhuomian.com
+btyou.com
 bmbaike.cn
 ch-hr12333.com
 chushoushijian.cn
@@ -196,8 +197,8 @@ v4dwkcv.com
 weizhenwx.com
 xixiqiu.com
 youle55.com
-||www.yatu.tv/image/*.gif^$image
-||www.yatu.tv/m/images/$image
+||www.yatu.tv:2082/image/*.gif^$image
+||www.yatu.tv:2082/m/images/$image
 
 @@||union.bokecc.com/player
 ||bokecc.com/flash/playlog?
