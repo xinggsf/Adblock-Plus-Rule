@@ -1,11 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202171
+! Version: 202202181
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-v.qq.com,bilibili.com,douyu.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(nowebrtc)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, RTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, webkitRTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, mozRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -13,7 +15,7 @@ m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 !m.youku.com,v.youku.com##+js(cookie-remover, cna)
 atm.youku.com
 cad.youku.com
-@@||log.mmstat.com^$script,domain=youku.com
+@@||mmstat.com^$domain=youku.com
 ||cibntv.net/youku/$media,important
 ||valipl.cp31.ott.cibntv.net/$media
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
@@ -122,7 +124,8 @@ zhiziyun.com
 le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-! www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
+www.douyu.com##+js(set, RTCPeerConnection.prototype.addStream, noopFunc)
+www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
