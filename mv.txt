@@ -174,8 +174,10 @@ in-page-push.com
 stgowan.com
 trustedgatetocontent.com
 
-netflix.mom,netflixya.com,yanetflix.com##.tips-box
+netflix.mom,netflixya.com,yanetflix.com##.tips-box,#note.popup
 netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
+@@||pstatp.com/obj/ad-tetris-site/file/$image,domain=player.kongbuya.com
+4kya.com###player_pause
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
