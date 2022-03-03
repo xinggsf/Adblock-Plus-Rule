@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202202181
+! Version: 202203041
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, RTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, webkitRTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan.top,nunuyy1.*##+js(set, mozRTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, webkitRTCPeerConnection, undefined)
+v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, mozRTCPeerConnection, undefined)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -150,7 +150,6 @@ waust.at
 age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agefans.*|mgtv1.net|agemys.com
 !hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
-dyjihe2.com##.tempWrap
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
 ! haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
@@ -167,7 +166,7 @@ dyjihe2.com##.tempWrap
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-dandanzan.top,nunuyy1.*##.gm-fp-body video:style(max-height:100%!important)
+dandanzan10.top,nunuyy10.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
 envyindebted.com
