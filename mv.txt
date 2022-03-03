@@ -148,7 +148,7 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 waust.at
 
 age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
-||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com
+||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com|subaibai.com
 !hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
