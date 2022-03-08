@@ -132,6 +132,7 @@ douyu.com,huya.com##a[href^="https://g.wan."]
 huya.com###hy-ad,#hy-ab,#huya-ab
 g.huya.com
 
+www.ted.com##.gm-fp-body .justify-center.tracking-tightest
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer, ytd-promoted-sparkles-web-renderer
@@ -148,7 +149,7 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 waust.at
 
 age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
-||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com|subaibai.com
+||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com|subaibaiys.com
 !hmtv.me,imeiju.io##+js(acis,Object.defineProperty,location.href)
 
 ! haitum.com##+js(set, document.writeln, noopFunc)
