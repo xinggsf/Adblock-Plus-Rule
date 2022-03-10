@@ -57,7 +57,6 @@ scorecardresearch.com
 tencentmind.com
 xtgreat.com
 
-bilibili.com#@#+js(ra, target, a[target=_blank][href^="/"])
 @@||g.w.bilicdn1.com/$script,domain=bilibili.com
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
