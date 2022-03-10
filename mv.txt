@@ -160,10 +160,6 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 ! ||haitum.com/template/default/static/js/bottom.js^$script
 ! ||haitum.com/template/default/static/js/middle.js^$script
 
-! 禁止站内新开窗
-*##+js(ra, target, base[target])
-*##+js(ra, target, a[target=_blank][href^="/"])
-
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
