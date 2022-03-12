@@ -17,6 +17,7 @@ iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 ! ||static.iqiyi.com/js/player_v*/skin.pc.$script
 ! 要用弹幕注释下条规则
 ||t7z.cupid.iqiyi.com/show$script,important
+
 ! le.com
 gentags.net
 gtags.net
@@ -134,6 +135,7 @@ h12-media.com
 lo8ve6ygour3pea4cee.com
 outbrain.com
 vlitag.com
+zozoplatform.com
 ||olevod.tv/upload/site/202$image
 ||olevod.com/upload/site/202$image
 
@@ -141,6 +143,7 @@ pangzitv.com##+js(acis,document.getElementById,initAd)
 pangzitv.com###pop
 ||pangzitv.com/template/*/js/ads3.js
 
+! 原片库网
 btnull.*##+js(set,pycount,0)
 btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
 !||btnull.re/ajax/historys/
