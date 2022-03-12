@@ -2,6 +2,9 @@
 :: rd/s/q "Media Cache"2>NUL
 del /s/q *.tmp
 del /s/q *.bak
+del /s/f/q "Crashpad\reports\*"
+del /s/f/q "GrShaderCache\GPUCache\*"
+del /s/f/q "Guest Profile\*"
 ::取得当前批处理所在路径
 ::cd /d %~dp0
 cd Default

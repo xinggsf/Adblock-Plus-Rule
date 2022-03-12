@@ -1,0 +1,184 @@
+[Adblock Plus 2.0]
+! Title: 乘风 小众视频过滤规则
+! Version: 202203121
+! Expires: 1 day
+! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
+
+##a.disabled
+
+iqiyi.com##.detail-sd, .qy-search~*
+! 禁用AI奇观
+iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
+||static.iqiyi.com/js/common/blMonitor.js
+||static.iqiyi.com/js/paoQitan/paoQitan.js
+||security.iqiyi.com/static/cook/v1/cooksdk.js
+||stc.iqiyipic.com/js/sdkpack/vippay.js
+||stc.iqiyipic.com/js/sdkpack/barrage
+! ||static.iqiyi.com/js/player_v*/skin.pc.$script
+! 要用弹幕注释下条规则
+||t7z.cupid.iqiyi.com/show$script,important
+! le.com
+gentags.net
+gtags.net
+||webrtc.github.io^$script,3p
+
+v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
+||acs.youku.com/h5/mopen.youku.danmu.
+
+www.bilibili.com##+js(aeld,dblclick,/V.event.triggered|native|dbclicktimer/)
+www.bilibili.com##+js(set,Sentry.init,noopFunc)
+||api.bilibili.com/x/click-interface/click/$xhr
+chat.bilibili.com
+||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
+||bilibili.com/page-proxy/game-nav.html$subdocument
+||www.bilibili.com^$doc,queryprune=~p
+|https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
+|https://s1.hdslb.com/bfs/seed/jinkela/header-v2/header.js
+!|https://s1.hdslb.com/bfs/static/jinkela/long/js/sentry/sentry-5.7.1.min.js
+
+v.qq.com##.wrapper.mod_vip_popup, #mask_layer
+||mfm.video.qq.com/danmu
+cm.l.qq.com
+!||ra.gtimg.com/web/crystal/v*/crystal-min.js$script
+tv.sohu.com###qflivetg,div.right>.adv
+
+www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
+||qvb.qcloud.com/$domain=www.douyu.com
+|https://sta-op.douyucdn.cn/front-publish/butterfly-
+butterfly.douyucdn.cn
+gift.douyucdn.cn
+rank.douyucdn.cn
+||shark2.douyucdn.cn/front-publish/live-landlordsactivity-
+||shark2.douyucdn.cn/front-publish/live-luckybaggift-activity-master/
+||shark2.douyucdn.cn/front-publish/live-festivalactivity-
+||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
+||shark2.douyucdn.cn/front-publish/live-cloud-game-master/
+||shark2.douyucdn.cn/front-publish/live-game-guess-master/
+||webconf.douyucdn.cn/resource/common/gift
+danmuproxy.douyu.com
+wsproxy.douyu.com
+
+m.huya.com##video:style(object-fit:fill!important)
+m.huya.com##.video-con:style(height:100vh!important;padding:0!important;position:static!important;)
+m.huya.com##.ssr-wrapper>:not(.live-wrap)
+www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
+|https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
+|https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
+|https://a.msstatic.com/huya/main3/components/
+|https://a.msstatic.com/huya/main3/modules/chat$important
+|https://a.msstatic.com/huya/main3/modules/gift/$important
+|https://a.msstatic.com/huya/main3/widget/
+!||va.huya.com^$websocket
+!||p2p.huya.com/huyalive/$websocket,xhr
+zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
+
+*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|imeiju.pro|xb15.cc|zhenbuka3.com
+! 2022-03-09 https://www.555dy7.com
+||1256964.com^$image
+6dm.cc###gongao
+88kan.tv##a[href^="https://www.88ys.app"]
+88kan.tv,vidhub.cc##.MacPlayer:style(height:600px!important)
+91meijuw.com##.detail-content~p, .stui-pannel_hd~a[href^=http]
+ejktj.com
+||www.91meijuw.com/template/pingg_tpl/images/$image
+!禁用左右快捷键
+caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
+||bibilm.com^$script,3p
+bimiacg4.net##.tuiguang,#bkcl
+
+!巴适影院 www.gdzidong.com www.bashiyy.com
+||bashiyy.com/static/js/plugin.js^$script
+||gdzidong.com/static/js/plugin.js^$script
+qrserver.com
+www.bashiyy.com,gdzidong.com,huaxingui.com,momdm.com,momovod.tv##.dplayer-web-fullscreen-fix #player-sidebar-is
+
+www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscreen-fix #player-shrink,#citybanner
+fds.api.mi-img.com
+eqlidke.cn
+dm233.cc##.playleft:style(height:620px!important)
+wlwblog.top
+qsnyswg.cn
+20under20ivy.com
+dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
+!eacg.net##+js(set, document.oncontextmenu, trueFunc)
+!|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
+eacg.net##+js(set, devtoolsDetector, {})
+
+! www.moez.cc
+www.iiyy.cc###zanpiancms_player:style(height:600px!important)
+www.hanjutvaa.com##.widget-weixin, .widget-qianhuiji
+huihev.com##+js(acis,document.body.oncontextmenu)
+||huihev.com/template/hstz.js$script
+kelatv.com##a[href*="/go.php"]
+z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
+imeiju.pro###qphf
+nbys1.tv##+js(aeld,dblclick,o.disabled)
+nbys1.tv###adltop
+||www.nbys1.tv/image/ad$image
+!www.mvcat.com##.wxfollow
+
+nfmovies.com##header:style(position: absolute!important)
+nfmovies.com##.myui-player~div.myui-ra-container
+nfmovies.com##+js(acis, $myui, probe)
+nfmovies.com##+js(set,initAd,noopFunc)
+nfmovies.com##+js(set,adTime,0)
+nfmovies.com##body > div.hidden-xs,#aaaDiv,#aaaDiv2
+||nfmovies.com/pic/tu/$image
+||nfmovies.com/static/$image,xhr
+||pic.imgdb.cn/$image,domain=nfmovies.com
+
+olevod.*##.bg_wtop_banner, .guangao, a[data-ab-css-background]
+azureedge.net
+bidgear.com
+h12-media.com
+lo8ve6ygour3pea4cee.com
+outbrain.com
+vlitag.com
+||olevod.tv/upload/site/202$image
+||olevod.com/upload/site/202$image
+
+pangzitv.com##+js(acis,document.getElementById,initAd)
+pangzitv.com###pop
+||pangzitv.com/template/*/js/ads3.js
+
+btnull.*##+js(set,pycount,0)
+btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
+!||btnull.re/ajax/historys/
+www.qdm8.com##.close-box.tips
+www.qdm8.com##body:style(background-image:none!important)
+
+qiqidongman.com##.flash-check-box, .AACC2,#rela_f
+rijutv.co###stats
+! 2022-01-23 https://www.sbdm.net
+@@||a.yximgs.com/bs2/ad-$media
+! 垃圾、evil站点，有钓鱼嫌疑
+tangrenjie.tv
+! TVB云播 HK
+tvyb02.com##a[href^=http],#hth
+||jpnimg.cnyuncdn.com/0$image
+tvyb02.com##+js(acis,document.writeln)
+
+! 2022-03-10 https://vidhub.cc
+||vidhub.cc/upload/art/rgsp-1200x110.png$image
+||vidhub.cc/player/buffer.html$subdocument
+wsdy.top##+js(set,fed.module,{})
+kowqd3.top
+zhuaijiong.cn
+|https://cdn.jsdelivr.net/gh/vodcms-cdn/js/$script
+yhdm.nl###x-play:style(height:600px)
+yhdm.nl###x-play::before
+
+zhenbuka3.com##+js(set,protectAd,noopFunc)
+mmiyue.com##+js(acis,setTimeout)
+zhenbuka3.com##.container>*:not(.row), img[onclick]
+||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
+||zhenbuka3.com/loadingbk.html$frame
+
+!https://youtubeproxy.win/
+adnxs.com
+adsrvr.org
+adsymptotic.com
+tapad.com
+!https://www.mirror.co.uk/all-about/youtubes
+adsafeprotected.com
+smartadserver.com
