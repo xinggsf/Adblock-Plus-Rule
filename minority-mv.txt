@@ -143,7 +143,7 @@ pangzitv.com##+js(acis,document.getElementById,initAd)
 pangzitv.com###pop
 ||pangzitv.com/template/*/js/ads3.js
 
-! 原片库网
+! 片库网
 btnull.*##+js(set,pycount,0)
 btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
 !||btnull.re/ajax/historys/

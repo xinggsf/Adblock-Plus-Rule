@@ -132,6 +132,7 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 g.huya.com
 
 www.ted.com##.gm-fp-body .justify-center.tracking-tightest
+litix.io
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer, ytm-promoted-sparkles-web-renderer, ytd-promoted-sparkles-web-renderer
