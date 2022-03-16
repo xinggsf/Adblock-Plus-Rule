@@ -23,7 +23,6 @@ cad.youku.com
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
-
 iqiyi.com##div[data-adzone],#block-V
 iqiyi.com##+js(aeld,dblclick,t.fullToggle)
 !iqiyi.com##+js(nano-sib)
@@ -168,6 +167,7 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
+dandanzan10.top,nunuyy10.top##+js(nowebrtc)
 dandanzan10.top,nunuyy10.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
