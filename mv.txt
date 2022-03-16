@@ -167,7 +167,7 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-|​wss://$websocket,domain=dandanzan10.top|nunuyy10.top
+|wss://$websocket,domain=dandanzan10.top|nunuyy10.top
 dandanzan10.top,nunuyy10.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
