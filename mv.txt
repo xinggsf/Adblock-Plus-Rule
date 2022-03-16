@@ -5,9 +5,11 @@
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, webkitRTCPeerConnection, undefined)
-v.qq.com,bilibili.com,huya.com,le.com,mgtv.com,dandanzan10.top,nunuyy10.top##+js(set, mozRTCPeerConnection, undefined)
+||tracker.$xhr,websocket,script,ping
+|ws://tracker.$websocket
+|wss://tracker.$websocket
+|ws://p2p.$websocket
+|wss://p2p.$websocket
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -181,7 +183,6 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
-||tracker.$xhr,websocket,script,ping
 geoparker.net
 uxrpkgh.cn
 anquanzhuomian.com
