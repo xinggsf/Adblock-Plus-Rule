@@ -39,7 +39,6 @@ chat.bilibili.com
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 ||mfm.video.qq.com/danmu
-cm.l.qq.com
 !||ra.gtimg.com/web/crystal/v*/crystal-min.js$script
 tv.sohu.com###qflivetg,div.right>.adv
 
