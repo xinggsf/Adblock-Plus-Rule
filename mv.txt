@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202203101
+! Version: 202203161
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -21,6 +21,7 @@ cad.youku.com
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
+
 iqiyi.com##div[data-adzone],#block-V
 iqiyi.com##+js(aeld,dblclick,t.fullToggle)
 !iqiyi.com##+js(nano-sib)
@@ -34,13 +35,15 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/app/$object-subrequest
 show.ssports.com
 
+!v.qq.com##+js(set, Object.prototype.requestAdOrder, noopFunc)
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap
 qq.com##+js(no-xhr-if, trace.)
 qq.com##+js(no-fetch-if, trace.)
-qq.com##+js(json-prune,ad,vinfo)
-qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+qq.com##+js(json-prune,adList.item)
+!qq.com##+js(json-prune,ad,vinfo)
+!qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 qq.com##+js(set, Beacon.prototype.fail, null)
-@@||video.qq.com/fcgi-bin/
+@@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
 ||l.qq.com/lview?
 ||l.qq.com/livemsg?
 ||mark.l.qq.com/fcgi-bin/get_video_mark_all?idlist=
