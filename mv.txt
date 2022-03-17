@@ -1,14 +1,16 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202203181
+! Version: 202203189
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
+
 ! 屏蔽P2P
-douyu.com,huya.com,yy.com,dandanzan10.top,nunuyy10.top##+js(nowebrtc)
+douyu.com,huya.com,yy.com,le.com,dandanzan10.top,nunuyy10.top##+js(nowebrtc)
 ! dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection.prototype.createDataChannel, trueFunc)
 ||tracker.$xhr,websocket,script,ping
+||p2p.$xhr,websocket,ping
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -106,7 +108,7 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 
 le.com##+js(set, isAdLoaded, true)
 */letv-gug/$media,object-subrequest
-||letvimg.com/$object,object-subrequest
+||letvimg.com/$object,xhr
 ||letvimg.com/*_gugwl/$image
 ||js.letvcdn.com/*_banner_$script
 ||banana.le.com/
