@@ -6,11 +6,9 @@
 
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
 ! 屏蔽P2P
+bilibili.com,huya.com,v.qq.com##+js(set, webkitRTCPeerConnection, noopFunc)
+bilibili.com,huya.com,v.qq.com##+js(set, RTCPeerConnection, noopFunc)
 ||tracker.$xhr,websocket,script,ping
-|ws://tracker.$websocket
-|wss://tracker.$websocket
-|ws://p2p.$websocket
-|wss://p2p.$websocket
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -167,7 +165,6 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-|wss://$websocket,domain=dandanzan10.top|nunuyy10.top|v.qq.com
 dandanzan10.top,nunuyy10.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
