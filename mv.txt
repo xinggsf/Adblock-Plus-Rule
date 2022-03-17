@@ -8,7 +8,6 @@ pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
 ! 屏蔽P2P, +js(nowebrtc)无效
 v.qq.com#@#+js(nowebrtc)
 bilibili.com,douyu.com,huya.com,v.qq.com##+js(set, RTCPeerConnection, trueFunc)
-! bilibili.com,huya.com,v.qq.com##+js(set, webkitRTCPeerConnection, trueFunc)
 ||tracker.$xhr,websocket,script,ping
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
@@ -41,6 +40,7 @@ qq.com##+js(no-xhr-if, trace.)
 qq.com##+js(no-fetch-if, trace.)
 qq.com##+js(json-prune,adList.item)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+v.qq.com#@#+js(set, Beacon.prototype.fail, null)
 qq.com##+js(set, Beacon.prototype.fail, null)
 @@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
 cm.l.qq.com
@@ -50,7 +50,6 @@ cm.l.qq.com
 ||gtimg.com/qqlive/
 ||qzonestyle.gtimg.cn/qzone/biz/ac/comm/$script
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
-!||v.smtcdns.com/*.tc.qq.com/$media,mp4,domain=new.qq.com
 !||ssp.qq.com/static/web/websites/pcnewsplugin/sspad_$script
 new.qq.com##+js(set, SSPAd.prototype.loadAd, noopFunc)
 ||news.ssp.qq.com/app
