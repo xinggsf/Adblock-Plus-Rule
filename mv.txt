@@ -7,7 +7,7 @@
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
 ! 屏蔽P2P, +js(nowebrtc)无效
 v.qq.com#@#+js(nowebrtc)
-bilibili.com,huya.com,v.qq.com##+js(set, RTCPeerConnection, trueFunc)
+bilibili.com,douyu.com,huya.com,v.qq.com##+js(set, RTCPeerConnection, trueFunc)
 ! bilibili.com,huya.com,v.qq.com##+js(set, webkitRTCPeerConnection, trueFunc)
 ||tracker.$xhr,websocket,script,ping
 
@@ -126,8 +126,8 @@ zhiziyun.com
 le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-www.douyu.com##+js(set, RTCPeerConnection.prototype.createDataChannel, noopFunc)
-!www.douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
+!douyu.com##+js(set, RTCPeerConnection.prototype.createDataChannel, noopFunc)
+!douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
