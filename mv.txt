@@ -6,8 +6,8 @@
 
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
 ! 屏蔽P2P, +js(nowebrtc)无效
-v.qq.com#@#+js(nowebrtc)
-bilibili.com,douyu.com,huya.com,v.qq.com##+js(set, RTCPeerConnection, trueFunc)
+bilibili.com,dandanzan10.top,nunuyy10.top,v.qq.com#@#+js(nowebrtc)
+bilibili.com,douyu.com,huya.com,v.qq.com,dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection, trueFunc)
 ||tracker.$xhr,websocket,script,ping
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
