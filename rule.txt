@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202201251
+! Version: 202203171
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -1229,3 +1229,39 @@ subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-
 
 admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 100.pncdn.cn
+
+! china evil site
+4009997658.com
+abbyychina.com
+bartender.cc
+beyondcompare.cc
+bingdianhuanyuan.cn
+chemdraw.com.cn
+coreldrawchina.com
+easyrecoverychina.com
+ediuschina.com
+flstudiochina.com
+guitarpro.cc
+huishenghuiying.com.cn
+iconworkshop.cn
+imindmap.cc
+jihehuaban.com.cn
+keyshot.cc
+kingdeecn.cn
+logoshejishi.com
+||mairuan.$all
+mairuanwang.com
+makeding.com
+mathtype.cn
+mindmanager.cc
+mycleanmymac.com
+ntfsformac.cc
+ntfsformac.cn
+parallelsdesktop.cn
+pdfexpert.cc
+shankejingling.com
+vegaschina.cn
+||xmindchina.
+xshellcn.com
+yihuifu.cn
+www.zhzzx.com
