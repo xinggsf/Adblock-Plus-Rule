@@ -5,9 +5,8 @@
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
-! 屏蔽P2P, +js(nowebrtc)无效
-bilibili.com,dandanzan10.top,nunuyy10.top,v.qq.com#@#+js(nowebrtc)
-bilibili.com,douyu.com,huya.com,v.qq.com,dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection.prototype.createDataChannel, trueFunc)
+! 屏蔽P2P
+! bilibili.com,douyu.com,huya.com,v.qq.com,dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection.prototype.createDataChannel, trueFunc)
 ||tracker.$xhr,websocket,script,ping
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
