@@ -6,7 +6,7 @@
 
 pan.baidu.com,www.bilibili.com,v.qq.com##+js(aeld,ratechange)
 ! 屏蔽P2P
-douyu.com,huya.com##+js(nowebrtc)
+douyu.com,huya.com,yy.com,dandanzan10.top,nunuyy10.top##+js(nowebrtc)
 ! dandanzan10.top,nunuyy10.top##+js(set, RTCPeerConnection.prototype.createDataChannel, trueFunc)
 ||tracker.$xhr,websocket,script,ping
 
