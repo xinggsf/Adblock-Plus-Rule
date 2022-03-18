@@ -4,7 +4,7 @@
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
-pan.baidu.com,www.bilibili.com,qq.com##+js(aeld,ratechange,!localStorage.mvPlayRate)
+pan.baidu.com,www.bilibili.com,qq.com##+js(aeld,ratechange)
 
 ! 屏蔽P2P
 v.qq.com,douyu.com,huya.com,yy.com,le.com##+js(nowebrtc)
