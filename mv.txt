@@ -7,7 +7,7 @@
 pan.baidu.com,www.bilibili.com,qq.com##+js(aeld,ratechange)
 
 ! 屏蔽P2P
-v.qq.com,douyu.com,huya.com,yy.com,le.com##+js(nowebrtc)
+douyu.com,huya.com,yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping
 
