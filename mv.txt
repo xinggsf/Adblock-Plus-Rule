@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202203189
+! Version: 202203191
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
-
-pan.baidu.com,www.bilibili.com,qq.com##+js(aeld,ratechange)
+! 腾讯真BT，什么事件都监控得死死的：按键、变速、播放进度、点击，就差装摄像头进马家卧室了
+pan.baidu.com,www.bilibili.com##+js(aeld,ratechange)
 
 ! 屏蔽P2P
-douyu.com,huya.com,yy.com,le.com##+js(nowebrtc)
+huya.com,yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping
 
@@ -126,7 +126,7 @@ zhiziyun.com
 le.com##.min_pause_img
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
-!douyu.com##+js(set, webkitRTCPeerConnection.prototype.addStream, noopFunc)
+douyu.com##+js(set, RTCPeerConnection.prototype.addTrack, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
 douyu.com,huya.com##a[href^="https://g.wan."]
