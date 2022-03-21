@@ -3,7 +3,7 @@
 ! Version: 202203191
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
-! 腾讯真BT，什么事件都监控得死死的：按键、变速、播放进度、点击，就差装摄像头进马家卧室了
+
 pan.baidu.com,www.bilibili.com##+js(aeld,ratechange)
 
 ! 屏蔽P2P
