@@ -129,7 +129,7 @@ www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 douyu.com##+js(set, RTCPeerConnection.prototype.addTrack, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
-douyu.com##.Title-ad
+douyu.com##.Title-ad, .DropMenuList-ad, .DropPane-ad
 douyu.com,huya.com##a[href^="https://g.wan."]
 huya.com###hy-ad,#hy-ab,#huya-ab
 g.huya.com
