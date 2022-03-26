@@ -55,7 +55,7 @@ rank.douyucdn.cn
 ||shark2.douyucdn.cn/front-publish/live-landlordsactivity-
 ||shark2.douyucdn.cn/front-publish/live-luckybaggift-activity-master/
 ||shark2.douyucdn.cn/front-publish/live-festivalactivity-
-||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
+!||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
 ||shark2.douyucdn.cn/front-publish/live-cloud-game-master/
 ||shark2.douyucdn.cn/front-publish/live-game-guess-master/
 ||webconf.douyucdn.cn/resource/common/gift

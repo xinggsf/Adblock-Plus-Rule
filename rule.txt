@@ -46,7 +46,11 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
 
 pan.baidu.com##.frame-all:style(overflow-x:hidden)
+pan.baidu.com##.ad-platform-tips, .phone-banner
+||bcebos.com^$image,domain=pan.baidu.com
+||pan.baidu.com/rest/*/adx?$image
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
+||s1.bdstatic.com/r/www/cache/biz/ecom/common/api/$script
 !--贴吧---
 tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##.tbui_aside_float_bar~*, div[ad-dom-img],#thread_list>li:not(.j_thread_list):not(.thread_top_list_folder),div[data-rank],a.j_click_stats
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
