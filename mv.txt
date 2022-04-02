@@ -9,7 +9,7 @@ pan.baidu.com,www.bilibili.com##+js(aeld,ratechange)
 ! 屏蔽P2P
 qq.com,huya.com,yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
-||p2p.$xhr,websocket,ping,domain=huya.com
+||p2p.$xhr,websocket,ping,domain=~huya.com
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
