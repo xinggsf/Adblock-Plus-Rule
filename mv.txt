@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202204013
+! Version: 202204031
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -9,7 +9,7 @@ pan.baidu.com,www.bilibili.com##+js(aeld,ratechange)
 ! 屏蔽P2P
 qq.com,huya.com,yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
-||p2p.$xhr,websocket,ping
+||p2p.$xhr,websocket,ping,domain=huya.com
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 v.youku.com##+js(aeld,dblclick,triggerEvent)
@@ -136,6 +136,7 @@ douyu.com##.Title-ad, .DropMenuList-ad, .DropPane-ad
 douyu.com,huya.com##a[href^="https://g.wan."]
 huya.com###hy-ad,#hy-ab,#huya-ab
 g.huya.com
+||msstatic.com/huya/*/p2plib.js$script
 
 www.ted.com##.gm-fp-body .justify-center.tracking-tightest
 litix.io
