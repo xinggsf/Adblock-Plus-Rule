@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202203271
+! Version: 202204071
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -172,7 +172,6 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*popup.js^$domain=~127.*|~10.*|~192.*|~maxthon.cn|~qq.com|~fupin832.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com
 */float.js^$script
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
