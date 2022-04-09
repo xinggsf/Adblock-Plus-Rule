@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202204071
+! Version: 202204091
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -1080,7 +1080,7 @@ subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-
 */js/asp.js^$script
 */js/autosize.js|
 */js/bann.js|
-*/js/bd.js^$domain=~share.dmhy.org
+*/js/bd.js^$domain=~dmhy.org
 */js/bd1.js^
 */js/bd2.js^
 */js/bd3.js^
