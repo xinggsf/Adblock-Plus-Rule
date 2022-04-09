@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202204031
+! Version: 202204091
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -23,10 +23,11 @@ cad.youku.com
 |https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
-iqiyi.com##div[data-adzone],#block-V
+iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"], div[data-adzone],#block-V
 iqiyi.com##+js(aeld,dblclick,t.fullToggle)
-!iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
+m.iqiyi.com##+js(set, Object.prototype.adPlayerId, '')
 ||static.iqiyi.com/js/common/mars_v.js$script
 ||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
 ||iqiyipic.com/image/20*_100000$image
@@ -41,7 +42,7 @@ qq.com##+js(no-xhr-if, trace.)
 qq.com##+js(no-fetch-if, trace.)
 qq.com##+js(json-prune,adList.item)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
-v.qq.com#@#+js(nosiif,/^/,100)
+sports.qq.com,v.qq.com#@#+js(nosiif,/^/,100)
 qq.com##+js(nosiif,/^/,100)
 !qq.com##+js(set, Beacon.prototype.expo, noopFunc)
 !v.qq.com#@#+js(aopr, Beacon.prototype.fail)
