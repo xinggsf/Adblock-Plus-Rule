@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202204091
+! Version: 202204101
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -171,10 +171,10 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 ||alicdn.com/$image,domain=api.xiaomingming.org
 imomoe.*###adl,#adr
 
-dandanzan10.top,nunuyy10.top##+js(set,RTCPeerConnection,null)
-dandanzan10.top,nunuyy10.top##+js(set,webkitRTCPeerConnection,null)
-dandanzan10.top,nunuyy10.top#@#+js(nowebrtc)
-dandanzan10.top,nunuyy10.top##.gm-fp-body video:style(max-height:100%!important)
+dandanzan10.top,nnyy6.top##+js(set,RTCPeerConnection,null)
+dandanzan10.top,nnyy6.top##+js(set,webkitRTCPeerConnection,null)
+dandanzan10.top,nnyy6.top#@#+js(nowebrtc)
+dandanzan10.top,nnyy6.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
 envyindebted.com
