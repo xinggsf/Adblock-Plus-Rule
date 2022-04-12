@@ -20,7 +20,7 @@ cad.youku.com
 @@||mmstat.com^$domain=youku.com
 ||cibntv.net/youku/$media,important
 ||valipl.cp31.ott.cibntv.net/$media
-|https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
+|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"], div[data-adzone],#block-V
