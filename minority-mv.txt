@@ -78,8 +78,8 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 ! 2022-03-09 https://www.555dy7.com
 ||1256964.com^$image
 6dm.cc###gongao
-88kan.tv##a[href^="https://www.88ys.app"]
-88kan.tv,vidhub.cc##.MacPlayer:style(height:600px!important)
+88hd.tv##a[href^="https://www.88ys.app"]
+88hd.tv,vidhub.cc##.MacPlayer:style(height:600px!important)
 91meijuw.com##.detail-content~p, .stui-pannel_hd~a[href^=http]
 ejktj.com
 ||www.91meijuw.com/template/pingg_tpl/images/$image
