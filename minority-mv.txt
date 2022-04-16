@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202203181
+! Version: 202204161
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -26,7 +26,6 @@ gtags.net
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 ||acs.youku.com/h5/mopen.youku.danmu.
 
-www.bilibili.com##+js(aeld,dblclick,/V.event.triggered|native|dbclicktimer/)
 www.bilibili.com##+js(set,Sentry.init,noopFunc)
 ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
@@ -35,7 +34,6 @@ chat.bilibili.com
 ||www.bilibili.com^$doc,queryprune=~p
 |https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
 |https://s1.hdslb.com/bfs/seed/jinkela/header-v2/header.js
-!|https://s1.hdslb.com/bfs/static/jinkela/long/js/sentry/sentry-5.7.1.min.js
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 ||v.qq.com/$subdocument
@@ -76,7 +74,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|imeiju.pro|xb15.cc|zhenbuka3.com
+*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka3.com
 ! 2022-03-09 https://www.555dy7.com
 ||1256964.com^$image
 6dm.cc###gongao
@@ -115,21 +113,9 @@ huihev.com##+js(acis,document.body.oncontextmenu)
 ||huihev.com/template/hstz.js$script
 kelatv.com##a[href*="/go.php"]
 z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
-imeiju.pro###qphf
 nbys1.tv##+js(aeld,dblclick,o.disabled)
 nbys1.tv###adltop
 ||www.nbys1.tv/image/ad$image
-!www.mvcat.com##.wxfollow
-
-nfmovies.com##header:style(position: absolute!important)
-nfmovies.com##.myui-player~div.myui-ra-container
-nfmovies.com##+js(acis, $myui, probe)
-nfmovies.com##+js(set,initAd,noopFunc)
-nfmovies.com##+js(set,adTime,0)
-nfmovies.com##body > div.hidden-xs,#aaaDiv,#aaaDiv2
-||nfmovies.com/pic/tu/$image
-||nfmovies.com/static/$image,xhr
-||pic.imgdb.cn/$image,domain=nfmovies.com
 
 olevod.*##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 azureedge.net
@@ -154,11 +140,12 @@ www.qdm8.com##.close-box.tips
 www.qdm8.com##body:style(background-image:none!important)
 
 qiqidongman.com##.flash-check-box, .AACC2,#rela_f
-rijutv.co###stats
 ! 2022-01-23 https://www.sbdm.net
 @@||a.yximgs.com/bs2/ad-$media
+
 ! 垃圾、evil站点，有钓鱼嫌疑
 tangrenjie.tv
+
 ! TVB云播 HK
 tvyb02.com##a[href^=http],#hth
 ||jpnimg.cnyuncdn.com/0$image
