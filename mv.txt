@@ -12,7 +12,6 @@ qq.com,huya.com,yy.com,le.com##+js(nowebrtc)
 ||p2p.$xhr,websocket,ping,domain=~huya.com
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
-v.youku.com##+js(aeld,dblclick,triggerEvent)
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 !m.youku.com,v.youku.com##+js(cookie-remover, cna)
 atm.youku.com
