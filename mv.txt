@@ -162,6 +162,7 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 
 dandanzan10.top,nnyy6.top##+js(set,RTCPeerConnection,null)
 dandanzan10.top,nnyy6.top##+js(set,webkitRTCPeerConnection,null)
+dandanzan10.top,nnyy6.top##+js(set,mozRTCPeerConnection,null)
 dandanzan10.top,nnyy6.top#@#+js(nowebrtc)
 dandanzan10.top,nnyy6.top##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
