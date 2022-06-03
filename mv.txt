@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202204281
+! Version: 202206031
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -152,19 +152,13 @@ age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=mgtv1.net|agemys.com|acgndmku.com|subaibaiys.com
 hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 
-! haitum.com##+js(set, document.writeln, noopFunc)
-! haitum.com##.dplayer-web-fullscreen-fix .float-box, .dplayer-web-fullscreen-fix header
-! .container 在视频页面头、尾、中部都可作用到
-! haitum.com##.container:style(max-width:90%!important;width:90%!important)
-! haitum.com##.left-content:style(width:77%!important)
-! ||haitum.com/template/default/static/js/bottom.js^$script
-! ||haitum.com/template/default/static/js/middle.js^$script
+! www.haitu.tv##+js(set, document.writeln, noopFunc)
 
-dandanzan10.top,nnyy6.top##+js(set,RTCPeerConnection,null)
-dandanzan10.top,nnyy6.top##+js(set,webkitRTCPeerConnection,null)
-dandanzan10.top,nnyy6.top##+js(set,mozRTCPeerConnection,null)
-dandanzan10.top,nnyy6.top#@#+js(nowebrtc)
-dandanzan10.top,nnyy6.top##.gm-fp-body video:style(max-height:100%!important)
+dandanzan10.top,nunuyy1.org##+js(set,RTCPeerConnection,null)
+dandanzan10.top,nunuyy1.org##+js(set,webkitRTCPeerConnection,null)
+dandanzan10.top,nunuyy1.org##+js(set,mozRTCPeerConnection,null)
+dandanzan10.top,nunuyy1.org#@#+js(nowebrtc)
+dandanzan10.top,nunuyy1.org##.gm-fp-body video:style(max-height:100%!important)
 adx1.com
 aqours.today
 envyindebted.com
