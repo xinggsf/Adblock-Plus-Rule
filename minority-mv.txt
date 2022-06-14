@@ -74,7 +74,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka3.com
-! 2022-03-09 https://www.555dy6.com
+! 2022-06-11 https://www.555dy6.com
 ||hdslb.com/bfs/album/$image,domain=~bilibili.com
 ||1256964.com^$image
 6dm.cc###gongao

@@ -180,6 +180,7 @@ pageMediaControl*$script
 */tongji.js|$domain=~zongheng.com
 !-------------------下载站点-----------------------
 *.gif|$image,domain=3987.com|www.ouyaoxiazai.com|www.myhack58.com
+myqqjd.com##+js(acis, String.fromCharCode, decodeURIComponent)
 52z.com###softdown>div,div.syGaosuDa:first-child
 ||www.fxxz.com/show/html/$subdocument
 ||www.fxxz.com/skin/know/html/$subdocument
