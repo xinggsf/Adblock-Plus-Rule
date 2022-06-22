@@ -172,7 +172,7 @@ pageMediaControl*$script
 */piao.js|
 */pop.js^$domain=~autohome.com.cn|~patch.ali213.net
 *.pop.js^$script
-*/float.js^$script
+*/float.js^$script,domain=~keylol.com
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
 */tan1.$script
@@ -215,7 +215,7 @@ greenxiazai.com##a[rel="nofollow"],.sinfo>div.s1,td.down-rr,.down-bd>div,div.lis
 onlinedown.net##div.downDz>:first-child,a[href*=".9377wan.cn/"],div.downgs,div.downxzqad,div.srolltool~div,#ItemXGJC,#ItemXGXZ,#ItemXGZT,#ItemSSZT
 ||pc6.com/$subdocument
 
-pcbeta.com##+js(apor, MutationObserver)
+! pcbeta.com##.adsbygoogle:upward(#wp>div)
 pcbeta.com###sitefocus
 ||pbcdn.com/data/attachment/album/$image
 ||pcbeta.com/static/image/biz/$image

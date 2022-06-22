@@ -115,8 +115,8 @@ huihev.com##+js(acis,document.body.oncontextmenu)
 kelatv.com##a[href*="/go.php"]
 ||www.ksmya.com/static/movie/js/guai2.js$script
 z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
-nbys.tv###adltop
-||nbys.tv/image/ad$image
+nbys1.tv###adltop
+||nbys1.tv/image/ad$image
 
 olevod.*##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 azureedge.net
