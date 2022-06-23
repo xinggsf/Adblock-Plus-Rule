@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202206131
+! Version: 202206231
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -73,7 +73,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka3.com
+*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka5.com
 ! 2022-06-11 https://www.555dy6.com
 ||hdslb.com/bfs/album/$image,domain=~bilibili.com
 ||1256964.com^$image
@@ -162,11 +162,11 @@ zhuaijiong.cn
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
-zhenbuka3.com##+js(set,protectAd,noopFunc)
+zhenbuka5.com##+js(set,protectAd,noopFunc)
 mmiyue.com##+js(acis,setTimeout)
-zhenbuka3.com##.container>*:not(.row), img[onclick]
+zhenbuka5.com##.container>*:not(.row), img[onclick], a[href^="/statics/js/"]
 ||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
-||zhenbuka3.com/loadingbk.html$frame
+||zhenbuka5.com/loadingbk.html^$frame
 
 !https://youtubeproxy.win/
 adnxs.com
