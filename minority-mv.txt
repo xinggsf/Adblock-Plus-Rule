@@ -163,8 +163,9 @@ yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
 zhenbuka5.com##+js(set,protectAd,noopFunc)
+!zhenbuka5.com##+js(set,ad_pic_list,0)
 mmiyue.com##+js(acis,setTimeout)
-zhenbuka5.com##.container>*:not(.row), img[onclick], a[href^="/statics/js/"]
+zhenbuka5.com##.container>*:not(.row), img[onclick], .stui-pannel>div:not([class]):first-child
 ||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
 ||zhenbuka5.com/loadingbk.html^$frame
 
