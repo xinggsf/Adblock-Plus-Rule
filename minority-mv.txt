@@ -149,7 +149,8 @@ tangrenjie.tv
 
 ! TVB云播 HK
 tvyb02.com##a[href^=http],#hth
-||jpnimg.cnyuncdn.com/0$image
+||pic.rmb.bdstatic.com/$image,domain=tvyb02.com
+||cfimg.cnyuncdn.com/0$image,domain=tvyb02.com
 tvyb02.com##+js(acis,document.writeln)
 
 vidhub.cc###player_pause
