@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202206231
+! Version: 202207011
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -148,8 +148,8 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 91p20.space
 waust.at
 
-age.tv,agemys.com##+js(noeval-if, devtoolsDetector)
-||toutiaoimg.com/origin/$image,domain=mgtv1.tv|mgtv.cc|agemys.com|acgndmku.com|subaibaiys.com
+age.tv,agemys.cc##+js(noeval-if, devtoolsDetector)
+||toutiaoimg.com/origin/$image,domain=mgtv1.tv|mgtv.cc|agemys.cc|acgndmku.com|subaibaiys.com
 hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 d58zz.com
 
@@ -198,6 +198,9 @@ youle55.com
 ||www.yatu.tv:2082/image/*.gif^$image
 ||www.yatu.tv:2082/m/images/$image
 ||nooen.com^$popup
+
+bixinlive.com
+quandangdang.net
 
 @@||union.bokecc.com/player
 ||bokecc.com/flash/playlog?
