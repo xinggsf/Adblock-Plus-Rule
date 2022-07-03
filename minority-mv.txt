@@ -96,7 +96,7 @@ qrserver.com
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm.com,momovod.tv##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscreen-fix #player-shrink,#citybanner
-fds.api.mi-img.com
+||fds.api.mi-img.com^$image,domain=~mi.com
 eqlidke.cn
 dm233.cc##.playleft:style(height:620px!important)
 wlwblog.top
