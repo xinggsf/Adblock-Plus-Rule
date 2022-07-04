@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202206231
+! Version: 202207031
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -9,8 +9,8 @@
 iqiyi.com##.detail-sd, .qy-search~*
 ! 禁用AI奇观
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
-||static.iqiyi.com/js/common/blMonitor.js
-||static.iqiyi.com/js/paoQitan/paoQitan.js
+! ||static.iqiyi.com/js/common/blMonitor.js
+! ||static.iqiyi.com/js/paoQitan/paoQitan.js
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
@@ -81,6 +81,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 88hd.tv##a[href^="https://www.88ys.app"]
 ||bdxiguaimg.com/origin/$image,domain=88hd.tv
 88hd.tv,vidhub.cc##.MacPlayer:style(height:600px!important)
+91meijuw.com##.dplayer:not(.dplayer-fulled):style(height:600px!important)
 91meijuw.com##.detail-content~p, .stui-pannel_hd~a[href^=http]
 ejktj.com
 ||www.91meijuw.com/template/pingg_tpl/images/$image
