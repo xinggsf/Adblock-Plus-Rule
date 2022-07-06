@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202207031
+! Version: 202207061
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -77,7 +77,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 ! 2022-06-11 https://www.555dy6.com
 ||hdslb.com/bfs/album/$image,domain=~bilibili.com
 ||1256964.com^$image
-6dm.cc###gongao
+! 996dm.com###gongao
 88hd.tv##a[href^="https://www.88ys.app"]
 ||bdxiguaimg.com/origin/$image,domain=88hd.tv
 88hd.tv,vidhub.cc##.MacPlayer:style(height:600px!important)
@@ -147,6 +147,9 @@ qiqidongman.com##.flash-check-box, .AACC2,#rela_f
 
 ! 垃圾、evil站点，有钓鱼嫌疑
 tangrenjie.tv
+
+www.ttsp.tv###playad1
+||img.imyyds.com/upload/vod/20211222-2/$image
 
 ! TVB云播 HK 港台影视
 tvyb02.com##a[href^=http],#hth
