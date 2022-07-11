@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202207061
+! Version: 202207081
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -150,6 +150,7 @@ tangrenjie.tv
 
 www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
+||img.imyyds.com/adimges/$image
 
 ! TVB云播 HK 港台影视
 tvyb02.com##a[href^=http],#hth
