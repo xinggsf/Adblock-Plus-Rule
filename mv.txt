@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202207081
+! Version: 202207111
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -153,6 +153,7 @@ waust.at
 
 ||btsow.bar/app/jav$image
 jads.co
+|https://$script,subdocument,3p,domain=btsow.bar|dandanzan10.top|nunuyy1.org
 !btsow.bar##+js(aeld, click, popunder)
 !btsow.*##body>div[id]:last-child>a:only-child
 
@@ -169,10 +170,7 @@ dandanzan10.top,nunuyy1.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan10.top,nunuyy1.org##+js(set,mozRTCPeerConnection,null)
 dandanzan10.top,nunuyy1.org#@#+js(nowebrtc)
 dandanzan10.top,nunuyy1.org##.gm-fp-body video:style(max-height:100%!important)
-adx1.com
 aqours.today
-envyindebted.com
-in-page-push.com
 mediaadjustment.com
 stgowan.com
 trustedgatetocontent.com
@@ -185,24 +183,13 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 geoparker.net
-uxrpkgh.cn
-anquanzhuomian.com
-btyou.com
-bmbaike.cn
 ch-hr12333.com
-chushoushijian.cn
 cppoc.com
-cqqc3.com
-g1c5.com
-ieeod0.com
 jinrongwang.net
 onenews.vip
-qdwght.com
-qfnoyix.cn
 quickapp.cn
 v4dwkcv.com
 weizhenwx.com
-xixiqiu.com
 youle55.com
 ||www.yatu.tv:2082/image/*.gif^$image
 ||www.yatu.tv:2082/m/images/$image
@@ -210,8 +197,3 @@ youle55.com
 
 bixinlive.com
 quandangdang.net
-
-@@||union.bokecc.com/player
-||bokecc.com/flash/playlog?
-||click.bokecc.com/
-||imedia.bokecc.com/
