@@ -182,9 +182,9 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
-geoparker.net
 ch-hr12333.com
 cppoc.com
+geoparker.net
 jinrongwang.net
 onenews.vip
 quickapp.cn
@@ -193,7 +193,7 @@ weizhenwx.com
 youle55.com
 ||www.yatu.tv:2082/image/*.gif^$image
 ||www.yatu.tv:2082/m/images/$image
-||nooen.com^$popup
 
+||nooen.com^$popup
 bixinlive.com
 quandangdang.net
