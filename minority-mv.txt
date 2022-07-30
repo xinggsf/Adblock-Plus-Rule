@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202207191
+! Version: 202207241
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -135,16 +135,19 @@ pangzitv.com##+js(acis,document.getElementById,initAd)
 pangzitv.com###pop
 ||pangzitv.com/template/*/js/ads3.js
 
-! 片库网
-btnull.*##+js(set,pycount,0)
-btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
-!||btnull.re/ajax/historys/
+! 片库网 https://www.btnull.org/py/aGrpO_5.html?164514
+! btnull.*##+js(set,pycount,0)
+! btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
+||btnull.in/ajax/historys/
+||btnull.re/ajax/historys/
+||btnull.org/ajax/historys/
+! 趣动漫
 www.qdm8.com##.close-box.tips
 www.qdm8.com##body:style(background-image:none!important)
 
 qiqidongman.com##.flash-check-box, .AACC2,#rela_f
 ! 2022-01-23 https://www.sbdm.net
-@@||a.yximgs.com/bs2/ad-$media
+@@||a.yximgs.com/bs2/ad-$media,domain=sbdm.net
 
 ! 垃圾、evil站点，有钓鱼嫌疑
 tangrenjie.tv
