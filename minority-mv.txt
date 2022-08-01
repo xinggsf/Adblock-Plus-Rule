@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202207241
+! Version: 202208011
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -65,10 +65,10 @@ m.huya.com##.ssr-wrapper>:not(.live-wrap)
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
 |https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
 |https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
-|https://a.msstatic.com/huya/main3/components/
+!|https://a.msstatic.com/huya/main3/components/
 |https://a.msstatic.com/huya/main3/modules/chat$important
 |https://a.msstatic.com/huya/main3/modules/gift/$important
-|https://a.msstatic.com/huya/main3/widget/
+!|https://a.msstatic.com/huya/main3/widget/
 !||va.huya.com^$websocket
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
