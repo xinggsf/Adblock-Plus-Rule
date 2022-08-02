@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202208011
+! Version: 202208031
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -65,17 +65,17 @@ m.huya.com##.ssr-wrapper>:not(.live-wrap)
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
 |https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
 |https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
-!|https://a.msstatic.com/huya/main3/components/
+|https://a.msstatic.com/huya/main3/components/
 |https://a.msstatic.com/huya/main3/modules/chat$important
 |https://a.msstatic.com/huya/main3/modules/gift/$important
-!|https://a.msstatic.com/huya/main3/widget/
+|https://a.msstatic.com/huya/main3/widget/
 !||va.huya.com^$websocket
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka5.com
 ! 2022-06-11 https://www.555dy6.com
-||hdslb.com/bfs/album/$image,domain=~bilibili.com
+||hdslb.com/bfs/album/$image,domain=555dy6.com
 ||1256964.com^$image
 ! 996dm.com###gongao
 88hd.com##a[href^="https://www.88ys.app"]
@@ -98,6 +98,7 @@ qrserver.com
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm.com,momovod.tv##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscreen-fix #player-shrink,#citybanner
+xg.jiezoiq.cn
 ||fds.api.mi-img.com^$image,domain=~mi.com
 eqlidke.cn
 dm233.cc##.playleft:style(height:620px!important)
