@@ -74,9 +74,11 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka5.com
-! 2022-06-11 https://www.555dy6.com
-||hdslb.com/bfs/album/$image,domain=555dy6.com
+! 2022-06-11 https://www.555kyy.com
+||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com
 ||1256964.com^$image
+! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
+||img.jcbdfyy.cn/upload/vod/$image
 ! 996dm.com###gongao
 88hd.com##a[href^="https://www.88ys.app"]
 |https://p1.bdxiguaimg.com/origin/pgc-image/9e762f89c3dd446b9ffe1e64543cf5ee$image
@@ -173,12 +175,12 @@ zhuaijiong.cn
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
-zhenbuka5.com##+js(set,protectAd,noopFunc)
+! zhenbuka5.com##+js(set,protectAd,noopFunc)
 !zhenbuka5.com##+js(set,ad_pic_list,0)
-mmiyue.com##+js(acis,setTimeout)
-zhenbuka5.com##.container>*:not(.row), img[onclick], .stui-pannel>div:not([class]):first-child
-||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
-||zhenbuka5.com/loadingbk.html^$frame
+! mmiyue.com##+js(acis,setTimeout)
+! zhenbuka5.com##.container>*:not(.row), img[onclick], .stui-pannel>div:not([class]):first-child
+! ||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
+! ||zhenbuka5.com/loadingbk.html^$frame
 
 !https://youtubeproxy.win/
 adnxs.com
