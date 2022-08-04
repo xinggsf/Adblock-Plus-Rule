@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202208031
+! Version: 202208051
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -75,7 +75,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka5.com
 ! 2022-06-11 https://www.555kyy.com
-||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com
+||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com|666ye.com
 ||1256964.com^$image
 ! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
 ||img.jcbdfyy.cn/upload/vod/$image
