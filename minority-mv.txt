@@ -112,13 +112,10 @@ dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
 !|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
 eacg.net##+js(set, devtoolsDetector, {})
 
-! www.moez.cc
-www.iiyy.cc###zanpiancms_player:style(height:600px!important)
-www.hanjutvaa.com##.widget-weixin, .widget-qianhuiji
 huihev.com##+js(acis,document.body.oncontextmenu)
 ||huihev.com/template/hstz.js$script
 kelatv.com##a[href*="/go.php"]
-||www.ksmya.com/static/movie/js/guai2.js$script
+! https://www.yaliyy.com/play/132772-0-0.html
 z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
 nbys1.tv###adltop
 ||nbys1.tv/image/ad$image
@@ -128,7 +125,9 @@ azureedge.net
 bidgear.com
 h12-media.com
 lo8ve6ygour3pea4cee.com
+majomalonic.com
 outbrain.com
+pubfuture.com
 vlitag.com
 zozoplatform.com
 ||olevod.tv/upload/site/202$image
