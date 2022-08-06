@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202207041
+! Version: 202208061
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -548,7 +548,9 @@ u17.com##[id|=u17-advert],div.ad_wrap
 ||tongj.xilu.com/
 ||img.cmm.xmfish.com/pages/uploads/20$image
 bbs.xmfish.com##div[id^=adm_show_]
-d2.yiche.com
+yiche.com##.news-head > div.news-head-adv:first-child, div.words-ad-list
+img.easypass.cn
+dd.yiche.com
 ||zchot.com/images/jiaoyou
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
