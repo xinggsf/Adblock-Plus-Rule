@@ -38,7 +38,7 @@ show.ssports.com
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap
 qq.com##+js(json-prune,adList.item)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
-!qq.com##+js(aopr, Beacon.prototype.fail)
+qq.com##+js(aopr, Beacon.prototype.fail)
 @@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
 cm.l.qq.com
 ||l.qq.com/lview?
