@@ -347,7 +347,7 @@ mail.163.com,mail.126.com##.emailSuggest,#theme,.gWel-bottom
 ||sina.com.cn/iframe/76/$subdocument
 ||sina.com.cn/litong/
 ||adbox.sina.com.cn/
-||beacon.$domain=~v.qq.com
+||beacon.
 ||sbeacon.sina.com.cn/
 ||d1.sina.com.cn/
 ||d2.sina.com.cn/
