@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202208083
+! Version: 202208085
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
-qq.com,yy.com,le.com##+js(nowebrtc)
+yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping,domain=~huya.com
 
@@ -38,7 +38,7 @@ show.ssports.com
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap
 qq.com##+js(json-prune,adList.item)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
-qq.com##+js(aopr, Beacon.prototype.fail)
+!qq.com##+js(aopr, Beacon.prototype.fail)
 @@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
 cm.l.qq.com
 ||l.qq.com/lview?
