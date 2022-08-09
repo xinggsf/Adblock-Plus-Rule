@@ -171,6 +171,8 @@ wsdy.top##+js(set,fed.module,{})
 kowqd3.top
 zhuaijiong.cn
 |https://cdn.jsdelivr.net/gh/vodcms-cdn/js/$script
+! https://www.xyhdm.cc/
+yunbangcheng.com
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
