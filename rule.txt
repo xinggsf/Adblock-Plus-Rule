@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202208111
+! Version: 202208113
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -402,7 +402,6 @@ zongheng.com###zh_ab_rb,#sumcard_flag,#gameFTip
 
 chuangshi.qq.com##.topbanner,.mainbox>div.adv,div.jpBanner.fr,.banner_index,.main_banner,#advert
 
-||www.dhzw.org/xiaoyi/$script
 ||hjwzw.com/js/n$script
 tianyabooks.com##div[class^=bread_]
 ||www.tianyabooks.com/$script,inline-script
@@ -562,25 +561,27 @@ dd.yiche.com
 ||www.zhujiceping.com/wp-content/uploads/$script
 !-------------------影视资源--------------------
 |https://www.36dm.com/js/
-lm343.com
-mjg0310.com
-tainicement.net
+diwenganzaoji.com
 ||www.36dm.com/images/$image
+
+www.dmhy.org##.info.relative-goods, #pkpk
+js.kiwihk.net
+||www.dmhy.org/*.gif^$image
+
 douban.com##.subject-banner, div[ad-status]
 at3.doubanio.com
 erebor.douban.com
-||share.dmhy.org^$image
-huojua.com
 
 ||hao6v.com/d/$script
 ||dygang.cc/d/$script
 ||6vw.cc/d/$script
 ||6vgood.com/d/$script
 
-||www.dy2018.com/js$script
-subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
-||subhd.com/images/ap/$image
-||ygdy8.com/jsy/
+||www.dy2018.com/jsdd/$script
+! https://subhd.tv/
+
+! https://www.ygdy8.com/
+||ygdy8.com/jsy1/
 !------------------精简自adbyby规则------------------
 */7mad.$image,object,object-subrequest
 */9vads
