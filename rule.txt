@@ -1,10 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202208101
+! Version: 202208111
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
-@@*$stylesheet
 !--------------------------百度----------------------------------
 @@||bdstatic.com/static/common/widget/ui/admanager/$script,domain=image.baidu.com
 ||cpro.$domain=~baidu.com
@@ -30,6 +29,7 @@ kstj.baidu.com
 
 ||pups.bdimg.com/
 baike.baidu.com##.after-content,#adLayerSideWrap
+baike.baidu.com##.squareAni.square.super-layer-promote
 ||baike.baidu.com/api/wikiad/
 fanyi.baidu.com##div.banner-wrap
 
@@ -64,10 +64,11 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 */ad.
 */ad/$script,subdocument,media
 */ad_
-@@||www.microsoft.com/onerfstatics/marketingsites-wcus-prod/shell/_scrf/js/themes=default/$script
+@@||www.microsoft.com/onerfstatics/marketingsites-*/ad-$script
 */ad-
 */ad0$script
 */ad1$script
+@@||www.youtube.com/s/desktop/ad$script
 */ad2$script
 */ad3$script
 */adbox/
@@ -82,6 +83,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 @@||g.alicdn.com/$script,subdocument
 @@||g.tbcdn.cn/
 ||g.$third-party,subdocument,script
+!@@||downloads.essential.gg
 ||gg.
 ||ggg.
 ||greenet.cn/$popunder
@@ -121,14 +123,13 @@ tanx.com
 ||vamaker.com/$third-party
 */vamaker/
 wegowan.com
-windows.net
 wrating.com
 *##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
 ~news.sina.com.cn##[id^=ad_]
-*##[id$="-ad"],[class|=ad],[id|=ad],
+*##[id$="-ad"],[class|=ad],[id|=ad]
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
 ~google.com,~mediafire.com##.ads
 ~google.com##.adsbygoogle
@@ -160,12 +161,15 @@ pageMediaControl*$script
 ||go.$domain=kickass.cd|thepiratebay.*|btsow.*
 */index_banner_
 ! *_banner.$script,object,image
+@@||static.realme.net/v1/knowledge/images/banner.jpg$image
 */images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
 */impservice$script
 */market.$script,domain=~jin10.com|~streamcommunity.com
 */market_$script
 */market-$script
 @@|https://media.amazon.map.fastly.net^$script
+! https://www.zelda.com/
+@@||media.nintendo.com/share/nclood/stable/en-us/bundles/microsite.min.js$script
 ||media.$third-party,script,subdocument
 */pagead$script
 */s.php?id=$script,third-party

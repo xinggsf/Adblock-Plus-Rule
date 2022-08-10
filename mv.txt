@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202208101
+! Version: 202208111
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
 ! 屏蔽P2P
 yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
-||p2p.$xhr,websocket,ping,domain=~huya.com
+||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
@@ -158,6 +158,7 @@ jads.co
 !btsow.*##body>div[id]:last-child>a:only-child
 ! 2022 https://rarbgprx.org
 statsy.net
+@@||dyncdn.me/static/20/js/jquery$script
 ||dyncdn.me/static/20/js/showads.js$script
 ||dyncdn.me/static/20/js/expla$script
 
