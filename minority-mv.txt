@@ -103,14 +103,18 @@ www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscre
 xg.jiezoiq.cn
 ||fds.api.mi-img.com^$image,domain=~mi.com
 eqlidke.cn
+
 dm233.cc##.playleft:style(height:620px!important)
 wlwblog.top
 qsnyswg.cn
 20under20ivy.com
 dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
-!eacg.net##+js(set, document.oncontextmenu, trueFunc)
-!|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
+
+||ddrk.me/vjs-plugins/videojs.das.min.js^$script
+
 eacg.net##+js(set, devtoolsDetector, {})
+!|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
+linjuyihao.com
 
 huihev.com##+js(acis,document.body.oncontextmenu)
 ||huihev.com/template/hstz.js$script
