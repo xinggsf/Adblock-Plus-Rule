@@ -121,6 +121,8 @@ xelements.cn
 yoyi.com.cn
 zhiziyun.com
 le.com##.min_pause_img
+! 视频水印
+le.com##.hv_wm_logo
 
 www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 douyu.com##+js(set, RTCPeerConnection.prototype.addTrack, noopFunc)
