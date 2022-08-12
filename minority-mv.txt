@@ -73,8 +73,8 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc
 !禁用左右快捷键
 caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88hd.com,91meijuw.com,tvyb03.com,vidhub.cc##a[target=_blank][href^=http]
-88hd.com,cmdy555.com,vidhub.cc,yunbtv.net##.MacPlayer:style(height:630px!important)
+88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
+vidhub.cc,vidhub.top,yunbtv.net##.MacPlayer:style(height:630px!important)
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 ! 2022-06-11 https://www.555kyy.com
@@ -83,7 +83,7 @@ www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dpl
 ! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
 ||img.jcbdfyy.cn/upload/vod/$image
 
-91meijuw.com##.dplayer:not(.dplayer-fulled):style(height:600px!important)
+! 91meijuw.com##.dplayer:not(.dplayer-fulled):style(height:600px!important)
 91meijuw.com##.detail-content~p
 ejktj.com
 ||www.91meijuw.com/template/pingg_tpl/images/$image
@@ -165,12 +165,14 @@ tvyb03.com###hth
 ||cfimg.cnyuncdn.com/0$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-vidhub.cc###player_pause
+vidhub.cc,vidhub.top###player_pause
 ||vidhub.cc/upload/art/rgsp-$image
 ||vidhub.cc/player/buffer.html$subdocument
+||vidhub.top/player/buffer.html$subdocument
 wsdy.top##+js(set,fed.module,{})
 kowqd3.top
 zhuaijiong.cn
+
 |https://cdn.jsdelivr.net/gh/vodcms-cdn/js/$script
 ! https://www.xyhdm.cc/
 yunbangcheng.com
