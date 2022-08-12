@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202208111
+! Version: 202208131
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -9,12 +9,9 @@
 iqiyi.com##.detail-sd, .qy-search~*
 ! 禁用AI奇观
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
-! ||static.iqiyi.com/js/common/blMonitor.js
-! ||static.iqiyi.com/js/paoQitan/paoQitan.js
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
-! ||static.iqiyi.com/js/player_v*/skin.pc.$script
 ! 要用弹幕注释下条规则
 ||t7z.cupid.iqiyi.com/show$script,important
 
@@ -73,23 +70,23 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb02.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc|zhenbuka5.com
+*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc
+!禁用左右快捷键
+caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
+88hd.com,91meijuw.com,tvyb03.com,vidhub.cc##a[target=_blank][href^=http]
+88hd.com,cmdy555.com,vidhub.cc,yunbtv.net##.MacPlayer:style(height:630px!important)
+www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
+
 ! 2022-06-11 https://www.555kyy.com
 ||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com|666ye.com
 ||1256964.com^$image
 ! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
 ||img.jcbdfyy.cn/upload/vod/$image
-! 996dm.com###gongao
-88hd.com##a[href^="https://www.88ys.app"]
-|https://p1.bdxiguaimg.com/origin/pgc-image/9e762f89c3dd446b9ffe1e64543cf5ee$image
-! ||bdxiguaimg.com/origin/$image,domain=88hd.com
-88hd.com,vidhub.cc##.MacPlayer:style(height:600px!important)
+
 91meijuw.com##.dplayer:not(.dplayer-fulled):style(height:600px!important)
-91meijuw.com##.detail-content~p, .stui-pannel_hd~a[href^=http]
+91meijuw.com##.detail-content~p
 ejktj.com
 ||www.91meijuw.com/template/pingg_tpl/images/$image
-!禁用左右快捷键
-caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 ||bibilm.com^$script,3p
 bimiacg4.net##.tuiguang,#bkcl
 
@@ -97,7 +94,6 @@ bimiacg4.net##.tuiguang,#bkcl
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
 qrserver.com
-www.bashiyy.com,gdzidong.com,huaxingui.com,momdm.com,momovod.tv##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right, .dplayer-web-fullscreen-fix #player-shrink,#citybanner
 xg.jiezoiq.cn
@@ -124,6 +120,7 @@ z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
 nbys1.tv###adltop
 ||nbys1.tv/image/ad$image
 
+www.novipnoad.com##.bg-ad
 olevod.*##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||azureedge.net^$~stylesheet
 bidgear.com
@@ -163,10 +160,10 @@ www.ttsp.tv###playad1
 ||img.imyyds.com/adimges/$image
 
 ! TVB云播 HK 港台影视
-tvyb02.com##a[href^=http],#hth
-||pic.rmb.bdstatic.com/$image,domain=tvyb02.com
-||cfimg.cnyuncdn.com/0$image,domain=tvyb02.com
-tvyb02.com##+js(acis,document.writeln)
+tvyb03.com###hth
+||pic.rmb.bdstatic.com/$image,domain=tvyb03.com
+||cfimg.cnyuncdn.com/0$image,domain=tvyb03.com
+tvyb03.com##+js(acis,document.writeln)
 
 vidhub.cc###player_pause
 ||vidhub.cc/upload/art/rgsp-$image
@@ -179,13 +176,6 @@ zhuaijiong.cn
 yunbangcheng.com
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
-
-! zhenbuka5.com##+js(set,protectAd,noopFunc)
-!zhenbuka5.com##+js(set,ad_pic_list,0)
-! mmiyue.com##+js(acis,setTimeout)
-! zhenbuka5.com##.container>*:not(.row), img[onclick], .stui-pannel>div:not([class]):first-child
-! ||mmiyue.com/zhenbuka2/statics/js/fuck-debugger.js
-! ||zhenbuka5.com/loadingbk.html^$frame
 
 !https://youtubeproxy.win/
 adnxs.com
