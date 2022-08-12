@@ -6,6 +6,14 @@ allow-lan: false
 mode: Rule
 log-level: info
 # external-controller: 127.0.0.1:9090
+tun:
+  enable: false
+  stack: system # or gvisor
+  # dns-hijack:
+  #   - 8.8.8.8:53
+  #   - tcp://8.8.8.8:53
+  auto-route: true # auto set global route
+  auto-detect-interface: true # conflict with interface-name
 dns:
   enable: false
   listen: 0.0.0.0:53
@@ -39,12 +47,20 @@ dns:
     - dhcp://en0 # dns from dhcp
 
 proxies:
-  - {name: CA_ga_221, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: CA_ga_388, server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_XX77, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}}
-  - {name: US_ga_337, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: YT_Tool3, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}}
+  - {name: rocket_0267295ac9bb, server: 120.233.150.146, port: 65092, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: 120.233.150.146}}}
+  - {name: US_b9141e66a2b0, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: EU_aa6d702d86bc, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
 proxy-providers:
+  learnhard:
+    type: http
+    url: https://raw.fastgit.org/learnhard-cn/free_proxy_ss/main/clash/providers/provider_home_netflix.yaml
+    interval: 1600
+    path: learnhard.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
   subp:
     type: file
     path: proxys.yml
@@ -53,20 +69,20 @@ proxy-providers:
       interval: 1500
       url: http://www.gstatic.com/generate_204
 proxy-groups:
-  - name: UQUICK
-    type: load-balance
-    proxies:
-      - YT_Tool3
-      - US_XX77
-      - US_ga_337
-      - CA_ga_221
-      - CA_ga_388
-    url: http://www.gstatic.com/generate_204
-    interval: 300
   - name: ♻️ 自动选择
     type: url-test
     use:
       - subp
+      - learnhard
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: UQUICK
+    type: load-balance
+    proxies:
+      - US_b9141e66a2b0
+      - EU_aa6d702d86bc
+      - rocket_0267295ac9bb
+      - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: UDOWNLOAD
@@ -79,48 +95,70 @@ proxy-groups:
     interval: 330
 # load-balance url-test fallback
 rules:
+  - DOMAIN-SUFFIX,hm.baidu.com,REJECT
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD
-  - DOMAIN-SUFFIX,bucm.cf,DIRECT
+  - DOMAIN-SUFFIX,onion,DIRECT
+  - DOMAIN-SUFFIX,cf,DIRECT
+  - DOMAIN-SUFFIX,duckduckgo.com,UQUICK
   - DOMAIN-SUFFIX,t.me,♻️ 自动选择
-  - DOMAIN-SUFFIX,meiju.pro,DIRECT
+  - DOMAIN-SUFFIX,dmhy.org,UQUICK
+  - DOMAIN-SUFFIX,91meijuw.com,DIRECT
+  - DOMAIN-SUFFIX,tangrenjie.tv,REJECT
+  - DOMAIN-SUFFIX,nunuyy2.org,DIRECT
   - DOMAIN-SUFFIX,qdm8.com,DIRECT
+  - DOMAIN-SUFFIX,yatu.tv,DIRECT
+  - DOMAIN-SUFFIX,xiahi.com,UDOWNLOAD
+  - DOMAIN-SUFFIX,789zy.cc,DIRECT
+  - DOMAIN-SUFFIX,baobuzz.com,DIRECT
   - DOMAIN-SUFFIX,hhmm0.com,DIRECT
-  - DOMAIN-SUFFIX,bdzybf.com,DIRECT
-  - DOMAIN-SUFFIX,wenshibaowenbei.com,DIRECT
+  - DOMAIN-KEYWORD,.bdzybf,DIRECT
   - DOMAIN-SUFFIX,ziyuan605.com,DIRECT
   - DOMAIN-SUFFIX,monidai.com,DIRECT
+  - DOMAIN-SUFFIX,bilibili.tv,UQUICK
+  - DOMAIN-SUFFIX,akamaized.net,UQUICK
+  - DOMAIN-SUFFIX,k8hdw.com,UQUICK
+  - DOMAIN-SUFFIX,if101.tv,UQUICK
+  - DOMAIN-SUFFIX,kaooooo.com,UQUICK
+  - DOMAIN-SUFFIX,olevod.tv,UQUICK
+  - DOMAIN-SUFFIX,olemovienews.com,DIRECT
+  - DOMAIN-SUFFIX,olevod.com,UQUICK
+  - DOMAIN-KEYWORD,taopianplay,DIRECT
   - DOMAIN-SUFFIX,w3schools.com,♻️ 自动选择
   - DOMAIN-SUFFIX,redditmedia.com,♻️ 自动选择
   - DOMAIN-SUFFIX,redditstatic.com,♻️ 自动选择
   - DOMAIN-SUFFIX,reddit.com,♻️ 自动选择
   - DOMAIN-SUFFIX,aiosearch.com,♻️ 自动选择
   - DOMAIN-SUFFIX,ask.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,startpage.com,♻️ 自动选择
   - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
   - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
   - DOMAIN-SUFFIX,twimg.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,free-ss.site,♻️ 自动选择
+  - DOMAIN-SUFFIX,grossman.io,♻️ 自动选择
+  - DOMAIN-SUFFIX,gitter.im,♻️ 自动选择
+  - DOMAIN-SUFFIX,nytimes.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,voachinese.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,voanews.com,♻️ 自动选择
   - DOMAIN-SUFFIX,ftchinese.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
   - DOMAIN-SUFFIX,archive.org,♻️ 自动选择
   - DOMAIN-SUFFIX,wikiwand.com,♻️ 自动选择
   - DOMAIN-SUFFIX,wikipedia.org,♻️ 自动选择
-  - DOMAIN-SUFFIX,dmhy.org,♻️ 自动选择
   - DOMAIN-SUFFIX,godoc.org,♻️ 自动选择
   - DOMAIN-SUFFIX,go-zh.org,♻️ 自动选择
-  - DOMAIN-SUFFIX,golang.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,golang.org,UQUICK
   - DOMAIN-KEYWORD,.blogger,♻️ 自动选择
   - DOMAIN-KEYWORD,.blogspot,♻️ 自动选择
   - DOMAIN-SUFFIX,appspot.com,♻️ 自动选择
   - DOMAIN-SUFFIX,chrome.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,duckduckgo.com,♻️ 自动选择
   - DOMAIN-SUFFIX,v2ex.com,♻️ 自动选择
   - DOMAIN-SUFFIX,gitlab-static.net,♻️ 自动选择
   - DOMAIN-SUFFIX,gitcdn.xyz,♻️ 自动选择
-  - DOMAIN-KEYWORD,github,♻️ 自动选择
+  - DOMAIN-KEYWORD,github,UQUICK
   - DOMAIN-SUFFIX,git.io,♻️ 自动选择
   - DOMAIN-SUFFIX,gitbooks.io,♻️ 自动选择
   - DOMAIN-SUFFIX,rawgit.com,♻️ 自动选择
-  - IP-CIDR,13.229.0.0/16,♻️ 自动选择
-  - IP-CIDR,20.205.243.0/24,♻️ 自动选择
+  - IP-CIDR,20.205.243.166/8,♻️ 自动选择,no-resolve
   - IP-CIDR,23.211.15.99/32,♻️ 自动选择,no-resolve
   - IP-CIDR,23.246.0.0/18,♻️ 自动选择,no-resolve
   - IP-CIDR,34.210.42.111/32,♻️ 自动选择,no-resolve
@@ -149,7 +187,8 @@ rules:
   - DOMAIN-SUFFIX,ttvnw.net,UQUICK
   - DOMAIN-SUFFIX,ted.com,UQUICK
   - DOMAIN-SUFFIX,tedcdn.com,UQUICK
-  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,UQUICK
+  - DOMAIN-SUFFIX,addons.mozilla.org,UQUICK
   - DOMAIN-SUFFIX,gstatic.com,♻️ 自动选择
   - DOMAIN-SUFFIX,ytimg.com,♻️ 自动选择
   - DOMAIN-SUFFIX,googlevideo.com,UQUICK
