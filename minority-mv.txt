@@ -74,7 +74,6 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 !禁用左右快捷键
 caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
-vidhub.cc,vidhub.top,yunbtv.net##.MacPlayer:style(height:630px!important)
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 ! 2022-06-11 https://www.555kyy.com
@@ -166,6 +165,7 @@ tvyb03.com###hth
 tvyb03.com##+js(acis,document.writeln)
 
 vidhub.cc,vidhub.top###player_pause
+vidhub.cc,vidhub.top##.MacPlayer:style(height:630px!important)
 ||vidhub.cc/upload/art/rgsp-$image
 ||vidhub.cc/player/buffer.html$subdocument
 ||vidhub.top/player/buffer.html$subdocument
