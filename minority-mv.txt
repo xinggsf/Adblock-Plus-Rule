@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202208131
+! Version: 202209111
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -175,7 +175,6 @@ zhuaijiong.cn
 
 |https://cdn.jsdelivr.net/gh/vodcms-cdn/js/$script
 ! https://www.xyhdm.cc/
-yunbangcheng.com
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
