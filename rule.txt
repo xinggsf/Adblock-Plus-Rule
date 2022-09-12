@@ -45,7 +45,7 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 ||as2.wenku.baidu.com/$subdocument
 ||wkstatic.bdimg.com/static/wkview/widget/top_ads_banner/$script
 
-pan.baidu.com##.frame-all:style(overflow-x:hidden)
+pan.baidu.com##.frame-all:style(overflow-x:hidden!important)
 pan.baidu.com##.ad-platform-tips, .phone-banner
 ||bcebos.com^$image,domain=pan.baidu.com
 ||pan.baidu.com/rest/*/adx?$image
