@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202209111
+! Version: 202209181
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -70,7 +70,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olevod.*|xb15.cc
+*.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olehd.com|olevod.*|xb15.cc
 !禁用左右快捷键
 caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
@@ -100,12 +100,19 @@ xg.jiezoiq.cn
 eqlidke.cn
 
 dm233.cc##.playleft:style(height:620px!important)
+xg.flsfzr.cn
 wlwblog.top
 qsnyswg.cn
 20under20ivy.com
 dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
 
 ||ddrk.me/vjs-plugins/videojs.das.min.js^$script
+
+!樱花动漫 http://www.imomoe.jp/
+dmh8.com##body>a
+dmh8.com##+js(acis,document.writeln)
+f77j6t2b.com
+yrqwnc.cn
 
 eacg.net##+js(set, devtoolsDetector, {})
 !|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
