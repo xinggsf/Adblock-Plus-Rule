@@ -118,7 +118,7 @@ eacg.net##+js(set, devtoolsDetector, {})
 !|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
 linjuyihao.com
 
-huihev.com##+js(acis,document.body.oncontextmenu)
+huihev.com##+js(ra,oncontextmenu|onselectstart|ondragstart|onsource,body)
 ||huihev.com/template/hstz.js$script
 kelatv.com##a[href*="/go.php"]
 ! https://www.yaliyy.com/play/132772-0-0.html
@@ -127,7 +127,7 @@ nbys1.tv###adltop
 ||nbys1.tv/image/ad$image
 
 www.novipnoad.com##.bg-ad
-olevod.*##.bg_wtop_banner, .guangao, a[data-ab-css-background]
+olevod.*,olehd.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||azureedge.net^$~stylesheet
 bidgear.com
 h12-media.com
@@ -139,6 +139,7 @@ vlitag.com
 zozoplatform.com
 ||olevod.tv/upload/site/202$image
 ||olevod.com/upload/site/202$image
+||olehd.com/upload/site/202$image
 
 pangzitv.com##+js(acis,document.getElementById,initAd)
 pangzitv.com###pop
