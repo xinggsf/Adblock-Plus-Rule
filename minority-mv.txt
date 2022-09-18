@@ -120,6 +120,8 @@ linjuyihao.com
 
 huihev.com##+js(ra,oncontextmenu|onselectstart|ondragstart|onsource,body)
 ||huihev.com/template/hstz.js$script
+||huihev.com/template/hepc2/img/dashang.gif$image
+
 kelatv.com##a[href*="/go.php"]
 ! https://www.yaliyy.com/play/132772-0-0.html
 z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
