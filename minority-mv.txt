@@ -71,8 +71,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olehd.com|olevod.*|xb15.cc
-!禁用左右快捷键
-caomin99.com,nangua55.com,qmia.cn,xuelidy.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
+! https://www.xyhdm.cc/ 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
@@ -183,8 +182,6 @@ wsdy.top##+js(set,fed.module,{})
 kowqd3.top
 zhuaijiong.cn
 
-|https://cdn.jsdelivr.net/gh/vodcms-cdn/js/$script
-! https://www.xyhdm.cc/
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
