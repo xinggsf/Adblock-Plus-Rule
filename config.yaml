@@ -1,5 +1,5 @@
 # 不必用clash for windows! 单clash.exe即可！ 定位配置目录为clash.exe所在目录~创建快捷方式：clash.exe -d "."
-# 下载只包含中国IP信息GEOIP文件：Country.mmdb ，保存于上述目录
+# 同目录下还必须有二个文件：只包含中国IP信息GEOIP文件Country.mmdb ；proxys.yml（代理）
 # port: 7890
 socks-port: 7891
 allow-lan: false
