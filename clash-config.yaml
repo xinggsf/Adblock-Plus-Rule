@@ -191,7 +191,6 @@ rules:
   - DOMAIN-SUFFIX,ggpht.com,UQUICK
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN,translate.googleapis.com,DIRECT
-  - DOMAIN-KEYWORD,mtalk.google.com,REJECT
   - DOMAIN-KEYWORD,.google,UQUICK
   - IP-CIDR,1.255.62.0/24,DIRECT
   - IP-CIDR,182.254.116.0/24,DIRECT
