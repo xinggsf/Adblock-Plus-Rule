@@ -47,13 +47,11 @@ dns:
     - dhcp://en0 # dns from dhcp
 
 proxies:
-  - {name: rocket_0267295ac9bb, server: 120.233.150.146, port: 65092, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: 120.233.150.146}}}
   - {name: US_b9141e66a2b0, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: EU_aa6d702d86bc, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
 proxy-providers:
   learnhard:
     type: http
-    url: https://raw.fastgit.org/learnhard-cn/free_proxy_ss/main/clash/providers/provider_home_netflix.yaml
+    url: https://raw.iqiq.io/learnhard-cn/free_proxy_ss/main/clash/providers/provider_home_netflix.yaml
     interval: 1600
     path: learnhard.yaml
     health-check:
@@ -80,8 +78,6 @@ proxy-groups:
     type: load-balance
     proxies:
       - US_b9141e66a2b0
-      - EU_aa6d702d86bc
-      - rocket_0267295ac9bb
       - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -95,12 +91,12 @@ proxy-groups:
     interval: 330
 # load-balance url-test fallback
 rules:
-  - DOMAIN-SUFFIX,hm.baidu.com,REJECT
+  - DOMAIN,hm.baidu.com,REJECT
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD
   - DOMAIN-SUFFIX,onion,DIRECT
   - DOMAIN-SUFFIX,cf,DIRECT
   - DOMAIN-SUFFIX,duckduckgo.com,UQUICK
-  - DOMAIN-SUFFIX,t.me,♻️ 自动选择
+  - DOMAIN-SUFFIX,t.me,UQUICK
   - DOMAIN-SUFFIX,dmhy.org,UQUICK
   - DOMAIN-SUFFIX,91meijuw.com,DIRECT
   - DOMAIN-SUFFIX,tangrenjie.tv,REJECT
@@ -114,7 +110,6 @@ rules:
   - DOMAIN-KEYWORD,.bdzybf,DIRECT
   - DOMAIN-SUFFIX,ziyuan605.com,DIRECT
   - DOMAIN-SUFFIX,monidai.com,DIRECT
-  - DOMAIN-SUFFIX,bilibili.tv,UQUICK
   - DOMAIN-SUFFIX,akamaized.net,UQUICK
   - DOMAIN-SUFFIX,k8hdw.com,UQUICK
   - DOMAIN-SUFFIX,if101.tv,UQUICK
@@ -122,78 +117,80 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,UQUICK
   - DOMAIN-SUFFIX,olemovienews.com,DIRECT
   - DOMAIN-SUFFIX,olevod.com,UQUICK
+  - DOMAIN-SUFFIX,olehd.com,UQUICK
   - DOMAIN-KEYWORD,taopianplay,DIRECT
-  - DOMAIN-SUFFIX,w3schools.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,redditmedia.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,redditstatic.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,reddit.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,aiosearch.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ask.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,startpage.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,facebook.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,twitter.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,twimg.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,free-ss.site,♻️ 自动选择
-  - DOMAIN-SUFFIX,grossman.io,♻️ 自动选择
-  - DOMAIN-SUFFIX,gitter.im,♻️ 自动选择
-  - DOMAIN-SUFFIX,nytimes.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,voachinese.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,voanews.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ftchinese.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ft.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,archive.org,♻️ 自动选择
-  - DOMAIN-SUFFIX,wikiwand.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,wikipedia.org,♻️ 自动选择
-  - DOMAIN-SUFFIX,godoc.org,♻️ 自动选择
-  - DOMAIN-SUFFIX,go-zh.org,♻️ 自动选择
+  - DOMAIN-SUFFIX,w3schools.com,UQUICK
+  - DOMAIN-SUFFIX,redditmedia.com,UQUICK
+  - DOMAIN-SUFFIX,redditstatic.com,UQUICK
+  - DOMAIN-SUFFIX,reddit.com,UQUICK
+  - DOMAIN-SUFFIX,aiosearch.com,UQUICK
+  - DOMAIN-SUFFIX,ask.com,UQUICK
+  - DOMAIN-SUFFIX,startpage.com,UQUICK
+  - DOMAIN-SUFFIX,facebook.com,UQUICK
+  - DOMAIN-SUFFIX,twitter.com,UQUICK
+  - DOMAIN-SUFFIX,twimg.com,UQUICK
+  - DOMAIN-SUFFIX,free-ss.site,UQUICK
+  - DOMAIN-SUFFIX,grossman.io,UQUICK
+  - DOMAIN-SUFFIX,gitter.im,UQUICK
+  - DOMAIN-SUFFIX,nytimes.com,UQUICK
+  - DOMAIN-SUFFIX,voachinese.com,UQUICK
+  - DOMAIN-SUFFIX,voanews.com,UQUICK
+  - DOMAIN-SUFFIX,ftchinese.com,UQUICK
+  - DOMAIN-SUFFIX,ft.com,UQUICK
+  - DOMAIN-SUFFIX,archive.org,UQUICK
+  - DOMAIN-SUFFIX,wikiwand.com,UQUICK
+  - DOMAIN-SUFFIX,wikipedia.org,UQUICK
+  - DOMAIN-SUFFIX,godoc.org,UQUICK
+  - DOMAIN-SUFFIX,go-zh.org,UQUICK
   - DOMAIN-SUFFIX,golang.org,UQUICK
-  - DOMAIN-KEYWORD,.blogger,♻️ 自动选择
-  - DOMAIN-KEYWORD,.blogspot,♻️ 自动选择
-  - DOMAIN-SUFFIX,appspot.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,chrome.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,v2ex.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,gitlab-static.net,♻️ 自动选择
-  - DOMAIN-SUFFIX,gitcdn.xyz,♻️ 自动选择
+  - DOMAIN-KEYWORD,.blogger,UQUICK
+  - DOMAIN-KEYWORD,.blogspot,UQUICK
+  - DOMAIN-SUFFIX,appspot.com,UQUICK
+  - DOMAIN-SUFFIX,chrome.com,UQUICK
+  - DOMAIN-SUFFIX,v2ex.com,UQUICK
+  - DOMAIN-SUFFIX,gitlab-static.net,UQUICK
+  - DOMAIN-SUFFIX,gitcdn.xyz,UQUICK
   - DOMAIN-KEYWORD,github,UQUICK
-  - DOMAIN-SUFFIX,git.io,♻️ 自动选择
-  - DOMAIN-SUFFIX,gitbooks.io,♻️ 自动选择
-  - DOMAIN-SUFFIX,rawgit.com,♻️ 自动选择
-  - IP-CIDR,20.205.243.166/8,♻️ 自动选择,no-resolve
-  - IP-CIDR,23.211.15.99/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,23.246.0.0/18,♻️ 自动选择,no-resolve
-  - IP-CIDR,34.210.42.111/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,37.77.184.0/21,♻️ 自动选择,no-resolve
-  - IP-CIDR,45.57.0.0/17,♻️ 自动选择,no-resolve
-  - IP-CIDR,52.89.124.203/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,54.148.37.5/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,64.120.128.0/17,♻️ 自动选择,no-resolve
-  - IP-CIDR,66.197.128.0/17,♻️ 自动选择,no-resolve
-  - IP-CIDR,103.5.34.153/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,108.175.32.0/20,♻️ 自动选择,no-resolve
-  - IP-CIDR,104.109.129.153/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,110.238.107.47/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,118.26.32.178/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,150.109.28.51/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,192.173.64.0/18,♻️ 自动选择,no-resolve
-  - IP-CIDR,198.38.96.0/19,♻️ 自动选择,no-resolve
-  - IP-CIDR,198.45.48.0/20,♻️ 自动选择,no-resolve
-  - IP-CIDR,203.74.95.131/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,203.74.95.139/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,203.211.4.169/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,203.211.4.193/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,210.201.32.8/32,♻️ 自动选择,no-resolve
-  - IP-CIDR,210.201.32.11/32,♻️ 自动选择,no-resolve
-  - DOMAIN-SUFFIX,twitch.tv,♻️ 自动选择
+  - DOMAIN-SUFFIX,git.io,UQUICK
+  - DOMAIN-SUFFIX,gitbooks.io,UQUICK
+  - DOMAIN-SUFFIX,rawgit.com,UQUICK
+  - IP-CIDR,20.205.243.166/8,UQUICK,no-resolve
+  - IP-CIDR,23.211.15.99/32,UQUICK,no-resolve
+  - IP-CIDR,23.246.0.0/18,UQUICK,no-resolve
+  - IP-CIDR,34.210.42.111/32,UQUICK,no-resolve
+  - IP-CIDR,37.77.184.0/21,UQUICK,no-resolve
+  - IP-CIDR,45.57.0.0/17,UQUICK,no-resolve
+  - IP-CIDR,52.89.124.203/32,UQUICK,no-resolve
+  - IP-CIDR,54.148.37.5/32,UQUICK,no-resolve
+  - IP-CIDR,64.120.128.0/17,UQUICK,no-resolve
+  - IP-CIDR,66.197.128.0/17,UQUICK,no-resolve
+  - IP-CIDR,103.5.34.153/32,UQUICK,no-resolve
+  - IP-CIDR,108.175.32.0/20,UQUICK,no-resolve
+  - IP-CIDR,104.109.129.153/32,UQUICK,no-resolve
+  - IP-CIDR,110.238.107.47/32,UQUICK,no-resolve
+  - IP-CIDR,118.26.32.178/32,UQUICK,no-resolve
+  - IP-CIDR,150.109.28.51/32,UQUICK,no-resolve
+  - IP-CIDR,192.173.64.0/18,UQUICK,no-resolve
+  - IP-CIDR,198.38.96.0/19,UQUICK,no-resolve
+  - IP-CIDR,198.45.48.0/20,UQUICK,no-resolve
+  - IP-CIDR,203.74.95.131/32,UQUICK,no-resolve
+  - IP-CIDR,203.74.95.139/32,UQUICK,no-resolve
+  - IP-CIDR,203.211.4.169/32,UQUICK,no-resolve
+  - IP-CIDR,203.211.4.193/32,UQUICK,no-resolve
+  - IP-CIDR,210.201.32.8/32,UQUICK,no-resolve
+  - IP-CIDR,210.201.32.11/32,UQUICK,no-resolve
+  - DOMAIN-SUFFIX,twitch.tv,UQUICK
   - DOMAIN-SUFFIX,ttvnw.net,UQUICK
   - DOMAIN-SUFFIX,ted.com,UQUICK
   - DOMAIN-SUFFIX,tedcdn.com,UQUICK
   - DOMAIN-SUFFIX,youtube.com,UQUICK
   - DOMAIN-SUFFIX,addons.mozilla.org,UQUICK
-  - DOMAIN-SUFFIX,gstatic.com,♻️ 自动选择
-  - DOMAIN-SUFFIX,ytimg.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,gstatic.com,UQUICK
+  - DOMAIN-SUFFIX,ytimg.com,UQUICK
   - DOMAIN-SUFFIX,googlevideo.com,UQUICK
-  - DOMAIN-SUFFIX,ggpht.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,ggpht.com,UQUICK
   - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN,translate.googleapis.com,DIRECT
   - DOMAIN-KEYWORD,mtalk.google.com,REJECT
   - DOMAIN-KEYWORD,.google,UQUICK
   - IP-CIDR,1.255.62.0/24,DIRECT
