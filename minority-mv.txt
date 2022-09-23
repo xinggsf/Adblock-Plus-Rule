@@ -123,7 +123,7 @@ huihev.com##+js(ra,oncontextmenu|onselectstart|ondragstart|onsource,body)
 ||huihev.com/template/hepc2/img/dashang.gif$image
 
 kelatv.com##a[href*="/go.php"]
-! https://ikandy.fun/vodplay/87548-1-1/  
+! https://ikandy.fun/vodplay/87548-1-1/
 |https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
 x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 
