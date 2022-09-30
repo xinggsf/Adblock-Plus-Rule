@@ -133,15 +133,6 @@ nbys1.tv###adltop
 
 www.novipnoad.com##.bg-ad
 olehdtv.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
-||azureedge.net^$~stylesheet
-bidgear.com
-h12-media.com
-lo8ve6ygour3pea4cee.com
-majomalonic.com
-pubfuture.com
-vlitag.com
-vooodkabelochkaa.com
-zozoplatform.com
 ||olehdtv.com/upload/site/20$image
 
 pangzitv.com##+js(acis,document.getElementById,initAd)
