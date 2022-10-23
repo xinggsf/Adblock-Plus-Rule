@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202210171
+! Version: 202210231
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -62,10 +62,8 @@ m.huya.com##.ssr-wrapper>:not(.live-wrap)
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
 |https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
 |https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
-|https://a.msstatic.com/huya/main3/components/
 |https://a.msstatic.com/huya/main3/modules/chat$important
 |https://a.msstatic.com/huya/main3/modules/gift/$important
-|https://a.msstatic.com/huya/main3/widget/
 !||va.huya.com^$websocket
 !||p2p.huya.com/huyalive/$websocket,xhr
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
@@ -99,10 +97,6 @@ xg.jiezoiq.cn
 eqlidke.cn
 
 dm233.cc##.playleft:style(height:620px!important)
-xg.flsfzr.cn
-wlwblog.top
-qsnyswg.cn
-20under20ivy.com
 dm233.cc###dh-box:style(left:96vw!important;margin-left:0!important;)
 
 ||ddrk.me/vjs-plugins/videojs.das.min.js^$script
@@ -132,9 +126,9 @@ z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
 nivod.tv###adltop
 ||nivod.tv/image/ad$image
 
-www.novipnoad.com##.bg-ad
-olehdtv.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
-||olehdtv.com/upload/site/20$image
+novipnoad.com##.bg-ad
+olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
+||olevod.com/upload/site/20$image
 
 pangzitv.com##+js(acis,document.getElementById,initAd)
 pangzitv.com###pop
@@ -178,12 +172,3 @@ zhuaijiong.cn
 
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
-
-!https://youtubeproxy.win/
-adnxs.com
-adsrvr.org
-adsymptotic.com
-tapad.com
-!https://www.mirror.co.uk/all-about/youtubes
-adsafeprotected.com
-smartadserver.com

@@ -80,6 +80,7 @@ proxy-groups:
       - US_b9141e66a2b0
       - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
+    strategy: round-robin
     interval: 300
   - name: UDOWNLOAD
     type: fallback
