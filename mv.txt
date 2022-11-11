@@ -84,6 +84,8 @@ de.as.pptv.com
 ! 风行网： fun.tv
 pub.funshion.com
 
+1905.com##+js(json-prune,videolink)
+
 @@||tb.mgtv.com/sdk/*/ad-sdk.
 ad-survey.com
 ||video.da.mgtv.com/$media
