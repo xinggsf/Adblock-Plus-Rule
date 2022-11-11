@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202211101
+! Version: 202211121
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -23,6 +23,8 @@ gtags.net
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 ||acs.youku.com/h5/mopen.youku.danmu.
 
+bilibili.com##+js(set, __INITIAL_STATE__.adData, {})
+bilibili.com##+js(set, __INITIAL_STATE__.locsData, null)
 www.bilibili.com##+js(set,Sentry.init,noopFunc)
 ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
