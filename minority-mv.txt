@@ -6,7 +6,6 @@
 
 ##a.disabled
 
-iqiyi.com##.detail-sd, .qy-search~*
 ! 禁用AI奇观
 iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
@@ -26,7 +25,7 @@ v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 bilibili.com##+js(set, __INITIAL_STATE__.adData, {})
 bilibili.com##+js(set, __INITIAL_STATE__.locsData, null)
 www.bilibili.com##+js(set,Sentry.init,noopFunc)
-||api.bilibili.com/x/click-interface/click/$xhr
+! ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
 ||bilibili.com/page-proxy/game-nav.html$subdocument
