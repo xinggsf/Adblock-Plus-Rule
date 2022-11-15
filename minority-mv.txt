@@ -159,9 +159,8 @@ www.ttsp.tv###playad1
 ||img.imyyds.com/adimges/$image
 
 ! TVB云播 HK 港台影视
-tvyb03.com###hth
-||pic.rmb.bdstatic.com/$image,domain=tvyb03.com
-||cfimg.cnyuncdn.com/0$image,domain=tvyb03.com
+tvyb03.com###hth,a[href="/e1111.html"]
+||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
 vidhub.cc,vidhub.top###player_pause
