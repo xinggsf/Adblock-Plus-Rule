@@ -29,7 +29,6 @@ www.bilibili.com##+js(set,Sentry.init,noopFunc)
 chat.bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
 ||bilibili.com/page-proxy/game-nav.html$subdocument
-||www.bilibili.com^$doc,queryprune=~p
 |https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
