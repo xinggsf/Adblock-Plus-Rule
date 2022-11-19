@@ -71,7 +71,7 @@ bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||hdslb.com/bfs/sycp/creative_img/$image
 cm.bilibili.com
-web-player-tracker.biliapi.net
+||hdslb.com/bfs/static/jinkela/long/js/sentry/$script
 
 acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
 ||aixifan.com/static/*/appGuide/

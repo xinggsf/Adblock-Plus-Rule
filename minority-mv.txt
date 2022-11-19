@@ -24,12 +24,11 @@ v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 
 ! bilibili.com##+js(set, __INITIAL_STATE__.adData, {})
 ! bilibili.com##+js(set, __INITIAL_STATE__.locsData, null)
-||hdslb.com/bfs/static/jinkela/long/js/sentry/$script
 ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
+||hdslb.com/bfs/seed/log/report/log-reporter.js
 ||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
 ||bilibili.com/page-proxy/game-nav.html$subdocument
-|https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 ||v.qq.com^$subdocument
