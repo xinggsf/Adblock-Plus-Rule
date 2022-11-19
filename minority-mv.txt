@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202211191
+! Version: 202211201
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -26,7 +26,6 @@ v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 ! bilibili.com##+js(set, __INITIAL_STATE__.locsData, null)
 ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
-||hdslb.com/bfs/static/jinkela/long/js/sentry/$script
 ||hdslb.com/bfs/seed/log/report/log-reporter.js
 ||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
 ||bilibili.com/page-proxy/game-nav.html$subdocument
@@ -117,6 +116,8 @@ kelatv.com##a[href*="/go.php"]
 ! https://ikandy.fun/vodplay/87548-1-1/
 |https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
 x.mmiyue.com##+js(set,killAdKiller,noopFunc)
+ikandy.fun##div:has(>b[onclick])
+ikandy.fun##marquee, img[onclick]
 
 z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
 ! https://www.nivod.tv/
