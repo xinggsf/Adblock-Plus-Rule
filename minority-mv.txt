@@ -32,8 +32,8 @@ chat.bilibili.com
 |https://s1.hdslb.com/bfs/seed/log/report/log-reporter.js
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
-||v.qq.com/$subdocument
-||video.qq.com/getcookie/cookie.html$subdocument
+||v.qq.com^$subdocument
+||video.qq.com^$subdocument
 ||mfm.video.qq.com/danmu
 dm.video.qq.com
 ||video.qq.com/danmu_manage/$xhr
