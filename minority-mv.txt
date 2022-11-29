@@ -36,7 +36,6 @@ v.qq.com##.wrapper.mod_vip_popup, #mask_layer
 ||mfm.video.qq.com/danmu
 dm.video.qq.com
 ||video.qq.com/danmu_manage/$xhr
-!||ra.gtimg.com/web/crystal/v*/crystal-min.js$script
 tv.sohu.com###qflivetg,div.right>.adv
 
 www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
@@ -119,7 +118,7 @@ x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 ikandy.fun##div:has(>b[onclick])
 ikandy.fun##marquee, img[onclick]
 
-z1.m1907.cn,nxflv.com##+js(noeval-if, pushState)
+im1907.top,nxflv.com##+js(noeval-if, pushState)
 ! https://www.nivod.tv/
 nivod.tv###adltop
 ||nivod.tv/image/ad$image
