@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202211201
+! Version: 202212021
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -62,7 +62,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olehd.com|olevod.*|xb15.cc
-! https://www.xyhdm.cc/ 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
+! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
@@ -79,7 +79,6 @@ ejktj.com
 ||bibilm.com^$script,3p
 bimiacg4.net##.tuiguang,#bkcl
 
-!巴适影院 www.gdzidong.com www.bashiyy.com
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
 qrserver.com
@@ -101,15 +100,7 @@ dmh8.me##body>a
 dmh8.me##+js(acis,document.writeln)
 f77j6t2b.com
 yrqwnc.cn
-! https://www.yaliyy.com/play/132772-0-0.html
-
 eacg.net##+js(set, devtoolsDetector, {})
-!|https://cdn.jsdelivr.net/gh/k8dmss/dongman/js/devtools-detector.js
-linjuyihao.com
-
-huihev.com##+js(ra,oncontextmenu|onselectstart|ondragstart|onsource,body)
-||huihev.com/template/hstz.js$script
-||huihev.com/template/hepc2/img/dashang.gif$image
 
 kelatv.com##a[href*="/go.php"]
 ! https://ikandy.fun/vodplay/87548-1-1/
@@ -128,10 +119,6 @@ novipnoad.com##.bg-ad
 olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||olevod.com/upload/site/20$image
 
-pangzitv.com##+js(acis,document.getElementById,initAd)
-pangzitv.com###pop
-||pangzitv.com/template/*/js/ads3.js
-
 ! 片库网 https://www.btnull.org/py/aGrpO_5.html?164514
 ! btnull.*##+js(set,pycount,0)
 ! btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
@@ -141,11 +128,6 @@ pangzitv.com###pop
 
 www.qdm66.com##.close-box.tips
 qiqidongman.com##.flash-check-box, .AACC2,#rela_f
-! 2022-01-23 https://www.sbdm.net
-@@||a.yximgs.com/bs2/ad-$media,domain=sbdm.net
-
-! 垃圾、evil站点，有钓鱼嫌疑
-tangrenjie.tv
 
 www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
@@ -166,4 +148,8 @@ kowqd3.top
 zhuaijiong.cn
 
 yhdm.nl###x-play:style(height:600px)
+eehuzaih.com
+inklinkor.com
 yhdm.nl###x-play::before
+
+!推： www.dmtvw.com == www.xyhdm.cc www.yhdmp.cc www.ttsp.tv www.idkdy.com
