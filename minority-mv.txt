@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202212021
+! Version: 202212051
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -64,6 +64,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 *.gif|$image,domain=91meijuw.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olehd.com|olevod.*|xb15.cc
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijuw.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
+88hd.com##.MacPlayer:style(height:480px!important)
 www.bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 ! 2022-06-11 https://www.555kyy.com
@@ -139,7 +140,7 @@ tvyb03.com###hth,a[href="/e1111.html"]
 tvyb03.com##+js(acis,document.writeln)
 
 vidhub.cc,vidhub.top###player_pause
-vidhub.cc,vidhub.top##.MacPlayer:style(height:630px!important)
+vidhub.*##.MacPlayer:style(height:630px!important)
 ||vidhub.cc/upload/art/rgsp-$image
 ||vidhub.cc/player/buffer.html$subdocument
 ||vidhub.top/player/buffer.html$subdocument
