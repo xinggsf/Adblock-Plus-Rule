@@ -108,6 +108,8 @@ rules:
   - DOMAIN-SUFFIX,git.io,UQUICK
   - DOMAIN-SUFFIX,gitbooks.io,UQUICK
   - DOMAIN-SUFFIX,rawgit.com,UQUICK
+  # github git推送地址
+  - IP-CIDR,20.205.243.166/24,UQUICK,no-resolve
   - IP-CIDR,23.211.15.99/32,UQUICK,no-resolve
   - IP-CIDR,23.246.0.0/18,UQUICK,no-resolve
   - IP-CIDR,34.210.42.111/32,UQUICK,no-resolve
