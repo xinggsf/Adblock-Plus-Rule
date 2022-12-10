@@ -143,7 +143,6 @@ g.huya.com
 ||msstatic.com/huya/*/p2plib.js$script
 
 www.ted.com##.gm-fp-body .justify-center.tracking-tightest
-litix.io
 ||onetrust.
 
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf

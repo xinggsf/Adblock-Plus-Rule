@@ -15,79 +15,57 @@ tun:
   auto-route: true # auto set global route
   auto-detect-interface: true # conflict with interface-name
 dns:
-  enable: false
-  listen: 0.0.0.0:53
-  # ipv6: false # when the false, response to AAAA questions will be empty
-
-  # These nameservers are used to resolve the DNS nameserver hostnames below.
-  # Specify IP addresses only
-  default-nameserver:
-    - 202.101.226.68
-    - 202.101.226.69
-
-  enhanced-mode: redir-host # or fake-ip
-  fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
-  # use-hosts: true # lookup hosts and return IP record
-
-  # Hostnames in this list will not be resolved with fake IPs
-  # i.e. questions to these domain names will always be answered with their
-  # real IP addresses
-  # fake-ip-filter:
-  #   - '*.lan'
-  #   - localhost.ptlogin2.qq.com
-
-  # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
-  # All DNS questions are sent directly to the nameserver, without proxies
-  # involved. Clash answers the DNS question with the first result gathered.
+  enabled: true
   nameserver:
-    - 114.114.114.114 # default value
-    - 8.8.8.8 # default value
-    - tls://dns.rubyfish.cn:853 # DNS over TLS
-    - https://1.1.1.1/dns-query # DNS over HTTPS
-    - dhcp://en0 # dns from dhcp
-
+    - 202.101.226.69
+    - 204.74.101.1
+  fallback:
+    - 8.8.8.8
+    # - 8.8.4.4
+    # - tls://dns.rubyfish.cn:853 # DNS over TLS
+    # - https://1.1.1.1/dns-query # DNS over HTTPS
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
-  - {name: US_b9141e66a2b0, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: jp_protocolbuffer, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com}
 proxy-providers:
   learnhard:
     type: http
-    url: https://raw.iqiq.io/learnhard-cn/free_proxy_ss/main/clash/providers/provider_home_netflix.yaml
-    interval: 1600
+    url: https://raw.fastgit.org/learnhard-cn/free_proxy_ss/main/clash/providers/provider_netflix.yaml
+    interval: 900
     path: learnhard.yaml
     health-check:
       enable: true
       interval: 600
-      # lazy: true
+      lazy: true
       url: http://www.gstatic.com/generate_204
   subp:
     type: file
     path: proxys.yml
     health-check:
       enable: true
-      interval: 1500
+      interval: 500
       url: http://www.gstatic.com/generate_204
 proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     use:
       - subp
-      - learnhard
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: UQUICK
     type: load-balance
     proxies:
-      - US_b9141e66a2b0
+      - jp_protocolbuffer
       - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
+    interval: 90
     strategy: round-robin
-    interval: 300
   - name: UDOWNLOAD
     type: fallback
     proxies:
       - DIRECT
       - UQUICK
-      - ♻️ 自动选择
     url: http://www.gstatic.com/generate_204
     interval: 330
 # load-balance url-test fallback
@@ -95,44 +73,18 @@ rules:
   - DOMAIN,hm.baidu.com,REJECT
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD
   - DOMAIN-SUFFIX,onion,DIRECT
+  - DOMAIN-SUFFIX,fastgit.org,DIRECT
   - DOMAIN-SUFFIX,cf,DIRECT
-  - DOMAIN-SUFFIX,duckduckgo.com,UQUICK
+  - DOMAIN-SUFFIX,akamaized.net,DIRECT
   - DOMAIN-SUFFIX,t.me,UQUICK
-  - DOMAIN-SUFFIX,dmhy.org,UQUICK
-  - DOMAIN-SUFFIX,91meijuw.com,DIRECT
-  - DOMAIN-SUFFIX,tangrenjie.tv,REJECT
-  - DOMAIN-SUFFIX,nunuyy2.org,DIRECT
-  - DOMAIN-SUFFIX,qdm8.com,DIRECT
-  - DOMAIN-SUFFIX,yatu.tv,DIRECT
-  - DOMAIN-SUFFIX,xiahi.com,UDOWNLOAD
-  - DOMAIN-SUFFIX,789zy.cc,DIRECT
-  - DOMAIN-SUFFIX,baobuzz.com,DIRECT
-  - DOMAIN-SUFFIX,hhmm0.com,DIRECT
-  - DOMAIN-KEYWORD,.bdzybf,DIRECT
-  - DOMAIN-SUFFIX,ziyuan605.com,DIRECT
-  - DOMAIN-SUFFIX,monidai.com,DIRECT
-  - DOMAIN-SUFFIX,akamaized.net,UQUICK
-  - DOMAIN-SUFFIX,k8hdw.com,UQUICK
-  - DOMAIN-SUFFIX,if101.tv,UQUICK
-  - DOMAIN-SUFFIX,kaooooo.com,UQUICK
-  - DOMAIN-SUFFIX,olevod.tv,UQUICK
-  - DOMAIN-SUFFIX,olemovienews.com,DIRECT
-  - DOMAIN-SUFFIX,olevod.com,UQUICK
-  - DOMAIN-SUFFIX,olehd.com,UQUICK
-  - DOMAIN-KEYWORD,taopianplay,DIRECT
   - DOMAIN-SUFFIX,w3schools.com,UQUICK
-  - DOMAIN-SUFFIX,redditmedia.com,UQUICK
-  - DOMAIN-SUFFIX,redditstatic.com,UQUICK
-  - DOMAIN-SUFFIX,reddit.com,UQUICK
+  - DOMAIN-KEYWORD,.reddit,UQUICK
   - DOMAIN-SUFFIX,aiosearch.com,UQUICK
   - DOMAIN-SUFFIX,ask.com,UQUICK
   - DOMAIN-SUFFIX,startpage.com,UQUICK
   - DOMAIN-SUFFIX,facebook.com,UQUICK
   - DOMAIN-SUFFIX,twitter.com,UQUICK
   - DOMAIN-SUFFIX,twimg.com,UQUICK
-  - DOMAIN-SUFFIX,free-ss.site,UQUICK
-  - DOMAIN-SUFFIX,grossman.io,UQUICK
-  - DOMAIN-SUFFIX,gitter.im,UQUICK
   - DOMAIN-SUFFIX,nytimes.com,UQUICK
   - DOMAIN-SUFFIX,voachinese.com,UQUICK
   - DOMAIN-SUFFIX,voanews.com,UQUICK
@@ -148,6 +100,7 @@ rules:
   - DOMAIN-KEYWORD,.blogspot,UQUICK
   - DOMAIN-SUFFIX,appspot.com,UQUICK
   - DOMAIN-SUFFIX,chrome.com,UQUICK
+  - DOMAIN-SUFFIX,duckduckgo.com,UQUICK
   - DOMAIN-SUFFIX,v2ex.com,UQUICK
   - DOMAIN-SUFFIX,gitlab-static.net,UQUICK
   - DOMAIN-SUFFIX,gitcdn.xyz,UQUICK
@@ -155,7 +108,6 @@ rules:
   - DOMAIN-SUFFIX,git.io,UQUICK
   - DOMAIN-SUFFIX,gitbooks.io,UQUICK
   - DOMAIN-SUFFIX,rawgit.com,UQUICK
-  - IP-CIDR,20.205.243.166/8,UQUICK,no-resolve
   - IP-CIDR,23.211.15.99/32,UQUICK,no-resolve
   - IP-CIDR,23.246.0.0/18,UQUICK,no-resolve
   - IP-CIDR,34.210.42.111/32,UQUICK,no-resolve
@@ -188,10 +140,8 @@ rules:
   - DOMAIN-SUFFIX,addons.mozilla.org,UQUICK
   - DOMAIN-SUFFIX,gstatic.com,UQUICK
   - DOMAIN-SUFFIX,ytimg.com,UQUICK
-  - DOMAIN-SUFFIX,googlevideo.com,UQUICK
   - DOMAIN-SUFFIX,ggpht.com,UQUICK
   - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN,translate.googleapis.com,DIRECT
   - DOMAIN-KEYWORD,.google,UQUICK
   - IP-CIDR,1.255.62.0/24,DIRECT
   - IP-CIDR,182.254.116.0/24,DIRECT
