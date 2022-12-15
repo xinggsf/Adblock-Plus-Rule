@@ -31,7 +31,7 @@ proxies:
 proxy-providers:
   learnhard:
     type: http
-    url: https://raw.fastgit.org/learnhard-cn/free_proxy_ss/main/clash/providers/provider_netflix.yaml
+    url: https://raw.iqiq.io/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml
     interval: 900
     path: learnhard.yaml
     health-check:
@@ -51,6 +51,7 @@ proxy-groups:
     type: url-test
     use:
       - subp
+      - learnhard
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: UQUICK
