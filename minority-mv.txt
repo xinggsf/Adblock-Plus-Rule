@@ -61,9 +61,9 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 |https://a.msstatic.com/huya/main3/modules/gift/$important
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|duboku.su|tvyb03.com|hxys.tv|kuhuiv.com|olehd.com|olevod.*|xb15.cc
+*.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|hxys.tv|kuhuiv.com|olevod.*
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88hd.com,91meijutv.com,tvyb03.com,vidhub.cc,vidhub.top##a[target=_blank][href^=http]
+88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88hd.com##.MacPlayer:style(height:480px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
@@ -100,18 +100,16 @@ dmh8.me##+js(acis,document.writeln)
 f77j6t2b.com
 yrqwnc.cn
 eacg.net##+js(set, devtoolsDetector, {})
-
 kelatv.com##a[href*="/go.php"]
-! https://ikandy.fun/vodplay/87548-1-1/
-|https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
-x.mmiyue.com##+js(set,killAdKiller,noopFunc)
+
 ikandy.fun##div:has(>b[onclick])
 ikandy.fun##img[onclick]:remove()
 ikandy.fun##.marquee_outer, b[onclick]+a
+|https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
+x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 |https://ikandy.fun/loadingbk.html^$subdocument
 
-im1907.top,nxflv.cc,nxflv.com##+js(noeval-if, pushState)
-! https://www.nivod.tv/
+im1907.top,nxflv.*##+js(noeval-if, pushState)
 nivod.tv###adltop
 ||nivod.tv/image/ad$image
 
@@ -119,7 +117,6 @@ novipnoad.com##.bg-ad
 olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||olevod.com/upload/site/20$image
 
-! 片库网 https://www.btnull.org/py/aGrpO_5.html?164514
 ! btnull.*##+js(set,pycount,0)
 ! btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
@@ -131,7 +128,7 @@ www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
 ||img.imyyds.com/adimges/$image
 
-! TVB云播 HK 港台影视
+! TVB云播  港台影视
 tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
