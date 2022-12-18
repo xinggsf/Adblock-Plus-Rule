@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202212121
+! Version: 202212181
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -95,8 +95,8 @@ ddys.tv,ddys2.me##+js(set, Object.prototype.ads, null)
 ||loli.io^$image,domain=ddys.tv|ddys2.me
 
 !樱花动漫 http://www.imomoe.jp/
-dmh8.me##body>a
-dmh8.me##+js(acis,document.writeln)
+dm88.me##body>a
+dm88.me##+js(acis,document.writeln)
 f77j6t2b.com
 yrqwnc.cn
 eacg.net##+js(set, devtoolsDetector, {})
