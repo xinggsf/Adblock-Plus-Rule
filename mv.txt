@@ -144,6 +144,7 @@ g.huya.com
 
 www.ted.com##.gm-fp-body .justify-center.tracking-tightest
 ||onetrust.
+litix.io
 
 youtube.com##.masthead-ad-control, .ad-div, .pyv-afc-ads-container, #promotion-shelf
 *_ad_$media,domain=youtube.com,3p

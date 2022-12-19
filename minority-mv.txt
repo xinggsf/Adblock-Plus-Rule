@@ -108,6 +108,7 @@ ikandy.fun##.marquee_outer, b[onclick]+a
 |https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
 x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 |https://ikandy.fun/loadingbk.html^$subdocument
+||netease.com^$image,domain=ikandy.fun
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 nivod.tv###adltop
