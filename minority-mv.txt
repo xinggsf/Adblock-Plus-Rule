@@ -118,7 +118,7 @@ novipnoad.com##.bg-ad
 olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||olevod.com/upload/site/20$image
 
-! btnull.*##+js(set,pycount,0)
+! pkmp4.com btnull.*##+js(set,pycount,0)
 ! btnull.*##+js(set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
 ||btnull.re/ajax/historys/
