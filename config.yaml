@@ -18,14 +18,15 @@ dns:
   enabled: true
   nameserver:
     - 202.101.226.69
-    - 204.74.101.1
+  # 提供 fallback 时，如果GEOIP非 CN 中国时使用 fallback 解析
   fallback:
-    - 8.8.8.8
-    # - 8.8.4.4
+    - tls://8.8.4.4:853 # cloudflare DNS over TLS
+    # - tls://8.8.8.8:853 # Google DNS over TLS
+    # - tls://1.0.0.1:853
+    # - tls://dns.google:853
+    - https://1.1.1.1/dns-query # cloudflare DNS over HTTPS
+    - https://dns.google/dns-query # Google DNS over HTTPS
     # - tls://dns.rubyfish.cn:853 # DNS over TLS
-    # - https://1.1.1.1/dns-query # DNS over HTTPS
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
   - {name: jp_protocolbuffer, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com}
 proxy-providers:
@@ -47,21 +48,15 @@ proxy-providers:
       interval: 500
       url: http://www.gstatic.com/generate_204
 proxy-groups:
-  - name: ♻️ 自动选择
-    type: url-test
-    use:
-      - subp
-      - learnhard
-    url: http://www.gstatic.com/generate_204
-    interval: 300
   - name: UQUICK
-    type: load-balance
+    type: load-balance # select url-test fallback
     proxies:
       - jp_protocolbuffer
-      - ♻️ 自动选择
+    use:
+      - subp
     url: http://www.gstatic.com/generate_204
     interval: 90
-    strategy: round-robin
+    strategy: round-robin # consistent-hashing
   - name: UDOWNLOAD
     type: fallback
     proxies:
@@ -69,7 +64,6 @@ proxy-groups:
       - UQUICK
     url: http://www.gstatic.com/generate_204
     interval: 330
-# load-balance url-test fallback
 rules:
   - DOMAIN,hm.baidu.com,REJECT
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD

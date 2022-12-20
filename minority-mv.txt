@@ -124,7 +124,7 @@ olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 ||btnull.re/ajax/historys/
 ||btnull.org/ajax/historys/
 
-91meijutv.com,qdm66.com##.close-box.tips
+91meijutv.com,k8hdw.com,qdm66.com##.close-box.tips
 www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
 ||img.imyyds.com/adimges/$image
