@@ -74,21 +74,16 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 ! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
 ||img.jcbdfyy.cn/upload/vod/$image
 
-||bibilm.com^$script,3p
-bimiacg4.net##.tuiguang,#bkcl
-
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
 qrserver.com
 
+bimiacg4.net##.tuiguang,#bkcl
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right
 www.citydy.com##.dplayer-web-fullscreen-fix #player-shrink,#citybanner
 xg.jiezoiq.cn
 ||fds.api.mi-img.com^$image,domain=~mi.com
 eqlidke.cn
-
-dm233.me##.playleft:style(height:620px!important)
-dm233.me###dh-box:style(left:96vw!important;margin-left:0!important;)
 
 ddys.tv,ddys2.me##+js(set, Object.prototype.ads, null)
 ! ddys.tv,ddys2.me##+js(set, Object.prototype.nopreroll_, true)
