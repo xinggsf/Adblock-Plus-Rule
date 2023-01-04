@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202212211
+! Version: 202301041
 ! Expires: 1 day
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -170,7 +170,6 @@ jads.co
 !btsow.*##body>div[id]:last-child>a:only-child
 ! 2022 https://rarbgprx.org
 statsy.net
-@@||dyncdn.me/static/20/js/jquery$script
 ||dyncdn.me/static/20/js/showads.js$script
 ||dyncdn.me/static/20/js/expla$script
 
@@ -182,11 +181,12 @@ d58zz.com
 
 ! www.haitu.tv##+js(set, document.writeln, noopFunc)
 
-dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
-dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
-dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
-dandanzan10.top,nunuyy5.org#@#+js(nowebrtc)
-dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
+dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,nunuyy5.org#@#+js(nowebrtc)
+dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
+shipostrich.com
 trustedgatetocontent.com
 wpadmngr.com
 
