@@ -33,37 +33,56 @@ proxy-providers:
   learnhard:
     type: http
     url: https://raw.iqiq.io/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml
-    interval: 900
+    interval: 800
     path: learnhard.yaml
     health-check:
       enable: true
       interval: 600
       lazy: true
       url: http://www.gstatic.com/generate_204
-  subp:
+  subp: # 暂存代理信息
     type: file
     path: proxys.yml
     health-check:
       enable: true
-      interval: 500
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  goodp: # 响应快和速度快的
+    type: file
+    path: goodp.yml
+    health-check:
+      enable: true
+      interval: 300
       url: http://www.gstatic.com/generate_204
 proxy-groups:
-  - name: UQUICK
+  - name: MV # 视频专用。网速快的
     type: load-balance # select url-test fallback
+    use:
+      - goodp
+    url: http://www.gstatic.com/generate_204
+    interval: 50
+    strategy: round-robin # consistent-hashing
+  - name: UGG # 能通过谷歌和油管IP检测的
+    type: url-test
     proxies:
       - jp_protocolbuffer
-    use:
-      - subp
     url: http://www.gstatic.com/generate_204
     interval: 90
-    strategy: round-robin # consistent-hashing
+  - name: UQUICK
+    type: load-balance
+    use:
+      - goodp
+      - subp
+    url: http://www.gstatic.com/generate_204
+    interval: 50
+    strategy: round-robin
   - name: UDOWNLOAD
     type: fallback
     proxies:
       - DIRECT
       - UQUICK
     url: http://www.gstatic.com/generate_204
-    interval: 330
+    interval: 210
 rules:
   - DOMAIN,hm.baidu.com,REJECT
   - PROCESS-NAME,IDMan.exe,UDOWNLOAD
@@ -130,12 +149,13 @@ rules:
   - IP-CIDR,210.201.32.8/32,UQUICK,no-resolve
   - IP-CIDR,210.201.32.11/32,UQUICK,no-resolve
   - DOMAIN-SUFFIX,twitch.tv,UQUICK
-  - DOMAIN-SUFFIX,ttvnw.net,UQUICK
+  - DOMAIN-SUFFIX,ttvnw.net,MV
   - DOMAIN-SUFFIX,ted.com,UQUICK
-  - DOMAIN-SUFFIX,tedcdn.com,UQUICK
+  - DOMAIN-SUFFIX,tedcdn.com,MV
   - DOMAIN-SUFFIX,youtube.com,UQUICK
   - DOMAIN-SUFFIX,addons.mozilla.org,UQUICK
   - DOMAIN-SUFFIX,gstatic.com,UQUICK
+  - DOMAIN-SUFFIX,googlevideo.com,MV
   - DOMAIN-SUFFIX,ytimg.com,UQUICK
   - DOMAIN-SUFFIX,ggpht.com,UQUICK
   - DOMAIN-SUFFIX,cn,DIRECT
