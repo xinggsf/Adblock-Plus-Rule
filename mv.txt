@@ -10,12 +10,11 @@ yy.com,le.com##+js(nowebrtc)
 ||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
-m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
-!m.youku.com,v.youku.com##+js(cookie-remover, cna)
+!m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 atm.youku.com
 cad.youku.com
 @@||mmstat.com^$domain=youku.com
-||cibntv.net/youku/$media,mp4
+||cibntv.net/youku/$mp4
 ||valipl.cp31.ott.cibntv.net/$media
 |https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
