@@ -19,6 +19,7 @@ gentags.net
 gtags.net
 ||webrtc.github.io^$script,3p
 
+!||cp31.ott.cibntv.net/*/ad/X*.ts?$xhr,mp4,domain=youku.com
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 ||acs.youku.com/h5/mopen.youku.danmu.
 
