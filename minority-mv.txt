@@ -89,7 +89,8 @@ eqlidke.cn
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
 ||loli.io^$image,domain=ddys.*
-||bj.bcebos.com^$image,domain=ddys.*
+||help-ol.bj.bcebos.com/972a3ea966dbe5ced6df6fc1aa9a4490.jpg^$image,domain=ddys.*
+||help-ol.bj.bcebos.com/ab4639662b03279c6a03785e6bb399a7.jpg^$image,domain=ddys.*
 
 !樱花动漫 http://www.imomoe.jp/
 dm88.me##body>a
