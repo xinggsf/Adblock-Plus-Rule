@@ -146,7 +146,7 @@ inklinkor.com
 yhdm.nl###x-play::before
 
 ! www.dmtvw.com --> www.xyhdm.cc www.yhdmp.cc www.ttsp.tv www.idkdy.com
-||hd.youyhn.com/202*.ts|$xhr,redirect=noop-0.1s.mp3,domain=xyhdm.cc
+! ||hd.youyhn.com/202*.ts|$xhr,redirect=noop-0.1s.mp3,domain=xyhdm.cc
 gdxinya.com
 |https://abb.$script,3p
 搜狐网络科技.中国
