@@ -103,6 +103,8 @@ kelatv.com##a[href*="/go.php"]
 ikandy.fun##div:has(>b[onclick])
 ikandy.fun##img[onclick]:remove()
 ikandy.fun##.marquee_outer, b[onclick]+a
+|https://x.mmiyue.com/x/statics/js/fuck-debugger.js^$script
+x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 |https://ikandy.fun/loadingbk.html^$subdocument
 ||netease.com^$image,domain=ikandy.fun
 
