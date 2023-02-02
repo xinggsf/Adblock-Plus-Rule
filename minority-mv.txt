@@ -116,7 +116,7 @@ olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
 
 ! pkmp4.com btnull.*##+js(set,pycount,0) (set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
-||btnull.re/ajax/historys/
+||btnull.nu/ajax/historys/
 ||btnull.org/ajax/historys/
 
 91meijutv.com,k8hdw.com,qdm66.com##.close-box.tips
