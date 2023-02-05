@@ -83,7 +83,7 @@ bimiacg4.net##.tuiguang,#bkcl
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right
 www.citydy.com##.dplayer-web-fullscreen-fix #player-shrink,#citybanner
 xg.jiezoiq.cn
-||fds.api.mi-img.com^$image,domain=~mi.com
+||fds.api.mi-img.com^$image,domain=~mi.com|~miui.com|~xiaomi.cn
 eqlidke.cn
 
 ddys.*##+js(set, Object.prototype.ads, null)
