@@ -9,7 +9,6 @@
 ||cpro.$domain=~baidu.com
 ada.baidu.com
 cstm.baidu.com
-dlswbr.baidu.com
 ||dup.baidustatic.com/
 ||ubmcmm.baidustatic.com/
 ||adscdn.baidu.com/
