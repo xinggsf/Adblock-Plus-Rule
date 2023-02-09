@@ -132,7 +132,7 @@ tvyb03.com###hth,a[href="/e1111.html"]
 tvyb03.com##+js(acis,document.writeln)
 
 vidhub.cc,vidhub.top###player_pause
-vidhub.*##.MacPlayer:style(height:630px!important)
+vidhub.*,www.jujiso.com##.MacPlayer:style(height:630px!important)
 ||vidhub.cc/upload/art/rgsp-$image
 ||vidhub.cc/player/buffer.html$subdocument
 ||vidhub.top/player/buffer.html$subdocument
