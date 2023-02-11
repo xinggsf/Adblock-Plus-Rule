@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202302021
+! Version: 202302111
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -148,5 +148,6 @@ yhdm.nl###x-play::before
 ! www.dmtvw.com --> www.xyhdm.cc www.yhdmp.cc www.ttsp.tv www.idkdy.com
 ! ||hd.youyhn.com/202*.ts|$xhr,redirect=noop-0.1s.mp3,domain=xyhdm.cc
 gdxinya.com
+whfyhouse.com
 |https://abb.$script,3p
 搜狐网络科技.中国
