@@ -95,8 +95,6 @@ ddys.*##+js(set, Object.prototype.ads, null)
 !樱花动漫 http://www.imomoe.jp/
 dm88.me##body>a
 dm88.me##+js(acis,document.writeln)
-f77j6t2b.com
-yrqwnc.cn
 eacg.net##+js(set, devtoolsDetector, {})
 kelatv.com##a[href*="/go.php"]
 
@@ -137,17 +135,15 @@ vidhub.*,www.jujiso.com##.MacPlayer:style(height:630px!important)
 ||vidhub.cc/player/buffer.html$subdocument
 ||vidhub.top/player/buffer.html$subdocument
 wsdy.top##+js(set,fed.module,{})
-kowqd3.top
-zhuaijiong.cn
 
 yhdm.nl###x-play:style(height:600px)
-eehuzaih.com
-inklinkor.com
 yhdm.nl###x-play::before
 
 ! www.dmtvw.com --> www.xyhdm.cc www.yhdmp.cc www.ttsp.tv www.idkdy.com
 ! ||hd.youyhn.com/202*.ts|$xhr,redirect=noop-0.1s.mp3,domain=xyhdm.cc
+dedcrfvdj.xyz
 gdxinya.com
+vokmhydy.xyz
 whfyhouse.com
 |https://abb.$script,3p
 搜狐网络科技.中国
