@@ -97,7 +97,7 @@ dm88.me##body>a
 dm88.me##+js(acis,document.writeln)
 eacg.net##+js(set, devtoolsDetector, {})
 www.fantuanhd.com##.MacPlayer:style(padding-bottom:0!important)
-www.fantuanhd.com###t-img-box
+www.fantuanhd.com###t-img-box:remove()
 kelatv.com##a[href*="/go.php"]
 
 ikandy.fun##div:has(>b[onclick])
