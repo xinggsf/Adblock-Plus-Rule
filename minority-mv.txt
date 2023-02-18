@@ -88,7 +88,6 @@ eqlidke.cn
 
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
-||loli.io^$image,domain=ddys.*
 ddys.*##.cfa_popup:remove()
 ddys.*###sajdhfbjwhe:remove()
 ddys.*##main.site-main > div:first-child:remove()
