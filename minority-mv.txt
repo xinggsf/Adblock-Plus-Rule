@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202302181
+! Version: 202302182
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -89,8 +89,9 @@ eqlidke.cn
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
 ||loli.io^$image,domain=ddys.*
-ddys.*###fkasjgf:remove()
+ddys.*##.cfa_popup:remove()
 ddys.*###sajdhfbjwhe:remove()
+ddys.*##.site-main > div:first-child:remove()
 
 !樱花动漫 http://www.imomoe.jp/
 dm88.me##body>a
