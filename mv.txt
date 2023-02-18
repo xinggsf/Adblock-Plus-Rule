@@ -163,7 +163,7 @@ waust.at
 ||btsow.beauty/app/jav$image
 jads.co
 |https://tellme.pw/go/jav$popup
-|https://$script,subdocument,popup,3p,domain=btsow.beauty|dandanzan10.top|nunuyingyuan.com|rarbgprx.org
+|https://$script,subdocument,popup,3p,domain=btsow.beauty|dandanzan10.top|dandanzan.*|nunuyingyuan.com|nunuyy5.org|rarbgprx.org
 !btsow.beauty##+js(aeld, click, popunder)
 !btsow.*##body>div[id]:last-child>a:only-child
 ! 2022 https://rarbgprx.org
@@ -178,12 +178,12 @@ hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 d58zz.com
 ! mgtvyy.com www.haitu.tv
 
-996dm.com,dandanzan.com,dandanzan10.top,nunuyingyuan.com,btnull.*##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\./)
-dandanzan.com,dandanzan10.top,nunuyingyuan.com##+js(set,RTCPeerConnection,null)
-dandanzan.com,dandanzan10.top,nunuyingyuan.com##+js(set,webkitRTCPeerConnection,null)
-dandanzan.com,dandanzan10.top,nunuyingyuan.com##+js(set,mozRTCPeerConnection,null)
-dandanzan.com,dandanzan10.top,nunuyingyuan.com#@#+js(nowebrtc)
-dandanzan.com,dandanzan10.top,nunuyingyuan.com##.gm-fp-body video:style(max-height:100%!important)
+996dm.com,dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org,btnull.*##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\./)
+dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org##+js(set,RTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
+dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org#@#+js(nowebrtc)
+dandanzan.com,dandanzan10.top,dandanzan.cf,nunuyingyuan.com,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
 shipostrich.com
 trustedgatetocontent.com
 wpadmngr.com
