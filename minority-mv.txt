@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202302191
+! Version: 202302201
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -69,22 +69,15 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
-! 2022-06-11 https://www.555kyy.com
-||hdslb.com/bfs/album/$image,domain=555kyy.com|555dsv.com|666ye.com
-||1256964.com^$image
-! 2022-08-03 https://www.666ye.com/index.php/vod/play/id/13320/sid/1/nid/4.html
-||img.jcbdfyy.cn/upload/vod/$image
-
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
 qrserver.com
 
+bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 www.citydy.com##.dplayer-web-fullscreen-fix .player-right
 www.citydy.com##.dplayer-web-fullscreen-fix #player-shrink,#citybanner
-xg.jiezoiq.cn
 ||fds.api.mi-img.com^$image,domain=~mi.com|~miui.com|~xiaomi.cn
-eqlidke.cn
 
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
@@ -113,9 +106,6 @@ nivod.tv###adltop
 ||nivod.tv/image/ad$image
 
 novipnoad.com##.bg-ad
-olevod.com##.bg_wtop_banner, .guangao, a[data-ab-css-background]
-||olevod.com/upload/site/20$image
-
 ! pkmp4.com btnull.*##+js(set,pycount,0) (set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
 ||btnull.nu/ajax/historys/
