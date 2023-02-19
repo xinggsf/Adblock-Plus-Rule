@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202301181
+! Version: 202302191
 ! Expires: 2 days
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -119,6 +119,7 @@ tanx.com
 */vamaker/
 wegowan.com
 wrating.com
+wwads.cn
 *##.ad
 *##.ad960-90
 *##.adbox
