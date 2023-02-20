@@ -62,7 +62,7 @@ www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .pl
 |https://a.msstatic.com/huya/main3/modules/gift/$important
 zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
-*.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|hxys.tv|kuhuiv.com|olevod.*
+*.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88hd.com##.MacPlayer:style(height:480px!important)
@@ -102,10 +102,12 @@ x.mmiyue.com##+js(set,killAdKiller,noopFunc)
 ||netease.com^$image,domain=ikandy.fun
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
-nivod.tv###adltop
+www.nivod.tv##.nav-ads:remove()
+www.nivod.tv###my_saberfeedback_button
 ||nivod.tv/image/ad$image
 
 novipnoad.com##.bg-ad
+olevod.com##.gm-fp-body .plyr__controls:style(bottom:33px!important)
 ! pkmp4.com btnull.*##+js(set,pycount,0) (set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
 ||btnull.nu/ajax/historys/
