@@ -107,7 +107,7 @@ www.nivod.tv###my_saberfeedback_button
 ||nivod.tv/image/ad$image
 
 novipnoad.com##.bg-ad
-olevod.com##.box-mask.gm-fp-wrapper:style(padding-top:0!important)
+! olevod.com##.box-mask.gm-fp-wrapper:style(padding-top:0!important)
 ! pkmp4.com btnull.*##+js(set,pycount,0) (set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
 ||btnull.nu/ajax/historys/
