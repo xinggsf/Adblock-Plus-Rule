@@ -67,7 +67,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88hd.com##.MacPlayer:style(height:480px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
-91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.tv,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
+91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
