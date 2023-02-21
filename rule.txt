@@ -61,6 +61,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 
 ||ad.
 */ad.
+@@||xxxy.jnu.edu.cn/_upload/tpl/08/ad/2221/template2221/$script
 */ad/$script,subdocument,media
 */ad_
 @@||www.microsoft.com/onerfstatics/marketingsites-*/ad-$script
