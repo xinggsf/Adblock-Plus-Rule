@@ -195,6 +195,7 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 ||yanetflix.com/upload/vod/$image
 
 www.sbdm.net##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
+www.sbdm.net##.ads_all:remove()
 |https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
