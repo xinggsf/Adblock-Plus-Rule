@@ -67,7 +67,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88hd.com##.MacPlayer:style(height:480px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
-91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
+91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,imjw.cc,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 ||bashiyy.com/static/js/plugin.js^$script
 ||gdzidong.com/static/js/plugin.js^$script
@@ -114,7 +114,7 @@ olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 ||btnull.nu/ajax/historys/
 ||btnull.org/ajax/historys/
 
-91meijutv.com,k8hdw.com,qdm66.com##.close-box.tips
+91meijutv.com,k8hdw.com,imjw.cc,qdm66.com##.close-box.tips
 www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
 ||img.imyyds.com/adimges/$image
