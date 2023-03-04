@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202302191
+! Version: 202303041
 ! Expires: 2 days
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -18,13 +18,10 @@ cstm.baidu.com
 ||f11.baidu.com/
 kstj.baidu.com
 ||pos.baidu.com/
-||sp0.baidu.com/$third-party
 ||cbjs.baidu.com/
 ||crs.baidu.com/
 ||entry.baidu.com/$subdocument
 ||hm.baidu.com/
-@@||baidu.com/customer_search/api/
-||znsv.baidu.com/
 
 ||pups.bdimg.com/
 baike.baidu.com##.after-content,#adLayerSideWrap
@@ -94,31 +91,24 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 *coinhive.min.js^$script
 ||coin-hive.com/
 doubleclick.net
-he2d.comhnjls.com.cn
 dlads.cn
-dmvbdfblevxvx.com
 ||adservice.
 ||googleadservices.
 imasdk.googleapis.com
 ||googlesyndication.com
 ||google-analytics.com
-gshtrl.top
-iclickcdn.com
 ||irs01.
 irs03.com
 cm.jd.com
 x.jd.com
 u-x.jd.com
 mediav.com
-q1qfc323.com
-sdqoi2d.com
 tanx.com
 @@||s.click.taobao.com^$popup
 ||click.taobao.com/$third-party,popunder
 ||union.
 ||vamaker.com/$third-party
 */vamaker/
-wegowan.com
 wrating.com
 wwads.cn
 *##.ad
@@ -318,7 +308,8 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35,div[adconfig_charset]
 !-------------------网易--------------------
 @@||bnet.163.com/
-||g.163.com/$~object-subrequest
+g.163.com
+||c.m.163.com^$subdocument
 ||img1.126.net/
 ||img3.126.net/
 ||img6.126.net/
