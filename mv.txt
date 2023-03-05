@@ -74,7 +74,7 @@ acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
 ||aixifan.com/static/*/appGuide/
 
 cctv.com###bgAd_div
-||imall.cctv.com/$subdocument
+!||imall.cctv.com/$subdocument
 bjcathay.com
 
 pptv.com##.advView-two,#p-mark
@@ -130,7 +130,7 @@ le.com##.min_pause_img
 ! 视频水印
 le.com##.hv_wm_logo
 
-www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
+cctv.com,www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
 douyu.com##+js(set, RTCPeerConnection.prototype.addTrack, noopFunc)
 ||douyucdn.cn/adxdsp/$image
 wan.douyu.com
