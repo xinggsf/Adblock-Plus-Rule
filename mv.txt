@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202303061
+! Version: 202303091
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -11,6 +11,7 @@ yy.com,le.com##+js(nowebrtc)
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
 !m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
+m.youku.com,v.youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?\.m3u8\?/)
 atm.youku.com
 cad.youku.com
 @@||mmstat.com^$domain=youku.com
