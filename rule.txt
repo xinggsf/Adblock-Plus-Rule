@@ -62,7 +62,8 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 */ad/$script,subdocument,media
 */ad_
 @@||www.microsoft.com/onerfstatics/marketingsites-*/ad-$script
-*/ad-
+@@||static.zhihu.com/ad-raccoon-web/$script
+*/ad-$~stylesheet
 */ad0$script
 */ad1$script
 @@||www.youtube.com/s/desktop/ad$script
