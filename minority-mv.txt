@@ -97,6 +97,7 @@ ikandy.fun##div:has(>b[onclick])
 ikandy.fun##img[onclick]:remove()
 ikandy.fun##.marquee_outer, b[onclick]+a
 |https://ikandy.fun/loadingbk.html^$subdocument
+|https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
 ||netease.com^$image,domain=ikandy.fun
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
