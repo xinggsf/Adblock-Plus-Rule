@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202304241
+! Version: 202304271
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -62,7 +62,7 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88hd.com,91meijutv.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
+88hd.com,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88hd.com##.MacPlayer:style(height:480px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,imjw.cc,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
@@ -107,6 +107,7 @@ www.nivod4.tv###my_saberfeedback_button
 novipnoad.com##.bg-ad
 olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 ||www.olevod.com/upload/site/202$image
+||static.olelive.com/uploads/file/$image
 ! pkmp4.com btnull.*##+js(set,pycount,0) (set,jQuery.fn.getScript,noopFunc)
 ||btnull.in/ajax/historys/
 ||btnull.nu/ajax/historys/
