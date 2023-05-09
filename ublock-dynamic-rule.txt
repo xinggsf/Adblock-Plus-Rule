@@ -38,17 +38,18 @@ no-csp-reports: * true
 * qqmail.com * noop
 * recaptcha.net * noop
 * sbdm.cc * noop
-* shankuwang.com * noop
 * sina.cn * noop
 * login.sina.com.cn * noop
 * sinaimg.cn * noop
 * sinajs.cn * noop
+* sp-flv.com * noop
 * woozooo.com * noop
 * yhdmjx.com * noop
 * youtube.com * noop
 * ytimg.com * noop
 * zhimg.com * noop
 www.123pan.com * 3p-frame noop
+www.123pan.com * 3p-script noop
 163.com * 3p-script noop
 1905.com * 3p-script noop
 www.20-0.net 09wl.com * noop
@@ -77,3 +78,4 @@ youku.com * 3p-script noop
 * https://play. sub_frame noop
 * https://player. sub_frame noop
 * https://pv.sohu.com/cityjson script allow
+* https://vip.lz-cdn * noop
