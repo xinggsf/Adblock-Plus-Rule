@@ -186,14 +186,6 @@ wpadmngr.com
 ||nunuyingyuan.com/serviceworker.js^$script
 ||dandanzan.cf/serviceworker.js^$script
 
-netflix.mom,netflixya.com,yanetflix.com##.tips-box,#note.popup
-netflix.mom,netflixya.com,yanetflix.com##.rm-list.player-rm
-netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
-@@||pstatp.com/obj/ad-tetris-site/file/$image,domain=player.kongbuya.com
-4kya.com###player_pause
-||wp.com/netflixya.com/upload/$image
-||yanetflix.com/upload/vod/$image
-
 www.sbdm.net##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
 aqours.today
 chushoushijian.cn
