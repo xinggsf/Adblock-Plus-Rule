@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202305251
+! Version: 202306061
 ! Expires: 2 days
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -1225,7 +1225,7 @@ erebor.douban.com
 *_index_banner$script
 *_right_ad.$domain=~dzwww.com
 @@||acs.m.taobao.com
-||acs.$domain=~youku.com|~tudou.com
+||acs.$domain=~youku.com|~tudou.com|~acs.org
 ||adpic.
 ||adsame.
 ||adsfile.
