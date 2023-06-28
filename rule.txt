@@ -436,9 +436,6 @@ autohome.com.cn###s2287
 ||autoimg.cn/admdfs/
 ||autohome.com.cn/adfront/
 
-cnbeta.com##+js(set, JB, noopFunc)
-cnbeta.com##.cbv,#artibody~*,#upcoming_box,div.article-global,div.meta > span.fr:last-child
-
 blog.csdn.net###content_views pre, #content_views pre code:style(user-select:auto!important)
 @@||g.csdnimg.cn/$script
 ||img-ads.csdn.net/
