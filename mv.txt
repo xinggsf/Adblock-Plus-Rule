@@ -15,7 +15,7 @@ m.youku.com,v.youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?
 atm.youku.com
 cad.youku.com
 @@||mmstat.com^$domain=youku.com
-||cibntv.net/youku/$media,mp4
+||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
 !|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
@@ -89,7 +89,6 @@ de.as.pptv.com
 ! 风行网： fun.tv
 pub.funshion.com
 
-! 1905.com##+js(json-prune,videolink)
 ||relive.vodfile.m1905.com/video/qiantie202$media
 
 @@||tb.mgtv.com/sdk/*/ad-sdk.
