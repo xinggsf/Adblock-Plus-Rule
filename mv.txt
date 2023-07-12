@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202307101
+! Version: 202307121
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -42,7 +42,7 @@ qq.com#@#+js(nowebrtc)
 video.qq.com#@#+js(set,RTCPeerConnection,null)
 video.qq.com#@#+js(no-xhr-if,/trace\.|\/collect/)
 video.qq.com#@#+js(no-fetch-if,/trace\.|beacon\./)
-video.qq.com#@#+js(json-prune,ads adList.item)
+video.qq.com#@#+js(json-prune,ads ad.pause adList.item)
 qq.com##+js(set,RTCPeerConnection,null)
 qq.com##+js(no-xhr-if,/trace\.|\/collect/)
 qq.com##+js(no-fetch-if,/trace\.|beacon\./)
