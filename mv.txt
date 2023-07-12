@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202307121
+! Version: 202307122
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -35,7 +35,7 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
 
-v.qq.com###player .txp_zt_content
+!v.qq.com###player .txp_zt_content
 v.qq.com##.quick_games.quick_item,div.card-wrap
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
 qq.com#@#+js(nowebrtc)
