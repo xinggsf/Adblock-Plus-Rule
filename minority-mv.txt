@@ -92,12 +92,12 @@ www.fantuanhd.com##.MacPlayer:style(padding-bottom:0!important)
 www.fantuanhd.com###t-img-box:remove()
 kelatv.com##a[href*="/go.php"]
 
-ikandy.fun##div:has(>b[onclick])
-ikandy.fun##img[onclick]:remove()
-ikandy.fun##.marquee_outer, b[onclick]+a
-|https://ikandy.fun/loadingbk.html^$subdocument
+ikandy2.fun##div:has(>b[onclick])
+ikandy2.fun##img[onclick]:remove()
+ikandy2.fun##.marquee_outer, b[onclick]+a
+|https://ikandy2.fun/loadingbk.html^$subdocument
 |https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
-||netease.com^$image,domain=ikandy.fun
+||netease.com^$image,domain=ikandy2.fun
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 www.nivod4.tv##.nav-ads:remove()
