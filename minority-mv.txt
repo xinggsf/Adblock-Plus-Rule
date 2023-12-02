@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202311221
+! Version: 202312021
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -62,8 +62,8 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88hd.com,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
-88hd.com##.MacPlayer:style(height:480px!important)
+88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
+88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,imjw.cc,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
@@ -125,11 +125,11 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-vidhub.cc,vidhub.top###player_pause
-vidhub.*,www.jujiso.com##.MacPlayer:style(height:630px!important)
-||vidhub.cc/upload/art/rgsp-$image
-||vidhub.cc/player/buffer.html$subdocument
-||vidhub.top/player/buffer.html$subdocument
+vidhub2.cc,vidhub.tv###player_pause
+vidhub2.cc,vidhub.tv,www.jujiso.com##.MacPlayer:style(height:630px!important)
+||vidhub2.cc/upload/art/rgsp-$image
+||vidhub2.cc/player/buffer.html$subdocument
+||vidhub.tv/player/buffer.html$subdocument
 wsdy.top##+js(set,fed.module,{})
 
 yhdm.nl###x-play:style(height:600px)
