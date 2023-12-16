@@ -36,7 +36,7 @@ show.ssports.com
 
 !v.qq.com###player .txp_zt_content
 v.qq.com##.quick_games.quick_item,div.card-wrap
-qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
+qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .adWrap, .iwan-wrapper
 ! qq.com##+js(json-prune,ads ad.pause adList.item)
 qq.com##+js(json-prune,ad material.video.url)
 !qq.com##+js(no-xhr-if,/trace\.|\/collect/)
