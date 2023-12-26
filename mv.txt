@@ -18,7 +18,6 @@ cad.youku.com
 ||valipl.cp31.ott.cibntv.net/$media
 ||alicdn.com/*yksdk/*sdk.js$script,domain=youku.com
 ||alicdn.com/awsc/et/
-!|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
@@ -170,7 +169,7 @@ dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:10
 
 ! mikudm.com##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
 aqours.today
-chushoushijian.cn
+2qpqwkx.cn
 z4a.net
 |https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
