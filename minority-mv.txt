@@ -133,7 +133,7 @@ wsdy.top##+js(set,fed.module,{})
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
-! www.dmtvw.com --> www.xyhdm.cc www.yhdmp.cc www.idkdy.com dm84.tv
+! www.dmtvw.com --> www.xyhdmw.com www.yhdmp.cc www.idkdy.com dm84.tv
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
