@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202312161
+! Version: 202402031
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -89,6 +89,7 @@ eacg.net##+js(set, devtoolsDetector, {})
 www.fantuanhd.com##.MacPlayer:style(padding-bottom:0!important)
 www.fantuanhd.com###t-img-box:remove()
 kelatv.com##a[href*="/go.php"]
+kktvn.com##.MacPlayer:style(height:765px!important)
 
 ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
