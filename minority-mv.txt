@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202402031
+! Version: 202402111
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -89,7 +89,6 @@ eacg.net##+js(set, devtoolsDetector, {})
 www.fantuanhd.com##.MacPlayer:style(padding-bottom:0!important)
 www.fantuanhd.com###t-img-box:remove()
 kelatv.com##a[href*="/go.php"]
-kktvn.com##.MacPlayer:style(height:765px!important)
 
 ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
@@ -125,8 +124,8 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-vidhub2.cc,vidhub.tv###player_pause
-vidhub2.cc,vidhub.tv,www.jujiso.com##.MacPlayer:style(height:630px!important)
+vidhub2.cc,vidhub.tv##.adpcc,#player_pause
+vidhub2.cc,vidhub.tv##.MacPlayer:style(height:630px!important)
 ||vidhub2.cc/upload/art/rgsp-$image
 ||vidhub2.cc/player/buffer.html$subdocument
 ||vidhub.tv/player/buffer.html$subdocument
@@ -135,7 +134,7 @@ wsdy.top##+js(set,fed.module,{})
 yhdm.nl###x-play:style(height:600px)
 yhdm.nl###x-play::before
 
-! www.dmtvw.com --> www.xyhdmw.com www.yhdmp.cc www.idkdy.com dm84.tv
+! www.dmtvw.com : www.xyhdmw.com dm84.tv www.kktvn.com
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
