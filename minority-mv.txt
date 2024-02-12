@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202402111
+! Version: 202402121
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -63,17 +63,11 @@ zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
 88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
 88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
-91meijutv.com,bashiyy.com,gdzidong.com,huaxingui.com,imjw.cc,momdm5.cc,momovod.app,piankuw.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
+91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
-||bashiyy.com/static/js/plugin.js^$script
-||gdzidong.com/static/js/plugin.js^$script
-qrserver.com
-
+agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
-www.citydy.com##.dplayer-web-fullscreen-fix .player-right
-www.citydy.com##.dplayer-web-fullscreen-fix #player-shrink,#citybanner
-||fds.api.mi-img.com^$image,domain=~mi.com|~miui.com|~xiaomi.cn
 
 ! 低端影视 ddys.art .one
 ddys.*##+js(set, Object.prototype.ads, null)
@@ -82,14 +76,7 @@ ddys.*##.cfa_popup:remove()
 ddys.*###sajdhfbjwhe:remove()
 ddys.*##main.site-main > div:first-child:remove()
 
-!樱花动漫 http://www.imomoe.jp/
-dm88.me##body>a
-dm88.me##+js(acis,document.writeln)
-eacg.net##+js(set, devtoolsDetector, {})
-www.fantuanhd.com##.MacPlayer:style(padding-bottom:0!important)
-www.fantuanhd.com###t-img-box:remove()
-kelatv.com##a[href*="/go.php"]
-
+||gdzidong.com/static/js/plugin.js^$script
 ikandy2.fun##div:has(>b[onclick])
 ikandy2.fun##img[onclick]:remove()
 ikandy2.fun##.marquee_outer, b[onclick]+a
@@ -102,9 +89,6 @@ www.nivod4.tv##.nav-ads:remove()
 www.nivod4.tv###my_saberfeedback_button
 ||nivod4.tv/image/ad$image
 
-! 2023.6.25 https://www.mgtvys.cc
-cdn.metaversemolecule.com
-novipnoad.com##.bg-ad
 olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 ||www.olevod.com/upload/site/202$image
 ||static.olelive.com/uploads/file/$image
@@ -129,10 +113,6 @@ vidhub2.cc,vidhub.tv##.MacPlayer:style(height:630px!important)
 ||vidhub2.cc/upload/art/rgsp-$image
 ||vidhub2.cc/player/buffer.html$subdocument
 ||vidhub.tv/player/buffer.html$subdocument
-wsdy.top##+js(set,fed.module,{})
-
-yhdm.nl###x-play:style(height:600px)
-yhdm.nl###x-play::before
 
 ! www.dmtvw.com : www.xyhdmw.com dm84.tv www.kktvn.com
 |https://abb.$script,3p
