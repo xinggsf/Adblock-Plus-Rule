@@ -26,7 +26,7 @@ v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 ||api.bilibili.com/x/click-interface/click/$xhr
 chat.bilibili.com
 ||hdslb.com/bfs/seed/log/report/log-reporter.js
-||hdslb.com/bfs/seed/jinkela/short/cols/iframe.html$subdocument
+||hdslb.com/bfs/seed/jinkela/$subdocument
 ||bilibili.com/page-proxy/game-nav.html$subdocument
 
 v.qq.com##.wrapper.mod_vip_popup, #mask_layer
@@ -114,7 +114,7 @@ vidhub2.cc,vidhub.tv##.MacPlayer:style(height:630px!important)
 ||vidhub2.cc/player/buffer.html$subdocument
 ||vidhub.tv/player/buffer.html$subdocument
 
-! www.dmtvw.com : www.xyhdmw.com dm84.tv www.kktvn.com
+! www.916dm.fans www.dmtvw.com : www.xyhdmw.com dm84.tv www.kktvn.com
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
