@@ -150,7 +150,7 @@ pageMediaControl*$script
 @@||static.realme.net/v1/knowledge/images/banner.jpg$image
 */images/banner$domain=~ipo.chinairn.com|~www.shuame.com|~exp.qq.com
 */impservice$script
-*/market.$script,domain=~jin10.com|~streamcommunity.com
+*/market.$script,domain=~jin10.com|~steamcommunity.com
 */market_$script
 */market-$script
 @@|https://media.amazon.map.fastly.net^$script
