@@ -12,7 +12,7 @@ iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
 ! 要用弹幕注释下条规则
-||t7z.cupid.iqiyi.com/show$script,important
+t7z.cupid.iqiyi.com
 
 ! le.com
 gentags.net
