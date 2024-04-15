@@ -52,10 +52,10 @@ m.huya.com##video:style(object-fit:fill!important)
 m.huya.com##.video-con:style(height:100vh!important;padding:0!important;position:static!important;)
 m.huya.com##.ssr-wrapper>:not(.live-wrap)
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
-|https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
+||a.msstatic.com/huya/main3/assets/img/room/gift/$important
 ||a.msstatic.com/huya/main3/assets/css/room/gift.$script
-||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
+||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
