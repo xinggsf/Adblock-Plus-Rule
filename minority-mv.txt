@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202402121
+! Version: 202404161
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -53,10 +53,9 @@ m.huya.com##.video-con:style(height:100vh!important;padding:0!important;position
 m.huya.com##.ssr-wrapper>:not(.live-wrap)
 www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
 |https://a.msstatic.com/huya/main3/assets/img/room/gift/$important
-|https://a.msstatic.com/huya/main3/assets/css/room/gift_$important
-|https://a.msstatic.com/huya/main3/modules/chat$important
-|https://a.msstatic.com/huya/main3/modules/gift/$important
-zhanqi.tv##.chat-gg-area,a[href*="/ad.click?"]
+||a.msstatic.com/huya/main3/assets/css/room/gift.$script
+||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
+||a.msstatic.com/huya/main3/assets/modules/gift/$script
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
