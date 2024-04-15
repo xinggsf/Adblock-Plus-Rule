@@ -1,0 +1,445 @@
+{
+	"request": [
+		{
+			"enable": true,
+			"name": "FT中文网--全文阅读",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(cn\\.ft|www\\.ftchinese)\\.com(/story/\\d+).*",
+			"exclude": "full=y",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "http://cn.ft.com$2?full=y&archive",
+			"code": "val = val.replace(/#.+$/,'');\nreturn val.includes('full=y') ? val :\nval.lastIndexOf('?')>9 ? val + '&full=y' : val + '?full=y';",
+			"group": "重定向",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "google",
+			"ruleType": "redirect",
+			"matchType": "url",
+			"pattern": "https://www.gg.com/",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.google.com.hk/",
+			"group": "快捷网址"
+		},
+		{
+			"enable": true,
+			"name": "gmail",
+			"ruleType": "redirect",
+			"matchType": "url",
+			"pattern": "https://www.g.com/",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://mail.google.com/mail/#inbox",
+			"group": "快捷网址"
+		},
+		{
+			"enable": true,
+			"name": "github",
+			"ruleType": "redirect",
+			"matchType": "url",
+			"pattern": "https://www.gi.com/",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://github.com/",
+			"group": "快捷网址"
+		},
+		{
+			"enable": true,
+			"name": "知乎、掘金链接重定向",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.im)/\\?target=([^&]+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "豆瓣去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www\\.douban\\.com/link\\d/\\?url=([^&]+)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "QQ图片",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://[^/]+?\\.qq\\.com/image\\?.*imageUrl=(.+)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "嘻哈网显示大图片",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://image\\.haha\\.mx/(.+)/middle/(.+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://image.haha.mx/$1/big/$2",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "google fonts >> 极客族",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://fonts\\.googleapis\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://fonts.geekzu.org/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "Wiki繁体 >> 简体",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://zh\\.wikipedia\\.org/zh-\\w+/(.*)$",
+			"exclude": "https://zh.wikipedia.org/zh-cn/",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://zh.wikipedia.org/zh-cn/$1",
+			"group": "重定向",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "古诗文网- 统一域名",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(\\w+\\.gushiwen\\.)org/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://$1cn/$2",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "谷歌重定向",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www\\.google\\.[^/]+/url\\?q=([^&]+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "虎牙直播跳转移动页面",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www\\.huya\\.com/(\\w+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://m.huya.com/$1",
+			"group": "重定向"
+		}
+	],
+	"sendHeader": [
+		{
+			"name": "QQ反防盗链1",
+			"ruleType": "modifySendHeader",
+			"pattern": "^https?://\\w+\\.photo\\.store\\.qq\\.com/",
+			"action": {
+				"name": "referer",
+				"value": "http://user.qzone.qq.com/"
+			},
+			"matchType": "regexp",
+			"isFunction": false,
+			"enable": true,
+			"exclude": "",
+			"group": "反防盗链"
+		},
+		{
+			"name": "新浪图片反防盗链",
+			"ruleType": "modifySendHeader",
+			"pattern": "^https?://ss?\\d+.sinaimg.cn/",
+			"action": {
+				"name": "referer",
+				"value": "http://blog.sina.com.cn/"
+			},
+			"matchType": "regexp",
+			"isFunction": false,
+			"enable": true,
+			"exclude": "",
+			"group": "反防盗链"
+		},
+		{
+			"name": "百度反防盗链1",
+			"ruleType": "modifySendHeader",
+			"pattern": "imgsrc.baidu.com",
+			"action": {
+				"name": "referer",
+				"value": "http://tieba.baidu.com"
+			},
+			"matchType": "domain",
+			"isFunction": false,
+			"enable": true,
+			"exclude": "",
+			"group": "反防盗链"
+		},
+		{
+			"name": "百度反防盗链2",
+			"ruleType": "modifySendHeader",
+			"pattern": "^https?://(\\w\\.)?hiphotos\\.(bdimg|baidu)\\.com/",
+			"action": {
+				"name": "referer",
+				"value": "http://tieba.baidu.com"
+			},
+			"matchType": "regexp",
+			"isFunction": false,
+			"enable": true,
+			"exclude": "",
+			"group": "反防盗链"
+		},
+		{
+			"enable": false,
+			"name": "测试，不要启用：User-Agent加上HE/2.0.0",
+			"ruleType": "modifySendHeader",
+			"matchType": "all",
+			"pattern": "",
+			"exclude": "",
+			"isFunction": true,
+			"code": "for (let a in val) {\n\tif (val[a].name === 'User-Agent') {\n\t\tval[a].value += ' HE/2.0.0';\n\t\tbreak;\n\t}\n}",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "QQ反防盗链2",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://\\w+\\.(qpic|qlogo)\\.cn/",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反防盗链"
+		},
+		{
+			"enable": true,
+			"name": "百度反防盗链3",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://img\\w*\\.bdstatic\\.com/",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://tieba.baidu.com"
+			},
+			"group": "反防盗链"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Firefox",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0"
+			}
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Android",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Safari",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:48.0) Gecko/20100101 Firefox/48.0"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：iPad",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Google爬虫",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：微信浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "http",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": true,
+			"name": "手机版网页不跳转到桌面版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://(m|wap|i|fm)\\.",
+			"exclude": "https://m.nbys.tv/",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "网易云音乐手机版",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "https://music.163.com/m/",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": true,
+			"name": "豆瓣FM手机版",
+			"ruleType": "modifySendHeader",
+			"matchType": "domain",
+			"pattern": "douban.fm",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": true,
+			"name": "88kan影视解析",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "https://vip.sp-flv.com:8443/?url=",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.mgtvys.net/"
+			},
+			"group": "反防盗链"
+		},
+		{
+			"enable": true,
+			"name": "豆瓣电影海报",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?://img\\d*\\.doubanio\\.com/",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.douban.com"
+			},
+			"group": "反防盗链"
+		},
+		{
+			"enable": true,
+			"name": "金福影视解析",
+			"ruleType": "modifySendHeader",
+			"matchType": "prefix",
+			"pattern": "https://vip.jsjinfu.com:8443/?url=",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.88mv.org/"
+			},
+			"group": "反防盗链"
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
