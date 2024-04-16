@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202404161
+! Version: 202404162
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -107,13 +107,12 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-vidhub2.cc,vidhub.tv##.adpcc,#player_pause
-vidhub2.cc,vidhub.tv##.MacPlayer:style(height:630px!important)
-||vidhub2.cc/upload/art/rgsp-$image
-||vidhub2.cc/player/buffer.html$subdocument
+vidhub1.cc,vidhub.*##.adpcc,#player_pause
+vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
+!||vidhub.tv/mxstatic/image/aabbc/$image
 ||vidhub.tv/player/buffer.html$subdocument
 
-! www.916dm.fans www.dmtvw.com : www.xyhdmw.com dm84.tv www.kktvn.com
+! www.916dm.fans www.dmtvw.com : www.xyhdmw.com dm84.tv dm84.xyz dm84.site www.kktvn.com
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
