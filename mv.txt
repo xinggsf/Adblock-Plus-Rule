@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 视频过滤规则
-! Version: 202404191
+! Version: 202404221
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -69,6 +69,7 @@ xtgreat.com
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
+||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js^$script,redirect=noop.js
 ||hdslb.com/bfs/sycp/creative_img/$image
 cm.bilibili.com
 
@@ -91,6 +92,7 @@ pub.funshion.com
 
 ||relive.vodfile.m1905.com/video/qiantie202$media
 1905.com##.pauseInfoWrap:remove()
+sobot.com
 
 @@||tb.mgtv.com/sdk/*/ad-sdk.
 ad-survey.com
@@ -186,7 +188,7 @@ age.tv,agedm.org##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com|subaibaiys.com
 
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
-dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
+dandanzan.com,nnyy.in##.gm-fp-body video:style(max-height:100%!important)
 
 ! mikudm.com##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
 aqours.today
