@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202404221
+! Version: 202404222
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -11,8 +11,6 @@ iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
-! 要用弹幕注释下条规则
-t7z.cupid.iqiyi.com
 
 ! le.com
 gentags.net
@@ -36,17 +34,18 @@ dm.video.qq.com
 tv.sohu.com###qflivetg,div.right>.adv
 
 www.douyu.com##.is-fullScreenPage .ToTopBtn, div.layout-Player~*, .multiBitRate-da4b60, .watermark-442a18, .player-dialog~*, .ChargeTask+div, .HeaderGif-right, .HeaderGif-left,#js-room-activity
-|https://sta-op.douyucdn.cn/front-publish/butterfly-
-butterfly.douyucdn.cn
-gift.douyucdn.cn
-rank.douyucdn.cn
-||shark2.douyucdn.cn/front-publish/live-landlordsactivity-
+||shark2.douyucdn.cn/front-publish/live-*-gift-$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/SetofGiftPop_$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/HappyLottery_$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiGoods_$script
+||shark2.douyucdn.cn/front-publish/live-master/js/room/XinghaiShoppingCart_$script
+
 ||shark2.douyucdn.cn/front-publish/live-luckybaggift-activity-master/
-||shark2.douyucdn.cn/front-publish/live-festivalactivity-
 ||shark2.douyucdn.cn/front-publish/live-master/js/room/activity_
 ||shark2.douyucdn.cn/front-publish/live-cloud-game-master/
 ||shark2.douyucdn.cn/front-publish/live-game-guess-master/
-||webconf.douyucdn.cn/resource/common/gift
+||webconf.douyucdn.cn/resource/common/gift$script
+||webconf.douyucdn.cn/resource/common/config/inter_com_w_ad_gift.json$script
 
 m.huya.com##video:style(object-fit:fill!important)
 m.huya.com##.video-con:style(height:100vh!important;padding:0!important;position:static!important;)
