@@ -49,7 +49,8 @@ www.douyu.com##.is-fullScreenPage .ToTopBtn, .multiBitRate-da4b60
 m.huya.com##video:style(object-fit:fill!important)
 m.huya.com##.video-con:style(height:100vh!important;padding:0!important;position:static!important;)
 m.huya.com##.ssr-wrapper>:not(.live-wrap)
-www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap,#huya-ab, .player-banner-gift,#player-marquee-wrap
+www.huya.com##.room-footer,#player-subscribe-wap,#player-gift-wrap
+www.huya.com##.player-banner-gift,#player-marquee-wrap
 ||a.msstatic.com/huya/main3/assets/img/room/gift/$important
 ||a.msstatic.com/huya/main3/assets/css/room/gift.$script
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
