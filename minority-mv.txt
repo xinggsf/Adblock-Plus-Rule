@@ -32,6 +32,7 @@ chat.bilibili.com
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
 ||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script
 dm.video.qq.com
+||mark.l.qq.com/fcgi-bin/get_video_mark_all?$script
 
 www.douyu.com##.ChargeTask+div, .HeaderGif-right, .HeaderGif-left
 ||shark2.douyucdn.cn/front-publish/live-*-gift-$script
