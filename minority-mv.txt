@@ -113,7 +113,7 @@ vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
 !||vidhub.tv/mxstatic/image/aabbc/$image
 ||vidhub.tv/player/buffer.html$subdocument
 
-! www.916dm.fans www.dmtvw.com : www.xyhdmw.com dm84.tv dm84.xyz dm84.site www.kktvn.com
+! www.916dm.fans www.dmtvw.com dm84.tv .xyz .site www.kktvn.com
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
