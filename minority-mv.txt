@@ -1,13 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202404251
+! Version: 202405011
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
 ##a.disabled
 
-! 禁用AI奇观
-iqiyi.com##+js(set, Object.prototype.isSupportAI, false)
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
@@ -56,6 +54,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 ||a.msstatic.com/huya/main3/assets/css/room/gift.$script
 ||a.msstatic.com/huya/main3/assets/modules/gift/$script
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
+||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
@@ -64,7 +63,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
-agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
+age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 
@@ -74,14 +73,6 @@ ddys.*##+js(set, Object.prototype.ads, null)
 ddys.*##.cfa_popup:remove()
 ddys.*###sajdhfbjwhe:remove()
 ddys.*##main.site-main > div:first-child:remove()
-
-||gdzidong.com/static/js/plugin.js^$script
-ikandy2.fun##div:has(>b[onclick])
-ikandy2.fun##img[onclick]:remove()
-ikandy2.fun##.marquee_outer, b[onclick]+a
-|https://ikandy2.fun/loadingbk.html^$subdocument
-|https://x.qcheng.cc/x/statics/js/fuck-debugger.js^$script
-||netease.com^$image,domain=ikandy2.fun
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 www.nivod4.tv##.nav-ads:remove()
