@@ -21,7 +21,6 @@ v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
 
 www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/click-interface/click/$xhr
-chat.bilibili.com
 ||hdslb.com/bfs/seed/log/report/log-reporter.js
 ||hdslb.com/bfs/seed/jinkela/$subdocument
 
