@@ -1,19 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202405011
+! Version: 202405121
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
 ##a.disabled
+||webrtc.github.io^$script,3p
 
 ||security.iqiyi.com/static/cook/v1/cooksdk.js
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
-
-! le.com
-gentags.net
-gtags.net
-||webrtc.github.io^$script,3p
 
 ! ||cp31.ott.cibntv.net/*/ad/X*.ts?$xhr,redirect=noop-0.1s.mp3,domain=v.youku.com
 v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
@@ -83,9 +79,7 @@ olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 ||static.olelive.com/uploads/file/$image
 
 btnull.*###ly
-||btnull.si/ajax/historys/
 ||btnull.nu/ajax/historys/
-||btnull.org/ajax/historys/
 
 91meijutv.com,k8hdw.com,imjw.cc,qdm66.com##.close-box.tips
 qdm66.com###gongao
@@ -103,7 +97,7 @@ vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
 !||vidhub.tv/mxstatic/image/aabbc/$image
 ||vidhub.tv/player/buffer.html$subdocument
 
-! www.916dm.fans www.dmtvw.com dm84.tv .xyz .site www.kktvn.com
+! www.916dm.fans www.dmtvw.com dm84.tv .me .site www.kktvn.com
 |https://abb.$script,3p
 prplads.com
 搜狐网络科技.中国
