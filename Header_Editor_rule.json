@@ -11,7 +11,7 @@
 			"action": "redirect",
 			"to": "http://cn.ft.com$2?full=y&archive",
 			"code": "val = val.replace(/#.+$/,'');\nreturn val.includes('full=y') ? val :\nval.lastIndexOf('?')>9 ? val + '&full=y' : val + '?full=y';",
-			"group": "重定向",
+			"group": "重定向",2
 			"_exclude": {}
 		},
 		{
@@ -148,7 +148,7 @@
 			"group": "重定向"
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "虎牙直播跳转移动页面",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -360,7 +360,7 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://(m|wap|i|fm)\\.",
-			"exclude": "https://m.nbys.tv/",
+			"exclude": "https://m.huya.com/",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",

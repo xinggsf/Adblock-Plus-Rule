@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202406051
+! Version: 202406091
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -23,8 +23,6 @@ www.bilibili.com##.pop-live-small-mode
 ||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
 ||v.qq.com/activity/qqvideo/interact/vod.html^$subdocument
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
-||vfiles.gtimg.cn/tvideo/aegis/web-sdk/lib/$script,domain=new.qq.com
-dm.video.qq.com
 ||mark.l.qq.com/fcgi-bin/get_video_mark_all?$script
 
 www.douyu.com##.ChargeTask+div, .HeaderGif-right, .HeaderGif-left
@@ -53,7 +51,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 
 *.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88mv.org,91meijutv.com,olevod.com,tvyb03.com,vidhub.*##a[target=_blank][href^=http]
+88mv.org,91meijutv.com,olevod.com,tvyb03.com##a[target=_blank][href^=http]
 88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
@@ -92,12 +90,5 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-vidhub1.cc,vidhub.*##.adpcc,#player_pause
-vidhub1.cc,vidhub.*##.MacPlayer:style(height:630px!important)
-!||vidhub.tv/mxstatic/image/aabbc/$image
-||vidhub.tv/player/buffer.html$subdocument
-
 ! www.916dm.fans www.dmtvw.com dm84.tv .me .site www.kktvn.com
-|https://abb.$script,3p
-prplads.com
 搜狐网络科技.中国
