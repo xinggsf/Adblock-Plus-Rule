@@ -2,14 +2,16 @@
 :: rd/s/q "Media Cache"2>NUL
 del /s/q *.tmp
 del /s/q *.bak
-del /s/f/q "Crashpad\reports\*"
-del /s/f/q "GrShaderCache\GPUCache\*"
+del /s/f/q "component_crx_cache\*"
+del /s/f/q "extensions_crx_cache\*"
+del /s/f/q "Crashpad\*"
+del /s/f/q "GrShaderCache\*"
 del /s/f/q "Guest Profile\*"
+del /s/f/q "ShaderCache\*"
 :: 取得当前批处理所在路径
 :: cd /d %~dp0
 cd Default
-del /f/q ChromeDWriteFontCache
-del /s/f/q "Pepper Data\*"
+::del /s/f/q "Pepper Data\*"
 del /s/f/q "Application Cache\*"
 del /s/f/q "Media Cache\*"
 del /s/f/q "Service Worker\CacheStorage\*"
