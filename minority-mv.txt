@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202406231
+! Version: 202407281
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -57,6 +57,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
+||cdn.aiqingyu1314.com/age/statics/js/notice.js^$script
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 
@@ -72,9 +73,9 @@ dm84.*##.p_box:style(height:33vw!important;padding-top:0!important)
 dm84.*###qrcode
 
 im1907.top,nxflv.*##+js(noeval-if, pushState)
-www.nivod4.tv##.nav-ads:remove()
-www.nivod4.tv###my_saberfeedback_button
-||nivod4.tv/image/ad$image
+nivod.cc##.nav-ads:remove()
+nivod.cc###my_saberfeedback_button
+||nivod.cc/image/ad$image
 
 olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 ||www.olevod.com/upload/site/202$image
@@ -94,5 +95,5 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-! www.916dm.fans www.dmtvw.com dm84.tv .me .site www.kktvn.com
+! www.916dm.fans www.dmtvw.com dm84.tv .me www.jujiso.com
 搜狐网络科技.中国
