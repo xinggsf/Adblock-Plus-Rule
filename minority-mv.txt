@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202410231
+! Version: 202410261
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -83,6 +83,7 @@ btnull.*###ly
 ||btnull.nu/ajax/historys/
 
 91meijutv.com,k8hdw.com,imjw.cc,qdm66.com##.close-box.tips
+age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 qdm66.com###gongao
 www.ttsp.tv###playad1
 ||img.imyyds.com/upload/vod/20211222-2/$image
@@ -93,5 +94,5 @@ tvyb03.com###hth,a[href="/e1111.html"]
 ||cdn.bcebos.com/images/$image,domain=tvyb03.com
 tvyb03.com##+js(acis,document.writeln)
 
-! www.916dm.fans mgtv.cc www.dmtvw.com dm84.tv .me www.jujiso.com
+! www.916dm.fans 77dm.vip mgtv.cc dm84.site age.tv www.dmtvw.com www.jujiso.com
 搜狐网络科技.中国
