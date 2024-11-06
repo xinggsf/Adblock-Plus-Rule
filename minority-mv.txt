@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202410261
+! Version: 202411061
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -70,13 +70,18 @@ dm84.*##.container:style(max-width: 60vw!important)
 dm84.*##.p_box:style(height:33vw!important;padding-top:0!important)
 dm84.*###qrcode
 
+www.iyf.tv##.dabf,div.pggf,vg-pause-f
+||pptstatic.iyf.tv/upload/video/202$image
+
 im1907.top,nxflv.*##+js(noeval-if, pushState)
 nivod.cc##.nav-ads:remove()
 nivod.cc###my_saberfeedback_button
 ||nivod.cc/image/ad$image
 
-olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
-||www.olevod.com/upload/site/202$image
+!olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
+olevod.com##.pc-ads
+olevod.com###adsMaskBox
+!||www.olevod.com/upload/site/202$image
 ||static.olelive.com/uploads/file/$image
 
 btnull.*###ly
