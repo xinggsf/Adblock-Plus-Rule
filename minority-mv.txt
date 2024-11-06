@@ -81,5 +81,5 @@ olevod.com###adsMaskBox
 qdm66.com###gongao
 ! TVB云播  港台影视 www.hktvyb.vip
 tvyun01.com,tvyb03.com##+js(acis,document.writeln)
-! www.916dm.fans 77dm.vip mgtv.cc dm84.site age.tv www.dmtvw.com www.jujiso.com
+! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.dmtvw.com www.jujiso.com
 搜狐网络科技.中国
