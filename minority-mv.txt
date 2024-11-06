@@ -49,12 +49,13 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
 ||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 
-*.gif|$image,domain=91meijutv.com|acgndmku.com|bimiacg4.net|tvyb03.com|kuhuiv.com
+*.gif|$image,domain=91meijutv.com|bimiacg4.net|tvyb03.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88mv.org,91meijutv.com,olevod.com,tvyb03.com##a[target=_blank][href^=http]
-88mv.org##.MacPlayer, .dplayer:style(height:600px!important)
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,mjw8.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
+91meijutv.com,gdzidong.com,imjw.cc,qdm66.com,tvyun01.com,tvyb03.com##.close-box.tips
+age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
@@ -73,31 +74,12 @@ dm84.*###qrcode
 www.iyf.tv##.dabf,div.pggf,vg-pause-f
 ||pptstatic.iyf.tv/upload/video/202$image
 
-im1907.top,nxflv.*##+js(noeval-if, pushState)
-nivod.cc##.nav-ads:remove()
-nivod.cc###my_saberfeedback_button
-||nivod.cc/image/ad$image
-
-!olevod.com##.adtip, .bg_wtop_banner, .guangao, .guangaoss, .wbalist_thumb
 olevod.com##.pc-ads
 olevod.com###adsMaskBox
-!||www.olevod.com/upload/site/202$image
 ||static.olelive.com/uploads/file/$image
 
-btnull.*###ly
-||btnull.nu/ajax/historys/
-
-91meijutv.com,k8hdw.com,imjw.cc,qdm66.com##.close-box.tips
-age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 qdm66.com###gongao
-www.ttsp.tv###playad1
-||img.imyyds.com/upload/vod/20211222-2/$image
-||img.imyyds.com/adimges/$image
-
-! TVB云播  港台影视
-tvyb03.com###hth,a[href="/e1111.html"]
-||cdn.bcebos.com/images/$image,domain=tvyb03.com
-tvyb03.com##+js(acis,document.writeln)
-
+! TVB云播  港台影视 www.hktvyb.vip
+tvyun01.com,tvyb03.com##+js(acis,document.writeln)
 ! www.916dm.fans 77dm.vip mgtv.cc dm84.site age.tv www.dmtvw.com www.jujiso.com
 搜狐网络科技.中国
