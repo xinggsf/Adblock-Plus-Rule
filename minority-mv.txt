@@ -49,7 +49,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
 ||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 
-*.gif|$image,domain=91meijutv.com|bimiacg4.net|tvyb03.com
+*.gif|$image,domain=91meijutv.com|bimiacg4.net|dk95.com|tvyb03.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
 88mv.org,91meijutv.com,olevod.com,tvyb03.com##a[target=_blank][href^=http]
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
