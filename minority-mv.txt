@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202411081
+! Version: 202411251
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -19,9 +19,11 @@ www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/click-interface/click/$xhr
 ||hdslb.com/bfs/seed/log/report/log-reporter.js
 ||hdslb.com/bfs/seed/jinkela/$subdocument
+||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/bili-user-fingerprint.min.js^$script
 
-||vfiles.gtimg.cn/tvideo/libcocos-frame/$subdocument
-||v.qq.com/activity/qqvideo/interact/vod.html^$subdocument
+||trace.qq.com^$image,redirect=1x1.gif
+||v.qq.com/pwa-sw.js^$script
+||beacon.cdn.qq.com/*/beacon_web.min.js^$script
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
 ||mark.l.qq.com/fcgi-bin/get_video_mark_all?$script
 
@@ -81,5 +83,5 @@ olevod.com###adsMaskBox
 qdm66.com###gongao
 ! TVB云播  港台影视 www.hktvyb.vip
 tvyun01.com,tvyb03.com##+js(acis,document.writeln)
-! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.dmtvw.com www.jujiso.com
+! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.kudm.vip www.dmtvw.com www.jujiso.com
 搜狐网络科技.中国
