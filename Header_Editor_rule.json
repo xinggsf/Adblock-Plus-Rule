@@ -11,7 +11,7 @@
 			"action": "redirect",
 			"to": "http://cn.ft.com$2?full=y&archive",
 			"code": "val = val.replace(/#.+$/,'');\nreturn val.includes('full=y') ? val :\nval.lastIndexOf('?')>9 ? val + '&full=y' : val + '?full=y';",
-			"group": "重定向",2
+			"group": "重定向",
 			"_exclude": {}
 		},
 		{
@@ -55,7 +55,7 @@
 			"name": "知乎、掘金链接重定向",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.im)/\\?target=([^&]+)$",
+			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.cn)/\\?target=([^&]+)$",
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
@@ -96,18 +96,6 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://image.haha.mx/$1/big/$2",
-			"group": "重定向"
-		},
-		{
-			"enable": false,
-			"name": "google fonts >> 极客族",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?://fonts\\.googleapis\\.com/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://fonts.geekzu.org/$1",
 			"group": "重定向"
 		},
 		{
@@ -158,6 +146,31 @@
 			"action": "redirect",
 			"to": "https://m.huya.com/$1",
 			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "咪咕播放页（移动）转PC页",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://m\\.miguvideo\\.com/m(gs/msite/prd/detail\\.html\\?cid=|/detail/)(\\d+).*",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.miguvideo.com/p/detail/$2",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "斗鱼小水管",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(https://[\\w\\-]+\\.bytefcdnrd\\.com/live/)(\\w+)(\\.flv.+)$",
+			"exclude": "_900.flv?",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1$2_900$3",
+			"group": "重定向",
+			"_exclude": {}
 		}
 	],
 	"sendHeader": [
@@ -360,7 +373,7 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://(m|wap|i|fm)\\.",
-			"exclude": "https://m.huya.com/",
+			"exclude": "https://m.nbys.tv/",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
@@ -407,7 +420,7 @@
 			"isFunction": false,
 			"action": {
 				"name": "referer",
-				"value": "https://www.mgtvys.net/"
+				"value": "https://www.mgtvys.com/"
 			},
 			"group": "反防盗链"
 		},
