@@ -21,7 +21,8 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/seed/jinkela/$subdocument
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/bili-user-fingerprint.min.js^$script
 
-||trace.qq.com^$image,redirect=1x1.gif
+||beacon.qq.com^$ping
+||trace.qq.com^$image,ping
 ||v.qq.com/pwa-sw.js^$script
 ||beacon.cdn.qq.com/*/beacon_web.min.js^$script
 ||v.qq.com/thumbplayer-offline-log.html^$subdocument
