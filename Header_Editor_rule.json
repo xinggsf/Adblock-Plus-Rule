@@ -164,11 +164,11 @@
 			"name": "斗鱼小水管",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^(https://[\\w\\-]+\\.bytefcdnrd\\.com/live/)(\\w+)(\\.flv.+)$",
-			"exclude": "_900.flv?",
+			"pattern": "^(https://[\\w\\-]+\\.bytefcdnrd\\.com/live/\\w+)(\\.flv.+)$",
+			"exclude": "00.flv?",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "$1$2_900$3",
+			"to": "$1_900$2",
 			"group": "重定向",
 			"_exclude": {}
 		}
