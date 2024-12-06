@@ -57,7 +57,6 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,yimj.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 91meijutv.com,gdzidong.com,mjwo.net,qdm66.com,tvyun01.com,tvyb03.com##.close-box.tips
-age.tv,agedm.org##.ratio-16x9:style(--bs-aspect-ratio:0!important)
 
 bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
