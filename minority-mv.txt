@@ -11,9 +11,6 @@
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
 
-v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
-||acs.youku.com/h5/mopen.youku.danmu.
-
 www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/click-interface/click/$xhr
 ||hdslb.com/bfs/seed/log/report/log-reporter.js^$script
