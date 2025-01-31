@@ -18,7 +18,6 @@
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.gg.com",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.google.com.hk/",
@@ -30,7 +29,6 @@
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.g.com",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://mail.google.com/mail/#inbox",
@@ -42,7 +40,6 @@
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.gi.com",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://github.com/",
@@ -54,7 +51,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.im)/\\?target=([^&]+)$",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
@@ -66,7 +62,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.douban\\.com/link\\d/\\?url=([^&]+)",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
@@ -74,11 +69,20 @@
 		},
 		{
 			"enable": true,
+			"name": "豆瓣移动版跳转PC版",
+			"ruleType": "redirect",
+			"matchType": "domain",
+			"pattern": "m.douban.com",
+			"group": "重定向",
+			"isFunction": true,
+			"code": "return /^xmlh|_frame$/.test(detail.type)\n? val.replace('m', 'www') : val;"
+		},
+		{
+			"enable": true,
 			"name": "QQ图片",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?://[^/]+?\\.qq\\.com/image\\?.*imageUrl=(.+)",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
@@ -90,7 +94,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://image\\.haha\\.mx/(.+)/middle/(.+)$",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://image.haha.mx/$1/big/$2",
@@ -114,7 +117,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?://\\w+\\.gushiwen\\.org/",
-			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
@@ -126,7 +128,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.google\\.[^/]+/url\\?q=([^&]+)$",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
@@ -138,7 +139,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.huya\\.com/\\w+$",
-			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
@@ -150,7 +150,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://m\\.miguvideo\\.com/m(gs/msite/prd/detail\\.html\\?cid=|/detail/)(\\d+).*",
-			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.miguvideo.com/p/detail/$2",
@@ -174,7 +173,6 @@
 			"ruleType": "redirect",
 			"matchType": "prefix",
 			"pattern": "https://64.32.20.246/play/",
-			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
@@ -186,7 +184,6 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://\\w+\\.1080tg\\.com",
-			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
@@ -205,7 +202,6 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"exclude": "",
 			"group": "反防盗链"
 		},
 		{
@@ -219,7 +215,6 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"exclude": "",
 			"group": "反防盗链"
 		},
 		{
@@ -233,7 +228,6 @@
 			"matchType": "domain",
 			"isFunction": false,
 			"enable": true,
-			"exclude": "",
 			"group": "反防盗链"
 		},
 		{
@@ -247,7 +241,6 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"exclude": "",
 			"group": "反防盗链"
 		},
 		{
@@ -256,7 +249,6 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "all",
 			"pattern": "",
-			"exclude": "",
 			"isFunction": true,
 			"code": "for (let a in val) {\n\tif (val[a].name === 'User-Agent') {\n\t\tval[a].value += ' HE/2.0.0';\n\t\tbreak;\n\t}\n}",
 			"group": "未分组"
@@ -267,7 +259,6 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://\\w+\\.(qpic|qlogo)\\.cn/",
-			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
@@ -281,7 +272,6 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://img\\w*\\.bdstatic\\.com/",
-			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
@@ -295,7 +285,6 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "prefix",
 			"pattern": "http",
-			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
@@ -309,7 +298,6 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "prefix",
 			"pattern": "http",
-			"exclude": "",
 			"group": "用户代理",
 			"isFunction": false,
 			"action": {
