@@ -17,7 +17,6 @@ no-csp-reports: * true
 * cloudfront.net * noop
 * cntv.cn * noop
 * doubanio.com * noop
-* douyinstatic.com * noop
 * github.com * noop
 * google.com * noop
 * googleapis.com * noop
@@ -45,7 +44,6 @@ no-csp-reports: * true
 1905.com * 3p-script noop
 acfun.cn * 3p-script noop
 miguvideo.com migu.cn * noop
-www.dmmiku.com bfdm.xyz * noop
 douyin.com * 3p-script noop
 github.com * 3p-script noop
 github.io * 3p-script noop

@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202412241
+! Version: 202502051
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -53,10 +53,10 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,yimj.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
-bimiacg4.net##+js(acis,Object.defineProperty,location.href)
+bimiacg4.net##+js(acs,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 
-! 低端影视 ddys.art .one
+! 低端影视 ddys.pro .one
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
 ddys.*##.cfa_popup:remove()
