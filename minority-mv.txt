@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202502051
+! Version: 202502161
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -14,7 +14,7 @@
 www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/click-interface/click/$xhr
 ||hdslb.com/bfs/seed/log/report/log-reporter.js^$script
-||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/bili-user-fingerprint.min.js^$script
+||hdslb.com^$subdocument
 
 ||beacon.qq.com^$ping
 ||trace.qq.com^$image,ping
