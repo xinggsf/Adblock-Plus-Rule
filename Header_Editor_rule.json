@@ -50,7 +50,7 @@
 			"name": "知乎、掘金链接重定向",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.im)/\\?target=([^&]+)$",
+			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.cn)/\\?target=([^&]+)$",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
@@ -69,10 +69,10 @@
 		},
 		{
 			"enable": true,
-			"name": "豆瓣移动版跳转PC版",
+			"name": "B站移动版跳转PC版",
 			"ruleType": "redirect",
 			"matchType": "domain",
-			"pattern": "m.douban.com",
+			"pattern": "m.bilibili.com",
 			"group": "重定向",
 			"isFunction": true,
 			"code": "return /^xmlh|_frame$/.test(detail.type)\n? val.replace('m', 'www') : val;"
