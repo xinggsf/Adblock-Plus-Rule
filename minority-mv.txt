@@ -66,6 +66,8 @@ ddys.*##main.site-main > div:first-child:remove()
 dm84.*##.container:style(max-width: 60vw!important)
 dm84.*##.p_box:style(height:33vw!important;padding-top:0!important)
 dm84.*###qrcode
+dmmiku.*##.ads_all:remove()
+||www.dmmiku.com/upload/*.png|$image
 
 www.iyf.tv##.dabf,div.pggf,vg-pause-f
 ||pptstatic.iyf.tv/upload/video/202$image
@@ -76,4 +78,4 @@ olevod.com###adsMaskBox
 
 qdm66.com###gongao
 ! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.kudm.vip www.dmtvw.com www.jujiso.com www.hktvyb.vip
-搜狐网络科技.中国
+cdn.g2ak5.com
