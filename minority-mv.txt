@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202503081
+! Version: 202503121
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -76,6 +76,6 @@ olevod.com##.pc-ads
 olevod.com###adsMaskBox
 ||static.olelive.com/uploads/file/$image
 
-qdm66.com###gongao
+qdm88.com###gongao
 ! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.kudm.vip www.dmtvw.com www.jujiso.com www.hktvyb.vip
 cdn.g2ak5.com
