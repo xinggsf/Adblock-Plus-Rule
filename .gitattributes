@@ -1,0 +1,10 @@
+[attr]adb   linguist-detectable linguist-language=Adblock
+[attr]hosts linguist-detactable linguist-language=Hosts
+
+# Fix language classification on GitHub.com
+hosts hosts
+minority-mv.txt adb
+mv.txt adb
+rule.txt adb
+ublock-dynamic-rule.txt adb
+git-config.txt linguist-language=Gitconfig
