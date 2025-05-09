@@ -54,7 +54,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 91meijutv.com,gdzidong.com,yimj.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
 
 bimiacg4.net##+js(acs,Object.defineProperty,location.href)
-bimiacg4.net##.tuiguang,#bkcl
+bimiacg4.net##.tuiguang,#bkcl,marquee
 
 ! 低端影视 ddys.pro .one
 ddys.*##+js(set, Object.prototype.ads, null)
