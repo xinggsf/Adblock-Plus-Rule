@@ -56,7 +56,7 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 bimiacg4.net##+js(acs,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl,marquee
 
-! 低端影视 ddys.pro .one
+! 低端影视 ddys.site .pro
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
 ddys.*##.cfa_popup:remove()
