@@ -2,26 +2,16 @@
 	"request": [
 		{
 			"enable": true,
-			"name": "FT中文网--全文阅读",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?://(cn\\.ft|www\\.ftchinese)\\.com(/story/\\d+).*",
-			"exclude": "full=y",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "http://cn.ft.com$2?full=y&archive",
-			"group": "重定向"
-		},
-		{
-			"enable": true,
 			"name": "google",
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.gg.com",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.google.com.hk/",
-			"group": "快捷网址"
+			"group": "快捷网址",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -29,10 +19,12 @@
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.g.com",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://mail.google.com/mail/#inbox",
-			"group": "快捷网址"
+			"group": "快捷网址",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -40,21 +32,39 @@
 			"ruleType": "redirect",
 			"matchType": "domain",
 			"pattern": "www.gi.com",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://github.com/",
-			"group": "快捷网址"
+			"group": "快捷网址",
+			"_runner": "dnr"
+		},
+		{
+			"enable": true,
+			"name": "FT中文网--全文阅读",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(cn\\.ft|www\\.ftchinese)\\.com(/story/\\d+)",
+			"exclude": "full=y",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://cn.ft.com$2?full=y&archive",
+			"group": "重定向",
+			"_runner": "web_request",
+			"_exclude": {}
 		},
 		{
 			"enable": true,
 			"name": "知乎、掘金链接重定向",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.cn)/\\?target=([^&]+)$",
+			"pattern": "^https?://link\\.(?:zhihu\\.com|juejin\\.cn)/\\?target=([^&]+)",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"group": "重定向"
+			"group": "重定向",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -62,42 +72,25 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.douban\\.com/link\\d/\\?url=([^&]+)",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"group": "重定向"
-		},
-		{
-			"enable": true,
-			"name": "B站移动版跳转PC版",
-			"ruleType": "redirect",
-			"matchType": "domain",
-			"pattern": "m.bilibili.com",
 			"group": "重定向",
-			"isFunction": true,
-			"code": "return /^xmlh|_frame$/.test(detail.type)\n? val.replace('m', 'www') : val;"
+			"_runner": "dnr"
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "QQ图片",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?://[^/]+?\\.qq\\.com/image\\?.*imageUrl=(.+)",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"group": "重定向"
-		},
-		{
-			"enable": true,
-			"name": "嘻哈网显示大图片",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https://image\\.haha\\.mx/(.+)/middle/(.+)$",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://image.haha.mx/$1/big/$2",
-			"group": "重定向"
+			"group": "重定向",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -109,7 +102,9 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://zh.wikipedia.org/zh-cn/$1",
-			"group": "重定向"
+			"group": "重定向",
+			"_runner": "web_request",
+			"_exclude": {}
 		},
 		{
 			"enable": true,
@@ -117,10 +112,12 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?://\\w+\\.gushiwen\\.org/",
+			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
-			"code": "return val.replace('.org','.cn');"
+			"code": "return val.replace('.org','.cn');",
+			"_runner": "web_request"
 		},
 		{
 			"enable": true,
@@ -128,21 +125,25 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.google\\.[^/]+/url\\?q=([^&]+)$",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "$1",
-			"group": "重定向"
+			"group": "重定向",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
-			"name": "虎牙直播跳转移动页面",
+			"name": "虎牙直播间跳转移动页面",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://www\\.huya\\.com/\\w+$",
+			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
-			"code": "return val.replace('www','m');"
+			"code": "return val.replace('www','m');",
+			"_runner": "web_request"
 		},
 		{
 			"enable": true,
@@ -150,22 +151,12 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://m\\.miguvideo\\.com/m(gs/msite/prd/detail\\.html\\?cid=|/detail/)(\\d+).*",
+			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.miguvideo.com/p/detail/$2",
-			"group": "重定向"
-		},
-		{
-			"enable": true,
-			"name": "斗鱼小水管",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https://[\\d\\-]+\\.bytefcdnrd\\.com/live/",
-			"exclude": "00.flv?",
-			"isFunction": true,
-			"action": "redirect",
 			"group": "重定向",
-			"code": "return val.replace('.flv','_900$&');"
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -173,10 +164,12 @@
 			"ruleType": "redirect",
 			"matchType": "prefix",
 			"pattern": "https://64.32.20.246/play/",
+			"exclude": "",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
-			"code": "return val.replace('64.32.20.246','hn.bfvvs.com');"
+			"code": "return val.replace('64.32.20.246','hn.bfvvs.com');",
+			"_runner": "web_request"
 		},
 		{
 			"enable": true,
@@ -184,10 +177,64 @@
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https://\\w+\\.1080tg\\.com",
+			"exclude": "",
+			"group": "重定向",
+			"isFunction": true,
+			"code": "return val.replace('1080tg','fentvoss');",
+			"_runner": "web_request"
+		},
+		{
+			"enable": true,
+			"name": "斗鱼小水管",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://[\\w\\-]+\\.bytefcdnrd\\.com/live/",
+			"exclude": "00.flv?",
 			"isFunction": true,
 			"action": "redirect",
 			"group": "重定向",
-			"code": "return val.replace('1080tg','fentvoss');"
+			"code": "return val.replace('.flv','_900$&');",
+			"_runner": "web_request",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "B站移动版跳转PC版",
+			"ruleType": "redirect",
+			"matchType": "domain",
+			"pattern": "m.bilibili.com",
+			"exclude": "",
+			"group": "重定向",
+			"isFunction": true,
+			"code": "return /^xmlh|_frame$/.test(detail.type)\n? val.replace('m', 'www').slice(0,val.indexOf('?',30)) : val;",
+			"_runner": "web_request"
+		},
+		{
+			"enable": false,
+			"name": "69shuba",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www\\.69shuba\\.com/modules/article/readbookcase.php.+?aid=(\\d+)&cid=(\\d+)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"group": "重定向",
+			"code": "return val.replace('www.69shuba.com','69shuba.cx');",
+			"to": "https://69shuba.cx/txt/$1/$2",
+			"_runner": "dnr"
+		},
+		{
+			"enable": false,
+			"name": "69shu",
+			"ruleType": "redirect",
+			"matchType": "prefix",
+			"pattern": "https://www.69shuba.com/txt/",
+			"exclude": "",
+			"isFunction": true,
+			"action": "redirect",
+			"group": "重定向",
+			"code": "return val.replace('www.69shuba.com','69shuba.cx');",
+			"_runner": "web_request"
 		}
 	],
 	"sendHeader": [
@@ -202,7 +249,9 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"group": "反防盗链"
+			"exclude": "",
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"name": "新浪图片反防盗链",
@@ -215,7 +264,9 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"group": "反防盗链"
+			"exclude": "",
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"name": "百度反防盗链1",
@@ -228,7 +279,9 @@
 			"matchType": "domain",
 			"isFunction": false,
 			"enable": true,
-			"group": "反防盗链"
+			"exclude": "",
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"name": "百度反防盗链2",
@@ -241,17 +294,9 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"group": "反防盗链"
-		},
-		{
-			"enable": false,
-			"name": "测试，不要启用：User-Agent加上HE/2.0.0",
-			"ruleType": "modifySendHeader",
-			"matchType": "all",
-			"pattern": "",
-			"isFunction": true,
-			"code": "for (let a in val) {\n\tif (val[a].name === 'User-Agent') {\n\t\tval[a].value += ' HE/2.0.0';\n\t\tbreak;\n\t}\n}",
-			"group": "未分组"
+			"exclude": "",
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -259,12 +304,14 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://\\w+\\.(qpic|qlogo)\\.cn/",
+			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
 				"value": ""
 			},
-			"group": "反防盗链"
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -272,12 +319,14 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?://img\\w*\\.bdstatic\\.com/",
+			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
 				"value": "http://tieba.baidu.com"
 			},
-			"group": "反防盗链"
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -285,12 +334,14 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "prefix",
 			"pattern": "http",
+			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -298,12 +349,14 @@
 			"ruleType": "modifySendHeader",
 			"matchType": "prefix",
 			"pattern": "http",
+			"exclude": "",
 			"group": "用户代理",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0"
-			}
+			},
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -317,7 +370,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -331,7 +385,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:48.0) Gecko/20100101 Firefox/48.0"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -345,7 +400,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -359,7 +415,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": false,
@@ -373,7 +430,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -388,7 +446,8 @@
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
 			"group": "用户代理",
-			"_exclude": {}
+			"_exclude": {},
+			"_runner": "web_request"
 		},
 		{
 			"enable": true,
@@ -402,7 +461,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -416,7 +476,8 @@
 				"name": "user-agent",
 				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
 			},
-			"group": "用户代理"
+			"group": "用户代理",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -430,7 +491,8 @@
 				"name": "referer",
 				"value": "https://www.mgtvys.com/"
 			},
-			"group": "反防盗链"
+			"group": "反防盗链",
+			"_runner": "dnr"
 		},
 		{
 			"enable": true,
@@ -444,21 +506,8 @@
 				"name": "referer",
 				"value": "https://www.douban.com"
 			},
-			"group": "反防盗链"
-		},
-		{
-			"enable": true,
-			"name": "金福影视解析",
-			"ruleType": "modifySendHeader",
-			"matchType": "prefix",
-			"pattern": "https://vip.jsjinfu.com:8443/?url=",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.88mv.org/"
-			},
-			"group": "反防盗链"
+			"group": "反防盗链",
+			"_runner": "dnr"
 		}
 	],
 	"receiveHeader": [],
