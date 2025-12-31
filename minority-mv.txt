@@ -75,7 +75,7 @@ dm84.*##.container:style(max-width: 60vw!important)
 dm84.*##.p_box:style(height:33vw!important;padding-top:0!important)
 dm84.*###qrcode
 dmmiku.*##.ads_all:remove()
-||www.dmmiku.com/upload/*.png|$image
+||www.dmmiku.net/upload/*.png|$image
 
 www.iyf.tv##.dabf,div.pggf,vg-pause-f
 ||pptstatic.iyf.tv/upload/video/202$image
