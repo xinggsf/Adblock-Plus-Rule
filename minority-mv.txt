@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202512241
+! Version: 202601201
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -71,9 +71,9 @@ ddys.*##.cfa_popup:remove()
 ddys.*###sajdhfbjwhe:remove()
 ddys.*##main.site-main > div:first-child:remove()
 
-dm84.*##.container:style(max-width: 60vw!important)
-dm84.*##.p_box:style(height:33vw!important;padding-top:0!important)
-dm84.*###qrcode
+dmbus.*##.container:style(max-width: 70vw!important)
+dmbus.*##.p_box:remove-class(p_box)
+dmbus.*###qrcode
 dmmiku.*##.ads_all:remove()
 ||www.dmmiku.net/upload/*.png|$image
 
@@ -85,5 +85,5 @@ olevod.com###adsMaskBox
 ||static.olelive.com/uploads/file/$image
 
 qdm8.com##.close-box.tips,#gongao
-! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.pro age.tv www.kudm.vip www.dmtvw.com www.jujiso.com www.hktvyb.vip
+! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.pro age.tv www.kudm.vip www.dmtvw.com www.jujiso.com www.hktvyb.vip 121310.xyz
 cdn.g2ak5.com
